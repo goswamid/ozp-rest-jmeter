@@ -212,7 +212,7 @@
           <stringProp name="IncludeController.includepath">../Common/AML_comp_GET_DATA.jmx</stringProp>
         </IncludeController>
         <hashTree/>
-        <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="Create Folder - Name Positive" enabled="false">
+        <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="Create Folder - Name Positive" enabled="true">
           <stringProp name="WhileController.condition">${__javaScript(&quot;${titlePos}&quot;!=&quot;EOF&quot;)}</stringProp>
         </WhileController>
         <hashTree>
@@ -540,7 +540,7 @@
             </hashTree>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Folder - Name Null" enabled="false"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Folder - Name Null" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Profile - Self" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -849,7 +849,7 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="Create Folder - Name Negative" enabled="false">
+        <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="Create Folder - Name Negative" enabled="true">
           <stringProp name="WhileController.condition">${__javaScript(&quot;${titleNeg}&quot;!=&quot;EOF&quot;)}</stringProp>
         </WhileController>
         <hashTree>
@@ -1079,7 +1079,7 @@
             </hashTree>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Library with no Folders" enabled="false"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Library with no Folders" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Profile - Self" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -2028,7 +2028,7 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Library with Single Folder" enabled="false"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Library with Single Folder" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Profile - Self" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -2997,7 +2997,7 @@ while (c &lt; 4){
             <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Library with Multiple Folder" enabled="false"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Library with Multiple Folder" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Profile - Self" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -3977,7 +3977,7 @@ while (c &lt; 4){
             <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Library with Multiple Folder and No Folder" enabled="false"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Library with Multiple Folder and No Folder" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Profile - Self" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -5167,7 +5167,7 @@ while (c &lt; 5){
             <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Library - Invalid ProfileID" enabled="false"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Library - Invalid ProfileID" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Library - Invalid ProfileID" enabled="false">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -5222,7 +5222,7 @@ while (c &lt; 5){
             <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Library - Invalid ListingID" enabled="false"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Library - Invalid ListingID" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Profile - Self" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -5324,7 +5324,7 @@ while (c &lt; 5){
             <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Get Library - Invalid ProfileID" enabled="false"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Get Library - Invalid ProfileID" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Library - Invalid ProfileID" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -5374,7 +5374,7 @@ while (c &lt; 5){
             <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Library with Duplicate Listings" enabled="false"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Library with Duplicate Listings" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Profile - Self" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -6196,7 +6196,7 @@ while (c &lt; 5){
           <stringProp name="IncludeController.includepath">../Common/AML_comp_GET_DATA.jmx</stringProp>
         </IncludeController>
         <hashTree/>
-        <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="Update Folder - Name Positive" enabled="false">
+        <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="Update Folder - Name Positive" enabled="true">
           <stringProp name="WhileController.condition">${__javaScript(&quot;${titlePos}&quot;!=&quot;EOF&quot;)}</stringProp>
         </WhileController>
         <hashTree>
@@ -6569,7 +6569,7 @@ while (c &lt; 5){
             </hashTree>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Update Folder - Name Null" enabled="false"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Update Folder - Name Null" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Profile - Self" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -6923,7 +6923,7 @@ while (c &lt; 5){
             <hashTree/>
           </hashTree>
         </hashTree>
-        <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="Update Folder - Name Negative" enabled="false">
+        <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="Update Folder - Name Negative" enabled="true">
           <stringProp name="WhileController.condition">${__javaScript(&quot;${titleNeg}&quot;!=&quot;EOF&quot;)}</stringProp>
         </WhileController>
         <hashTree>
@@ -7294,7 +7294,7 @@ while (c &lt; 5){
             </hashTree>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Update Library with no Folders" enabled="false"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Update Library with no Folders" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Profile - Self" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -9398,7 +9398,7 @@ while (c &lt; 4){
             <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Update Library with Multiple Folders" enabled="false"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Update Library with Multiple Folders" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Profile - Self" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -10095,35 +10095,35 @@ while (c &lt; 4){
               <intProp name="Assertion.test_type">2</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
-              <stringProp name="BeanShellAssertion.query">import com.eclipsesource.json.*;
+            <BSFAssertion guiclass="TestBeanGUI" testclass="BSFAssertion" testname="BSF Assertion" enabled="true">
+              <stringProp name="scriptLanguage">javascript</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
+ eval(&apos;var names = &apos; + prev.getResponseDataAsString());
 
-String jsonString = prev.getResponseDataAsString();
-JsonArray library = JsonArray.readFrom(jsonString);
-int count = 0;
-while (count &lt; 2) {
-//	System.out.println(count);
-	String name = library.get(count).asObject().get(&quot;folder&quot;).asString();
-//	System.out.println(name);
-	if (!name.equals(&quot;folder 1&quot;))
-		Failure = true;
-	count++;
+var c = 0;
+
+while (c &lt; 2){
+	var name = names[c];
+	if (name.folder !== &quot;folder 1&quot;){
+		AssertionResult.setResultForFailure(&quot;The folder came back wrong with the incorrect name - folder 1.&quot;);
+	}
+//	OUT.println(c);
+//	OUT.println(name.folder);
+	c++;
 };
 
-while (count &lt; 4) {
-//	System.out.println(count);
-	String name = library.get(count).asObject().get(&quot;folder&quot;).asString();
-//	System.out.println(name);
-	if (!name.equals(&quot;folder 2&quot;))
-		Failure = true;
-	count++;
-};
-
-FailureMessage = &quot;Test failed: The folder name does not match.&quot;;</stringProp>
-              <stringProp name="BeanShellAssertion.filename"></stringProp>
-              <stringProp name="BeanShellAssertion.parameters"></stringProp>
-              <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
-            </BeanShellAssertion>
+while (c &lt; 4){
+	var name = names[c];
+	if (name.folder !== &quot;folder 2&quot;){
+		AssertionResult.setResultForFailure(&quot;The folder came back wrong with the incorrect name - folder 2&quot;);
+	}
+//	OUT.println(c);
+//	OUT.println(name.folder);
+	c++;
+}</stringProp>
+            </BSFAssertion>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Delete Folder - Listing 1" enabled="true">
@@ -10450,7 +10450,7 @@ FailureMessage = &quot;Test failed: The folder name does not match.&quot;;</stri
             <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Update Library with Multiple Folders and No Folder" enabled="false"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Update Library with Multiple Folders and No Folder" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Profile - Self" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -11285,44 +11285,43 @@ FailureMessage = &quot;Test failed: The folder name does not match.&quot;;</stri
               <intProp name="Assertion.test_type">2</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
-              <stringProp name="BeanShellAssertion.query">import com.eclipsesource.json.*;
+            <BSFAssertion guiclass="TestBeanGUI" testclass="BSFAssertion" testname="BSF Assertion" enabled="true">
+              <stringProp name="scriptLanguage">javascript</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
+ eval(&apos;var names = &apos; + prev.getResponseDataAsString());
 
-String jsonString = prev.getResponseDataAsString();
-JsonArray library = JsonArray.readFrom(jsonString);
-int count = 0;
+var c = 0;
 
-while (count &lt; 2) {
-//	System.out.println(count);
-	String name = library.get(count).asObject().get(&quot;folder&quot;).asString();
-//	System.out.println(name);
-	if (!name.equals(&quot;folder 1&quot;))
-		Failure = true;
-	count++;
+while (c &lt; 2){
+	var name = names[c];
+	if (name.folder !== &quot;folder 1&quot;){
+		AssertionResult.setResultForFailure(&quot;The folder came back wrong with the incorrect name - folder 1.&quot;);
+	}
+//	OUT.println(c);
+//	OUT.println(name.folder);
+	c++;
 };
 
-while (count &lt; 4) {
-//	System.out.println(count);
-	String name = library.get(count).asObject().get(&quot;folder&quot;).asString();
-//	System.out.println(name);
-	if (!name.equals(&quot;folder 2&quot;))
-		Failure = true;
-	count++;
-};
+while (c &lt; 4){
+	var name = names[c];
+	if (name.folder !== &quot;folder 2&quot;){
+		AssertionResult.setResultForFailure(&quot;The folder came back wrong with the incorrect name - folder 2&quot;);
+	}
+//	OUT.println(c);
+//	OUT.println(name.folder);
+	c++;
+}
 
-while (count &lt; 5) {
-	JsonLiteral name = library.get(count).asObject().get(&quot;folder&quot;);
-//	System.out.println(name);
-	if (!name.isNull())
-		Failure = true;
-	count++;
-};
-
-FailureMessage = &quot;Test failed: The folder name does not match.&quot;;</stringProp>
-              <stringProp name="BeanShellAssertion.filename"></stringProp>
-              <stringProp name="BeanShellAssertion.parameters"></stringProp>
-              <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
-            </BeanShellAssertion>
+while (c &lt; 5){
+	var name = names[c];
+	if (name.folder !== null){
+		AssertionResult.setResultForFailure(&quot;The folder came back wrong with the incorrect name - null&quot;);
+	}
+	c++;
+}</stringProp>
+            </BSFAssertion>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Delete Folder - Listing 1" enabled="true">
@@ -11718,7 +11717,7 @@ FailureMessage = &quot;Test failed: The folder name does not match.&quot;;</stri
             <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Update Library to Empty" enabled="false"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Update Library to Empty" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Profile - Self" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -12557,7 +12556,7 @@ FailureMessage = &quot;Test failed: The folder name does not match.&quot;;</stri
             <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Update Library - Invalid ProfileID" enabled="false"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Update Library - Invalid ProfileID" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Update Library - Invalid ProfileID" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -12612,7 +12611,7 @@ FailureMessage = &quot;Test failed: The folder name does not match.&quot;;</stri
             <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Update Library - Invalid ListingID" enabled="false"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Update Library - Invalid ListingID" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Profile - Self" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -12714,7 +12713,7 @@ FailureMessage = &quot;Test failed: The folder name does not match.&quot;;</stri
             <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Update Library - Reorder Listings and Folders ADD BEANSHELL" enabled="false"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Update Library - Reorder Listings and Folders" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Profile - Self" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -13549,44 +13548,58 @@ FailureMessage = &quot;Test failed: The folder name does not match.&quot;;</stri
               <intProp name="Assertion.test_type">2</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="false">
-              <stringProp name="BeanShellAssertion.query">import com.eclipsesource.json.*;
+            <BSFAssertion guiclass="TestBeanGUI" testclass="BSFAssertion" testname="BSF Assertion" enabled="true">
+              <stringProp name="filename"></stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
+ eval(&apos;var names = &apos; + prev.getResponseDataAsString());
 
-String jsonString = prev.getResponseDataAsString();
-JsonArray library = JsonArray.readFrom(jsonString);
-int count = 0;
+var name0 = names[0];
+if (name0.serviceItem.title !== &quot;Listing3&quot;){
+	AssertionResult.setResultForFailure(&quot;The listings came back in the wrong order failed for Listing3&quot;);
+}
 
-while (count &lt; 2) {
-//	System.out.println(count);
-	String name = library.get(count).asObject().get(&quot;folder&quot;).asString();
-//	System.out.println(name);
-	if (!name.equals(&quot;folder 1&quot;))
-		Failure = true;
-	count++;
-};
+if (name0.folder !== &quot;folder 2&quot;){
+		AssertionResult.setResultForFailure(&quot;The folders came back in the wrong order failed for folder 2&quot;);	
+	}
 
-while (count &lt; 4) {
-//	System.out.println(count);
-	String name = library.get(count).asObject().get(&quot;folder&quot;).asString();
-//	System.out.println(name);
-	if (!name.equals(&quot;folder 2&quot;))
-		Failure = true;
-	count++;
-};
+var name1 = names[1];
+if (name1.serviceItem.title !== &quot;Listing4&quot;){
+	AssertionResult.setResultForFailure(&quot;The listings came back in the wrong order failed for Listing4&quot;);
+} 
 
-while (count &lt; 5) {
-	JsonLiteral name = library.get(count).asObject().get(&quot;folder&quot;);
-//	System.out.println(name);
-	if (!name.isNull())
-		Failure = true;
-	count++;
-};
+if (name1.folder !== &quot;folder 2&quot;){
+		AssertionResult.setResultForFailure(&quot;The folders came back in the wrong order failed for folder 2&quot;);	
+	}
 
-FailureMessage = &quot;Test failed: The folder name does not match.&quot;;</stringProp>
-              <stringProp name="BeanShellAssertion.filename"></stringProp>
-              <stringProp name="BeanShellAssertion.parameters"></stringProp>
-              <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
-            </BeanShellAssertion>
+var name2 = names[2];
+if (name2.serviceItem.title !== &quot;Listing5&quot;){
+	AssertionResult.setResultForFailure(&quot;The listings came back in the wrong order failed for Listing5&quot;);
+} 
+
+ if (name2.folder !== null){
+		AssertionResult.setResultForFailure(&quot;The folders came back in the wrong order failed for null&quot;);	
+	}
+
+var name3 = names[3];
+if (name3.serviceItem.title !== &quot;Listing2&quot;){
+	AssertionResult.setResultForFailure(&quot;The listings came back in the wrong order failed for Listing2&quot;);
+} 
+
+if (name3.folder !== &quot;folder 1&quot;){
+		AssertionResult.setResultForFailure(&quot;The folders came back in the wrong order failed for folder 1&quot;);	
+	}
+
+var name4 = names[4];
+if (name4.serviceItem.title !== &quot;Listing1&quot;){
+	AssertionResult.setResultForFailure(&quot;The listings came back in the wrong order failed for Listing1&quot;);
+} 
+
+if (name4.folder !== &quot;folder 1&quot;){
+		AssertionResult.setResultForFailure(&quot;The folders came back in the wrong order failed for folder 1&quot;);	
+	}</stringProp>
+              <stringProp name="scriptLanguage">javascript</stringProp>
+            </BSFAssertion>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Delete Folder - Listing 1" enabled="true">
@@ -13982,7 +13995,7 @@ FailureMessage = &quot;Test failed: The folder name does not match.&quot;;</stri
             <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Update Library  with Duplicate Listings" enabled="false"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Update Library  with Duplicate Listings" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Profile - Self" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -14387,7 +14400,7 @@ FailureMessage = &quot;Test failed: The folder name does not match.&quot;;</stri
             <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Update Library - Add a listing to folder" enabled="false"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Update Library - Add a listing to folder" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Profile - Self" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -15357,7 +15370,7 @@ FailureMessage = &quot;Test failed: The folder name does not match.&quot;;</stri
             <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Update Library - Delete a listing from folder" enabled="false"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Update Library - Delete a listing from folder" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Profile - Self" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
