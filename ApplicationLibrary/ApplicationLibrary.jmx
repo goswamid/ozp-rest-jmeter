@@ -1388,8 +1388,8 @@
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
 	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}],&#xd;
-	}</stringProp>
+	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -2337,7 +2337,7 @@
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
 	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}],&#xd;
+	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
 	}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -3306,7 +3306,7 @@ while (c &lt; 4){
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
 	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}],&#xd;
+	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
 	}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -4286,7 +4286,7 @@ while (c &lt; 4){
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
 	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}],&#xd;
+	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
 	}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -4364,7 +4364,7 @@ while (c &lt; 4){
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
 	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}],&#xd;
+	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
 	}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -5826,7 +5826,7 @@ while (c &lt; 5){
             <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Delete Listing in a Library" enabled="false"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Delete Listing in a Library" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Profile - Self" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -5953,7 +5953,7 @@ while (c &lt; 5){
             </RegexExtractor>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Library with Duplicate Listings" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Library for Delete Listing in a Library" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
@@ -6006,7 +6006,7 @@ while (c &lt; 5){
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Folder - Library with Duplicate Listings" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Folder - Delete Listing in a Library" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
@@ -6055,16 +6055,9 @@ while (c &lt; 5){
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Delete Folder - Listing 1" enabled="false">
-            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-              <collectionProp name="Arguments.arguments">
-                <elementProp name="" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value"></stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-              </collectionProp>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Delete Listing 1" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
             </elementProp>
             <stringProp name="HTTPSampler.domain"></stringProp>
             <stringProp name="HTTPSampler.port"></stringProp>
@@ -6072,7 +6065,7 @@ while (c &lt; 5){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/profile/${profileAdminID}/library/${listingID1}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID1}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -6093,7 +6086,7 @@ while (c &lt; 5){
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Folder - Library with Duplicate Listings" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Folder - Delete Listing in a Library" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
@@ -6137,37 +6130,6 @@ while (c &lt; 5){
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
               <intProp name="Assertion.test_type">2</intProp>
-            </ResponseAssertion>
-            <hashTree/>
-          </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Delete Listing 1" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
-              <collectionProp name="Arguments.arguments"/>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain"></stringProp>
-            <stringProp name="HTTPSampler.port"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            <stringProp name="HTTPSampler.protocol"></stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID1}</stringProp>
-            <stringProp name="HTTPSampler.method">DELETE</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.implementation">Java</stringProp>
-            <boolProp name="HTTPSampler.monitor">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code" enabled="true">
-              <collectionProp name="Asserion.test_strings">
-                <stringProp name="49590">204</stringProp>
-              </collectionProp>
-              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
-              <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">8</intProp>
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
@@ -7603,7 +7565,7 @@ while (c &lt; 5){
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
 	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}],&#xd;
+	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
 	}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -8657,7 +8619,7 @@ if (name3.serviceItem.title !== &quot;Listing1&quot;){
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
 	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}],&#xd;
+	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
 	}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -9707,7 +9669,7 @@ while (c &lt; 4){
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
 	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}],&#xd;
+	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
 	}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -10759,7 +10721,7 @@ while (c &lt; 4){
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
 	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}],&#xd;
+	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
 	}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -10837,7 +10799,7 @@ while (c &lt; 4){
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
 	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}],&#xd;
+	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
 	}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -12026,7 +11988,7 @@ while (c &lt; 5){
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
 	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}],&#xd;
+	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
 	}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -13022,7 +12984,7 @@ while (c &lt; 5){
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
 	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}],&#xd;
+	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
 	}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -13100,7 +13062,7 @@ while (c &lt; 5){
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
 	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}],&#xd;
+	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
 	}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -14709,7 +14671,7 @@ if (name4.folder !== &quot;folder 1&quot;){
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
 	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}],&#xd;
+	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
 	}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -15679,7 +15641,7 @@ if (name4.folder !== &quot;folder 1&quot;){
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
 	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}],&#xd;
+	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
 	}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
