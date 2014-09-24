@@ -15,17 +15,12 @@
         <stringProp name="TestPlan.comments">For execution vs. the Marketplace server.  Created for MP 2.5.</stringProp>
       </ConfigTestElement>
       <hashTree/>
-      <ConfigTestElement guiclass="SimpleConfigGui" testclass="ConfigTestElement" testname="Instructions" enabled="true">
-        <stringProp name="TestPlan.comments"> To run these tests:
-1. Inspect the &apos;Test Variables&apos; node for test parameters; number of users, number of repetitions, etc.
-    Pay attention here to where your server is hosted, and where CAS (required) is hosted; these may be the same
-2. Examine HTTP Request Defaults for the protocol, hostname, and port of your test server; this gets pre-pended on 
-every HTTP request sent during the tests
-3. Use nenu choice Options-&gt; SSL Manager and select a P12 certificate appropriate for your SSL connection
-4. Optionally disable portions of the test by selecting nodes and right-clicking
-5. Collapse all thread groups (User Threads, Admin Threads, etc.)  for readability
-6. Select the &apos;View Results Tree&apos; or &apos;Aggregate Report&apos; results at the bottom of test
-7. Execute using menu choice Run-&gt;Start 
+      <ConfigTestElement guiclass="SimpleConfigGui" testclass="ConfigTestElement" testname="Description" enabled="true">
+        <stringProp name="TestPlan.comments">This test will validate the API call that will field test all of the items of the serviceItem it will also test valid GET and Deletes
+
+ To run these tests:
+1. Inspect the &apos;Test Variables&apos; node for test parameters and validate they are correct and pointed to the correct locations
+2. Execute using menu choice Run-&gt;Start 
 </stringProp>
       </ConfigTestElement>
       <hashTree/>
