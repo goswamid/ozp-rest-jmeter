@@ -352,7 +352,7 @@
               </RegexExtractor>
               <hashTree/>
             </hashTree>
-            <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="Store Intnent ID" enabled="true">
+            <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="Store Intent ID" enabled="true">
               <stringProp name="BeanShellSampler.query">${__setProperty(globalintentID,${intentIDtemp},)};</stringProp>
               <stringProp name="BeanShellSampler.filename"></stringProp>
               <stringProp name="BeanShellSampler.parameters"></stringProp>
