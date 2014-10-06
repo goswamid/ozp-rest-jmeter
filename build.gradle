@@ -47,3 +47,6 @@ jmeterRun {
     jmeterPropertyFile = file('jmeter.properties')
 }
 
+task wrapper(type: Wrapper) {
+  gradleVersion = '2.1'
+}
