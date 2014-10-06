@@ -186,10 +186,6 @@
       <hashTree>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="API Call" enabled="true"/>
         <hashTree>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-            <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="API Call" enabled="true"/>
           <hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="API" enabled="true">
@@ -247,10 +243,6 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-            <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
         </hashTree>
       </hashTree>
     </hashTree>

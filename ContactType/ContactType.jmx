@@ -49,7 +49,7 @@ This will scenarios for CRUD on Contact Type as well as testing the list functio
           </elementProp>
           <elementProp name="hostPort" elementType="Argument">
             <stringProp name="Argument.name">hostPort</stringProp>
-            <stringProp name="Argument.value">8080</stringProp>
+            <stringProp name="Argument.value">8443</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="context" elementType="Argument">
@@ -72,6 +72,16 @@ This will scenarios for CRUD on Contact Type as well as testing the list functio
             <stringProp name="Argument.value">testAdmin1</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
+          <elementProp name="testUser" elementType="Argument">
+            <stringProp name="Argument.name">testUser</stringProp>
+            <stringProp name="Argument.value">testUser1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="testAdmin" elementType="Argument">
+            <stringProp name="Argument.name">testAdmin</stringProp>
+            <stringProp name="Argument.value">testAdmin1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
         </collectionProp>
       </Arguments>
       <hashTree/>
@@ -83,7 +93,7 @@ This will scenarios for CRUD on Contact Type as well as testing the list functio
         <stringProp name="HTTPSampler.port">${hostPort}</stringProp>
         <stringProp name="HTTPSampler.connect_timeout"></stringProp>
         <stringProp name="HTTPSampler.response_timeout"></stringProp>
-        <stringProp name="HTTPSampler.protocol">http</stringProp>
+        <stringProp name="HTTPSampler.protocol">https</stringProp>
         <stringProp name="HTTPSampler.contentEncoding"></stringProp>
         <stringProp name="HTTPSampler.path"></stringProp>
         <stringProp name="HTTPSampler.concurrentPool">4</stringProp>
@@ -2616,7 +2626,7 @@ This will scenarios for CRUD on Contact Type as well as testing the list functio
         </IncludeController>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Validate User Role" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Validate User Role" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -2633,7 +2643,7 @@ This will scenarios for CRUD on Contact Type as well as testing the list functio
       <hashTree>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Contact Type for User" enabled="true"/>
         <hashTree>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="true">
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
             <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
           </IncludeController>
           <hashTree/>
@@ -2706,14 +2716,14 @@ This will scenarios for CRUD on Contact Type as well as testing the list functio
             <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
           </BeanShellSampler>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="true">
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
             <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
           </IncludeController>
           <hashTree/>
         </hashTree>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="User CRUD ContactType" enabled="true"/>
         <hashTree>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="true">
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
             <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
           </IncludeController>
           <hashTree/>
@@ -2722,10 +2732,10 @@ This will scenarios for CRUD on Contact Type as well as testing the list functio
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
             <stringProp name="script">vars.get(&quot;userName&quot;);
-vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
+vars.put(&quot;userName&quot;,&quot;${testUser}&quot;);</stringProp>
           </BeanShellPreProcessor>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="true">
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
             <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
           </IncludeController>
           <hashTree/>
@@ -2862,7 +2872,7 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Contact Type" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Contact Type - User" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
@@ -2913,7 +2923,7 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="true">
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
             <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
           </IncludeController>
           <hashTree/>
@@ -2925,10 +2935,10 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
             <stringProp name="script">vars.get(&quot;userName&quot;);
-vars.put(&quot;userName&quot;,&quot;testAdmin1&quot;);</stringProp>
+vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
           </BeanShellPreProcessor>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="true">
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
             <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
           </IncludeController>
           <hashTree/>
@@ -2963,7 +2973,7 @@ vars.put(&quot;userName&quot;,&quot;testAdmin1&quot;);</stringProp>
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="true">
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
             <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
           </IncludeController>
           <hashTree/>
