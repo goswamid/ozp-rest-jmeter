@@ -2727,7 +2727,7 @@ vars.put(&quot;profileAdminID&quot;,res[6]);</stringProp>
               <boolProp name="quotedData">false</boolProp>
               <boolProp name="recycle">false</boolProp>
               <boolProp name="stopThread">true</boolProp>
-              <stringProp name="shareMode">shareMode.thread</stringProp>
+              <stringProp name="shareMode">Current thread</stringProp>
             </CSVDataSet>
             <hashTree/>
             <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
@@ -3139,7 +3139,7 @@ vars.put(&quot;profileAdminID&quot;,res[6]);</stringProp>
               <boolProp name="quotedData">false</boolProp>
               <boolProp name="recycle">false</boolProp>
               <boolProp name="stopThread">true</boolProp>
-              <stringProp name="shareMode">shareMode.thread</stringProp>
+              <stringProp name="shareMode">Current thread</stringProp>
             </CSVDataSet>
             <hashTree/>
             <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">

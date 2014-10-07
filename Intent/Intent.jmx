@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="2.6" jmeter="2.11 r1554548">
+<jmeterTestPlan version="1.2" properties="2.1" jmeter="2.9 r1437961">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -203,7 +203,7 @@ This will scenarios for CRUD on Intents as well as testing the list function.</s
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">shareMode.thread</stringProp>
+            <stringProp name="shareMode">Current thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Intents - Action Positive" enabled="true">
@@ -464,7 +464,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <boolProp name="quotedData">false</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">shareMode.thread</stringProp>
+            <stringProp name="shareMode">Current thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Intents - Action Negative" enabled="true">
@@ -557,7 +557,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">shareMode.thread</stringProp>
+            <stringProp name="shareMode">Current thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Intents - Type Positive" enabled="true">
@@ -739,7 +739,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">shareMode.thread</stringProp>
+            <stringProp name="shareMode">Current thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Intents - Type Positive" enabled="true">
@@ -921,7 +921,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <boolProp name="quotedData">false</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">shareMode.thread</stringProp>
+            <stringProp name="shareMode">Current thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Intents - Type Negative - Post Slash" enabled="true">
@@ -1014,7 +1014,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <boolProp name="quotedData">false</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">shareMode.thread</stringProp>
+            <stringProp name="shareMode">Current thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Intents - Type Negative - Pre Slash" enabled="true">
@@ -1292,7 +1292,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">shareMode.thread</stringProp>
+            <stringProp name="shareMode">Current thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Intents - Icon Positive" enabled="true">
@@ -1643,7 +1643,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <boolProp name="quotedData">false</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">shareMode.thread</stringProp>
+            <stringProp name="shareMode">Current thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Intents - Icon Negative" enabled="true">
@@ -1822,7 +1822,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">shareMode.thread</stringProp>
+            <stringProp name="shareMode">Current thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Intents - Label Positive" enabled="true">
@@ -2173,7 +2173,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <boolProp name="quotedData">false</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">shareMode.thread</stringProp>
+            <stringProp name="shareMode">Current thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Intents - Label Negative" enabled="true">
@@ -2692,7 +2692,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">shareMode.thread</stringProp>
+            <stringProp name="shareMode">Current thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Intents - Icon Positive" enabled="true">
@@ -2930,7 +2930,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">shareMode.thread</stringProp>
+            <stringProp name="shareMode">Current thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Intents - Icon Positive" enabled="true">

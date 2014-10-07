@@ -452,7 +452,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">shareMode.thread</stringProp>
+            <stringProp name="shareMode">Current thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Agency - Title Positive" enabled="true">
@@ -708,7 +708,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">shareMode.thread</stringProp>
+            <stringProp name="shareMode">Current thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Agency - Name Negative" enabled="true">
@@ -970,7 +970,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">shareMode.thread</stringProp>
+            <stringProp name="shareMode">Current thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Agency - IconURL Positive" enabled="true">
@@ -1309,7 +1309,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">shareMode.thread</stringProp>
+            <stringProp name="shareMode">Current thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Agency - Icon URL Negative" enabled="true">
@@ -1825,7 +1825,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">shareMode.thread</stringProp>
+            <stringProp name="shareMode">Current thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Agency - Name Negative" enabled="true">
@@ -2452,17 +2452,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
           <stringProp name="WhileController.condition">title</stringProp>
         </WhileController>
         <hashTree>
-          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">./IconURL_Negative.csv</stringProp>
-            <stringProp name="fileEncoding"></stringProp>
-            <stringProp name="variableNames">icon</stringProp>
-            <stringProp name="delimiter">,</stringProp>
-            <boolProp name="quotedData">true</boolProp>
-            <boolProp name="recycle">false</boolProp>
-            <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">shareMode.thread</stringProp>
-          </CSVDataSet>
-          <hashTree/>
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="" elementType="Header">
@@ -2475,6 +2464,17 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
               </elementProp>
             </collectionProp>
           </HeaderManager>
+          <hashTree/>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+            <stringProp name="filename">./IconURL_Negative.csv</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames">icon</stringProp>
+            <stringProp name="delimiter">,</stringProp>
+            <boolProp name="quotedData">true</boolProp>
+            <boolProp name="recycle">false</boolProp>
+            <boolProp name="stopThread">true</boolProp>
+            <stringProp name="shareMode">Current thread</stringProp>
+          </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Agency - Icon URL Negative" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
