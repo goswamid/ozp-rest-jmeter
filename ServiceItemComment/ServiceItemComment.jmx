@@ -869,15 +869,15 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
           </hashTree>
         </hashTree>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="Create ItemComment - Text Negative" enabled="true">
-          <stringProp name="WhileController.condition">${__javaScript(&quot;${text}&quot;!=&quot;EOF&quot;)}</stringProp>
+          <stringProp name="WhileController.condition">${__javaScript(&quot;${textNeg}&quot;!=&quot;EOF&quot;)}</stringProp>
         </WhileController>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
             <stringProp name="filename">./Comment_Negative.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
-            <stringProp name="variableNames">text</stringProp>
+            <stringProp name="variableNames">textNeg</stringProp>
             <stringProp name="delimiter">\t</stringProp>
-            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
             <stringProp name="shareMode">shareMode.thread</stringProp>
@@ -931,7 +931,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
             <hashTree/>
           </hashTree>
           <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
-            <stringProp name="IfController.condition">&quot;${text}&quot;!=&quot;EOF&quot;</stringProp>
+            <stringProp name="IfController.condition">&quot;${textNeg}&quot;!=&quot;EOF&quot;</stringProp>
             <boolProp name="IfController.evaluateAll">false</boolProp>
           </IfController>
           <hashTree>
@@ -1030,7 +1030,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">{&quot;text&quot;:&quot;${text}&quot;}</stringProp>
+                    <stringProp name="Argument.value">{&quot;text&quot;:&quot;${textNeg}&quot;}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
@@ -1757,13 +1757,13 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
           </hashTree>
         </hashTree>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="Create ItemComment - Rate Negative" enabled="true">
-          <stringProp name="WhileController.condition">${__javaScript(&quot;${rate}&quot;!=&quot;EOF&quot;)}</stringProp>
+          <stringProp name="WhileController.condition">${__javaScript(&quot;${rateNeg}&quot;!=&quot;EOF&quot;)}</stringProp>
         </WhileController>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
             <stringProp name="filename">./Rate_Negative.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
-            <stringProp name="variableNames">rate,result</stringProp>
+            <stringProp name="variableNames">rateNeg,result</stringProp>
             <stringProp name="delimiter">,</stringProp>
             <boolProp name="quotedData">false</boolProp>
             <boolProp name="recycle">false</boolProp>
@@ -1819,7 +1819,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
             <hashTree/>
           </hashTree>
           <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
-            <stringProp name="IfController.condition">&quot;${rate}&quot;!=&quot;EOF&quot;</stringProp>
+            <stringProp name="IfController.condition">&quot;${rateNeg}&quot;!=&quot;EOF&quot;</stringProp>
             <boolProp name="IfController.evaluateAll">false</boolProp>
           </IfController>
           <hashTree>
@@ -1920,7 +1920,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.value">{&#xd;
 	&quot;text&quot;:&quot;This is an Admin comment for Listing1&quot;,&#xd;
-	&quot;rate&quot;:${rate}&#xd;
+	&quot;rate&quot;:${rateNeg}&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -2778,15 +2778,15 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
           </hashTree>
         </hashTree>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="Update ItemComment - Text Negative" enabled="true">
-          <stringProp name="WhileController.condition">${__javaScript(&quot;${text}&quot;!=&quot;EOF&quot;)}</stringProp>
+          <stringProp name="WhileController.condition">${__javaScript(&quot;${textNeg}&quot;!=&quot;EOF&quot;)}</stringProp>
         </WhileController>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
             <stringProp name="filename">./Comment_Negative.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
-            <stringProp name="variableNames">text</stringProp>
+            <stringProp name="variableNames">textNeg</stringProp>
             <stringProp name="delimiter">\t</stringProp>
-            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
             <stringProp name="shareMode">shareMode.thread</stringProp>
@@ -2840,7 +2840,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
             <hashTree/>
           </hashTree>
           <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
-            <stringProp name="IfController.condition">&quot;${text}&quot;!=&quot;EOF&quot;</stringProp>
+            <stringProp name="IfController.condition">&quot;${textNeg}&quot;!=&quot;EOF&quot;</stringProp>
             <boolProp name="IfController.evaluateAll">false</boolProp>
           </IfController>
           <hashTree>
@@ -3000,7 +3000,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.value">{&#xd;
 	&quot;id&quot;:${commentID},&#xd;
-	&quot;text&quot;:&quot;${text}&quot;&#xd;
+	&quot;text&quot;:&quot;${textNeg}&quot;&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -3920,13 +3920,13 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
           </hashTree>
         </hashTree>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="Update ItemComment - Rate Negative" enabled="true">
-          <stringProp name="WhileController.condition">${__javaScript(&quot;${rate}&quot;!=&quot;EOF&quot;)}</stringProp>
+          <stringProp name="WhileController.condition">${__javaScript(&quot;${rateNeg}&quot;!=&quot;EOF&quot;)}</stringProp>
         </WhileController>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
             <stringProp name="filename">./Rate_Negative.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
-            <stringProp name="variableNames">rate,result</stringProp>
+            <stringProp name="variableNames">rateNeg,result</stringProp>
             <stringProp name="delimiter">,</stringProp>
             <boolProp name="quotedData">false</boolProp>
             <boolProp name="recycle">false</boolProp>
@@ -3982,7 +3982,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
             <hashTree/>
           </hashTree>
           <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
-            <stringProp name="IfController.condition">&quot;${rate}&quot;!=&quot;EOF&quot;</stringProp>
+            <stringProp name="IfController.condition">&quot;${rateNeg}&quot;!=&quot;EOF&quot;</stringProp>
             <boolProp name="IfController.evaluateAll">false</boolProp>
           </IfController>
           <hashTree>
@@ -4146,7 +4146,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
                     <stringProp name="Argument.value">{&#xd;
 	&quot;id&quot;:${commentID},&#xd;
 	&quot;text&quot;:&quot;This is an Admin comment for Listing1&quot;,&#xd;
-	&quot;rate&quot;:${rate}&#xd;
+	&quot;rate&quot;:${rateNeg}&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>

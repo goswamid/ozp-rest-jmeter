@@ -47,7 +47,7 @@
           </elementProp>
           <elementProp name="hostPort" elementType="Argument">
             <stringProp name="Argument.name">hostPort</stringProp>
-            <stringProp name="Argument.value">8080</stringProp>
+            <stringProp name="Argument.value">8443</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="showAccessAlertEnabled" elementType="Argument">
@@ -76,7 +76,7 @@
         <stringProp name="HTTPSampler.port">${hostPort}</stringProp>
         <stringProp name="HTTPSampler.connect_timeout"></stringProp>
         <stringProp name="HTTPSampler.response_timeout"></stringProp>
-        <stringProp name="HTTPSampler.protocol">http</stringProp>
+        <stringProp name="HTTPSampler.protocol">https</stringProp>
         <stringProp name="HTTPSampler.contentEncoding"></stringProp>
         <stringProp name="HTTPSampler.path"></stringProp>
         <stringProp name="HTTPSampler.concurrentPool">4</stringProp>
@@ -204,10 +204,6 @@
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Data - Include Controller" enabled="true">
           <stringProp name="IncludeController.includepath">../Common/AML_comp_GET_DATA.jmx</stringProp>
         </IncludeController>
@@ -288,7 +284,7 @@
                     <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -317,7 +313,7 @@
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+              <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
               <stringProp name="HTTPSampler.method">POST</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -376,7 +372,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:&quot;${titlePos}&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID1}&#xd;
 	}&#xd;
 }</stringProp>
@@ -528,7 +524,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID1}</stringProp>
+              <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID1}</stringProp>
               <stringProp name="HTTPSampler.method">DELETE</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -609,7 +605,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -638,7 +634,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -697,7 +693,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID1}&#xd;
 	}&#xd;
 }</stringProp>
@@ -849,7 +845,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID1}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID1}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -947,7 +943,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                     <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -976,7 +972,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+              <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
               <stringProp name="HTTPSampler.method">POST</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1035,7 +1031,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:&quot;${titleNeg}&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID1}&#xd;
 	}&#xd;
 }</stringProp>
@@ -1089,7 +1085,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID1}</stringProp>
+              <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID1}</stringProp>
               <stringProp name="HTTPSampler.method">DELETE</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1170,7 +1166,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -1199,7 +1195,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1259,7 +1255,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -1288,7 +1284,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1348,7 +1344,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -1377,7 +1373,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1437,7 +1433,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -1466,7 +1462,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1525,7 +1521,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID1}&#xd;
 	}&#xd;
 }</stringProp>
@@ -1578,7 +1574,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID2}&#xd;
 	}&#xd;
 }</stringProp>
@@ -1631,7 +1627,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID3}&#xd;
 	}&#xd;
 }</stringProp>
@@ -1684,7 +1680,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID4}&#xd;
 	}&#xd;
 }</stringProp>
@@ -1990,7 +1986,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID1}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID1}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2021,7 +2017,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID2}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID2}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2052,7 +2048,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID3}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID3}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2083,7 +2079,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID4}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID4}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2163,7 +2159,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -2192,7 +2188,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2252,7 +2248,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -2281,7 +2277,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2341,7 +2337,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -2370,7 +2366,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2430,7 +2426,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -2459,7 +2455,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2518,7 +2514,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:&quot;folder 1&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID1}&#xd;
 	}&#xd;
 }</stringProp>
@@ -2571,7 +2567,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:&quot;folder 1&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID2}&#xd;
 	}&#xd;
 }</stringProp>
@@ -2624,7 +2620,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:&quot;folder 1&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID3}&#xd;
 	}&#xd;
 }</stringProp>
@@ -2677,7 +2673,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:&quot;folder 1&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID4}&#xd;
 	}&#xd;
 }</stringProp>
@@ -3003,7 +2999,7 @@ while (c &lt; 4){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID1}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID1}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3034,7 +3030,7 @@ while (c &lt; 4){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID2}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID2}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3065,7 +3061,7 @@ while (c &lt; 4){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID3}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID3}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3096,7 +3092,7 @@ while (c &lt; 4){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID4}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID4}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3176,7 +3172,7 @@ while (c &lt; 4){
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -3205,7 +3201,7 @@ while (c &lt; 4){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3265,7 +3261,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -3294,7 +3290,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3354,7 +3350,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -3383,7 +3379,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3443,7 +3439,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -3472,7 +3468,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3531,7 +3527,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:&quot;folder 1&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID1}&#xd;
 	}&#xd;
 }</stringProp>
@@ -3584,7 +3580,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:&quot;folder 1&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID2}&#xd;
 	}&#xd;
 }</stringProp>
@@ -3637,7 +3633,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:&quot;folder 2&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID3}&#xd;
 	}&#xd;
 }</stringProp>
@@ -3690,7 +3686,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:&quot;folder 2&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID4}&#xd;
 	}&#xd;
 }</stringProp>
@@ -4027,7 +4023,7 @@ while (c &lt; 4){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID1}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID1}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -4058,7 +4054,7 @@ while (c &lt; 4){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID2}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID2}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -4089,7 +4085,7 @@ while (c &lt; 4){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID3}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID3}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -4120,7 +4116,7 @@ while (c &lt; 4){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID4}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID4}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -4200,7 +4196,7 @@ while (c &lt; 4){
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -4229,7 +4225,7 @@ while (c &lt; 4){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -4289,7 +4285,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -4318,7 +4314,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -4378,7 +4374,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -4407,7 +4403,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -4467,7 +4463,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -4496,7 +4492,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -4556,7 +4552,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -4585,7 +4581,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -4644,7 +4640,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:&quot;folder 1&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID1}&#xd;
 	}&#xd;
 }</stringProp>
@@ -4697,7 +4693,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:&quot;folder 1&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID2}&#xd;
 	}&#xd;
 }</stringProp>
@@ -4750,7 +4746,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:&quot;folder 2&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID3}&#xd;
 	}&#xd;
 }</stringProp>
@@ -4803,7 +4799,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:&quot;folder 2&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID4}&#xd;
 	}&#xd;
 }</stringProp>
@@ -4856,7 +4852,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID5}&#xd;
 	}&#xd;
 }</stringProp>
@@ -5241,7 +5237,7 @@ while (c &lt; 5){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID1}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID1}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -5272,7 +5268,7 @@ while (c &lt; 5){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID2}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID2}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -5303,7 +5299,7 @@ while (c &lt; 5){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID3}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID3}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -5334,7 +5330,7 @@ while (c &lt; 5){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID4}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID4}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -5365,7 +5361,7 @@ while (c &lt; 5){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID5}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID5}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -5397,7 +5393,7 @@ while (c &lt; 5){
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:1&#xd;
 	}&#xd;
 }</stringProp>
@@ -5499,7 +5495,7 @@ while (c &lt; 5){
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:9999&#xd;
 	}&#xd;
 }</stringProp>
@@ -5535,7 +5531,7 @@ while (c &lt; 5){
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1411137385">error&quot;:true,&quot;message&quot;:&quot;Attempted to find non-existant object of type class marketplace.ServiceItem with id 9999&quot;</stringProp>
+                <stringProp name="-779793787">error&quot;:true,&quot;message&quot;:&quot;Attempted to find non-existant object of type class marketplace.Listing with id 9999&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -5652,7 +5648,7 @@ while (c &lt; 5){
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -5681,7 +5677,7 @@ while (c &lt; 5){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -5740,7 +5736,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID1}&#xd;
 	}&#xd;
 }</stringProp>
@@ -5793,7 +5789,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID1}&#xd;
 	}&#xd;
 }</stringProp>
@@ -5846,7 +5842,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:&quot;Folder 1&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID1}&#xd;
 	}&#xd;
 }</stringProp>
@@ -6035,7 +6031,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID1}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID1}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -6115,7 +6111,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -6144,7 +6140,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -6203,7 +6199,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID1}&#xd;
 	}&#xd;
 }</stringProp>
@@ -6307,7 +6303,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID1}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID1}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -6392,10 +6388,6 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Data - Include Controller" enabled="true">
           <stringProp name="IncludeController.includepath">../Common/AML_comp_GET_DATA.jmx</stringProp>
         </IncludeController>
@@ -6476,7 +6468,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                     <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -6505,7 +6497,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+              <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
               <stringProp name="HTTPSampler.method">POST</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -6564,7 +6556,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:&quot;Folder 1&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID1}&#xd;
 	}&#xd;
 }</stringProp>
@@ -6618,7 +6610,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.value">[{&#xd;
 	&quot;folder&quot;:&quot;${titlePos}&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID1}&#xd;
 	}&#xd;
 }]</stringProp>
@@ -6761,7 +6753,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID1}</stringProp>
+              <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID1}</stringProp>
               <stringProp name="HTTPSampler.method">DELETE</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -6842,7 +6834,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -6871,7 +6863,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -6930,7 +6922,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:&quot;Folder 1&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID1}&#xd;
 	}&#xd;
 }</stringProp>
@@ -6984,7 +6976,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">[{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID1}&#xd;
 	}&#xd;
 }]</stringProp>
@@ -7127,7 +7119,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID1}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID1}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -7225,7 +7217,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                     <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -7254,7 +7246,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+              <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
               <stringProp name="HTTPSampler.method">POST</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -7313,7 +7305,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:&quot;Folder 1&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID1}&#xd;
 	}&#xd;
 }</stringProp>
@@ -7367,7 +7359,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.value">[{&#xd;
 	&quot;folder&quot;:&quot;${titleNeg}&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID1}&#xd;
 	}&#xd;
 }]</stringProp>
@@ -7508,7 +7500,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID1}</stringProp>
+              <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID1}</stringProp>
               <stringProp name="HTTPSampler.method">DELETE</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -7589,7 +7581,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -7618,7 +7610,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -7678,7 +7670,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -7707,7 +7699,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -7767,7 +7759,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -7796,7 +7788,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -7856,7 +7848,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -7885,7 +7877,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -7944,7 +7936,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID1}&#xd;
 	}&#xd;
 }</stringProp>
@@ -7997,7 +7989,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID2}&#xd;
 	}&#xd;
 }</stringProp>
@@ -8050,7 +8042,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID3}&#xd;
 	}&#xd;
 }</stringProp>
@@ -8103,7 +8095,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID4}&#xd;
 	}&#xd;
 }</stringProp>
@@ -8156,24 +8148,24 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">[{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID4}&#xd;
 	}&#xd;
 },&#xd;
 {&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID3}&#xd;
 	}&#xd;
 },&#xd;
 {&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID2}&#xd;
 	}&#xd;
 },{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID1}&#xd;
 	}&#xd;
 }]</stringProp>
@@ -8277,22 +8269,22 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
  eval(&apos;var names = &apos; + prev.getResponseDataAsString());
 
 var name0 = names[0];
-if (name0.serviceItem.title !== &quot;Listing4&quot;){
+if (name0.listing.title !== &quot;Listing4&quot;){
 	AssertionResult.setResultForFailure(&quot;The listings came back in the wrong order failed for Listing4&quot;);
 }
 
 var name1 = names[1];
-if (name1.serviceItem.title !== &quot;Listing3&quot;){
+if (name1.listing.title !== &quot;Listing3&quot;){
 	AssertionResult.setResultForFailure(&quot;The listings came back in the wrong order failed for Listing3&quot;);
 }
 
 var name2 = names[2];
-if (name2.serviceItem.title !== &quot;Listing2&quot;){
+if (name2.listing.title !== &quot;Listing2&quot;){
 	AssertionResult.setResultForFailure(&quot;The listings came back in the wrong order failed for Listing2&quot;);
 }
 
 var name3 = names[3];
-if (name3.serviceItem.title !== &quot;Listing1&quot;){
+if (name3.listing.title !== &quot;Listing1&quot;){
 	AssertionResult.setResultForFailure(&quot;The listings came back in the wrong order failed for Listing1&quot;);
 }</stringProp>
               <stringProp name="scriptLanguage">javascript</stringProp>
@@ -8514,7 +8506,7 @@ if (name3.serviceItem.title !== &quot;Listing1&quot;){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID1}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID1}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -8545,7 +8537,7 @@ if (name3.serviceItem.title !== &quot;Listing1&quot;){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID2}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID2}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -8576,7 +8568,7 @@ if (name3.serviceItem.title !== &quot;Listing1&quot;){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID3}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID3}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -8607,7 +8599,7 @@ if (name3.serviceItem.title !== &quot;Listing1&quot;){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID4}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID4}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -8687,7 +8679,7 @@ if (name3.serviceItem.title !== &quot;Listing1&quot;){
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -8716,7 +8708,7 @@ if (name3.serviceItem.title !== &quot;Listing1&quot;){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -8776,7 +8768,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -8805,7 +8797,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -8865,7 +8857,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -8894,7 +8886,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -8954,7 +8946,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -8983,7 +8975,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -9042,7 +9034,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID1}&#xd;
 	}&#xd;
 }</stringProp>
@@ -9095,7 +9087,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID2}&#xd;
 	}&#xd;
 }</stringProp>
@@ -9148,7 +9140,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID3}&#xd;
 	}&#xd;
 }</stringProp>
@@ -9201,7 +9193,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID4}&#xd;
 	}&#xd;
 }</stringProp>
@@ -9254,24 +9246,24 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">[{&#xd;
 	&quot;folder&quot;:&quot;folder 1&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID1}&#xd;
 	}&#xd;
 },&#xd;
 {&#xd;
 	&quot;folder&quot;:&quot;folder 1&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID2}&#xd;
 	}&#xd;
 },&#xd;
 {&#xd;
 	&quot;folder&quot;:&quot;folder 1&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID3}&#xd;
 	}&#xd;
 },{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID4}&#xd;
 	}&#xd;
 }]</stringProp>
@@ -9608,7 +9600,7 @@ while (c &lt; 4){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID1}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID1}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -9639,7 +9631,7 @@ while (c &lt; 4){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID2}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID2}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -9670,7 +9662,7 @@ while (c &lt; 4){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID3}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID3}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -9701,7 +9693,7 @@ while (c &lt; 4){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID4}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID4}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -9781,7 +9773,7 @@ while (c &lt; 4){
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -9810,7 +9802,7 @@ while (c &lt; 4){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -9870,7 +9862,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -9899,7 +9891,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -9959,7 +9951,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -9988,7 +9980,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -10048,7 +10040,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -10077,7 +10069,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -10136,7 +10128,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:&quot;folder 1&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID1}&#xd;
 	}&#xd;
 }</stringProp>
@@ -10189,7 +10181,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID2}&#xd;
 	}&#xd;
 }</stringProp>
@@ -10242,7 +10234,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID3}&#xd;
 	}&#xd;
 }</stringProp>
@@ -10295,7 +10287,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID4}&#xd;
 	}&#xd;
 }</stringProp>
@@ -10348,24 +10340,24 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">[{&#xd;
 	&quot;folder&quot;:&quot;folder 1&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID1}&#xd;
 	}&#xd;
 },&#xd;
 {&#xd;
 	&quot;folder&quot;:&quot;folder 1&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID2}&#xd;
 	}&#xd;
 },&#xd;
 {&#xd;
 	&quot;folder&quot;:&quot;folder 2&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID3}&#xd;
 	}&#xd;
 },{&#xd;
 	&quot;folder&quot;:&quot;folder 2&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID4}&#xd;
 	}&#xd;
 }]</stringProp>
@@ -10704,7 +10696,7 @@ while (c &lt; 4){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID1}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID1}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -10735,7 +10727,7 @@ while (c &lt; 4){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID2}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID2}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -10766,7 +10758,7 @@ while (c &lt; 4){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID3}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID3}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -10797,7 +10789,7 @@ while (c &lt; 4){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID4}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID4}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -10877,7 +10869,7 @@ while (c &lt; 4){
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -10906,7 +10898,7 @@ while (c &lt; 4){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -10966,7 +10958,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -10995,7 +10987,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -11055,7 +11047,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -11084,7 +11076,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -11144,7 +11136,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -11173,7 +11165,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -11233,7 +11225,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -11262,7 +11254,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -11321,7 +11313,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:&quot;folder 1&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID1}&#xd;
 	}&#xd;
 }</stringProp>
@@ -11374,7 +11366,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID2}&#xd;
 	}&#xd;
 }</stringProp>
@@ -11427,7 +11419,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID3}&#xd;
 	}&#xd;
 }</stringProp>
@@ -11480,7 +11472,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID4}&#xd;
 	}&#xd;
 }</stringProp>
@@ -11533,7 +11525,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID5}&#xd;
 	}&#xd;
 }</stringProp>
@@ -11586,29 +11578,29 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">[{&#xd;
 	&quot;folder&quot;:&quot;folder 1&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID1}&#xd;
 	}&#xd;
 },&#xd;
 {&#xd;
 	&quot;folder&quot;:&quot;folder 1&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID2}&#xd;
 	}&#xd;
 },&#xd;
 {&#xd;
 	&quot;folder&quot;:&quot;folder 2&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID3}&#xd;
 	}&#xd;
 },{&#xd;
 	&quot;folder&quot;:&quot;folder 2&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID4}&#xd;
 	}&#xd;
 },{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID5}&#xd;
 	}&#xd;
 }]</stringProp>
@@ -11995,7 +11987,7 @@ while (c &lt; 5){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID1}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID1}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -12026,7 +12018,7 @@ while (c &lt; 5){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID2}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID2}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -12057,7 +12049,7 @@ while (c &lt; 5){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID3}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID3}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -12088,7 +12080,7 @@ while (c &lt; 5){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID4}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID4}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -12119,7 +12111,7 @@ while (c &lt; 5){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID5}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID5}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -12199,7 +12191,7 @@ while (c &lt; 5){
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -12228,7 +12220,7 @@ while (c &lt; 5){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -12288,7 +12280,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -12317,7 +12309,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -12377,7 +12369,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -12406,7 +12398,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -12466,7 +12458,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -12495,7 +12487,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -12554,7 +12546,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID1}&#xd;
 	}&#xd;
 }</stringProp>
@@ -12607,7 +12599,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID2}&#xd;
 	}&#xd;
 }</stringProp>
@@ -12660,7 +12652,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID3}&#xd;
 	}&#xd;
 }</stringProp>
@@ -12713,7 +12705,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID4}&#xd;
 	}&#xd;
 }</stringProp>
@@ -12909,7 +12901,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID1}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID1}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -12940,7 +12932,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID2}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID2}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -12971,7 +12963,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID3}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID3}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -13002,7 +12994,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID4}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID4}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -13034,7 +13026,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">[{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:1&#xd;
 	}&#xd;
 }]</stringProp>
@@ -13136,7 +13128,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">[{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:9999&#xd;
 	}&#xd;
 }]</stringProp>
@@ -13172,7 +13164,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1411137385">error&quot;:true,&quot;message&quot;:&quot;Attempted to find non-existant object of type class marketplace.ServiceItem with id 9999&quot;</stringProp>
+                <stringProp name="-779793787">error&quot;:true,&quot;message&quot;:&quot;Attempted to find non-existant object of type class marketplace.Listing with id 9999&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -13239,7 +13231,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -13268,7 +13260,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -13328,7 +13320,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -13357,7 +13349,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -13417,7 +13409,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -13446,7 +13438,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -13506,7 +13498,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -13535,7 +13527,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -13595,7 +13587,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -13624,7 +13616,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -13683,7 +13675,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:&quot;folder 1&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID1}&#xd;
 	}&#xd;
 }</stringProp>
@@ -13736,7 +13728,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:&quot;folder 1&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID2}&#xd;
 	}&#xd;
 }</stringProp>
@@ -13789,7 +13781,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:&quot;folder 2&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID3}&#xd;
 	}&#xd;
 }</stringProp>
@@ -13842,7 +13834,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:&quot;folder 2&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID4}&#xd;
 	}&#xd;
 }</stringProp>
@@ -13895,7 +13887,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID5}&#xd;
 	}&#xd;
 }</stringProp>
@@ -13948,29 +13940,29 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">[{&#xd;
 	&quot;folder&quot;:&quot;folder 2&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID3}&#xd;
 	}&#xd;
 },&#xd;
 {&#xd;
 	&quot;folder&quot;:&quot;folder 2&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID4}&#xd;
 	}&#xd;
 },&#xd;
 {&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID5}&#xd;
 	}&#xd;
 },{&#xd;
 	&quot;folder&quot;:&quot;folder 1&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID2}&#xd;
 	}&#xd;
 },{&#xd;
 	&quot;folder&quot;:&quot;folder 1&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID1}&#xd;
 	}&#xd;
 }]</stringProp>
@@ -14078,7 +14070,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
  eval(&apos;var names = &apos; + prev.getResponseDataAsString());
 
 var name0 = names[0];
-if (name0.serviceItem.title !== &quot;Listing3&quot;){
+if (name0.listing.title !== &quot;Listing3&quot;){
 	AssertionResult.setResultForFailure(&quot;The listings came back in the wrong order failed for Listing3&quot;);
 }
 
@@ -14087,7 +14079,7 @@ if (name0.folder !== &quot;folder 2&quot;){
 	}
 
 var name1 = names[1];
-if (name1.serviceItem.title !== &quot;Listing4&quot;){
+if (name1.listing.title !== &quot;Listing4&quot;){
 	AssertionResult.setResultForFailure(&quot;The listings came back in the wrong order failed for Listing4&quot;);
 } 
 
@@ -14096,7 +14088,7 @@ if (name1.folder !== &quot;folder 2&quot;){
 	}
 
 var name2 = names[2];
-if (name2.serviceItem.title !== &quot;Listing5&quot;){
+if (name2.listing.title !== &quot;Listing5&quot;){
 	AssertionResult.setResultForFailure(&quot;The listings came back in the wrong order failed for Listing5&quot;);
 } 
 
@@ -14105,7 +14097,7 @@ if (name2.serviceItem.title !== &quot;Listing5&quot;){
 	}
 
 var name3 = names[3];
-if (name3.serviceItem.title !== &quot;Listing2&quot;){
+if (name3.listing.title !== &quot;Listing2&quot;){
 	AssertionResult.setResultForFailure(&quot;The listings came back in the wrong order failed for Listing2&quot;);
 } 
 
@@ -14114,7 +14106,7 @@ if (name3.folder !== &quot;folder 1&quot;){
 	}
 
 var name4 = names[4];
-if (name4.serviceItem.title !== &quot;Listing1&quot;){
+if (name4.listing.title !== &quot;Listing1&quot;){
 	AssertionResult.setResultForFailure(&quot;The listings came back in the wrong order failed for Listing1&quot;);
 } 
 
@@ -14372,7 +14364,7 @@ if (name4.folder !== &quot;folder 1&quot;){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID1}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID1}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -14403,7 +14395,7 @@ if (name4.folder !== &quot;folder 1&quot;){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID2}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID2}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -14434,7 +14426,7 @@ if (name4.folder !== &quot;folder 1&quot;){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID3}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID3}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -14465,7 +14457,7 @@ if (name4.folder !== &quot;folder 1&quot;){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID4}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID4}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -14496,7 +14488,7 @@ if (name4.folder !== &quot;folder 1&quot;){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID5}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID5}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -14576,7 +14568,7 @@ if (name4.folder !== &quot;folder 1&quot;){
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -14605,7 +14597,7 @@ if (name4.folder !== &quot;folder 1&quot;){
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -14664,7 +14656,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID1}&#xd;
 	}&#xd;
 }</stringProp>
@@ -14717,13 +14709,13 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">[{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID1}&#xd;
 	}&#xd;
 },&#xd;
 {&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID1}&#xd;
 	}&#xd;
 }]</stringProp>
@@ -14912,7 +14904,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID1}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID1}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -14992,7 +14984,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -15021,7 +15013,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -15081,7 +15073,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -15110,7 +15102,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -15170,7 +15162,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -15199,7 +15191,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -15259,7 +15251,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -15288,7 +15280,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -15347,7 +15339,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID1}&#xd;
 	}&#xd;
 }</stringProp>
@@ -15400,7 +15392,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID2}&#xd;
 	}&#xd;
 }</stringProp>
@@ -15453,7 +15445,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID3}&#xd;
 	}&#xd;
 }</stringProp>
@@ -15506,24 +15498,24 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">[{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID1}&#xd;
 	}&#xd;
 },&#xd;
 {&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID2}&#xd;
 	}&#xd;
 },&#xd;
 {&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID3}&#xd;
 	}&#xd;
 },{&#xd;
 	&quot;folder&quot;:null,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID4}&#xd;
 	}&#xd;
 }]</stringProp>
@@ -15833,7 +15825,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID1}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID1}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -15864,7 +15856,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID2}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID2}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -15895,7 +15887,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID3}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID3}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -15926,7 +15918,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID4}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID4}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -16006,7 +15998,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -16035,7 +16027,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -16095,7 +16087,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -16124,7 +16116,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -16184,7 +16176,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -16213,7 +16205,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -16273,7 +16265,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -16302,7 +16294,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -16361,7 +16353,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:&quot;Folder 1&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID1}&#xd;
 	}&#xd;
 }</stringProp>
@@ -16414,7 +16406,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:&quot;Folder 1&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID2}&#xd;
 	}&#xd;
 }</stringProp>
@@ -16467,7 +16459,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:&quot;Folder 1&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID3}&#xd;
 	}&#xd;
 }</stringProp>
@@ -16520,7 +16512,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;folder&quot;:&quot;Folder 1&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID4}&#xd;
 	}&#xd;
 }</stringProp>
@@ -16573,19 +16565,19 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">[{&#xd;
 	&quot;folder&quot;:&quot;Folder 1&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID1}&#xd;
 	}&#xd;
 },&#xd;
 {&#xd;
 	&quot;folder&quot;:&quot;Folder 1&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID2}&#xd;
 	}&#xd;
 },&#xd;
 {&#xd;
 	&quot;folder&quot;:&quot;Folder 1&quot;,&#xd;
-	&quot;serviceItem&quot;:{&#xd;
+	&quot;listing&quot;:{&#xd;
 		&quot;id&quot;:${listingID4}&#xd;
 	}&#xd;
 }]</stringProp>
@@ -16873,7 +16865,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID1}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID1}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -16904,7 +16896,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID2}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID2}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -16935,7 +16927,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID3}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID3}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -16966,7 +16958,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID4}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID4}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
