@@ -1,0 +1,52 @@
+buildscript {
+  repositories {
+    maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local' }
+    jcenter()
+  }
+  dependencies {
+    classpath 'org.akhikhl.gretty:gretty:1.1.4-SNAPSHOT'
+    classpath 'com.github.kulya:jmeter-gradle-plugin:1.3.2-2.9'
+  }
+}
+
+apply plugin: 'war'
+apply plugin: 'org.akhikhl.gretty'
+apply plugin: 'jmeter'
+
+repositories {
+  mavenLocal()
+  maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local' }
+  jcenter()
+}
+
+gretty {
+    jvmArgs = [
+        '-Xms256m',
+        '-Xmx1536m',
+        '-XX:MaxPermSize=256m'
+    ]
+}
+
+farm {
+  webapp 'org.ozoneplatform:marketplace:0.1.0', contextPath: '/marketplace'
+
+  afterEvaluate {
+    tasks.farmIntegrationTest.dependsOn tasks.jmeterRun
+    tasks.test.dependsOn tasks.farmIntegrationTest
+  }
+}
+
+jmeterRun {
+    jmeterTestFiles = [
+        'API/API.jmx',
+        'Category/Category.jmx'
+    ].collect { path ->
+        file path
+    }
+
+    jmeterPropertyFile = file('jmeter.properties')
+}
+
+task wrapper(type: Wrapper) {
+  gradleVersion = '2.1'
+}
