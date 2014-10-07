@@ -2205,9 +2205,6 @@ vars.put(&quot;profileAdminID&quot;,res[6]);</stringProp>
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="-914098081">&quot;id&quot;:${listingID1}</stringProp>
-                  <stringProp name="-914098050">&quot;id&quot;:${listingID2}</stringProp>
-                  <stringProp name="-914098019">&quot;id&quot;:${listingID3}</stringProp>
                   <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                   <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
                   <stringProp name="-1442106721">&quot;title&quot;:&quot;Listing3&quot;</stringProp>
