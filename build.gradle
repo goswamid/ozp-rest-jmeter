@@ -8,6 +8,8 @@ buildscript {
   }
 }
 
+import org.akhikhl.gretty.FarmStartTask
+
 apply plugin: 'war'
 apply plugin: 'org.akhikhl.gretty'
 apply plugin: 'jmeter'
@@ -18,14 +20,15 @@ repositories {
 }
 
 gretty {
-    jvmArgs = [
-        '-Xms256m',
-        '-Xmx1536m',
-        '-XX:MaxPermSize=256m'
-    ]
+  jvmArgs = [
+    '-Xms256m',
+    '-Xmx1536m',
+    '-XX:MaxPermSize=256m'
+  ]
 }
 
 farm {
+  servletContainer = 'tomcat7'
   webapp 'org.ozoneplatform:marketplace:0.1.0', contextPath: '/marketplace'
 
   afterEvaluate {
@@ -37,9 +40,11 @@ farm {
 jmeterRun {
     jmeterTestFiles = [
         'API/API.jmx',
-        'Category/Category.jmx'
+        'Category/Category.jmx',
+        'Agency/Agency.jmx',
+        'ApplicationLibrary/ApplicationLibrary.jmx'
     ].collect { path ->
-        file path
+        file "test/$path"
     }
 
     jmeterPropertyFile = file 'jmeter.properties'
