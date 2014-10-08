@@ -1,3 +1,0 @@
-Category that contains more then 256 chars and throws an error. Category that contains more then 256 chars and throws an error. Category that contains more then 256 chars and throws an error. Category that contains more then 256 chars and throws an error. Category that contains more then 256 chars and throws an error.,"NumberFormatException: For input string: 
-Invalid Category,"NumberFormatException: For input string:
-9999,Field error in object 'marketplace.ServiceItem' on field 'categories': rejected value

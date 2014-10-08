@@ -1,3 +1,0 @@
-Type that contains more then 256 chars and throws an error. Type that contains more then 256 chars and throws an error. Type that contains more then 256 chars and throws an error. Type that contains more then 256 chars and throws an error. Type that contains more then 256 chars and throws an error.,"error":true,"message":"com.fasterxml.jackson.databind.JsonMappingException: Unrecognized token 'Type'
-Invalid Type,"error":true,"message":"com.fasterxml.jackson.databind.JsonMappingException: Unrecognized token 'Invalid'
-9999,"error":true,"message":"Attempted to find non-existant object of type class marketplace.ContactType with id 9999"

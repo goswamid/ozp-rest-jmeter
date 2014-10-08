@@ -1,3 +1,0 @@
-Category that contains more then 256 chars and throws an error. Category that contains more then 256 chars and throws an error. Category that contains more then 256 chars and throws an error. Category that contains more then 256 chars and throws an error. Category that contains more then 256 chars and throws an error.,"error":true,"message":"For input string:
-Invalid Category,"error":true,"message":"For input string:
-9999,"error":true,"message":"Attempted to find non-existant object of type class marketplace.Category with id 9999"
