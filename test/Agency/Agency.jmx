@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="2.6" jmeter="2.11 r1554548">
+<jmeterTestPlan version="1.2" properties="2.1" jmeter="2.9 r1437961">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -172,10 +172,6 @@
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller" enabled="true"/>
         <hashTree>
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -415,16 +411,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
           </BeanShellSampler>
           <hashTree/>
         </hashTree>
-        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
-          <boolProp name="displayJMeterProperties">true</boolProp>
-          <boolProp name="displayJMeterVariables">true</boolProp>
-          <boolProp name="displaySystemProperties">false</boolProp>
-        </DebugSampler>
-        <hashTree/>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Agency - Name Positive" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -441,10 +427,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
           <stringProp name="WhileController.condition">title</stringProp>
         </WhileController>
@@ -470,7 +452,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">shareMode.thread</stringProp>
+            <stringProp name="shareMode">Current thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Agency - Title Positive" enabled="true">
@@ -605,10 +587,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Agency - Name Null" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -625,10 +603,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller" enabled="true"/>
         <hashTree>
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -693,10 +667,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Agency - Name Negative" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -713,10 +683,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
           <stringProp name="WhileController.condition">title</stringProp>
         </WhileController>
@@ -742,7 +708,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">shareMode.thread</stringProp>
+            <stringProp name="shareMode">Current thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Agency - Name Negative" enabled="true">
@@ -794,10 +760,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Agency - Duplicate Name" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -814,10 +776,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller" enabled="true"/>
         <hashTree>
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -971,10 +929,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Agency - Icon URL Positive" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -991,10 +945,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="true">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
           <stringProp name="WhileController.condition">title</stringProp>
         </WhileController>
@@ -1020,7 +970,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">shareMode.thread</stringProp>
+            <stringProp name="shareMode">Current thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Agency - IconURL Positive" enabled="true">
@@ -1155,12 +1105,8 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="true">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="OZF-231 - Create Agency - Icon URL Null" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Agency - Icon URL Null" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -1175,10 +1121,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller" enabled="true"/>
         <hashTree>
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -1326,10 +1268,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Agency - Icon URL Negative" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -1346,10 +1284,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
           <stringProp name="WhileController.condition">title</stringProp>
         </WhileController>
@@ -1375,7 +1309,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">shareMode.thread</stringProp>
+            <stringProp name="shareMode">Current thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Agency - Icon URL Negative" enabled="true">
@@ -1427,10 +1361,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Update Agency - Name Positive" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -1447,10 +1377,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller" enabled="true"/>
         <hashTree>
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -1647,10 +1573,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Update Agency - Name Null" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -1667,10 +1589,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller" enabled="true"/>
         <hashTree>
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -1866,10 +1784,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Update Agency - Name Negative" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -1886,10 +1800,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
           <stringProp name="WhileController.condition">title</stringProp>
         </WhileController>
@@ -1915,7 +1825,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">shareMode.thread</stringProp>
+            <stringProp name="shareMode">Current thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Agency - Name Negative" enabled="true">
@@ -2098,10 +2008,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Update Agency - Icon URL Positive" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -2118,10 +2024,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller" enabled="true"/>
         <hashTree>
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -2318,10 +2220,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Update Agency - Icon URL Null" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -2338,10 +2236,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller" enabled="true"/>
         <hashTree>
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -2538,10 +2432,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Update Agency - Icon URL Negative" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -2558,25 +2448,10 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
           <stringProp name="WhileController.condition">title</stringProp>
         </WhileController>
         <hashTree>
-          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">./IconURL_Negative.csv</stringProp>
-            <stringProp name="fileEncoding"></stringProp>
-            <stringProp name="variableNames">icon</stringProp>
-            <stringProp name="delimiter">,</stringProp>
-            <boolProp name="quotedData">true</boolProp>
-            <boolProp name="recycle">false</boolProp>
-            <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">shareMode.thread</stringProp>
-          </CSVDataSet>
-          <hashTree/>
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="" elementType="Header">
@@ -2589,6 +2464,17 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
               </elementProp>
             </collectionProp>
           </HeaderManager>
+          <hashTree/>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+            <stringProp name="filename">./IconURL_Negative.csv</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames">icon</stringProp>
+            <stringProp name="delimiter">,</stringProp>
+            <boolProp name="quotedData">true</boolProp>
+            <boolProp name="recycle">false</boolProp>
+            <boolProp name="stopThread">true</boolProp>
+            <stringProp name="shareMode">Current thread</stringProp>
+          </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Agency - Icon URL Negative" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -2770,10 +2656,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Validate User Calls" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -2790,10 +2672,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
           <boolProp name="resetInterpreter">true</boolProp>
           <stringProp name="parameters"></stringProp>
@@ -2801,10 +2679,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
           <stringProp name="script">vars.get(&quot;userName&quot;);
 vars.put(&quot;userName&quot;,&quot;${testUser}&quot;);</stringProp>
         </BeanShellPreProcessor>
-        <hashTree/>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
         <hashTree/>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller" enabled="true"/>
         <hashTree>
@@ -3051,10 +2925,6 @@ vars.put(&quot;userName&quot;,&quot;${testUser}&quot;);</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
           <boolProp name="displayJMeterProperties">true</boolProp>
           <boolProp name="displayJMeterVariables">true</boolProp>
@@ -3084,10 +2954,6 @@ vars.put(&quot;userName&quot;,&quot;${testUser}&quot;);</stringProp>
           <stringProp name="script">vars.get(&quot;userName&quot;);
 vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
         </BeanShellPreProcessor>
-        <hashTree/>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="true">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
         <hashTree/>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller" enabled="true"/>
         <hashTree>
@@ -3198,10 +3064,6 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="false">
           <boolProp name="displayJMeterProperties">true</boolProp>
           <boolProp name="displayJMeterVariables">true</boolProp>
