@@ -72,6 +72,11 @@ This will scenarios for CRUD on Intents as well as testing the list function.</s
             <stringProp name="Argument.value">testAdmin1</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
+          <elementProp name="protocol" elementType="Argument">
+            <stringProp name="Argument.name">protocol</stringProp>
+            <stringProp name="Argument.value">https</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
         </collectionProp>
       </Arguments>
       <hashTree/>
@@ -83,7 +88,7 @@ This will scenarios for CRUD on Intents as well as testing the list function.</s
         <stringProp name="HTTPSampler.port">${hostPort}</stringProp>
         <stringProp name="HTTPSampler.connect_timeout"></stringProp>
         <stringProp name="HTTPSampler.response_timeout"></stringProp>
-        <stringProp name="HTTPSampler.protocol">https</stringProp>
+        <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
         <stringProp name="HTTPSampler.contentEncoding"></stringProp>
         <stringProp name="HTTPSampler.path"></stringProp>
         <stringProp name="HTTPSampler.concurrentPool">4</stringProp>
@@ -187,10 +192,6 @@ This will scenarios for CRUD on Intents as well as testing the list function.</s
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
           <stringProp name="WhileController.condition">title</stringProp>
         </WhileController>
@@ -349,10 +350,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Intents  - Action Null" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -369,10 +366,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Intents  - Action Null" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Intents - Action Null" enabled="true">
@@ -428,10 +421,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Intents  - Action Negative" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -448,10 +437,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
           <stringProp name="WhileController.condition">title</stringProp>
         </WhileController>
@@ -521,10 +506,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Intents  - Type Positive - Post Slash" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -541,10 +522,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="Type Post Slash" enabled="true">
           <stringProp name="WhileController.condition">title</stringProp>
         </WhileController>
@@ -703,10 +680,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Intents  - Type Positive - Pre Slash" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -723,10 +696,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="Type Pre Slash" enabled="true">
           <stringProp name="WhileController.condition">title</stringProp>
         </WhileController>
@@ -885,10 +854,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Intents  - Type Negative - Post Slash" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -905,10 +870,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
           <stringProp name="WhileController.condition">title</stringProp>
         </WhileController>
@@ -978,10 +939,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Intents  - Type Negative - Pre Slash" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -998,10 +955,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
           <stringProp name="WhileController.condition">title</stringProp>
         </WhileController>
@@ -1071,10 +1024,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Intents  - Type Null" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -1091,10 +1040,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Intents  - Action Null" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Intents - Action Null" enabled="true">
@@ -1256,10 +1201,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Intents  - Icon Positive" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -1276,10 +1217,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
           <stringProp name="WhileController.condition">title</stringProp>
         </WhileController>
@@ -1438,10 +1375,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Intents  - Icon Null" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -1458,10 +1391,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Intents  - Icon Null" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Intents - Icon Null" enabled="true">
@@ -1607,10 +1536,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Intents  - Icon Negative" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -1627,10 +1552,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
           <stringProp name="WhileController.condition">title</stringProp>
         </WhileController>
@@ -1786,10 +1707,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Intents  - Label Positive" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -1806,10 +1723,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
           <stringProp name="WhileController.condition">title</stringProp>
         </WhileController>
@@ -1968,10 +1881,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Intents  - Label Null" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -1988,10 +1897,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Intents  - Label Null" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Intents - Label Null" enabled="true">
@@ -2137,10 +2042,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Intents  - Label Negative" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -2157,10 +2058,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
           <stringProp name="WhileController.condition">title</stringProp>
         </WhileController>
@@ -2230,10 +2127,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Update Intents  - Action" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -2250,10 +2143,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Intents - Action" enabled="true">
@@ -2324,7 +2213,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             </BSFPostProcessor>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Update Intents - Action Positive" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Update Intents - Action" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
@@ -2347,7 +2236,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/intent</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/intent/${intentID}</stringProp>
             <stringProp name="HTTPSampler.method">PUT</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2443,10 +2332,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Update Intents  - Type" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -2463,13 +2348,9 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller" enabled="true"/>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Intents - Action" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Intents - Type" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
@@ -2537,7 +2418,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             </BSFPostProcessor>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Update Intents - Action Positive" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Update Intents - Type" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
@@ -2560,7 +2441,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/intent</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/intent/${intentID}</stringProp>
             <stringProp name="HTTPSampler.method">PUT</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2581,7 +2462,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="get Intents - Action" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="get Intents - Type" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
@@ -2624,7 +2505,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Delete Intents - Action" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Delete Intents - Type" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
@@ -2656,10 +2537,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Update Intents  - Icon Positive" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -2676,10 +2553,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
           <stringProp name="WhileController.condition">title</stringProp>
         </WhileController>
@@ -2786,7 +2659,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/intent</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/intent/${intentID}</stringProp>
             <stringProp name="HTTPSampler.method">PUT</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2894,10 +2767,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Update Intents  - Label Positive" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -2914,10 +2783,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
           <stringProp name="WhileController.condition">title</stringProp>
         </WhileController>
@@ -2925,22 +2790,22 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
             <stringProp name="filename">./Label_Positive.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
-            <stringProp name="variableNames">label</stringProp>
-            <stringProp name="delimiter">,</stringProp>
+            <stringProp name="variableNames">label,result</stringProp>
+            <stringProp name="delimiter">\t</stringProp>
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
             <stringProp name="shareMode">Current thread</stringProp>
           </CSVDataSet>
           <hashTree/>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Intents - Icon Positive" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Intents - Label Positive" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
-	 &quot;type&quot;: &quot;application/json&quot;,&#xd;
+     &quot;type&quot;: &quot;application/json&quot;,&#xd;
       &quot;action&quot;: &quot;view&quot;,&#xd;
       &quot;label&quot;: &quot;Test Label&quot;,&#xd;
       &quot;icon&quot;:&quot;http://www.image.com/image.png&quot;&#xd;
@@ -3001,16 +2866,16 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             </BSFPostProcessor>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Update Intents - Icon Positive" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Update Intents - Label Positive" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
-	 &quot;type&quot;: &quot;application/json&quot;,&#xd;
+     &quot;type&quot;: &quot;application/json&quot;,&#xd;
       &quot;action&quot;: &quot;view&quot;,&#xd;
-      &quot;label&quot;:&quot;${lable}&quot;,&#xd;
+      &quot;label&quot;:&quot;${label}&quot;,&#xd;
       &quot;icon&quot;:&quot;http://www.image.com/image.png&quot;&#xd;
 }&#xd;
 </stringProp>
@@ -3024,7 +2889,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/intent</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/intent/${intentID}</stringProp>
             <stringProp name="HTTPSampler.method">PUT</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3048,8 +2913,8 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="-907948659">&quot;type&quot;:&quot;application/json&quot;</stringProp>
                 <stringProp name="-114604437">&quot;action&quot;:&quot;view&quot;</stringProp>
-                <stringProp name="-1300542351">&quot;label&quot;:null</stringProp>
-                <stringProp name="1904139108">&quot;icon&quot;:&quot;${icon}&quot;</stringProp>
+                <stringProp name="-193356591">&quot;label&quot;:&quot;${result}</stringProp>
+                <stringProp name="453206759">&quot;icon&quot;:&quot;http://www.image.com/image.png&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -3057,7 +2922,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="get Intents - Icon" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="get Intents - Label" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
@@ -3091,8 +2956,8 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="-907948659">&quot;type&quot;:&quot;application/json&quot;</stringProp>
                 <stringProp name="-114604437">&quot;action&quot;:&quot;view&quot;</stringProp>
-                <stringProp name="-1300542351">&quot;label&quot;:null</stringProp>
-                <stringProp name="1904139108">&quot;icon&quot;:&quot;${icon}&quot;</stringProp>
+                <stringProp name="-193356591">&quot;label&quot;:&quot;${result}</stringProp>
+                <stringProp name="453206759">&quot;icon&quot;:&quot;http://www.image.com/image.png&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -3100,7 +2965,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Delete Intents - Icon" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Delete Intents - Label" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
@@ -3132,10 +2997,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Update Intent  - Invalid ID" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -3152,10 +3013,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Update Intent  - Invalid ID" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
@@ -3208,10 +3065,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Get Intent - Invalid ID" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -3228,10 +3081,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Intent - Invalid ID" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
@@ -3272,10 +3121,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Delete Intent - Invalid ID" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -3292,10 +3137,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Delete Intent - Invalid ID" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
@@ -3336,10 +3177,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Get Intent List" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -3356,10 +3193,6 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Create Intents" enabled="true">
           <boolProp name="LoopController.continue_forever">true</boolProp>
           <stringProp name="LoopController.loops">10</stringProp>
@@ -3762,12 +3595,8 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Validate User Role" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Validate User Role" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -3782,22 +3611,21 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Type for User" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Intent for User" enabled="true"/>
         <hashTree>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="true">
-            <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Type" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Intent - For User" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
-	&quot;title&quot;:&quot;UserType&quot;,&#xd;
-	&quot;description&quot;:&quot;This is a description&quot;&#xd;
-}</stringProp>
+     &quot;type&quot;: &quot;application/json&quot;,&#xd;
+      &quot;action&quot;: &quot;view&quot;,&#xd;
+      &quot;label&quot;: null,&#xd;
+      &quot;icon&quot;: null&#xd;
+}&#xd;
+</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -3808,7 +3636,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/type</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/intent</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3830,56 +3658,41 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="102442473">&quot;title&quot;:&quot;UserType&quot;</stringProp>
-                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
-                <stringProp name="-1288175671">&quot;description&quot;:&quot;This is a description&quot;</stringProp>
+                <stringProp name="-907948659">&quot;type&quot;:&quot;application/json&quot;</stringProp>
+                <stringProp name="-114604437">&quot;action&quot;:&quot;view&quot;</stringProp>
+                <stringProp name="-1300542351">&quot;label&quot;:null</stringProp>
+                <stringProp name="1374673210">&quot;icon&quot;:null</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
               <intProp name="Assertion.test_type">2</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
-              <stringProp name="RegexExtractor.refname">typeIDtemp</stringProp>
-              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+),</stringProp>
-              <stringProp name="RegexExtractor.template">$1$</stringProp>
-              <stringProp name="RegexExtractor.default">unknown</stringProp>
-              <stringProp name="RegexExtractor.match_number">1</stringProp>
-            </RegexExtractor>
+            <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor - Get IntentID" enabled="true">
+              <stringProp name="scriptLanguage">javascript</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
+eval(&apos;var response = &apos; + prev.getResponseDataAsString());
+var intentLink = response._links.self.href;	
+var res = intentLink.split(&apos;/&apos;);
+//OUT.println(res[6]);
+vars.put(&quot;intentID&quot;,res[6]);</stringProp>
+            </BSFPostProcessor>
             <hashTree/>
           </hashTree>
-          <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="Store Type IDs" enabled="true">
-            <stringProp name="BeanShellSampler.query">${__setProperty(typeID,${typeIDtemp},)};</stringProp>
-            <stringProp name="BeanShellSampler.filename"></stringProp>
-            <stringProp name="BeanShellSampler.parameters"></stringProp>
-            <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
-          </BeanShellSampler>
-          <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="true">
-            <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
         </hashTree>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="User CRUD Type" enabled="true"/>
         <hashTree>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="true">
-            <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
           <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
             <boolProp name="resetInterpreter">true</boolProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
             <stringProp name="script">vars.get(&quot;userName&quot;);
-vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
+vars.put(&quot;userName&quot;,&quot;${testUser}&quot;);</stringProp>
           </BeanShellPreProcessor>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="true">
-            <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="get Type - User" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="get Intent - User" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
@@ -3889,7 +3702,7 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/type/${__property(typeID,,)}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/intent/${intentID}</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3911,8 +3724,10 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="367861058">&quot;id&quot;:${__property(contactTypeID,,)}</stringProp>
-                <stringProp name="102442473">&quot;title&quot;:&quot;UserType&quot;</stringProp>
+                <stringProp name="-907948659">&quot;type&quot;:&quot;application/json&quot;</stringProp>
+                <stringProp name="-114604437">&quot;action&quot;:&quot;view&quot;</stringProp>
+                <stringProp name="-1300542351">&quot;label&quot;:null</stringProp>
+                <stringProp name="1374673210">&quot;icon&quot;:null</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -3920,16 +3735,17 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Update Type - User" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Update Intent - User" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
-	&quot;id&quot;:${__property(typeID,,)},&#xd;
-	&quot;title&quot;:&quot;UserType&quot;,&#xd;
-	&quot;description&quot;:&quot;User attempting to update the description.&quot;&#xd;
+     &quot;type&quot;: &quot;application1/json&quot;,&#xd;
+      &quot;action&quot;: &quot;view1&quot;,&#xd;
+      &quot;label&quot;: null,&#xd;
+      &quot;icon&quot;: null&#xd;
 }&#xd;
 </stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -3942,7 +3758,7 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/type/${__property(typeID,,)}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/intent/${intentID}</stringProp>
             <stringProp name="HTTPSampler.method">PUT</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3972,7 +3788,7 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Delete Type - User" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Delete Intent - User" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
@@ -3982,7 +3798,7 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/type/${__property(typeID,,)}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/intent/${intentID}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -4012,15 +3828,17 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Type" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Intent" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
-	&quot;title&quot;:&quot;UserType2&quot;,&#xd;
-	&quot;description&quot;:&quot;This is a description&quot;&#xd;
+     &quot;type&quot;: &quot;application1/json&quot;,&#xd;
+      &quot;action&quot;: &quot;view1&quot;,&#xd;
+      &quot;label&quot;: null,&#xd;
+      &quot;icon&quot;: null&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -4032,7 +3850,7 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/type</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/intent</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -4062,26 +3880,18 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="true">
-            <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Remove Type for User" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Remove Intent for User" enabled="true"/>
         <hashTree>
           <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
             <boolProp name="resetInterpreter">true</boolProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
             <stringProp name="script">vars.get(&quot;userName&quot;);
-vars.put(&quot;userName&quot;,&quot;testAdmin1&quot;);</stringProp>
+vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
           </BeanShellPreProcessor>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="true">
-            <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Delete Type" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Delete Intent" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
@@ -4091,7 +3901,7 @@ vars.put(&quot;userName&quot;,&quot;testAdmin1&quot;);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/type/${__property(typeID,,)}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/intent/${intentID}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -4112,10 +3922,6 @@ vars.put(&quot;userName&quot;,&quot;testAdmin1&quot;);</stringProp>
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="true">
-            <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
         </hashTree>
       </hashTree>
     </hashTree>
