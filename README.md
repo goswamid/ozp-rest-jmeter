@@ -1,6 +1,7 @@
 ## Setup
 
-In order to run this project you need JDK 6 or 7 with $JAVA_HOME defined in your environment.
+In order to run this project you need JDK 6 or 7 with $JAVA_HOME defined in your environment. You will also need to have marketplace running (the test expects a base URL of https://localhost:8443/marketplace).
+
 
 ## Run All Tests
 
