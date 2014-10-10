@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="2.6" jmeter="2.11 r1554548">
+<jmeterTestPlan version="1.2" properties="2.1" jmeter="2.9 r1437961">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -12,7 +12,7 @@
     </TestPlan>
     <hashTree>
       <ConfigTestElement guiclass="SimpleConfigGui" testclass="ConfigTestElement" testname="Description" enabled="true">
-        <stringProp name="TestPlan.comments">This test will validate the API call that will test invalid ids being used to GET, PUT and DELETE serviceItems
+        <stringProp name="TestPlan.comments">This test will validate the API call that will test invalid ids being used to GET, PUT and DELETE listings
 
  To run these tests:
 1. Inspect the &apos;Test Variables&apos; node for test parameters and validate they are correct and pointed to the correct locations
@@ -51,7 +51,7 @@
           </elementProp>
           <elementProp name="hostPort" elementType="Argument">
             <stringProp name="Argument.name">hostPort</stringProp>
-            <stringProp name="Argument.value">8080</stringProp>
+            <stringProp name="Argument.value">8443</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="showAccessAlertEnabled" elementType="Argument">
@@ -69,6 +69,11 @@
             <stringProp name="Argument.value">marketplace</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
+          <elementProp name="protocol" elementType="Argument">
+            <stringProp name="Argument.name">protocol</stringProp>
+            <stringProp name="Argument.value">https</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
         </collectionProp>
       </Arguments>
       <hashTree/>
@@ -80,7 +85,7 @@
         <stringProp name="HTTPSampler.port">${hostPort}</stringProp>
         <stringProp name="HTTPSampler.connect_timeout"></stringProp>
         <stringProp name="HTTPSampler.response_timeout"></stringProp>
-        <stringProp name="HTTPSampler.protocol">http</stringProp>
+        <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
         <stringProp name="HTTPSampler.contentEncoding"></stringProp>
         <stringProp name="HTTPSampler.path"></stringProp>
         <stringProp name="HTTPSampler.concurrentPool">4</stringProp>
@@ -185,7 +190,7 @@
       </SetupThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Create Data - Include Controller" enabled="true">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_CREATE_DATA.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_CREATE_DATA.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
@@ -204,12 +209,8 @@
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Data - Include Controller" enabled="true">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_GET_DATA.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_GET_DATA.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Listing - Invalid ID" enabled="true">
@@ -222,7 +223,7 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">${context}/api/serviceItem/99999</stringProp>
+          <stringProp name="HTTPSampler.path">${context}/api/listing/99999</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -243,7 +244,7 @@
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="-2120801636">&quot;error&quot;:true,&quot;message&quot;:&quot;ServiceItem with id 99999 not found&quot;</stringProp>
+              <stringProp name="852508032">&quot;error&quot;:true,&quot;message&quot;:&quot;Listing with id 99999 not found&quot;</stringProp>
             </collectionProp>
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
@@ -261,7 +262,7 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">${context}/api/serviceItem/99999</stringProp>
+          <stringProp name="HTTPSampler.path">${context}/api/listing/99999</stringProp>
           <stringProp name="HTTPSampler.method">DELETE</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -283,7 +284,7 @@
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="-2120801636">&quot;error&quot;:true,&quot;message&quot;:&quot;ServiceItem with id 99999 not found&quot;</stringProp>
+              <stringProp name="852508032">&quot;error&quot;:true,&quot;message&quot;:&quot;Listing with id 99999 not found&quot;</stringProp>
             </collectionProp>
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
@@ -301,7 +302,7 @@
 	&quot;id&quot;:99999,&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -331,7 +332,7 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">${context}/api/serviceItem/99999</stringProp>
+          <stringProp name="HTTPSampler.path">${context}/api/listing/99999</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -353,7 +354,7 @@
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="-2120801636">&quot;error&quot;:true,&quot;message&quot;:&quot;ServiceItem with id 99999 not found&quot;</stringProp>
+              <stringProp name="852508032">&quot;error&quot;:true,&quot;message&quot;:&quot;Listing with id 99999 not found&quot;</stringProp>
             </collectionProp>
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
@@ -361,10 +362,6 @@
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <PostThreadGroup guiclass="PostThreadGroupGui" testclass="PostThreadGroup" testname="tearDown Thread Group" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -382,7 +379,7 @@
       </PostThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Delete Data - Include Controller" enabled="true">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_DELETE_DATA.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_DELETE_DATA.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
@@ -415,7 +412,7 @@
             <bytes>true</bytes>
           </value>
         </objProp>
-        <stringProp name="filename">./CreateListing_Report.jtl</stringProp>
+        <stringProp name="filename">./Listing/CreateListing_Report.jtl</stringProp>
       </ResultCollector>
       <hashTree/>
       <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
