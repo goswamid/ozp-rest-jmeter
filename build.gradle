@@ -93,3 +93,9 @@ jmeterEditor {
 task wrapper(type: Wrapper) {
   gradleVersion = '2.1'
 }
+
+task list << {
+  apiResources.each { resource ->
+    println resource
+  }
+}
