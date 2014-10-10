@@ -181,7 +181,7 @@
       </SetupThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Create Data - Include Controller" enabled="true">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_CREATE_DATA.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_CREATE_DATA.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
@@ -2052,7 +2052,7 @@ vars.put(&quot;profileAdminID&quot;,res[6]);</stringProp>
       </PostThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Delete Data - Include Controller" enabled="true">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_DELETE_DATA.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_DELETE_DATA.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>

@@ -196,7 +196,7 @@
       </SetupThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Create Data - Include Controller" enabled="true">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_CREATE_DATA.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_CREATE_DATA.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
@@ -216,7 +216,7 @@
       </ThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Data - Include Controller" enabled="true">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_GET_DATA.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_GET_DATA.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="Create ItemComment - Text Positive" enabled="true">
@@ -224,7 +224,7 @@
         </WhileController>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">./Comment_Positive.csv</stringProp>
+            <stringProp name="filename">./ListingComment/Comment_Positive.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">text,result</stringProp>
             <stringProp name="delimiter">\t</stringProp>
@@ -873,7 +873,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
         </WhileController>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">./Comment_Negative.csv</stringProp>
+            <stringProp name="filename">./ListingComment/Comment_Negative.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">textNeg</stringProp>
             <stringProp name="delimiter">\t</stringProp>
@@ -1109,7 +1109,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
         </WhileController>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">./Rate_Positive.csv</stringProp>
+            <stringProp name="filename">./ListingComment/Rate_Positive.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">rate,result</stringProp>
             <stringProp name="delimiter">,</stringProp>
@@ -1761,7 +1761,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
         </WhileController>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">./Rate_Negative.csv</stringProp>
+            <stringProp name="filename">./ListingComment/Rate_Negative.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">rateNeg,result</stringProp>
             <stringProp name="delimiter">,</stringProp>
@@ -2023,7 +2023,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
       </ThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Data - Include Controller" enabled="true">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_GET_DATA.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_GET_DATA.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="Update ItemComment - Text Positive" enabled="true">
@@ -2031,7 +2031,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
         </WhileController>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">./Comment_Positive.csv</stringProp>
+            <stringProp name="filename">./ListingComment/Comment_Positive.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">text,result</stringProp>
             <stringProp name="delimiter">\t</stringProp>
@@ -2782,7 +2782,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
         </WhileController>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">./Comment_Negative.csv</stringProp>
+            <stringProp name="filename">./ListingComment/Comment_Negative.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">textNeg</stringProp>
             <stringProp name="delimiter">\t</stringProp>
@@ -3166,7 +3166,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
         </WhileController>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">./Rate_Positive.csv</stringProp>
+            <stringProp name="filename">./ListingComment/Rate_Positive.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">rate,result</stringProp>
             <stringProp name="delimiter">,</stringProp>
@@ -3924,7 +3924,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
         </WhileController>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">./Rate_Negative.csv</stringProp>
+            <stringProp name="filename">./ListingComment/Rate_Negative.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">rateNeg,result</stringProp>
             <stringProp name="delimiter">,</stringProp>
@@ -4520,7 +4520,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Invalid itemComment ID" enabled="true"/>
         <hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Data - Include Controller" enabled="true">
-            <stringProp name="IncludeController.includepath">../Common/AML_comp_GET_DATA.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">./Common/AML_comp_GET_DATA.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Profile - Self" enabled="true">
@@ -4820,7 +4820,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
       </PostThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Delete Data - Include Controller" enabled="true">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_DELETE_DATA.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_DELETE_DATA.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>

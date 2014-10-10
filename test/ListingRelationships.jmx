@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="2.6" jmeter="2.11 r1554548">
+<jmeterTestPlan version="1.2" properties="2.1" jmeter="2.9 r1437961">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -47,7 +47,7 @@
           </elementProp>
           <elementProp name="hostPort" elementType="Argument">
             <stringProp name="Argument.name">hostPort</stringProp>
-            <stringProp name="Argument.value">8080</stringProp>
+            <stringProp name="Argument.value">8443</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="showAccessAlertEnabled" elementType="Argument">
@@ -65,6 +65,11 @@
             <stringProp name="Argument.value">marketplace</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
+          <elementProp name="protocol" elementType="Argument">
+            <stringProp name="Argument.name">protocol</stringProp>
+            <stringProp name="Argument.value">https</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
         </collectionProp>
       </Arguments>
       <hashTree/>
@@ -76,7 +81,7 @@
         <stringProp name="HTTPSampler.port">${hostPort}</stringProp>
         <stringProp name="HTTPSampler.connect_timeout"></stringProp>
         <stringProp name="HTTPSampler.response_timeout"></stringProp>
-        <stringProp name="HTTPSampler.protocol">http</stringProp>
+        <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
         <stringProp name="HTTPSampler.contentEncoding"></stringProp>
         <stringProp name="HTTPSampler.path"></stringProp>
         <stringProp name="HTTPSampler.concurrentPool">4</stringProp>
@@ -184,8 +189,8 @@
         <stringProp name="ThreadGroup.delay"></stringProp>
       </SetupThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Data - Include Controller" enabled="true">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_CREATE_DATA.jmx</stringProp>
+        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Create Data - Include Controller" enabled="true">
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_CREATE_DATA.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
@@ -204,12 +209,8 @@
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Data - Include Controller" enabled="true">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_GET_DATA.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_GET_DATA.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Requireing Listings" enabled="true"/>
@@ -223,7 +224,7 @@
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -238,9 +239,9 @@
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}],&#xd;
+	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
 	}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -252,7 +253,7 @@
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -274,15 +275,14 @@
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
-                <stringProp name="-1442106690">&quot;title&quot;:&quot;Listing4&quot;</stringProp>
+                <stringProp name="1454393973">&quot;name&quot;:&quot;Listing4&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
               <intProp name="Assertion.test_type">2</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID4</stringProp>
               <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
@@ -290,6 +290,18 @@
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
+            <hashTree/>
+            <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor - Get ListingID" enabled="true">
+              <stringProp name="scriptLanguage">javascript</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
+eval(&apos;var response = &apos; + prev.getResponseDataAsString());
+var listingLink = response._links.self.href;	
+var res = listingLink.split(&apos;/&apos;);
+//OUT.println(res[6]);
+vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
+            </BSFPostProcessor>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Listing 1" enabled="true">
@@ -301,7 +313,7 @@
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -316,7 +328,7 @@
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}],&#xd;
 	&quot;relationships&quot;:[{&quot;relationshipType&quot;:&quot;REQUIRE&quot;,&quot;relatedItems&quot;:[{&quot;id&quot;:${listingID4}}]}]&#xd;
@@ -331,7 +343,7 @@
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -353,15 +365,14 @@
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
-                <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
+                <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
               <intProp name="Assertion.test_type">2</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID1</stringProp>
               <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
@@ -369,6 +380,18 @@
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
+            <hashTree/>
+            <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor - Get ListingID" enabled="true">
+              <stringProp name="scriptLanguage">javascript</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
+eval(&apos;var response = &apos; + prev.getResponseDataAsString());
+var listingLink = response._links.self.href;	
+var res = listingLink.split(&apos;/&apos;);
+//OUT.println(res[6]);
+vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
+            </BSFPostProcessor>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Listing 2" enabled="true">
@@ -380,7 +403,7 @@
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -395,7 +418,7 @@
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}],&#xd;
 	&quot;relationships&quot;:[{&quot;relationshipType&quot;:&quot;REQUIRE&quot;,&quot;relatedItems&quot;:[{&quot;id&quot;:${listingID4}}]}]&#xd;
@@ -410,7 +433,7 @@
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -432,15 +455,14 @@
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
-                <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
+                <stringProp name="1454393911">&quot;name&quot;:&quot;Listing2&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
               <intProp name="Assertion.test_type">2</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID2</stringProp>
               <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
@@ -448,6 +470,18 @@
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
+            <hashTree/>
+            <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor - Get ListingID" enabled="true">
+              <stringProp name="scriptLanguage">javascript</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
+eval(&apos;var response = &apos; + prev.getResponseDataAsString());
+var listingLink = response._links.self.href;	
+var res = listingLink.split(&apos;/&apos;);
+//OUT.println(res[6]);
+vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
+            </BSFPostProcessor>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Listing 3" enabled="true">
@@ -459,7 +493,7 @@
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -474,7 +508,7 @@
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}],&#xd;
 	&quot;relationships&quot;:[{&quot;relationshipType&quot;:&quot;REQUIRE&quot;,&quot;relatedItems&quot;:[{&quot;id&quot;:${listingID2}}]}]&#xd;
@@ -489,7 +523,7 @@
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -511,15 +545,14 @@
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
-                <stringProp name="-1442106721">&quot;title&quot;:&quot;Listing3&quot;</stringProp>
+                <stringProp name="1454393942">&quot;name&quot;:&quot;Listing3&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
               <intProp name="Assertion.test_type">2</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID3</stringProp>
               <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
@@ -527,6 +560,18 @@
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
+            <hashTree/>
+            <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor - Get ListingID" enabled="true">
+              <stringProp name="scriptLanguage">javascript</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
+eval(&apos;var response = &apos; + prev.getResponseDataAsString());
+var listingLink = response._links.self.href;	
+var res = listingLink.split(&apos;/&apos;);
+//OUT.println(res[6]);
+vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
+            </BSFPostProcessor>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Requireing Listings for Listing 4 " enabled="true">
@@ -546,7 +591,7 @@
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID4}/requiringServiceItems</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID4}/requiringlistings</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -568,10 +613,9 @@
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
-                <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
-                <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
-                <stringProp name="-1442106690">&quot;title&quot;:&quot;Listing4&quot;</stringProp>
+                <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                <stringProp name="1454393911">&quot;name&quot;:&quot;Listing2&quot;</stringProp>
+                <stringProp name="1454393973">&quot;name&quot;:&quot;Listing4&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -580,7 +624,7 @@
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-1442106721">&quot;title&quot;:&quot;Listing3&quot;</stringProp>
+                <stringProp name="1454393942">&quot;name&quot;:&quot;Listing3&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -605,7 +649,7 @@
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID2}/requiringServiceItems</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID2}/requiringlistings</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -627,7 +671,7 @@
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
+                <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -636,8 +680,8 @@
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-1442106721">&quot;title&quot;:&quot;Listing3&quot;</stringProp>
-                <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
+                <stringProp name="1454393942">&quot;name&quot;:&quot;Listing3&quot;</stringProp>
+                <stringProp name="1454393911">&quot;name&quot;:&quot;Listing2&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -655,7 +699,7 @@
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID1}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID1}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -686,7 +730,7 @@
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID2}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID2}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -717,7 +761,7 @@
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID3}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID3}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -748,7 +792,7 @@
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID4}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID4}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -789,7 +833,7 @@
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/99999/requiringServiceItems</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/99999/requiringlistings</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -811,7 +855,7 @@
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-700221877">ServiceItem with id 99999 not found</stringProp>
+                <stringProp name="158155143">listing with id 99999 not found</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -831,7 +875,7 @@
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -846,7 +890,7 @@
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
 }</stringProp>
@@ -860,7 +904,7 @@
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -882,15 +926,14 @@
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
-                <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
+                <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
               <intProp name="Assertion.test_type">2</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID1</stringProp>
               <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
@@ -898,6 +941,18 @@
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
+            <hashTree/>
+            <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor - Get ListingID" enabled="true">
+              <stringProp name="scriptLanguage">javascript</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
+eval(&apos;var response = &apos; + prev.getResponseDataAsString());
+var listingLink = response._links.self.href;	
+var res = listingLink.split(&apos;/&apos;);
+//OUT.println(res[6]);
+vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
+            </BSFPostProcessor>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Listing 3" enabled="true">
@@ -909,7 +964,7 @@
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -924,9 +979,9 @@
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}],&#xd;
+	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -938,7 +993,7 @@
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -960,15 +1015,14 @@
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
-                <stringProp name="-1442106721">&quot;title&quot;:&quot;Listing3&quot;</stringProp>
+                <stringProp name="1454393942">&quot;name&quot;:&quot;Listing3&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
               <intProp name="Assertion.test_type">2</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID3</stringProp>
               <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
@@ -976,6 +1030,18 @@
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
+            <hashTree/>
+            <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor - Get ListingID" enabled="true">
+              <stringProp name="scriptLanguage">javascript</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
+eval(&apos;var response = &apos; + prev.getResponseDataAsString());
+var listingLink = response._links.self.href;	
+var res = listingLink.split(&apos;/&apos;);
+//OUT.println(res[6]);
+vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
+            </BSFPostProcessor>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Listing 2" enabled="true">
@@ -987,7 +1053,7 @@
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -1002,7 +1068,7 @@
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}],&#xd;
 	&quot;relationships&quot;:[{&quot;relationshipType&quot;:&quot;REQUIRE&quot;,&quot;relatedItems&quot;:[{&quot;id&quot;:${listingID3}}]}]&#xd;
@@ -1017,7 +1083,7 @@
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1039,15 +1105,14 @@
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
-                <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
+                <stringProp name="1454393911">&quot;name&quot;:&quot;Listing2&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
               <intProp name="Assertion.test_type">2</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID2</stringProp>
               <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
@@ -1055,6 +1120,18 @@
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
+            <hashTree/>
+            <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor - Get ListingID" enabled="true">
+              <stringProp name="scriptLanguage">javascript</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
+eval(&apos;var response = &apos; + prev.getResponseDataAsString());
+var listingLink = response._links.self.href;	
+var res = listingLink.split(&apos;/&apos;);
+//OUT.println(res[6]);
+vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
+            </BSFPostProcessor>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Listing that Requires Listing" enabled="true">
@@ -1066,7 +1143,7 @@
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -1081,7 +1158,7 @@
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}],&#xd;
 	&quot;relationships&quot;:[{&quot;relationshipType&quot;:&quot;REQUIRE&quot;,&quot;relatedItems&quot;:[{&quot;id&quot;:${listingID1}},{&quot;id&quot;:${listingID2}}]}]&#xd;
@@ -1096,7 +1173,7 @@
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1118,15 +1195,14 @@
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
-                <stringProp name="-1442106690">&quot;title&quot;:&quot;Listing4&quot;</stringProp>
+                <stringProp name="1454393973">&quot;name&quot;:&quot;Listing4&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
               <intProp name="Assertion.test_type">2</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID4</stringProp>
               <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
@@ -1134,6 +1210,18 @@
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
+            <hashTree/>
+            <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor - Get ListingID" enabled="true">
+              <stringProp name="scriptLanguage">javascript</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
+eval(&apos;var response = &apos; + prev.getResponseDataAsString());
+var listingLink = response._links.self.href;	
+var res = listingLink.split(&apos;/&apos;);
+//OUT.println(res[6]);
+vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
+            </BSFPostProcessor>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Required Listings" enabled="true">
@@ -1153,7 +1241,7 @@
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID4}/requiredServiceItems</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID4}/requiredlistings</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1175,10 +1263,9 @@
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
-                <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
-                <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
-                <stringProp name="-1442106721">&quot;title&quot;:&quot;Listing3&quot;</stringProp>
+                <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                <stringProp name="1454393911">&quot;name&quot;:&quot;Listing2&quot;</stringProp>
+                <stringProp name="1454393942">&quot;name&quot;:&quot;Listing3&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -1196,7 +1283,7 @@
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID1}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID1}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1227,7 +1314,7 @@
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID2}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID2}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1258,7 +1345,7 @@
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID3}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID3}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1289,7 +1376,7 @@
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID4}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID4}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1330,7 +1417,7 @@
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/99999/requiredServiceItems</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/99999/requiredlistings</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1352,7 +1439,7 @@
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-700221877">ServiceItem with id 99999 not found</stringProp>
+                <stringProp name="158155143">listing with id 99999 not found</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -1374,7 +1461,7 @@
                     <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -1389,9 +1476,9 @@
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}],&#xd;
+	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -1403,7 +1490,7 @@
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+              <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
               <stringProp name="HTTPSampler.method">POST</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1453,7 +1540,7 @@
 	&quot;id&quot;:${listingID1},&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -1468,9 +1555,9 @@
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}],&#xd;
+	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
 	&quot;relationships&quot;:[{&quot;relationshipType&quot;:&quot;REQUIRE&quot;,&quot;relatedItems&quot;:[{&quot;id&quot;:${listingID1}}]}]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
@@ -1483,7 +1570,7 @@
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID1}</stringProp>
+              <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID1}</stringProp>
               <stringProp name="HTTPSampler.method">PUT</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1531,7 +1618,7 @@
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID1}/requiredServiceItems</stringProp>
+              <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID1}/requiredlistings</stringProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1578,7 +1665,7 @@
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID1}/requiringServiceItems</stringProp>
+              <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID1}/requiringlistings</stringProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1628,7 +1715,7 @@
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID1}</stringProp>
+              <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID1}</stringProp>
               <stringProp name="HTTPSampler.method">DELETE</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1661,7 +1748,7 @@
                     <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -1676,9 +1763,9 @@
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}],&#xd;
+	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -1690,7 +1777,7 @@
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+              <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
               <stringProp name="HTTPSampler.method">POST</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1712,15 +1799,14 @@
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
-                  <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
+                  <stringProp name="1454393911">&quot;name&quot;:&quot;Listing2&quot;</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
                 <intProp name="Assertion.test_type">2</intProp>
               </ResponseAssertion>
               <hashTree/>
-              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
                 <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                 <stringProp name="RegexExtractor.refname">listingID2</stringProp>
                 <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
@@ -1728,6 +1814,18 @@
                 <stringProp name="RegexExtractor.default">unknown</stringProp>
                 <stringProp name="RegexExtractor.match_number">1</stringProp>
               </RegexExtractor>
+              <hashTree/>
+              <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor - Get ListingID" enabled="true">
+                <stringProp name="scriptLanguage">javascript</stringProp>
+                <stringProp name="parameters"></stringProp>
+                <stringProp name="filename"></stringProp>
+                <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
+eval(&apos;var response = &apos; + prev.getResponseDataAsString());
+var listingLink = response._links.self.href;	
+var res = listingLink.split(&apos;/&apos;);
+//OUT.println(res[6]);
+vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
+              </BSFPostProcessor>
               <hashTree/>
             </hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Listing 3" enabled="true">
@@ -1739,7 +1837,7 @@
                     <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -1754,7 +1852,7 @@
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}],&#xd;
 	&quot;relationships&quot;:[{&quot;relationshipType&quot;:&quot;REQUIRE&quot;,&quot;relatedItems&quot;:[{&quot;id&quot;:${listingID2}}]}]&#xd;
@@ -1769,7 +1867,7 @@
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+              <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
               <stringProp name="HTTPSampler.method">POST</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1791,15 +1889,14 @@
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
-                  <stringProp name="-1442106721">&quot;title&quot;:&quot;Listing3&quot;</stringProp>
+                  <stringProp name="1454393942">&quot;name&quot;:&quot;Listing3&quot;</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
                 <intProp name="Assertion.test_type">2</intProp>
               </ResponseAssertion>
               <hashTree/>
-              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
                 <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                 <stringProp name="RegexExtractor.refname">listingID3</stringProp>
                 <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
@@ -1807,6 +1904,18 @@
                 <stringProp name="RegexExtractor.default">unknown</stringProp>
                 <stringProp name="RegexExtractor.match_number">1</stringProp>
               </RegexExtractor>
+              <hashTree/>
+              <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor - Get ListingID" enabled="true">
+                <stringProp name="scriptLanguage">javascript</stringProp>
+                <stringProp name="parameters"></stringProp>
+                <stringProp name="filename"></stringProp>
+                <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
+eval(&apos;var response = &apos; + prev.getResponseDataAsString());
+var listingLink = response._links.self.href;	
+var res = listingLink.split(&apos;/&apos;);
+//OUT.println(res[6]);
+vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
+              </BSFPostProcessor>
               <hashTree/>
             </hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Update Listing 2" enabled="true">
@@ -1819,7 +1928,7 @@
 	&quot;id&quot;:${listingID2},&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -1834,7 +1943,7 @@
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}],&#xd;
 	&quot;relationships&quot;:[{&quot;relationshipType&quot;:&quot;REQUIRE&quot;,&quot;relatedItems&quot;:[{&quot;id&quot;:${listingID3}}]}]&#xd;
@@ -1849,7 +1958,7 @@
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID2}</stringProp>
+              <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID2}</stringProp>
               <stringProp name="HTTPSampler.method">PUT</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1871,8 +1980,7 @@
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
-                  <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
+                  <stringProp name="1454393911">&quot;name&quot;:&quot;Listing2&quot;</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
@@ -1897,7 +2005,7 @@
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID2}/requiredServiceItems</stringProp>
+              <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID2}/requiredlistings</stringProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1945,7 +2053,7 @@
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID2}/requiringServiceItems</stringProp>
+              <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID2}/requiringlistings</stringProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1993,7 +2101,7 @@
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID3}/requiredServiceItems</stringProp>
+              <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID3}/requiredlistings</stringProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2041,7 +2149,7 @@
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID3}/requiringServiceItems</stringProp>
+              <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID3}/requiringlistings</stringProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2082,7 +2190,7 @@
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID2}</stringProp>
+              <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID2}</stringProp>
               <stringProp name="HTTPSampler.method">DELETE</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2113,7 +2221,7 @@
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol"></stringProp>
               <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID3}</stringProp>
+              <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID3}</stringProp>
               <stringProp name="HTTPSampler.method">DELETE</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2136,14 +2244,10 @@
             </hashTree>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Get Requireing Listings as a User" enabled="false"/>
         <hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="true">
-            <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
@@ -2155,7 +2259,7 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
           </BeanShellPreProcessor>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="true">
-            <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Profile - Self" enabled="true">
@@ -2223,7 +2327,7 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -2238,9 +2342,9 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}],&#xd;
+	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
 	}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -2252,7 +2356,7 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2301,7 +2405,7 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -2316,9 +2420,9 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}],&#xd;
+	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
 	&quot;relationships&quot;:[{&quot;relationshipType&quot;:&quot;REQUIRE&quot;,&quot;relatedItems&quot;:[{&quot;id&quot;:${listingID4}}]}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -2331,7 +2435,7 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2380,7 +2484,7 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -2395,9 +2499,9 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}],&#xd;
+	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
 	&quot;relationships&quot;:[{&quot;relationshipType&quot;:&quot;REQUIRE&quot;,&quot;relatedItems&quot;:[{&quot;id&quot;:${listingID4}}]}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -2410,7 +2514,7 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2459,7 +2563,7 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -2474,9 +2578,9 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}],&#xd;
+	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
 	&quot;relationships&quot;:[{&quot;relationshipType&quot;:&quot;REQUIRE&quot;,&quot;relatedItems&quot;:[{&quot;id&quot;:${listingID2}}]}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -2489,7 +2593,7 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2546,7 +2650,7 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID4}/requiringServiceItems</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID4}/requiringlistings</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2605,7 +2709,7 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID2}/requiringServiceItems</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID2}/requiringlistings</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2649,7 +2753,7 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Delete User Listings" enabled="false"/>
         <hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="true">
-            <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
@@ -2661,7 +2765,7 @@ vars.put(&quot;userName&quot;,&quot;testAdmin1&quot;);</stringProp>
           </BeanShellPreProcessor>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="true">
-            <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Delete Listing" enabled="true">
@@ -2674,7 +2778,7 @@ vars.put(&quot;userName&quot;,&quot;testAdmin1&quot;);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID1}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID1}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2705,7 +2809,7 @@ vars.put(&quot;userName&quot;,&quot;testAdmin1&quot;);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID2}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID2}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2736,7 +2840,7 @@ vars.put(&quot;userName&quot;,&quot;testAdmin1&quot;);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID3}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID3}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2767,7 +2871,7 @@ vars.put(&quot;userName&quot;,&quot;testAdmin1&quot;);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID4}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID4}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2792,7 +2896,7 @@ vars.put(&quot;userName&quot;,&quot;testAdmin1&quot;);</stringProp>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Get Required Listings as a User" enabled="false"/>
         <hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="true">
-            <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
@@ -2804,7 +2908,7 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
           </BeanShellPreProcessor>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="true">
-            <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Profile - Self" enabled="true">
@@ -2872,7 +2976,7 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -2887,7 +2991,7 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
 }</stringProp>
@@ -2901,7 +3005,7 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2950,7 +3054,7 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -2965,9 +3069,9 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}],&#xd;
+	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -2979,7 +3083,7 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3028,7 +3132,7 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -3043,9 +3147,9 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}],&#xd;
+	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
 	&quot;relationships&quot;:[{&quot;relationshipType&quot;:&quot;REQUIRE&quot;,&quot;relatedItems&quot;:[{&quot;id&quot;:${listingID3}}]}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -3058,7 +3162,7 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3107,7 +3211,7 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	&quot;description&quot;:&quot;Description test&quot;,&#xd;
 	&quot;techPocs&quot;:[&quot;techPOC test&quot;, &quot;555-555-5555&quot;],&#xd;
-	&quot;class&quot;:&quot;marketplace.ServiceItem&quot;,&#xd;
+	&quot;class&quot;:&quot;marketplace.listing&quot;,&#xd;
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
@@ -3122,9 +3226,9 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;types&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}],&#xd;
+	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
 	&quot;relationships&quot;:[{&quot;relationshipType&quot;:&quot;REQUIRE&quot;,&quot;relatedItems&quot;:[{&quot;id&quot;:${listingID1}},{&quot;id&quot;:${listingID2}}]}]&#xd;
 	}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -3137,7 +3241,7 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3194,7 +3298,7 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID4}/requiredServiceItems</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID4}/requiredlistings</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3231,7 +3335,7 @@ vars.put(&quot;userName&quot;,&quot;testUser1&quot;);</stringProp>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Delete User Listings" enabled="false"/>
         <hashTree>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="true">
-            <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
@@ -3243,7 +3347,7 @@ vars.put(&quot;userName&quot;,&quot;testAdmin1&quot;);</stringProp>
           </BeanShellPreProcessor>
           <hashTree/>
           <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="true">
-            <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
+            <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Delete Listing" enabled="true">
@@ -3256,7 +3360,7 @@ vars.put(&quot;userName&quot;,&quot;testAdmin1&quot;);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID1}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID1}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3287,7 +3391,7 @@ vars.put(&quot;userName&quot;,&quot;testAdmin1&quot;);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID2}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID2}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3318,7 +3422,7 @@ vars.put(&quot;userName&quot;,&quot;testAdmin1&quot;);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID3}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID3}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3349,7 +3453,7 @@ vars.put(&quot;userName&quot;,&quot;testAdmin1&quot;);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/serviceItem/${listingID4}</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID4}</stringProp>
             <stringProp name="HTTPSampler.method">DELETE</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3387,8 +3491,8 @@ vars.put(&quot;userName&quot;,&quot;testAdmin1&quot;);</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </PostThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Data - Include Controller" enabled="true">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_DELETE_DATA.jmx</stringProp>
+        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Delete Data - Include Controller" enabled="true">
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_DELETE_DATA.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>

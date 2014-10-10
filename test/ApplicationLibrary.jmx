@@ -190,7 +190,7 @@
       </SetupThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Create Data - Include Controller" enabled="true">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_CREATE_DATA.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_CREATE_DATA.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
@@ -210,7 +210,7 @@
       </ThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Data - Include Controller" enabled="true">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_GET_DATA.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_GET_DATA.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="Create Folder - Name Positive" enabled="true">
@@ -218,7 +218,7 @@
         </WhileController>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">./Title_Positive.csv</stringProp>
+            <stringProp name="filename">./ApplicationLibrary/Title_Positive.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">titlePos,result</stringProp>
             <stringProp name="delimiter">\t</stringProp>
@@ -977,7 +977,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
         </WhileController>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">./Title_Negative.csv</stringProp>
+            <stringProp name="filename">./ApplicationLibrary/Title_Negative.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">titleNeg,result</stringProp>
             <stringProp name="delimiter">\t</stringProp>
@@ -6943,7 +6943,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
       </ThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Data - Include Controller" enabled="true">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_GET_DATA.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_GET_DATA.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="Update Folder - Name Positive" enabled="true">
@@ -6951,7 +6951,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
         </WhileController>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">./Title_Positive.csv</stringProp>
+            <stringProp name="filename">./ApplicationLibrary/Title_Positive.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">titlePos,result</stringProp>
             <stringProp name="delimiter">\t</stringProp>
@@ -7794,7 +7794,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
         </WhileController>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">./Title_Negative.csv</stringProp>
+            <stringProp name="filename">./ApplicationLibrary/Title_Negative.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">titleNeg,result</stringProp>
             <stringProp name="delimiter">\t</stringProp>
@@ -18360,7 +18360,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
       </PostThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Get Data - Include Controller" enabled="true">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_DELETE_DATA.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_DELETE_DATA.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>

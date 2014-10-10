@@ -198,7 +198,7 @@ This will scenarios for CRUD on Type as well as testing the list function.</stri
       </ThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
@@ -206,7 +206,7 @@ This will scenarios for CRUD on Type as well as testing the list function.</stri
         </WhileController>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">./Question_Positive.csv</stringProp>
+            <stringProp name="filename">./Scorecard/Question_Positive.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">question,result</stringProp>
             <stringProp name="delimiter">\t</stringProp>
@@ -360,7 +360,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
           </hashTree>
         </hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
@@ -380,7 +380,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
       </ThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Scorecard - Question Null" enabled="true">
@@ -436,7 +436,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
           <hashTree/>
         </hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
@@ -456,7 +456,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
       </ThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
@@ -464,7 +464,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
         </WhileController>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">./Question_Negative.csv</stringProp>
+            <stringProp name="filename">./Scorecard/Question_Negative.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">question</stringProp>
             <stringProp name="delimiter">,</stringProp>
@@ -529,7 +529,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
           </hashTree>
         </hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
@@ -549,7 +549,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
       </ThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
@@ -557,7 +557,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
         </WhileController>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">./Description_Positive.csv</stringProp>
+            <stringProp name="filename">./Scorecard/Description_Positive.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">description,result</stringProp>
             <stringProp name="delimiter">\t</stringProp>
@@ -711,7 +711,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
           </hashTree>
         </hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
@@ -731,7 +731,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
       </ThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Scorecard - Description Null" enabled="true">
@@ -787,7 +787,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
           <hashTree/>
         </hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
@@ -807,7 +807,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
       </ThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
@@ -815,7 +815,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
         </WhileController>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">./Description_Negative.csv</stringProp>
+            <stringProp name="filename">./Scorecard/Description_Negative.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">description</stringProp>
             <stringProp name="delimiter">,</stringProp>
@@ -880,7 +880,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
           </hashTree>
         </hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
@@ -900,7 +900,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
       </ThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Scorecard  - ShowOnListing Positive - TRUE" enabled="true"/>
@@ -1194,7 +1194,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
           </hashTree>
         </hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
@@ -1214,7 +1214,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
       </ThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Scorecard  - ShowOnListing Positive - Null" enabled="true"/>
@@ -1362,7 +1362,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
           </hashTree>
         </hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
@@ -1382,7 +1382,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
       </ThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
@@ -1390,7 +1390,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
         </WhileController>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">./URL_Positive.csv</stringProp>
+            <stringProp name="filename">./Scorecard/URL_Positive.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">image</stringProp>
             <stringProp name="delimiter">\t</stringProp>
@@ -1544,7 +1544,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
           </hashTree>
         </hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
@@ -1564,7 +1564,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
       </ThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Scorecard - Image Null" enabled="true">
@@ -1709,7 +1709,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
           <hashTree/>
         </hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
@@ -1729,7 +1729,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
       </ThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
@@ -1737,7 +1737,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
         </WhileController>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">./URL_Negative.csv</stringProp>
+            <stringProp name="filename">./Scorecard/URL_Negative.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">image</stringProp>
             <stringProp name="delimiter">,</stringProp>
@@ -1802,7 +1802,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
           </hashTree>
         </hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
@@ -1822,7 +1822,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
       </ThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
@@ -1830,7 +1830,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
         </WhileController>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">./Question_Positive.csv</stringProp>
+            <stringProp name="filename">./Scorecard/Question_Positive.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">question,result</stringProp>
             <stringProp name="delimiter">\t</stringProp>
@@ -2041,7 +2041,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
           </hashTree>
         </hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
@@ -2061,7 +2061,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
       </ThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Scorecard - Question Null" enabled="true">
@@ -2260,7 +2260,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
           <hashTree/>
         </hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
@@ -2280,7 +2280,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
       </ThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
@@ -2288,7 +2288,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
         </WhileController>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">./Question_Negative.csv</stringProp>
+            <stringProp name="filename">./Scorecard/Question_Negative.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">question</stringProp>
             <stringProp name="delimiter">,</stringProp>
@@ -2496,7 +2496,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
           </hashTree>
         </hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
@@ -2516,7 +2516,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
       </ThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
@@ -2524,7 +2524,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
         </WhileController>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">./Description_Positive.csv</stringProp>
+            <stringProp name="filename">./Scorecard/Description_Positive.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">description,result</stringProp>
             <stringProp name="delimiter">\t</stringProp>
@@ -2735,7 +2735,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
           </hashTree>
         </hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
@@ -2755,7 +2755,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
       </ThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Scorecard - Description Null" enabled="true">
@@ -2954,7 +2954,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
           <hashTree/>
         </hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
@@ -2974,7 +2974,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
       </ThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
@@ -2982,7 +2982,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
         </WhileController>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">./Description_Negative.csv</stringProp>
+            <stringProp name="filename">./Scorecard/Description_Negative.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">description</stringProp>
             <stringProp name="delimiter">,</stringProp>
@@ -3190,7 +3190,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
           </hashTree>
         </hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
@@ -3210,7 +3210,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
       </ThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Scorecard  - ShowOnListing Positive - TRUE" enabled="true"/>
@@ -3516,7 +3516,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
           </hashTree>
         </hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
@@ -3536,7 +3536,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
       </ThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Scorecard  - ShowOnListing Positive - Null" enabled="true"/>
@@ -3741,7 +3741,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
           </hashTree>
         </hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
@@ -3761,7 +3761,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
       </ThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
@@ -3769,7 +3769,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
         </WhileController>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">./URL_Positive.csv</stringProp>
+            <stringProp name="filename">./Scorecard/URL_Positive.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">image</stringProp>
             <stringProp name="delimiter">\t</stringProp>
@@ -3980,7 +3980,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
           </hashTree>
         </hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
@@ -4000,7 +4000,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
       </ThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Scorecard - Image Null" enabled="true">
@@ -4202,7 +4202,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
           <hashTree/>
         </hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
@@ -4222,7 +4222,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
       </ThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
@@ -4230,7 +4230,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
         </WhileController>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">./URL_Negative.csv</stringProp>
+            <stringProp name="filename">./Scorecard/URL_Negative.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">image</stringProp>
             <stringProp name="delimiter">,</stringProp>
@@ -4438,7 +4438,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
           </hashTree>
         </hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
@@ -4458,7 +4458,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
       </ThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Update Scorecard  - Invalid ID" enabled="true">
@@ -4516,7 +4516,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
           <hashTree/>
         </hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
@@ -4536,7 +4536,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
       </ThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Scorecard - Invalid ID" enabled="true">
@@ -4580,7 +4580,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
           <hashTree/>
         </hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
@@ -4600,7 +4600,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
       </ThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Delete Scorecard - Invalid ID" enabled="true">
@@ -4644,7 +4644,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
           <hashTree/>
         </hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
@@ -4664,7 +4664,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
       </ThreadGroup>
       <hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Authenticate.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
         </IncludeController>
         <hashTree/>
         <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Create Types" enabled="true">
@@ -5028,7 +5028,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
           </hashTree>
         </hashTree>
         <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">../Common/AML_comp_Logout.jmx</stringProp>
+          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
