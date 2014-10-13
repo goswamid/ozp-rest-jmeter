@@ -122,14 +122,28 @@
                 <intProp name="Assertion.test_type">2</intProp>
               </ResponseAssertion>
               <hashTree/>
-              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
-                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
-                <stringProp name="RegexExtractor.refname">categoryID</stringProp>
-                <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+),&quot;title&quot;:&quot;Jmeter</stringProp>
-                <stringProp name="RegexExtractor.template">$1$</stringProp>
-                <stringProp name="RegexExtractor.default">unknown</stringProp>
-                <stringProp name="RegexExtractor.match_number">1</stringProp>
-              </RegexExtractor>
+              <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor" enabled="true">
+                <stringProp name="scriptLanguage">javascript</stringProp>
+                <stringProp name="parameters"></stringProp>
+                <stringProp name="filename"></stringProp>
+                <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
+eval(&apos;var response = &apos; + prev.getResponseDataAsString());
+var c = 0;
+OUT.println(response._embedded.item.title);
+
+var categories = [].concat(response._embedded.item)
+while (c &lt; categories.length){
+	var name = categories[c].title;
+	if (name === &quot;Jmeter Category&quot;){
+		var catId = categories[c].id;
+		c = categories.length;
+	}
+	c++;
+	}
+	
+//OUT.println(catId);
+vars.put(&quot;categoryID&quot;,catId);</stringProp>
+              </BSFPostProcessor>
               <hashTree/>
             </hashTree>
           </hashTree>
