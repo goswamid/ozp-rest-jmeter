@@ -218,7 +218,7 @@
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;Agency 1&quot;, &quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Captain-America-icon.png&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;Agency 1&quot;, &quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Captain-America-icon.png&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -274,7 +274,7 @@
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;Agency 2&quot;, &quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Captain-America-Shield-icon.png&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;Agency 2&quot;, &quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Captain-America-Shield-icon.png&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -330,7 +330,7 @@
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;Agency 3&quot;, &quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Captain-America-Shield-2-icon.png&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;Agency 3&quot;, &quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Captain-America-Shield-2-icon.png&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -416,9 +416,9 @@
                 <stringProp name="-1942803752">&quot;title&quot;:&quot;Agency 1&quot;</stringProp>
                 <stringProp name="-1942803721">&quot;title&quot;:&quot;Agency 2&quot;</stringProp>
                 <stringProp name="-1942803690">&quot;title&quot;:&quot;Agency 3&quot;</stringProp>
-                <stringProp name="-2138087913">&quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Captain-America-icon.png&quot;</stringProp>
-                <stringProp name="1473953633">&quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Captain-America-Shield-icon.png&quot;</stringProp>
-                <stringProp name="-1093969210">&quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Captain-America-Shield-2-icon.png&quot;</stringProp>
+                <stringProp name="-1354134608">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Captain-America-icon.png&quot;</stringProp>
+                <stringProp name="-1369979992">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Captain-America-Shield-icon.png&quot;</stringProp>
+                <stringProp name="1779984717">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Captain-America-Shield-2-icon.png&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -486,7 +486,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;${name}&quot;, &quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;${name}&quot;, &quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -529,7 +529,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
-                <stringProp name="-817372166">&quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
+                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="2134919733">&quot;title&quot;:&quot;${result}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -571,7 +571,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="1607886001">&quot;id&quot;:${agencyID}</stringProp>
-                <stringProp name="-817372166">&quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
+                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="2134919733">&quot;title&quot;:&quot;${result}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -649,7 +649,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;title&quot;:null, &quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;title&quot;:null, &quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -742,7 +742,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;${name}&quot;, &quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;${name}&quot;, &quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -822,7 +822,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;Duplicate Agency&quot;, &quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;Duplicate Agency&quot;, &quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -865,7 +865,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
-                <stringProp name="-817372166">&quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
+                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="-151903916">&quot;title&quot;:&quot;Duplicate Agency&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -880,7 +880,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;Duplicate Agency&quot;, &quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;Duplicate Agency&quot;, &quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -988,7 +988,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
           </HeaderManager>
           <hashTree/>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">./Agency/IconURL_Positive.csv</stringProp>
+            <stringProp name="filename">./Agency/iconURL_Positive.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">icon</stringProp>
             <stringProp name="delimiter">,</stringProp>
@@ -998,13 +998,13 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <stringProp name="shareMode">shareMode.thread</stringProp>
           </CSVDataSet>
           <hashTree/>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Agency - IconURL Positive" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Agency - icon Positive" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;Test Agency ${__Random(1,99,random)}&quot;, &quot;iconUrl&quot;:&quot;${icon}&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;Test Agency ${__Random(1,99,random)}&quot;, &quot;icon&quot;:&quot;${icon}&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -1047,7 +1047,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
-                <stringProp name="-1881931381">&quot;iconUrl&quot;:&quot;${icon}&quot;</stringProp>
+                <stringProp name="1904139108">&quot;icon&quot;:&quot;${icon}&quot;</stringProp>
                 <stringProp name="1566078112">&quot;title&quot;:&quot;Test Agency ${random}&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -1089,7 +1089,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
-                <stringProp name="-1881931381">&quot;iconUrl&quot;:&quot;${icon}&quot;</stringProp>
+                <stringProp name="1904139108">&quot;icon&quot;:&quot;${icon}&quot;</stringProp>
                 <stringProp name="1566078112">&quot;title&quot;:&quot;Test Agency ${random}&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -1167,7 +1167,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;Test Agency&quot;, &quot;iconUrl&quot;:null}</stringProp>
+                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;Test Agency&quot;, &quot;icon&quot;:null}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -1201,7 +1201,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
-                <stringProp name="1596405427">&quot;iconUrl&quot;:null</stringProp>
+                <stringProp name="1374673210">&quot;icon&quot;:null</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -1252,7 +1252,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
-                <stringProp name="1596405427">&quot;iconUrl&quot;:null</stringProp>
+                <stringProp name="1374673210">&quot;icon&quot;:null</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -1327,7 +1327,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
           </HeaderManager>
           <hashTree/>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">./Agency/IconURL_Negative.csv</stringProp>
+            <stringProp name="filename">./Agency/iconURL_Negative.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">icon</stringProp>
             <stringProp name="delimiter">,</stringProp>
@@ -1343,7 +1343,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;Test Agency&quot;, &quot;iconUrl&quot;:&quot;${icon}&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;Test Agency&quot;, &quot;icon&quot;:&quot;${icon}&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -1423,7 +1423,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;Test Agency&quot;, &quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;Test Agency&quot;, &quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -1466,7 +1466,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
-                <stringProp name="-817372166">&quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
+                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -1481,7 +1481,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;id&quot;:${agencyID},&quot;title&quot;:&quot;Updated Agency&quot;, &quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;id&quot;:${agencyID},&quot;title&quot;:&quot;Updated Agency&quot;, &quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -1515,7 +1515,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
-                <stringProp name="-817372166">&quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
+                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="-865515516">&quot;title&quot;:&quot;Updated Agency&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -1557,7 +1557,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="1607886001">&quot;id&quot;:${agencyID}</stringProp>
-                <stringProp name="-817372166">&quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
+                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="-865515516">&quot;title&quot;:&quot;Updated Agency&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -1635,7 +1635,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;Test Agency&quot;, &quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;Test Agency&quot;, &quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -1678,7 +1678,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
-                <stringProp name="-817372166">&quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
+                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -1693,7 +1693,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;id&quot;:${agencyID},&quot;title&quot;:null, &quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;id&quot;:${agencyID},&quot;title&quot;:null, &quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -1768,7 +1768,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="1607886001">&quot;id&quot;:${agencyID}</stringProp>
-                <stringProp name="-817372166">&quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
+                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -1859,7 +1859,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;Test Agency&quot;, &quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;Test Agency&quot;, &quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -1902,7 +1902,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
-                <stringProp name="-817372166">&quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
+                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -1917,7 +1917,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;id&quot;:${agencyID},&quot;title&quot;:&quot;${name}&quot;, &quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;id&quot;:${agencyID},&quot;title&quot;:&quot;${name}&quot;, &quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -1992,7 +1992,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="1607886001">&quot;id&quot;:${agencyID}</stringProp>
-                <stringProp name="-817372166">&quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
+                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -2070,7 +2070,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;Test Agency&quot;, &quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;Test Agency&quot;, &quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -2113,7 +2113,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
-                <stringProp name="-817372166">&quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
+                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -2128,7 +2128,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;id&quot;:${agencyID},&quot;title&quot;:&quot;Test Agency&quot;, &quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Rulk-Angry-icon.png&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;id&quot;:${agencyID},&quot;title&quot;:&quot;Test Agency&quot;, &quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Rulk-Angry-icon.png&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -2162,7 +2162,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
-                <stringProp name="-1224556410">&quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Rulk-Angry-icon.png&quot;</stringProp>
+                <stringProp name="-102320307">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Rulk-Angry-icon.png&quot;</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -2204,7 +2204,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="1607886001">&quot;id&quot;:${agencyID}</stringProp>
-                <stringProp name="-1224556410">&quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Rulk-Angry-icon.png&quot;</stringProp>
+                <stringProp name="-102320307">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Rulk-Angry-icon.png&quot;</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -2282,7 +2282,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;Test Agency&quot;, &quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;Test Agency&quot;, &quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -2325,7 +2325,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
-                <stringProp name="-817372166">&quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
+                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -2340,7 +2340,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;id&quot;:${agencyID},&quot;title&quot;:&quot;Test Agency&quot;, &quot;iconUrl&quot;:null}</stringProp>
+                  <stringProp name="Argument.value">{&quot;id&quot;:${agencyID},&quot;title&quot;:&quot;Test Agency&quot;, &quot;icon&quot;:null}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -2374,7 +2374,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
-                <stringProp name="1596405427">&quot;iconUrl&quot;:null</stringProp>
+                <stringProp name="1374673210">&quot;icon&quot;:null</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -2416,7 +2416,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="1607886001">&quot;id&quot;:${agencyID}</stringProp>
-                <stringProp name="1596405427">&quot;iconUrl&quot;:null</stringProp>
+                <stringProp name="1374673210">&quot;icon&quot;:null</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -2491,7 +2491,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
           </HeaderManager>
           <hashTree/>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">./Agency/IconURL_Negative.csv</stringProp>
+            <stringProp name="filename">./Agency/iconURL_Negative.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">icon</stringProp>
             <stringProp name="delimiter">,</stringProp>
@@ -2507,7 +2507,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;Test Agency&quot;, &quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;Test Agency&quot;, &quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -2550,7 +2550,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
-                <stringProp name="-817372166">&quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
+                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -2565,7 +2565,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;id&quot;:${agencyID},&quot;title&quot;:&quot;Test Agency&quot;, &quot;iconUrl&quot;:&quot;${icon}&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;id&quot;:${agencyID},&quot;title&quot;:&quot;Test Agency&quot;, &quot;icon&quot;:&quot;${icon}&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -2640,7 +2640,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="1607886001">&quot;id&quot;:${agencyID}</stringProp>
-                <stringProp name="-817372166">&quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
+                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -2756,9 +2756,9 @@ vars.put(&quot;userName&quot;,&quot;${testUser}&quot;);</stringProp>
                 <stringProp name="-1942803752">&quot;title&quot;:&quot;Agency 1&quot;</stringProp>
                 <stringProp name="-1942803721">&quot;title&quot;:&quot;Agency 2&quot;</stringProp>
                 <stringProp name="-1942803690">&quot;title&quot;:&quot;Agency 3&quot;</stringProp>
-                <stringProp name="-2138087913">&quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Captain-America-icon.png&quot;</stringProp>
-                <stringProp name="1473953633">&quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Captain-America-Shield-icon.png&quot;</stringProp>
-                <stringProp name="-1093969210">&quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Captain-America-Shield-2-icon.png&quot;</stringProp>
+                <stringProp name="-1354134608">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Captain-America-icon.png&quot;</stringProp>
+                <stringProp name="-1369979992">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Captain-America-Shield-icon.png&quot;</stringProp>
+                <stringProp name="1779984717">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Captain-America-Shield-2-icon.png&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -2821,7 +2821,7 @@ vars.put(&quot;userName&quot;,&quot;${testUser}&quot;);</stringProp>
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;Test Agency&quot;, &quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;Test Agency&quot;, &quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -2868,7 +2868,7 @@ vars.put(&quot;userName&quot;,&quot;${testUser}&quot;);</stringProp>
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;id&quot;:${agencyID},&quot;title&quot;:&quot;Updated Agency&quot;, &quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;id&quot;:${agencyID},&quot;title&quot;:&quot;Updated Agency&quot;, &quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -3137,7 +3137,7 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;Agency 1&quot;, &quot;iconUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Captain-America-icon.png&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;title&quot;:&quot;Agency 1&quot;, &quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Captain-America-icon.png&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
