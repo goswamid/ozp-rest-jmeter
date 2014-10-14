@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="2.1" jmeter="2.9 r1437961">
+<jmeterTestPlan version="1.2" properties="2.6" jmeter="2.11 r1554548">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -68,6 +68,16 @@
           <elementProp name="protocol" elementType="Argument">
             <stringProp name="Argument.name">protocol</stringProp>
             <stringProp name="Argument.value">https</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="testAdmin" elementType="Argument">
+            <stringProp name="Argument.name">testAdmin</stringProp>
+            <stringProp name="Argument.value">testAdmin1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="testUser" elementType="Argument">
+            <stringProp name="Argument.name">testUser</stringProp>
+            <stringProp name="Argument.value">testUser1</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -225,7 +235,7 @@
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">Current thread group</stringProp>
+            <stringProp name="shareMode">shareMode.group</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Profile - Self" enabled="true">
@@ -294,7 +304,7 @@
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -304,9 +314,9 @@
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -340,7 +350,7 @@
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                  <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
@@ -668,7 +678,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -678,9 +688,9 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -714,7 +724,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -984,7 +994,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">Current thread group</stringProp>
+            <stringProp name="shareMode">shareMode.group</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Profile - Self" enabled="true">
@@ -1053,7 +1063,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -1063,9 +1073,9 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -1099,7 +1109,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                  <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
@@ -1276,7 +1286,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -1286,9 +1296,9 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -1322,7 +1332,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -1365,7 +1375,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -1375,9 +1385,9 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -1411,7 +1421,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393911">&quot;name&quot;:&quot;Listing2&quot;</stringProp>
+                <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -1454,7 +1464,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -1464,9 +1474,9 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -1500,7 +1510,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393942">&quot;name&quot;:&quot;Listing3&quot;</stringProp>
+                <stringProp name="-1442106721">&quot;title&quot;:&quot;Listing3&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -1543,7 +1553,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -1553,9 +1563,9 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -1589,7 +1599,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393973">&quot;name&quot;:&quot;Listing4&quot;</stringProp>
+                <stringProp name="-1442106690">&quot;title&quot;:&quot;Listing4&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -2369,7 +2379,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -2379,9 +2389,9 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -2415,7 +2425,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -2458,7 +2468,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -2468,9 +2478,9 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -2504,7 +2514,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393911">&quot;name&quot;:&quot;Listing2&quot;</stringProp>
+                <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -2547,7 +2557,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -2557,9 +2567,9 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -2593,7 +2603,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393942">&quot;name&quot;:&quot;Listing3&quot;</stringProp>
+                <stringProp name="-1442106721">&quot;title&quot;:&quot;Listing3&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -2636,7 +2646,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -2646,9 +2656,9 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 	}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -2682,7 +2692,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393973">&quot;name&quot;:&quot;Listing4&quot;</stringProp>
+                <stringProp name="-1442106690">&quot;title&quot;:&quot;Listing4&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -3482,7 +3492,7 @@ while (c &lt; 4){
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -3492,9 +3502,9 @@ while (c &lt; 4){
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -3528,7 +3538,7 @@ while (c &lt; 4){
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -3571,7 +3581,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -3581,9 +3591,9 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -3617,7 +3627,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393911">&quot;name&quot;:&quot;Listing2&quot;</stringProp>
+                <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -3660,7 +3670,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -3670,9 +3680,9 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -3706,7 +3716,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393942">&quot;name&quot;:&quot;Listing3&quot;</stringProp>
+                <stringProp name="-1442106721">&quot;title&quot;:&quot;Listing3&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -3749,7 +3759,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -3759,9 +3769,9 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 	}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -3795,7 +3805,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393973">&quot;name&quot;:&quot;Listing4&quot;</stringProp>
+                <stringProp name="-1442106690">&quot;title&quot;:&quot;Listing4&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -4606,7 +4616,7 @@ while (c &lt; 4){
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -4616,9 +4626,9 @@ while (c &lt; 4){
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -4652,7 +4662,7 @@ while (c &lt; 4){
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -4695,7 +4705,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -4705,9 +4715,9 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -4741,7 +4751,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393911">&quot;name&quot;:&quot;Listing2&quot;</stringProp>
+                <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -4784,7 +4794,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -4794,9 +4804,9 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -4830,7 +4840,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393942">&quot;name&quot;:&quot;Listing3&quot;</stringProp>
+                <stringProp name="-1442106721">&quot;title&quot;:&quot;Listing3&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -4873,7 +4883,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -4883,9 +4893,9 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 	}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -4919,7 +4929,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393973">&quot;name&quot;:&quot;Listing4&quot;</stringProp>
+                <stringProp name="-1442106690">&quot;title&quot;:&quot;Listing4&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -4962,7 +4972,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -4972,9 +4982,9 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 	}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -5008,7 +5018,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454394004">&quot;name&quot;:&quot;Listing5&quot;</stringProp>
+                <stringProp name="-1442106659">&quot;title&quot;:&quot;Listing5&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -6038,7 +6048,7 @@ while (c &lt; 5){
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-779793787">error&quot;:true,&quot;message&quot;:&quot;Attempted to find non-existant object of type class marketplace.Listing with id 9999&quot;</stringProp>
+                <stringProp name="758132596">error&quot;:true,&quot;message&quot;:&quot;Attempted to find non-existant object of type class marketplace.Listing&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -6207,7 +6217,7 @@ while (c &lt; 5){
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -6217,9 +6227,9 @@ while (c &lt; 5){
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -6253,7 +6263,7 @@ while (c &lt; 5){
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -6670,7 +6680,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -6680,9 +6690,9 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -6716,7 +6726,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -6958,7 +6968,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">Current thread group</stringProp>
+            <stringProp name="shareMode">shareMode.group</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Profile - Self" enabled="true">
@@ -7027,7 +7037,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -7037,9 +7047,9 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -7073,7 +7083,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                  <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
@@ -7440,7 +7450,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -7450,9 +7460,9 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -7486,7 +7496,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -7801,7 +7811,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">Current thread group</stringProp>
+            <stringProp name="shareMode">shareMode.group</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Profile - Self" enabled="true">
@@ -7870,7 +7880,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -7880,9 +7890,9 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -7916,7 +7926,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                  <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
@@ -8234,7 +8244,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -8244,9 +8254,9 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -8280,7 +8290,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -8323,7 +8333,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -8333,9 +8343,9 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -8369,7 +8379,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393911">&quot;name&quot;:&quot;Listing2&quot;</stringProp>
+                <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -8412,7 +8422,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -8422,9 +8432,9 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -8458,7 +8468,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393942">&quot;name&quot;:&quot;Listing3&quot;</stringProp>
+                <stringProp name="-1442106721">&quot;title&quot;:&quot;Listing3&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -8501,7 +8511,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -8511,9 +8521,9 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 	}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -8547,7 +8557,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393973">&quot;name&quot;:&quot;Listing4&quot;</stringProp>
+                <stringProp name="-1442106690">&quot;title&quot;:&quot;Listing4&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -9432,7 +9442,7 @@ if (name3.listing.title !== &quot;Listing1&quot;){
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -9442,9 +9452,9 @@ if (name3.listing.title !== &quot;Listing1&quot;){
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -9478,7 +9488,7 @@ if (name3.listing.title !== &quot;Listing1&quot;){
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -9521,7 +9531,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -9531,9 +9541,9 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -9567,7 +9577,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393911">&quot;name&quot;:&quot;Listing2&quot;</stringProp>
+                <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -9610,7 +9620,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -9620,9 +9630,9 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -9656,7 +9666,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393942">&quot;name&quot;:&quot;Listing3&quot;</stringProp>
+                <stringProp name="-1442106721">&quot;title&quot;:&quot;Listing3&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -9699,7 +9709,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -9709,9 +9719,9 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 	}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -9745,7 +9755,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393973">&quot;name&quot;:&quot;Listing4&quot;</stringProp>
+                <stringProp name="-1442106690">&quot;title&quot;:&quot;Listing4&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -10626,7 +10636,7 @@ while (c &lt; 4){
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -10636,9 +10646,9 @@ while (c &lt; 4){
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -10672,7 +10682,7 @@ while (c &lt; 4){
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -10715,7 +10725,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -10725,9 +10735,9 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -10761,7 +10771,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393911">&quot;name&quot;:&quot;Listing2&quot;</stringProp>
+                <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -10804,7 +10814,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -10814,9 +10824,9 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -10850,7 +10860,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393942">&quot;name&quot;:&quot;Listing3&quot;</stringProp>
+                <stringProp name="-1442106721">&quot;title&quot;:&quot;Listing3&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -10893,7 +10903,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -10903,9 +10913,9 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 	}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -10939,7 +10949,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393973">&quot;name&quot;:&quot;Listing4&quot;</stringProp>
+                <stringProp name="-1442106690">&quot;title&quot;:&quot;Listing4&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -11822,7 +11832,7 @@ while (c &lt; 4){
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -11832,9 +11842,9 @@ while (c &lt; 4){
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -11868,7 +11878,7 @@ while (c &lt; 4){
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -11911,7 +11921,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -11921,9 +11931,9 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -11957,7 +11967,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393911">&quot;name&quot;:&quot;Listing2&quot;</stringProp>
+                <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -12000,7 +12010,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -12010,9 +12020,9 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -12046,7 +12056,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393942">&quot;name&quot;:&quot;Listing3&quot;</stringProp>
+                <stringProp name="-1442106721">&quot;title&quot;:&quot;Listing3&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -12089,7 +12099,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -12099,9 +12109,9 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 	}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -12135,7 +12145,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393973">&quot;name&quot;:&quot;Listing4&quot;</stringProp>
+                <stringProp name="-1442106690">&quot;title&quot;:&quot;Listing4&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -12178,7 +12188,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -12188,9 +12198,9 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 	}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -12224,7 +12234,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454394004">&quot;name&quot;:&quot;Listing5&quot;</stringProp>
+                <stringProp name="-1442106659">&quot;title&quot;:&quot;Listing5&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -13246,7 +13256,7 @@ while (c &lt; 5){
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -13256,9 +13266,9 @@ while (c &lt; 5){
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -13292,7 +13302,7 @@ while (c &lt; 5){
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -13335,7 +13345,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -13345,9 +13355,9 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -13381,7 +13391,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393911">&quot;name&quot;:&quot;Listing2&quot;</stringProp>
+                <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -13424,7 +13434,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -13434,9 +13444,9 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -13470,7 +13480,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393942">&quot;name&quot;:&quot;Listing3&quot;</stringProp>
+                <stringProp name="-1442106721">&quot;title&quot;:&quot;Listing3&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -13513,7 +13523,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -13523,9 +13533,9 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 	}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -13559,7 +13569,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393973">&quot;name&quot;:&quot;Listing4&quot;</stringProp>
+                <stringProp name="-1442106690">&quot;title&quot;:&quot;Listing4&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -14217,7 +14227,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-779793787">error&quot;:true,&quot;message&quot;:&quot;Attempted to find non-existant object of type class marketplace.Listing with id 9999&quot;</stringProp>
+                <stringProp name="758132596">error&quot;:true,&quot;message&quot;:&quot;Attempted to find non-existant object of type class marketplace.Listing&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -14289,7 +14299,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -14299,9 +14309,9 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -14335,7 +14345,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -14378,7 +14388,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -14388,9 +14398,9 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -14424,7 +14434,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393911">&quot;name&quot;:&quot;Listing2&quot;</stringProp>
+                <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -14467,7 +14477,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -14477,9 +14487,9 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -14513,7 +14523,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393942">&quot;name&quot;:&quot;Listing3&quot;</stringProp>
+                <stringProp name="-1442106721">&quot;title&quot;:&quot;Listing3&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -14556,7 +14566,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -14566,9 +14576,9 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 	}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -14602,7 +14612,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393973">&quot;name&quot;:&quot;Listing4&quot;</stringProp>
+                <stringProp name="-1442106690">&quot;title&quot;:&quot;Listing4&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -14645,7 +14655,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -14655,9 +14665,9 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 	}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -14691,7 +14701,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454394004">&quot;name&quot;:&quot;Listing5&quot;</stringProp>
+                <stringProp name="-1442106659">&quot;title&quot;:&quot;Listing5&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -15728,7 +15738,7 @@ if (name4.folder !== &quot;folder 1&quot;){
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -15738,9 +15748,9 @@ if (name4.folder !== &quot;folder 1&quot;){
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -15774,7 +15784,7 @@ if (name4.folder !== &quot;folder 1&quot;){
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -16144,7 +16154,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -16154,9 +16164,9 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -16190,7 +16200,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -16233,7 +16243,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -16243,9 +16253,9 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -16279,7 +16289,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393911">&quot;name&quot;:&quot;Listing2&quot;</stringProp>
+                <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -16322,7 +16332,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -16332,9 +16342,9 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -16368,7 +16378,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393942">&quot;name&quot;:&quot;Listing3&quot;</stringProp>
+                <stringProp name="-1442106721">&quot;title&quot;:&quot;Listing3&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -16411,7 +16421,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -16421,9 +16431,9 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 	}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -16457,7 +16467,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393973">&quot;name&quot;:&quot;Listing4&quot;</stringProp>
+                <stringProp name="-1442106690">&quot;title&quot;:&quot;Listing4&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -17258,7 +17268,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -17268,9 +17278,9 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -17304,7 +17314,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -17347,7 +17357,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -17357,9 +17367,9 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -17393,7 +17403,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393911">&quot;name&quot;:&quot;Listing2&quot;</stringProp>
+                <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -17436,7 +17446,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -17446,9 +17456,9 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -17482,7 +17492,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393942">&quot;name&quot;:&quot;Listing3&quot;</stringProp>
+                <stringProp name="-1442106721">&quot;title&quot;:&quot;Listing3&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -17525,7 +17535,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:1}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -17535,9 +17545,9 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 	}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -17571,7 +17581,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393973">&quot;name&quot;:&quot;Listing4&quot;</stringProp>
+                <stringProp name="-1442106690">&quot;title&quot;:&quot;Listing4&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
