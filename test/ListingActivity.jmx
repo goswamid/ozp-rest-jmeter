@@ -442,7 +442,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
                 <stringProp name="2121102136">&quot;total&quot;:2</stringProp>
                 <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
                 <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                <stringProp name="-822801384">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;title&quot;:&quot;SUBMITTED&quot;\}</stringProp>
+                <stringProp name="-998864503">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;name&quot;:&quot;SUBMITTED&quot;\}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -556,8 +556,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
                 <stringProp name="2121102137">&quot;total&quot;:3</stringProp>
                 <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
                 <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                <stringProp name="-822801384">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;title&quot;:&quot;SUBMITTED&quot;\}</stringProp>
-                <stringProp name="823711642">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;title&quot;:&quot;DISABLED&quot;\}</stringProp>
+                <stringProp name="-998864503">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;name&quot;:&quot;SUBMITTED&quot;\}</stringProp>
+                <stringProp name="86553571">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;name&quot;:&quot;DISABLED&quot;\}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -671,9 +671,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
                 <stringProp name="2121102138">&quot;total&quot;:4</stringProp>
                 <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
                 <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                <stringProp name="-822801384">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;title&quot;:&quot;SUBMITTED&quot;\}</stringProp>
-                <stringProp name="823711642">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;title&quot;:&quot;DISABLED&quot;\}</stringProp>
-                <stringProp name="-262685236">&quot;action&quot;:\{&quot;description&quot;:&quot;Enabled&quot;,&quot;title&quot;:&quot;ENABLED&quot;\}</stringProp>
+                <stringProp name="-998864503">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;name&quot;:&quot;SUBMITTED&quot;\}</stringProp>
+                <stringProp name="86553571">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;name&quot;:&quot;DISABLED&quot;\}</stringProp>
+                <stringProp name="-200568631">&quot;action&quot;:\{&quot;description&quot;:&quot;Enabled&quot;,&quot;name&quot;:&quot;ENABLED&quot;\}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -810,9 +810,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
                 <stringProp name="2121102139">&quot;total&quot;:5</stringProp>
                 <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
                 <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                <stringProp name="-822801384">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;title&quot;:&quot;SUBMITTED&quot;\}</stringProp>
-                <stringProp name="823711642">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;title&quot;:&quot;DISABLED&quot;\}</stringProp>
-                <stringProp name="-262685236">&quot;action&quot;:\{&quot;description&quot;:&quot;Enabled&quot;,&quot;title&quot;:&quot;ENABLED&quot;\}</stringProp>
+                <stringProp name="-998864503">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;name&quot;:&quot;SUBMITTED&quot;\}</stringProp>
+                <stringProp name="86553571">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;name&quot;:&quot;DISABLED&quot;\}</stringProp>
+                <stringProp name="-200568631">&quot;action&quot;:\{&quot;description&quot;:&quot;Enabled&quot;,&quot;name&quot;:&quot;ENABLED&quot;\}</stringProp>
                 <stringProp name="-351183393">&quot;action&quot;:\{&quot;description&quot;:&quot;Rejected&quot;,&quot;name&quot;:&quot;REJECTED&quot;\}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -927,9 +927,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
                 <stringProp name="2121102140">&quot;total&quot;:6</stringProp>
                 <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
                 <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                <stringProp name="-822801384">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;title&quot;:&quot;SUBMITTED&quot;\}</stringProp>
-                <stringProp name="823711642">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;title&quot;:&quot;DISABLED&quot;\}</stringProp>
-                <stringProp name="-262685236">&quot;action&quot;:\{&quot;description&quot;:&quot;Enabled&quot;,&quot;title&quot;:&quot;ENABLED&quot;\}</stringProp>
+                <stringProp name="-998864503">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;name&quot;:&quot;SUBMITTED&quot;\}</stringProp>
+                <stringProp name="86553571">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;name&quot;:&quot;DISABLED&quot;\}</stringProp>
+                <stringProp name="-200568631">&quot;action&quot;:\{&quot;description&quot;:&quot;Enabled&quot;,&quot;name&quot;:&quot;ENABLED&quot;\}</stringProp>
                 <stringProp name="-351183393">&quot;action&quot;:\{&quot;description&quot;:&quot;Rejected&quot;,&quot;name&quot;:&quot;REJECTED&quot;\}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -1044,11 +1044,11 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
                 <stringProp name="2121102141">&quot;total&quot;:7</stringProp>
                 <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
                 <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                <stringProp name="-822801384">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;title&quot;:&quot;SUBMITTED&quot;\}</stringProp>
-                <stringProp name="823711642">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;title&quot;:&quot;DISABLED&quot;\}</stringProp>
-                <stringProp name="-262685236">&quot;action&quot;:\{&quot;description&quot;:&quot;Enabled&quot;,&quot;title&quot;:&quot;ENABLED&quot;\}</stringProp>
+                <stringProp name="-998864503">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;name&quot;:&quot;SUBMITTED&quot;\}</stringProp>
+                <stringProp name="86553571">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;name&quot;:&quot;DISABLED&quot;\}</stringProp>
+                <stringProp name="-200568631">&quot;action&quot;:\{&quot;description&quot;:&quot;Enabled&quot;,&quot;name&quot;:&quot;ENABLED&quot;\}</stringProp>
                 <stringProp name="-351183393">&quot;action&quot;:\{&quot;description&quot;:&quot;Rejected&quot;,&quot;name&quot;:&quot;REJECTED&quot;\}</stringProp>
-                <stringProp name="1733917562">&quot;action&quot;:\{&quot;description&quot;:&quot;Approved&quot;,&quot;title&quot;:&quot;APPROVED&quot;\}</stringProp>
+                <stringProp name="-97832851">&quot;action&quot;:\{&quot;description&quot;:&quot;Approved&quot;,&quot;name&quot;:&quot;APPROVED&quot;\}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -3202,12 +3202,12 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
                 <stringProp name="-205731481">&quot;changeDetails&quot;:\[</stringProp>
                 <stringProp name="749276180">&quot;id&quot;:\d+,&quot;newValue&quot;:&quot;Requirements Test1&quot;,&quot;oldValue&quot;:&quot;Requirements Test&quot;,&quot;fieldName&quot;:&quot;requirements&quot;,&quot;displayName&quot;:&quot;Requirements&quot;</stringProp>
                 <stringProp name="-909416701">&quot;id&quot;:\d+,&quot;newValue&quot;:&quot;21&quot;,&quot;oldValue&quot;:&quot;2&quot;,&quot;fieldName&quot;:&quot;versionName&quot;,&quot;displayName&quot;:&quot;Version&quot;</stringProp>
-                <stringProp name="2112795072">&quot;id&quot;:\d+,&quot;newValue&quot;:&quot;StartTitle1&quot;,&quot;oldValue&quot;:&quot;StartTitle&quot;,&quot;fieldName&quot;:&quot;title&quot;,&quot;displayName&quot;:&quot;title&quot;</stringProp>
+                <stringProp name="-659921119">&quot;id&quot;:\d+,&quot;newValue&quot;:&quot;StartTitle1&quot;,&quot;oldValue&quot;:&quot;StartTitle&quot;,&quot;fieldName&quot;:&quot;title&quot;,&quot;displayName&quot;:&quot;Name&quot;</stringProp>
                 <stringProp name="2098680770">&quot;id&quot;:\d+,&quot;newValue&quot;:&quot;Description test 1&quot;,&quot;oldValue&quot;:&quot;Description test&quot;,&quot;fieldName&quot;:&quot;description&quot;,&quot;displayName&quot;:&quot;Description&quot;</stringProp>
                 <stringProp name="-1804411486">&quot;id&quot;:\d+,&quot;newValue&quot;:&quot;http:\/\/icons1.iconarchive.com\/icons\/mattahan\/ultrabuuf\/128\/Comics-Hulkling-Sulking-icon.png&quot;,&quot;oldValue&quot;:&quot;http:\/\/icons.iconarchive.com\/icons\/mattahan\/ultrabuuf\/128\/Comics-Hulkling-Sulking-icon.png&quot;,&quot;fieldName&quot;:&quot;imageSmallUrl&quot;,&quot;displayName&quot;:&quot;Small Icon URL&quot;</stringProp>
                 <stringProp name="634820730">&quot;id&quot;:\d+,&quot;newValue&quot;:&quot;http:\/\/icons1.iconarchive.com\/icons\/mattahan\/ultrabuuf\/128\/Comics-Hulkling-Sulking-icon.png&quot;,&quot;oldValue&quot;:&quot;http:\/\/icons.iconarchive.com\/icons\/mattahan\/ultrabuuf\/128\/Comics-Hulkling-Sulking-icon.png&quot;,&quot;fieldName&quot;:&quot;launchUrl&quot;,&quot;displayName&quot;:&quot;Launch URL&quot;</stringProp>
                 <stringProp name="1067802658">&quot;id&quot;:\d+,&quot;newValue&quot;:&quot;http:\/\/icons1.iconarchive.com\/icons\/mattahan\/ultrabuuf\/128\/Comics-Hulkling-Sulking-icon.png&quot;,&quot;oldValue&quot;:&quot;http:\/\/icons.iconarchive.com\/icons\/mattahan\/ultrabuuf\/128\/Comics-Hulkling-Sulking-icon.png&quot;,&quot;fieldName&quot;:&quot;imageLargeUrl&quot;,&quot;displayName&quot;:&quot;Large Icon URL&quot;</stringProp>
-                <stringProp name="-1418989382">&quot;action&quot;:\{&quot;description&quot;:&quot;Modified&quot;,&quot;title&quot;:&quot;MODIFIED&quot;\}</stringProp>
+                <stringProp name="1089029705">&quot;action&quot;:\{&quot;description&quot;:&quot;Modified&quot;,&quot;name&quot;:&quot;MODIFIED&quot;\}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -3647,7 +3647,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:2}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -3727,7 +3727,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:2}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -3809,7 +3809,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:2}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -3931,7 +3931,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:2}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -4021,7 +4021,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
                   <stringProp name="2121102136">&quot;total&quot;:2</stringProp>
                   <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
                   <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                  <stringProp name="-822801384">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;title&quot;:&quot;SUBMITTED&quot;\}</stringProp>
+                  <stringProp name="-998864503">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;name&quot;:&quot;SUBMITTED&quot;\}</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
@@ -4043,7 +4043,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:2}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -4135,8 +4135,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
                   <stringProp name="2121102137">&quot;total&quot;:3</stringProp>
                   <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
                   <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                  <stringProp name="-822801384">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;title&quot;:&quot;SUBMITTED&quot;\}</stringProp>
-                  <stringProp name="823711642">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;title&quot;:&quot;DISABLED&quot;\}</stringProp>
+                  <stringProp name="-998864503">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;name&quot;:&quot;SUBMITTED&quot;\}</stringProp>
+                  <stringProp name="86553571">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;name&quot;:&quot;DISABLED&quot;\}</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
@@ -4158,7 +4158,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;versionName&quot;:&quot;2&quot;,&#xd;
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:2}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -4250,9 +4250,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
                   <stringProp name="2121102138">&quot;total&quot;:4</stringProp>
                   <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
                   <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                  <stringProp name="-822801384">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;title&quot;:&quot;SUBMITTED&quot;\}</stringProp>
-                  <stringProp name="823711642">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;title&quot;:&quot;DISABLED&quot;\}</stringProp>
-                  <stringProp name="-262685236">&quot;action&quot;:\{&quot;description&quot;:&quot;Enabled&quot;,&quot;title&quot;:&quot;ENABLED&quot;\}</stringProp>
+                  <stringProp name="-998864503">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;name&quot;:&quot;SUBMITTED&quot;\}</stringProp>
+                  <stringProp name="86553571">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;name&quot;:&quot;DISABLED&quot;\}</stringProp>
+                  <stringProp name="-200568631">&quot;action&quot;:\{&quot;description&quot;:&quot;Enabled&quot;,&quot;name&quot;:&quot;ENABLED&quot;\}</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
@@ -4389,9 +4389,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
                   <stringProp name="2121102139">&quot;total&quot;:5</stringProp>
                   <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
                   <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                  <stringProp name="-822801384">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;title&quot;:&quot;SUBMITTED&quot;\}</stringProp>
-                  <stringProp name="823711642">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;title&quot;:&quot;DISABLED&quot;\}</stringProp>
-                  <stringProp name="-262685236">&quot;action&quot;:\{&quot;description&quot;:&quot;Enabled&quot;,&quot;title&quot;:&quot;ENABLED&quot;\}</stringProp>
+                  <stringProp name="-998864503">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;name&quot;:&quot;SUBMITTED&quot;\}</stringProp>
+                  <stringProp name="86553571">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;name&quot;:&quot;DISABLED&quot;\}</stringProp>
+                  <stringProp name="-200568631">&quot;action&quot;:\{&quot;description&quot;:&quot;Enabled&quot;,&quot;name&quot;:&quot;ENABLED&quot;\}</stringProp>
                   <stringProp name="-351183393">&quot;action&quot;:\{&quot;description&quot;:&quot;Rejected&quot;,&quot;name&quot;:&quot;REJECTED&quot;\}</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -4415,7 +4415,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:2}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -4506,9 +4506,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
                   <stringProp name="2121102140">&quot;total&quot;:6</stringProp>
                   <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
                   <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                  <stringProp name="-822801384">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;title&quot;:&quot;SUBMITTED&quot;\}</stringProp>
-                  <stringProp name="823711642">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;title&quot;:&quot;DISABLED&quot;\}</stringProp>
-                  <stringProp name="-262685236">&quot;action&quot;:\{&quot;description&quot;:&quot;Enabled&quot;,&quot;title&quot;:&quot;ENABLED&quot;\}</stringProp>
+                  <stringProp name="-998864503">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;name&quot;:&quot;SUBMITTED&quot;\}</stringProp>
+                  <stringProp name="86553571">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;name&quot;:&quot;DISABLED&quot;\}</stringProp>
+                  <stringProp name="-200568631">&quot;action&quot;:\{&quot;description&quot;:&quot;Enabled&quot;,&quot;name&quot;:&quot;ENABLED&quot;\}</stringProp>
                   <stringProp name="-351183393">&quot;action&quot;:\{&quot;description&quot;:&quot;Rejected&quot;,&quot;name&quot;:&quot;REJECTED&quot;\}</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -4532,7 +4532,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:2}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -4623,11 +4623,11 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
                   <stringProp name="2121102141">&quot;total&quot;:7</stringProp>
                   <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
                   <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                  <stringProp name="-822801384">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;title&quot;:&quot;SUBMITTED&quot;\}</stringProp>
-                  <stringProp name="823711642">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;title&quot;:&quot;DISABLED&quot;\}</stringProp>
-                  <stringProp name="-262685236">&quot;action&quot;:\{&quot;description&quot;:&quot;Enabled&quot;,&quot;title&quot;:&quot;ENABLED&quot;\}</stringProp>
+                  <stringProp name="-998864503">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;name&quot;:&quot;SUBMITTED&quot;\}</stringProp>
+                  <stringProp name="86553571">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;name&quot;:&quot;DISABLED&quot;\}</stringProp>
+                  <stringProp name="-200568631">&quot;action&quot;:\{&quot;description&quot;:&quot;Enabled&quot;,&quot;name&quot;:&quot;ENABLED&quot;\}</stringProp>
                   <stringProp name="-351183393">&quot;action&quot;:\{&quot;description&quot;:&quot;Rejected&quot;,&quot;name&quot;:&quot;REJECTED&quot;\}</stringProp>
-                  <stringProp name="1733917562">&quot;action&quot;:\{&quot;description&quot;:&quot;Approved&quot;,&quot;title&quot;:&quot;APPROVED&quot;\}</stringProp>
+                  <stringProp name="-97832851">&quot;action&quot;:\{&quot;description&quot;:&quot;Approved&quot;,&quot;name&quot;:&quot;APPROVED&quot;\}</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
@@ -4662,7 +4662,7 @@ vars.put(&quot;userName&quot;,&quot;testAdmin2&quot;);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:2}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -4821,11 +4821,11 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
                 <stringProp name="2121102143">&quot;total&quot;:9</stringProp>
                 <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
                 <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                <stringProp name="-822801384">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;title&quot;:&quot;SUBMITTED&quot;\}</stringProp>
-                <stringProp name="823711642">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;title&quot;:&quot;DISABLED&quot;\}</stringProp>
-                <stringProp name="-262685236">&quot;action&quot;:\{&quot;description&quot;:&quot;Enabled&quot;,&quot;title&quot;:&quot;ENABLED&quot;\}</stringProp>
+                <stringProp name="-998864503">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;name&quot;:&quot;SUBMITTED&quot;\}</stringProp>
+                <stringProp name="86553571">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;name&quot;:&quot;DISABLED&quot;\}</stringProp>
+                <stringProp name="-200568631">&quot;action&quot;:\{&quot;description&quot;:&quot;Enabled&quot;,&quot;name&quot;:&quot;ENABLED&quot;\}</stringProp>
                 <stringProp name="-351183393">&quot;action&quot;:\{&quot;description&quot;:&quot;Rejected&quot;,&quot;name&quot;:&quot;REJECTED&quot;\}</stringProp>
-                <stringProp name="1733917562">&quot;action&quot;:\{&quot;description&quot;:&quot;Approved&quot;,&quot;title&quot;:&quot;APPROVED&quot;\}</stringProp>
+                <stringProp name="-97832851">&quot;action&quot;:\{&quot;description&quot;:&quot;Approved&quot;,&quot;name&quot;:&quot;APPROVED&quot;\}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -4846,7 +4846,7 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/profile/2/listing/activity</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/profile/${profileID}/listing/activity</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -4882,12 +4882,12 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
                 <stringProp name="1329656793">&quot;total&quot;:10</stringProp>
                 <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
                 <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                <stringProp name="-822801384">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;title&quot;:&quot;SUBMITTED&quot;\}</stringProp>
-                <stringProp name="823711642">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;title&quot;:&quot;DISABLED&quot;\}</stringProp>
-                <stringProp name="-262685236">&quot;action&quot;:\{&quot;description&quot;:&quot;Enabled&quot;,&quot;title&quot;:&quot;ENABLED&quot;\}</stringProp>
+                <stringProp name="-998864503">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;name&quot;:&quot;SUBMITTED&quot;\}</stringProp>
+                <stringProp name="86553571">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;name&quot;:&quot;DISABLED&quot;\}</stringProp>
+                <stringProp name="-200568631">&quot;action&quot;:\{&quot;description&quot;:&quot;Enabled&quot;,&quot;name&quot;:&quot;ENABLED&quot;\}</stringProp>
                 <stringProp name="-351183393">&quot;action&quot;:\{&quot;description&quot;:&quot;Rejected&quot;,&quot;name&quot;:&quot;REJECTED&quot;\}</stringProp>
-                <stringProp name="1733917562">&quot;action&quot;:\{&quot;description&quot;:&quot;Approved&quot;,&quot;title&quot;:&quot;APPROVED&quot;\}</stringProp>
-                <stringProp name="-1418989382">&quot;action&quot;:\{&quot;description&quot;:&quot;Modified&quot;,&quot;title&quot;:&quot;MODIFIED&quot;\}</stringProp>
+                <stringProp name="-97832851">&quot;action&quot;:\{&quot;description&quot;:&quot;Approved&quot;,&quot;name&quot;:&quot;APPROVED&quot;\}</stringProp>
+                <stringProp name="1089029705">&quot;action&quot;:\{&quot;description&quot;:&quot;Modified&quot;,&quot;name&quot;:&quot;MODIFIED&quot;\}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -4993,7 +4993,7 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
           </hashTree>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Change Log for Feedback - Create Listing" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="OZF-301 - Change Log for Feedback - Create Listing" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>

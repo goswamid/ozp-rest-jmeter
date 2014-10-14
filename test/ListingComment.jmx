@@ -280,6 +280,17 @@
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
             <hashTree/>
+            <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor - Get userName" enabled="true">
+              <stringProp name="scriptLanguage">javascript</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
+eval(&apos;var response = &apos; + prev.getResponseDataAsString());
+var username = response.username;	
+//OUT.println(res[6]);
+vars.put(&quot;profileName&quot;,username);</stringProp>
+            </BSFPostProcessor>
+            <hashTree/>
           </hashTree>
           <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
             <stringProp name="IfController.condition">&quot;${text}&quot;!=&quot;EOF&quot;</stringProp>
@@ -300,7 +311,7 @@
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:${profileID}}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${profileName}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -310,9 +321,9 @@
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -346,7 +357,7 @@
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                  <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
@@ -601,6 +612,17 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
             <hashTree/>
+            <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor - Get userName" enabled="true">
+              <stringProp name="scriptLanguage">javascript</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
+eval(&apos;var response = &apos; + prev.getResponseDataAsString());
+var username = response.username;	
+//OUT.println(res[6]);
+vars.put(&quot;profileName&quot;,username);</stringProp>
+            </BSFPostProcessor>
+            <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Listing 1" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -616,7 +638,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:${profileID}}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${profileName}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -626,9 +648,9 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -662,7 +684,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -929,6 +951,17 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
             <hashTree/>
+            <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor - Get userName" enabled="true">
+              <stringProp name="scriptLanguage">javascript</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
+eval(&apos;var response = &apos; + prev.getResponseDataAsString());
+var username = response.username;	
+//OUT.println(res[6]);
+vars.put(&quot;profileName&quot;,username);</stringProp>
+            </BSFPostProcessor>
+            <hashTree/>
           </hashTree>
           <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
             <stringProp name="IfController.condition">&quot;${textNeg}&quot;!=&quot;EOF&quot;</stringProp>
@@ -949,7 +982,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:${profileID}}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${profileName}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -959,9 +992,9 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -995,7 +1028,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                  <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
@@ -1165,6 +1198,17 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
             <hashTree/>
+            <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor - Get userName" enabled="true">
+              <stringProp name="scriptLanguage">javascript</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
+eval(&apos;var response = &apos; + prev.getResponseDataAsString());
+var username = response.username;	
+//OUT.println(res[6]);
+vars.put(&quot;profileName&quot;,username);</stringProp>
+            </BSFPostProcessor>
+            <hashTree/>
           </hashTree>
           <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
             <stringProp name="IfController.condition">&quot;${rate}&quot;!=&quot;EOF&quot;</stringProp>
@@ -1185,7 +1229,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:${profileID}}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${profileName}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -1195,9 +1239,9 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -1231,7 +1275,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                  <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
@@ -1489,6 +1533,17 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
             <hashTree/>
+            <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor - Get userName" enabled="true">
+              <stringProp name="scriptLanguage">javascript</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
+eval(&apos;var response = &apos; + prev.getResponseDataAsString());
+var username = response.username;	
+//OUT.println(res[6]);
+vars.put(&quot;profileName&quot;,username);</stringProp>
+            </BSFPostProcessor>
+            <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Listing 1" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -1504,7 +1559,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:${profileID}}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${profileName}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -1514,9 +1569,9 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -1550,7 +1605,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -1817,6 +1872,17 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
             <hashTree/>
+            <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor - Get userName" enabled="true">
+              <stringProp name="scriptLanguage">javascript</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
+eval(&apos;var response = &apos; + prev.getResponseDataAsString());
+var username = response.username;	
+//OUT.println(res[6]);
+vars.put(&quot;profileName&quot;,username);</stringProp>
+            </BSFPostProcessor>
+            <hashTree/>
           </hashTree>
           <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
             <stringProp name="IfController.condition">&quot;${rateNeg}&quot;!=&quot;EOF&quot;</stringProp>
@@ -1837,7 +1903,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:${profileID}}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${profileName}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -1847,9 +1913,9 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -1883,7 +1949,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                  <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
@@ -2087,6 +2153,17 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
             <hashTree/>
+            <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor - Get userName" enabled="true">
+              <stringProp name="scriptLanguage">javascript</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
+eval(&apos;var response = &apos; + prev.getResponseDataAsString());
+var username = response.username;	
+//OUT.println(res[6]);
+vars.put(&quot;profileName&quot;,username);</stringProp>
+            </BSFPostProcessor>
+            <hashTree/>
           </hashTree>
           <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
             <stringProp name="IfController.condition">&quot;${text}&quot;!=&quot;EOF&quot;</stringProp>
@@ -2107,7 +2184,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:${profileID}}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${profileName}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -2117,9 +2194,9 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -2153,7 +2230,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                  <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
@@ -2459,6 +2536,17 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
             <hashTree/>
+            <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor - Get userName" enabled="true">
+              <stringProp name="scriptLanguage">javascript</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
+eval(&apos;var response = &apos; + prev.getResponseDataAsString());
+var username = response.username;	
+//OUT.println(res[6]);
+vars.put(&quot;profileName&quot;,username);</stringProp>
+            </BSFPostProcessor>
+            <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Listing 1" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -2474,7 +2562,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:${profileID}}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${profileName}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -2484,9 +2572,9 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -2520,7 +2608,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -2838,6 +2926,17 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
             <hashTree/>
+            <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor - Get userName" enabled="true">
+              <stringProp name="scriptLanguage">javascript</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
+eval(&apos;var response = &apos; + prev.getResponseDataAsString());
+var username = response.username;	
+//OUT.println(res[6]);
+vars.put(&quot;profileName&quot;,username);</stringProp>
+            </BSFPostProcessor>
+            <hashTree/>
           </hashTree>
           <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
             <stringProp name="IfController.condition">&quot;${textNeg}&quot;!=&quot;EOF&quot;</stringProp>
@@ -2858,7 +2957,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:${profileID}}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${profileName}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -2868,9 +2967,9 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -2904,7 +3003,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                  <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
@@ -3222,6 +3321,17 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
             <hashTree/>
+            <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor - Get userName" enabled="true">
+              <stringProp name="scriptLanguage">javascript</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
+eval(&apos;var response = &apos; + prev.getResponseDataAsString());
+var username = response.username;	
+//OUT.println(res[6]);
+vars.put(&quot;profileName&quot;,username);</stringProp>
+            </BSFPostProcessor>
+            <hashTree/>
           </hashTree>
           <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
             <stringProp name="IfController.condition">&quot;${rate}&quot;!=&quot;EOF&quot;</stringProp>
@@ -3242,7 +3352,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:${profileID}}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${profileName}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -3252,9 +3362,9 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -3288,7 +3398,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                  <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
@@ -3598,6 +3708,17 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
             <hashTree/>
+            <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor - Get userName" enabled="true">
+              <stringProp name="scriptLanguage">javascript</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
+eval(&apos;var response = &apos; + prev.getResponseDataAsString());
+var username = response.username;	
+//OUT.println(res[6]);
+vars.put(&quot;profileName&quot;,username);</stringProp>
+            </BSFPostProcessor>
+            <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Listing 1" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -3613,7 +3734,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:${profileID}}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${profileName}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -3623,9 +3744,9 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -3659,7 +3780,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -3980,6 +4101,17 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
             <hashTree/>
+            <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor - Get userName" enabled="true">
+              <stringProp name="scriptLanguage">javascript</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
+eval(&apos;var response = &apos; + prev.getResponseDataAsString());
+var username = response.username;	
+//OUT.println(res[6]);
+vars.put(&quot;profileName&quot;,username);</stringProp>
+            </BSFPostProcessor>
+            <hashTree/>
           </hashTree>
           <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
             <stringProp name="IfController.condition">&quot;${rateNeg}&quot;!=&quot;EOF&quot;</stringProp>
@@ -4000,7 +4132,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:${profileID}}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${profileName}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -4010,9 +4142,9 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -4046,7 +4178,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                  <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
@@ -4569,6 +4701,17 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
             <hashTree/>
+            <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor - Get userName" enabled="true">
+              <stringProp name="scriptLanguage">javascript</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
+eval(&apos;var response = &apos; + prev.getResponseDataAsString());
+var username = response.username;	
+//OUT.println(res[6]);
+vars.put(&quot;profileName&quot;,username);</stringProp>
+            </BSFPostProcessor>
+            <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Listing 1" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -4584,7 +4727,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
-	&quot;owners&quot;:[{&quot;id&quot;:${profileID}}],&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${profileName}&quot;}],&#xd;
 	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
@@ -4594,9 +4737,9 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
 	&quot;releaseDate&quot;:&quot;2013-11-15T05:00:00Z&quot;,&#xd;
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
-	&quot;type&quot;:{&quot;id&quot;:${typeID}},&#xd;
+	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[{&quot;id&quot;:${categoryID}}]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -4630,7 +4773,7 @@ vars.put(&quot;commentID&quot;,commentIDtemp);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1454393880">&quot;name&quot;:&quot;Listing1&quot;</stringProp>
+                <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
