@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="2.1" jmeter="2.9 r1437961">
+<jmeterTestPlan version="1.2" properties="2.6" jmeter="2.11 r1554548">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -82,6 +82,11 @@ This will scenarios for CRUD on Category as well as testing the list function.</
             <stringProp name="Argument.value">testAdmin1</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
+          <elementProp name="protocol" elementType="Argument">
+            <stringProp name="Argument.name">protocol</stringProp>
+            <stringProp name="Argument.value">https</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
         </collectionProp>
       </Arguments>
       <hashTree/>
@@ -93,7 +98,7 @@ This will scenarios for CRUD on Category as well as testing the list function.</
         <stringProp name="HTTPSampler.port">${hostPort}</stringProp>
         <stringProp name="HTTPSampler.connect_timeout"></stringProp>
         <stringProp name="HTTPSampler.response_timeout"></stringProp>
-        <stringProp name="HTTPSampler.protocol">https</stringProp>
+        <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
         <stringProp name="HTTPSampler.contentEncoding"></stringProp>
         <stringProp name="HTTPSampler.path"></stringProp>
         <stringProp name="HTTPSampler.concurrentPool">4</stringProp>
@@ -197,10 +202,6 @@ This will scenarios for CRUD on Category as well as testing the list function.</
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
           <stringProp name="WhileController.condition">title</stringProp>
         </WhileController>
@@ -213,7 +214,7 @@ This will scenarios for CRUD on Category as well as testing the list function.</
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">Current thread</stringProp>
+            <stringProp name="shareMode">shareMode.thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Category - Title Positive" enabled="true">
@@ -350,10 +351,6 @@ This will scenarios for CRUD on Category as well as testing the list function.</
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Category - Title Null" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -370,10 +367,6 @@ This will scenarios for CRUD on Category as well as testing the list function.</
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Category - Title Null" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
@@ -425,10 +418,6 @@ This will scenarios for CRUD on Category as well as testing the list function.</
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Category - Title Negative" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -445,10 +434,6 @@ This will scenarios for CRUD on Category as well as testing the list function.</
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
           <stringProp name="WhileController.condition">title</stringProp>
         </WhileController>
@@ -461,7 +446,7 @@ This will scenarios for CRUD on Category as well as testing the list function.</
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">Current thread</stringProp>
+            <stringProp name="shareMode">shareMode.thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Category - Title Negative" enabled="true">
@@ -516,10 +501,6 @@ This will scenarios for CRUD on Category as well as testing the list function.</
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Category  - Description Positive" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -536,10 +517,6 @@ This will scenarios for CRUD on Category as well as testing the list function.</
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
           <stringProp name="WhileController.condition">title</stringProp>
         </WhileController>
@@ -552,7 +529,7 @@ This will scenarios for CRUD on Category as well as testing the list function.</
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">Current thread</stringProp>
+            <stringProp name="shareMode">shareMode.thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Category - Description Positive" enabled="true">
@@ -689,10 +666,6 @@ This will scenarios for CRUD on Category as well as testing the list function.</
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Category  - Description Null" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -709,10 +682,6 @@ This will scenarios for CRUD on Category as well as testing the list function.</
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Category  - Description Null" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Category - Description Null" enabled="true">
@@ -849,10 +818,6 @@ This will scenarios for CRUD on Category as well as testing the list function.</
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Category - Description Negative" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -869,10 +834,6 @@ This will scenarios for CRUD on Category as well as testing the list function.</
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
           <stringProp name="WhileController.condition">title</stringProp>
         </WhileController>
@@ -885,10 +846,10 @@ This will scenarios for CRUD on Category as well as testing the list function.</
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">Current thread</stringProp>
+            <stringProp name="shareMode">shareMode.thread</stringProp>
           </CSVDataSet>
           <hashTree/>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Category - Title Negative" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Category - Description Negative" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
@@ -931,7 +892,7 @@ This will scenarios for CRUD on Category as well as testing the list function.</
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-124168118">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Property \[description\] exceeds the maximum size of \[250\]&quot;</stringProp>
+                <stringProp name="-124019163">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Property \[description\] exceeds the maximum size of \[255\]&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -940,10 +901,6 @@ This will scenarios for CRUD on Category as well as testing the list function.</
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Update Category  -Title Positive" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -960,10 +917,6 @@ This will scenarios for CRUD on Category as well as testing the list function.</
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
           <stringProp name="WhileController.condition">title</stringProp>
         </WhileController>
@@ -976,7 +929,7 @@ This will scenarios for CRUD on Category as well as testing the list function.</
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">Current thread</stringProp>
+            <stringProp name="shareMode">shareMode.thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Category - Title Positive" enabled="true">
@@ -1166,10 +1119,6 @@ This will scenarios for CRUD on Category as well as testing the list function.</
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Update Category  - Title Null" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -1186,10 +1135,6 @@ This will scenarios for CRUD on Category as well as testing the list function.</
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Category - Title Positive" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
@@ -1375,10 +1320,6 @@ This will scenarios for CRUD on Category as well as testing the list function.</
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Update Category -Title Negative" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -1395,10 +1336,6 @@ This will scenarios for CRUD on Category as well as testing the list function.</
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
           <stringProp name="WhileController.condition">title</stringProp>
         </WhileController>
@@ -1411,7 +1348,7 @@ This will scenarios for CRUD on Category as well as testing the list function.</
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">Current thread</stringProp>
+            <stringProp name="shareMode">shareMode.thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Category - Title Negative" enabled="true">
@@ -1600,10 +1537,6 @@ This will scenarios for CRUD on Category as well as testing the list function.</
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Update Category  - Description Positive" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -1620,10 +1553,6 @@ This will scenarios for CRUD on Category as well as testing the list function.</
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
           <stringProp name="WhileController.condition">title</stringProp>
         </WhileController>
@@ -1636,7 +1565,7 @@ This will scenarios for CRUD on Category as well as testing the list function.</
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">Current thread</stringProp>
+            <stringProp name="shareMode">shareMode.thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Category - Description Positive" enabled="true">
@@ -1826,10 +1755,6 @@ This will scenarios for CRUD on Category as well as testing the list function.</
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Update Category  - Description Null" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -1846,10 +1771,6 @@ This will scenarios for CRUD on Category as well as testing the list function.</
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Category  - Description Null" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Category - Description Null" enabled="true">
@@ -2039,10 +1960,6 @@ This will scenarios for CRUD on Category as well as testing the list function.</
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Update Category -Description Negative" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -2059,10 +1976,6 @@ This will scenarios for CRUD on Category as well as testing the list function.</
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
           <stringProp name="WhileController.condition">title</stringProp>
         </WhileController>
@@ -2075,7 +1988,7 @@ This will scenarios for CRUD on Category as well as testing the list function.</
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">Current thread</stringProp>
+            <stringProp name="shareMode">shareMode.thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Category - Description Negative" enabled="true">
@@ -2183,7 +2096,7 @@ This will scenarios for CRUD on Category as well as testing the list function.</
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-124168118">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Property \[description\] exceeds the maximum size of \[250\]&quot;</stringProp>
+                <stringProp name="-124019163">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Property \[description\] exceeds the maximum size of \[255\]&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -2264,10 +2177,6 @@ This will scenarios for CRUD on Category as well as testing the list function.</
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Update Category  - Invalid ID" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -2284,10 +2193,6 @@ This will scenarios for CRUD on Category as well as testing the list function.</
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Update Category  - Invalid ID" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
@@ -2340,10 +2245,6 @@ This will scenarios for CRUD on Category as well as testing the list function.</
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Get Category - Invalid ID" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -2360,10 +2261,6 @@ This will scenarios for CRUD on Category as well as testing the list function.</
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Category - Invalid ID" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
@@ -2404,10 +2301,6 @@ This will scenarios for CRUD on Category as well as testing the list function.</
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Delete Category - Invalid ID" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -2424,10 +2317,6 @@ This will scenarios for CRUD on Category as well as testing the list function.</
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Delete Category - Invalid ID" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
@@ -2468,10 +2357,6 @@ This will scenarios for CRUD on Category as well as testing the list function.</
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Get Category List" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -2488,10 +2373,6 @@ This will scenarios for CRUD on Category as well as testing the list function.</
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
         <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Create Categorys" enabled="true">
           <boolProp name="LoopController.continue_forever">true</boolProp>
           <stringProp name="LoopController.loops">10</stringProp>
@@ -2853,10 +2734,6 @@ This will scenarios for CRUD on Category as well as testing the list function.</
             <hashTree/>
           </hashTree>
         </hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-          <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
-        </IncludeController>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Validate User Role" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -2875,10 +2752,6 @@ This will scenarios for CRUD on Category as well as testing the list function.</
       <hashTree>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Category for User" enabled="true"/>
         <hashTree>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-            <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Category" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
@@ -2947,17 +2820,9 @@ This will scenarios for CRUD on Category as well as testing the list function.</
             <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
           </BeanShellSampler>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-            <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
         </hashTree>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="User CRUD Type" enabled="true"/>
         <hashTree>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-            <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
           <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
             <boolProp name="resetInterpreter">true</boolProp>
             <stringProp name="parameters"></stringProp>
@@ -2965,10 +2830,6 @@ This will scenarios for CRUD on Category as well as testing the list function.</
             <stringProp name="script">vars.get(&quot;userName&quot;);
 vars.put(&quot;userName&quot;,&quot;${testUser}&quot;);</stringProp>
           </BeanShellPreProcessor>
-          <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-            <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
-          </IncludeController>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Category - User" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
@@ -3153,10 +3014,6 @@ vars.put(&quot;userName&quot;,&quot;${testUser}&quot;);</stringProp>
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-            <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
         </hashTree>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Remove Category for User" enabled="true"/>
         <hashTree>
@@ -3167,10 +3024,6 @@ vars.put(&quot;userName&quot;,&quot;${testUser}&quot;);</stringProp>
             <stringProp name="script">vars.get(&quot;userName&quot;);
 vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
           </BeanShellPreProcessor>
-          <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Authenticate - Include Controller" enabled="false">
-            <stringProp name="IncludeController.includepath">./Common/AML_comp_Authenticate.jmx</stringProp>
-          </IncludeController>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Delete Category" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
@@ -3203,10 +3056,6 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Logout - Include Controller" enabled="false">
-            <stringProp name="IncludeController.includepath">./Common/AML_comp_Logout.jmx</stringProp>
-          </IncludeController>
-          <hashTree/>
         </hashTree>
       </hashTree>
     </hashTree>
