@@ -213,7 +213,7 @@ This will scenarios for CRUD on Contact Type as well as testing the list functio
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">Current thread</stringProp>
+            <stringProp name="shareMode">shareMode.thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Contact Type - Title Positive" enabled="true">
@@ -461,7 +461,7 @@ This will scenarios for CRUD on Contact Type as well as testing the list functio
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">Current thread</stringProp>
+            <stringProp name="shareMode">shareMode.thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Contact Type - Title Negative" enabled="true">
@@ -471,7 +471,7 @@ This will scenarios for CRUD on Contact Type as well as testing the list functio
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
-	&quot;title&quot;:${title},&#xd;
+	&quot;title&quot;:&quot;${title}&quot;,&#xd;
 	&quot;required&quot;:false&#xd;
 }&#xd;
 </stringProp>
@@ -1006,7 +1006,7 @@ This will scenarios for CRUD on Contact Type as well as testing the list functio
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">Current thread</stringProp>
+            <stringProp name="shareMode">shareMode.thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Contact Type - Title Positive" enabled="true">
@@ -1441,7 +1441,7 @@ This will scenarios for CRUD on Contact Type as well as testing the list functio
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">Current thread</stringProp>
+            <stringProp name="shareMode">shareMode.thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Contact Type - Title Negative" enabled="true">
