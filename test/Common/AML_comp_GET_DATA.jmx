@@ -226,7 +226,7 @@ vars.put(&quot;categoryTitle&quot;,name);</stringProp>
 eval(&apos;var response = &apos; + prev.getResponseDataAsString());
 var c = 0;
 
-var agencies = [].concat(response.data)
+var agencies = [].concat(response._embedded.item)
 while (c &lt; agencies.length){
 	var name = agencies[c].title;
 	if (name === &quot;Jmeter Agency&quot;){
