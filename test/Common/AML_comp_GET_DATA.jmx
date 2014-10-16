@@ -291,7 +291,7 @@ vars.put(&quot;agencyTitle&quot;,name);</stringProp>
                 <intProp name="Assertion.test_type">2</intProp>
               </ResponseAssertion>
               <hashTree/>
-              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
                 <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                 <stringProp name="RegexExtractor.refname">contactTypeID</stringProp>
                 <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+),&quot;title&quot;:&quot;Jmeter</stringProp>
@@ -299,6 +299,29 @@ vars.put(&quot;agencyTitle&quot;,name);</stringProp>
                 <stringProp name="RegexExtractor.default">unknown</stringProp>
                 <stringProp name="RegexExtractor.match_number">1</stringProp>
               </RegexExtractor>
+              <hashTree/>
+              <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor" enabled="true">
+                <stringProp name="scriptLanguage">javascript</stringProp>
+                <stringProp name="parameters"></stringProp>
+                <stringProp name="filename"></stringProp>
+                <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
+eval(&apos;var response = &apos; + prev.getResponseDataAsString());
+var c = 0;
+
+var contacts = [].concat(response._embedded.item)
+while (c &lt; contacts.length){
+	var name = contacts[c].title;
+	if (name === &quot;Jmeter ContactType&quot;){
+		var contactId = contacts[c].id;
+		c = contacts.length;
+	}
+	c++;
+	}
+	
+//OUT.println(catId);
+vars.put(&quot;contactTypeID&quot;,contactId);
+vars.put(&quot;contactTypeTitle&quot;,name);</stringProp>
+              </BSFPostProcessor>
               <hashTree/>
             </hashTree>
           </hashTree>
