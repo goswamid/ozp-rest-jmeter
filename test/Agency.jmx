@@ -776,7 +776,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="-12505613">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save</stringProp>
-                <stringProp name="78339108">&quot;Company Name must not exceed 255 characters.&quot;</stringProp>
+                <stringProp name="1873540414">&quot;Organization name must not exceed 255 characters.&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -914,7 +914,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="-26382324">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\)</stringProp>
-                <stringProp name="211109211">&quot;Company Name must be unique.&quot;</stringProp>
+                <stringProp name="-636530059">&quot;Organization name must be unique.&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -1951,7 +1951,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="-12505613">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save</stringProp>
-                <stringProp name="78339108">&quot;Company Name must not exceed 255 characters.&quot;</stringProp>
+                <stringProp name="1873540414">&quot;Organization name must not exceed 255 characters.&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
