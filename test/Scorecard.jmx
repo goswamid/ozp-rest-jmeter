@@ -213,7 +213,7 @@ This will scenarios for CRUD on Type as well as testing the list function.</stri
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">Current thread</stringProp>
+            <stringProp name="shareMode">shareMode.thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Scorecard - Question Positive" enabled="true">
@@ -471,7 +471,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">Current thread</stringProp>
+            <stringProp name="shareMode">shareMode.thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Scorecard - Question Negative" enabled="true">
@@ -564,7 +564,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">Current thread</stringProp>
+            <stringProp name="shareMode">shareMode.thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Scorecard - Description Positive" enabled="true">
@@ -822,7 +822,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">Current thread</stringProp>
+            <stringProp name="shareMode">shareMode.thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Scorecard - Description Negative" enabled="true">
@@ -1397,7 +1397,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">Current thread</stringProp>
+            <stringProp name="shareMode">shareMode.thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Scorecard - Image Positive" enabled="true">
@@ -1739,12 +1739,12 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
             <stringProp name="filename">./Scorecard/URL_Negative.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
-            <stringProp name="variableNames">image</stringProp>
-            <stringProp name="delimiter">,</stringProp>
+            <stringProp name="variableNames">image,result</stringProp>
+            <stringProp name="delimiter">\t</stringProp>
             <boolProp name="quotedData">false</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">Current thread</stringProp>
+            <stringProp name="shareMode">shareMode.thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Scorecard - Image Negative" enabled="true">
@@ -1792,7 +1792,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-42898270">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Property \[description\] exceeds the maximum size of \[500\]&quot;</stringProp>
+                <stringProp name="71001929">${result}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -1837,7 +1837,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">Current thread</stringProp>
+            <stringProp name="shareMode">shareMode.thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Scorecard - Question Positive" enabled="true">
@@ -2295,7 +2295,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">Current thread</stringProp>
+            <stringProp name="shareMode">shareMode.thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Scorecard - Question Negative" enabled="true">
@@ -2391,7 +2391,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">${context}/api/scorecard/${scorecardID}</stringProp>
-            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <stringProp name="HTTPSampler.method">PUT</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
             <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -2531,7 +2531,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">Current thread</stringProp>
+            <stringProp name="shareMode">shareMode.thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Scorecard - Description Positive" enabled="true">
@@ -2989,7 +2989,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">Current thread</stringProp>
+            <stringProp name="shareMode">shareMode.thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Scorecard - Description Negative" enabled="true">
@@ -3776,7 +3776,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">Current thread</stringProp>
+            <stringProp name="shareMode">shareMode.thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Scorecard - Image Positive" enabled="true">
@@ -4232,12 +4232,12 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
             <stringProp name="filename">./Scorecard/URL_Negative.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
-            <stringProp name="variableNames">image</stringProp>
-            <stringProp name="delimiter">,</stringProp>
+            <stringProp name="variableNames">image,result</stringProp>
+            <stringProp name="delimiter">\t</stringProp>
             <boolProp name="quotedData">false</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">Current thread</stringProp>
+            <stringProp name="shareMode">shareMode.thread</stringProp>
           </CSVDataSet>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Scorecard - Image Negative" enabled="true">
@@ -4354,7 +4354,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-42898270">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Property \[description\] exceeds the maximum size of \[500\]&quot;</stringProp>
+                <stringProp name="71001929">${result}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
