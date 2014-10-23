@@ -552,6 +552,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="1724640785">&quot;approvalStatus&quot;:&quot;REJECTED&quot;</stringProp>
+                <stringProp name="-1668964876">&quot;currentRejection&quot;:{&quot;description&quot;:&quot;This listing is rejected&quot;,&quot;author&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
