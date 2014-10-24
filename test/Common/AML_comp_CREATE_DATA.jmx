@@ -161,7 +161,9 @@
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">{&quot;title&quot;:&quot;Jmeter Agency&quot;, &quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Captain-America-icon.png&quot;}</stringProp>
+                    <stringProp name="Argument.value">{&quot;title&quot;:&quot;Jmeter Agency&quot;, &#xd;
+&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Captain-America-icon.png&quot;,&#xd;
+&quot;shortName&quot;:&quot;JAgency&quot;}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
