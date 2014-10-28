@@ -328,7 +328,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="2121102135">&quot;total&quot;:1</stringProp>
-                <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
+                <stringProp name="1727010636">&quot;action&quot;:&quot;CREATED&quot;</stringProp>
                 <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -440,9 +440,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="2121102136">&quot;total&quot;:2</stringProp>
-                <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
+                <stringProp name="1727010636">&quot;action&quot;:&quot;CREATED&quot;</stringProp>
                 <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                <stringProp name="-998864503">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;name&quot;:&quot;SUBMITTED&quot;\}</stringProp>
+                <stringProp name="-1645676775">&quot;action&quot;:&quot;SUBMITTED&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -554,10 +554,10 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="2121102137">&quot;total&quot;:3</stringProp>
-                <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
+                <stringProp name="1727010636">&quot;action&quot;:&quot;CREATED&quot;</stringProp>
                 <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                <stringProp name="-998864503">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;name&quot;:&quot;SUBMITTED&quot;\}</stringProp>
-                <stringProp name="86553571">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;name&quot;:&quot;DISABLED&quot;\}</stringProp>
+                <stringProp name="-1645676775">&quot;action&quot;:&quot;SUBMITTED&quot;</stringProp>
+                <stringProp name="1208580724">&quot;action&quot;:&quot;DISABLED&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -669,11 +669,11 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="2121102138">&quot;total&quot;:4</stringProp>
-                <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
+                <stringProp name="1727010636">&quot;action&quot;:&quot;CREATED&quot;</stringProp>
                 <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                <stringProp name="-998864503">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;name&quot;:&quot;SUBMITTED&quot;\}</stringProp>
-                <stringProp name="86553571">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;name&quot;:&quot;DISABLED&quot;\}</stringProp>
-                <stringProp name="-200568631">&quot;action&quot;:\{&quot;description&quot;:&quot;Enabled&quot;,&quot;name&quot;:&quot;ENABLED&quot;\}</stringProp>
+                <stringProp name="-1645676775">&quot;action&quot;:&quot;SUBMITTED&quot;</stringProp>
+                <stringProp name="1208580724">&quot;action&quot;:&quot;DISABLED&quot;</stringProp>
+                <stringProp name="1548785171">&quot;action&quot;:&quot;ENABLED&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -808,12 +808,12 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="2121102139">&quot;total&quot;:5</stringProp>
-                <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
+                <stringProp name="1727010636">&quot;action&quot;:&quot;CREATED&quot;</stringProp>
                 <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                <stringProp name="-998864503">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;name&quot;:&quot;SUBMITTED&quot;\}</stringProp>
-                <stringProp name="86553571">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;name&quot;:&quot;DISABLED&quot;\}</stringProp>
-                <stringProp name="-200568631">&quot;action&quot;:\{&quot;description&quot;:&quot;Enabled&quot;,&quot;name&quot;:&quot;ENABLED&quot;\}</stringProp>
-                <stringProp name="-351183393">&quot;action&quot;:\{&quot;description&quot;:&quot;Rejected&quot;,&quot;name&quot;:&quot;REJECTED&quot;\}</stringProp>
+                <stringProp name="-1645676775">&quot;action&quot;:&quot;SUBMITTED&quot;</stringProp>
+                <stringProp name="1208580724">&quot;action&quot;:&quot;DISABLED&quot;</stringProp>
+                <stringProp name="1548785171">&quot;action&quot;:&quot;ENABLED&quot;</stringProp>
+                <stringProp name="-284172110">&quot;action&quot;:&quot;REJECTED&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -925,12 +925,12 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="2121102140">&quot;total&quot;:6</stringProp>
-                <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
+                <stringProp name="1727010636">&quot;action&quot;:&quot;CREATED&quot;</stringProp>
                 <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                <stringProp name="-998864503">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;name&quot;:&quot;SUBMITTED&quot;\}</stringProp>
-                <stringProp name="86553571">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;name&quot;:&quot;DISABLED&quot;\}</stringProp>
-                <stringProp name="-200568631">&quot;action&quot;:\{&quot;description&quot;:&quot;Enabled&quot;,&quot;name&quot;:&quot;ENABLED&quot;\}</stringProp>
-                <stringProp name="-351183393">&quot;action&quot;:\{&quot;description&quot;:&quot;Rejected&quot;,&quot;name&quot;:&quot;REJECTED&quot;\}</stringProp>
+                <stringProp name="-1645676775">&quot;action&quot;:&quot;SUBMITTED&quot;</stringProp>
+                <stringProp name="1208580724">&quot;action&quot;:&quot;DISABLED&quot;</stringProp>
+                <stringProp name="1548785171">&quot;action&quot;:&quot;ENABLED&quot;</stringProp>
+                <stringProp name="-284172110">&quot;action&quot;:&quot;REJECTED&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -1042,13 +1042,13 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="2121102141">&quot;total&quot;:7</stringProp>
-                <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
+                <stringProp name="1727010636">&quot;action&quot;:&quot;CREATED&quot;</stringProp>
                 <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                <stringProp name="-998864503">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;name&quot;:&quot;SUBMITTED&quot;\}</stringProp>
-                <stringProp name="86553571">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;name&quot;:&quot;DISABLED&quot;\}</stringProp>
-                <stringProp name="-200568631">&quot;action&quot;:\{&quot;description&quot;:&quot;Enabled&quot;,&quot;name&quot;:&quot;ENABLED&quot;\}</stringProp>
-                <stringProp name="-351183393">&quot;action&quot;:\{&quot;description&quot;:&quot;Rejected&quot;,&quot;name&quot;:&quot;REJECTED&quot;\}</stringProp>
-                <stringProp name="-97832851">&quot;action&quot;:\{&quot;description&quot;:&quot;Approved&quot;,&quot;name&quot;:&quot;APPROVED&quot;\}</stringProp>
+                <stringProp name="-1645676775">&quot;action&quot;:&quot;SUBMITTED&quot;</stringProp>
+                <stringProp name="1208580724">&quot;action&quot;:&quot;DISABLED&quot;</stringProp>
+                <stringProp name="1548785171">&quot;action&quot;:&quot;ENABLED&quot;</stringProp>
+                <stringProp name="-284172110">&quot;action&quot;:&quot;REJECTED&quot;</stringProp>
+                <stringProp name="-512764519">&quot;action&quot;:&quot;APPROVED&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -1474,10 +1474,10 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="2121102137">&quot;total&quot;:3</stringProp>
-                <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
+                <stringProp name="1727010636">&quot;action&quot;:&quot;CREATED&quot;</stringProp>
                 <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                <stringProp name="-351183393">&quot;action&quot;:\{&quot;description&quot;:&quot;Rejected&quot;,&quot;name&quot;:&quot;REJECTED&quot;\}</stringProp>
-                <stringProp name="1496546553">&quot;description&quot;:null</stringProp>
+                <stringProp name="-284172110">&quot;action&quot;:&quot;REJECTED&quot;</stringProp>
+                <stringProp name="-1117858444">&quot;rejectionDescription&quot;:null</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -1902,10 +1902,10 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="2121102137">&quot;total&quot;:3</stringProp>
-                <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
+                <stringProp name="1727010636">&quot;action&quot;:&quot;CREATED&quot;</stringProp>
                 <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                <stringProp name="-351183393">&quot;action&quot;:\{&quot;description&quot;:&quot;Rejected&quot;,&quot;name&quot;:&quot;REJECTED&quot;\}</stringProp>
-                <stringProp name="-414756759">&quot;description&quot;:&quot;This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 chars. This is the end of the detail!!!&quot;</stringProp>
+                <stringProp name="-284172110">&quot;action&quot;:&quot;REJECTED&quot;</stringProp>
+                <stringProp name="915636174">&quot;rejectionDescription&quot;:&quot;This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 characters. This is a rejection detail that contains 2000 chars. This is the end of the detail!!!&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -3092,7 +3092,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="2121102135">&quot;total&quot;:1</stringProp>
-                <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
+                <stringProp name="1727010636">&quot;action&quot;:&quot;CREATED&quot;</stringProp>
                 <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -3198,16 +3198,16 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="2121102136">&quot;total&quot;:2</stringProp>
-                <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
+                <stringProp name="1727010636">&quot;action&quot;:&quot;CREATED&quot;</stringProp>
                 <stringProp name="-205731481">&quot;changeDetails&quot;:\[</stringProp>
-                <stringProp name="749276180">&quot;id&quot;:\d+,&quot;newValue&quot;:&quot;Requirements Test1&quot;,&quot;oldValue&quot;:&quot;Requirements Test&quot;,&quot;fieldName&quot;:&quot;requirements&quot;,&quot;displayName&quot;:&quot;Requirements&quot;</stringProp>
-                <stringProp name="-909416701">&quot;id&quot;:\d+,&quot;newValue&quot;:&quot;21&quot;,&quot;oldValue&quot;:&quot;2&quot;,&quot;fieldName&quot;:&quot;versionName&quot;,&quot;displayName&quot;:&quot;Version&quot;</stringProp>
-                <stringProp name="-659921119">&quot;id&quot;:\d+,&quot;newValue&quot;:&quot;StartTitle1&quot;,&quot;oldValue&quot;:&quot;StartTitle&quot;,&quot;fieldName&quot;:&quot;title&quot;,&quot;displayName&quot;:&quot;Name&quot;</stringProp>
-                <stringProp name="2098680770">&quot;id&quot;:\d+,&quot;newValue&quot;:&quot;Description test 1&quot;,&quot;oldValue&quot;:&quot;Description test&quot;,&quot;fieldName&quot;:&quot;description&quot;,&quot;displayName&quot;:&quot;Description&quot;</stringProp>
-                <stringProp name="-1804411486">&quot;id&quot;:\d+,&quot;newValue&quot;:&quot;http:\/\/icons1.iconarchive.com\/icons\/mattahan\/ultrabuuf\/128\/Comics-Hulkling-Sulking-icon.png&quot;,&quot;oldValue&quot;:&quot;http:\/\/icons.iconarchive.com\/icons\/mattahan\/ultrabuuf\/128\/Comics-Hulkling-Sulking-icon.png&quot;,&quot;fieldName&quot;:&quot;imageSmallUrl&quot;,&quot;displayName&quot;:&quot;Small Icon URL&quot;</stringProp>
-                <stringProp name="634820730">&quot;id&quot;:\d+,&quot;newValue&quot;:&quot;http:\/\/icons1.iconarchive.com\/icons\/mattahan\/ultrabuuf\/128\/Comics-Hulkling-Sulking-icon.png&quot;,&quot;oldValue&quot;:&quot;http:\/\/icons.iconarchive.com\/icons\/mattahan\/ultrabuuf\/128\/Comics-Hulkling-Sulking-icon.png&quot;,&quot;fieldName&quot;:&quot;launchUrl&quot;,&quot;displayName&quot;:&quot;Launch URL&quot;</stringProp>
-                <stringProp name="1067802658">&quot;id&quot;:\d+,&quot;newValue&quot;:&quot;http:\/\/icons1.iconarchive.com\/icons\/mattahan\/ultrabuuf\/128\/Comics-Hulkling-Sulking-icon.png&quot;,&quot;oldValue&quot;:&quot;http:\/\/icons.iconarchive.com\/icons\/mattahan\/ultrabuuf\/128\/Comics-Hulkling-Sulking-icon.png&quot;,&quot;fieldName&quot;:&quot;imageLargeUrl&quot;,&quot;displayName&quot;:&quot;Large Icon URL&quot;</stringProp>
-                <stringProp name="1089029705">&quot;action&quot;:\{&quot;description&quot;:&quot;Modified&quot;,&quot;name&quot;:&quot;MODIFIED&quot;\}</stringProp>
+                <stringProp name="-1513700247">&quot;newValue&quot;:&quot;Requirements Test1&quot;,&quot;oldValue&quot;:&quot;Requirements Test&quot;,&quot;fieldName&quot;:&quot;requirements&quot;</stringProp>
+                <stringProp name="289479976">&quot;newValue&quot;:&quot;21&quot;,&quot;oldValue&quot;:&quot;2&quot;,&quot;fieldName&quot;:&quot;versionName&quot;</stringProp>
+                <stringProp name="2050994181">&quot;newValue&quot;:&quot;StartTitle1&quot;,&quot;oldValue&quot;:&quot;StartTitle&quot;,&quot;fieldName&quot;:&quot;title&quot;</stringProp>
+                <stringProp name="-39355449">&quot;newValue&quot;:&quot;Description test 1&quot;,&quot;oldValue&quot;:&quot;Description test&quot;,&quot;fieldName&quot;:&quot;description&quot;</stringProp>
+                <stringProp name="-1868511378">&quot;newValue&quot;:&quot;http:\/\/icons1.iconarchive.com\/icons\/mattahan\/ultrabuuf\/128\/Comics-Hulkling-Sulking-icon.png&quot;,&quot;oldValue&quot;:&quot;http:\/\/icons.iconarchive.com\/icons\/mattahan\/ultrabuuf\/128\/Comics-Hulkling-Sulking-icon.png&quot;,&quot;fieldName&quot;:&quot;imageSmallUrl&quot;</stringProp>
+                <stringProp name="-1997090123">&quot;newValue&quot;:&quot;http:\/\/icons1.iconarchive.com\/icons\/mattahan\/ultrabuuf\/128\/Comics-Hulkling-Sulking-icon.png&quot;,&quot;oldValue&quot;:&quot;http:\/\/icons.iconarchive.com\/icons\/mattahan\/ultrabuuf\/128\/Comics-Hulkling-Sulking-icon.png&quot;,&quot;fieldName&quot;:&quot;launchUrl&quot;</stringProp>
+                <stringProp name="512930722">&quot;newValue&quot;:&quot;http:\/\/icons1.iconarchive.com\/icons\/mattahan\/ultrabuuf\/128\/Comics-Hulkling-Sulking-icon.png&quot;,&quot;oldValue&quot;:&quot;http:\/\/icons.iconarchive.com\/icons\/mattahan\/ultrabuuf\/128\/Comics-Hulkling-Sulking-icon.png&quot;,&quot;fieldName&quot;:&quot;imageLargeUrl&quot;</stringProp>
+                <stringProp name="-501695545">&quot;action&quot;:&quot;MODIFIED&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -3420,7 +3420,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="2121102135">&quot;total&quot;:1</stringProp>
-                <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
+                <stringProp name="1727010636">&quot;action&quot;:&quot;CREATED&quot;</stringProp>
                 <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -3531,7 +3531,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="2121102135">&quot;total&quot;:1</stringProp>
-                <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
+                <stringProp name="1727010636">&quot;action&quot;:&quot;CREATED&quot;</stringProp>
                 <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -3907,7 +3907,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="2121102135">&quot;total&quot;:1</stringProp>
-                  <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
+                  <stringProp name="1727010636">&quot;action&quot;:&quot;CREATED&quot;</stringProp>
                   <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -4019,9 +4019,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="2121102136">&quot;total&quot;:2</stringProp>
-                  <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
+                  <stringProp name="1727010636">&quot;action&quot;:&quot;CREATED&quot;</stringProp>
                   <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                  <stringProp name="-998864503">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;name&quot;:&quot;SUBMITTED&quot;\}</stringProp>
+                  <stringProp name="-1645676775">&quot;action&quot;:&quot;SUBMITTED&quot;</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
@@ -4133,10 +4133,10 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="2121102137">&quot;total&quot;:3</stringProp>
-                  <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
+                  <stringProp name="1727010636">&quot;action&quot;:&quot;CREATED&quot;</stringProp>
                   <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                  <stringProp name="-998864503">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;name&quot;:&quot;SUBMITTED&quot;\}</stringProp>
-                  <stringProp name="86553571">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;name&quot;:&quot;DISABLED&quot;\}</stringProp>
+                  <stringProp name="-1645676775">&quot;action&quot;:&quot;SUBMITTED&quot;</stringProp>
+                  <stringProp name="1208580724">&quot;action&quot;:&quot;DISABLED&quot;</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
@@ -4248,11 +4248,11 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="2121102138">&quot;total&quot;:4</stringProp>
-                  <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
+                  <stringProp name="1727010636">&quot;action&quot;:&quot;CREATED&quot;</stringProp>
                   <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                  <stringProp name="-998864503">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;name&quot;:&quot;SUBMITTED&quot;\}</stringProp>
-                  <stringProp name="86553571">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;name&quot;:&quot;DISABLED&quot;\}</stringProp>
-                  <stringProp name="-200568631">&quot;action&quot;:\{&quot;description&quot;:&quot;Enabled&quot;,&quot;name&quot;:&quot;ENABLED&quot;\}</stringProp>
+                  <stringProp name="-1645676775">&quot;action&quot;:&quot;SUBMITTED&quot;</stringProp>
+                  <stringProp name="1208580724">&quot;action&quot;:&quot;DISABLED&quot;</stringProp>
+                  <stringProp name="1548785171">&quot;action&quot;:&quot;ENABLED&quot;</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
@@ -4387,12 +4387,12 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="2121102139">&quot;total&quot;:5</stringProp>
-                  <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
+                  <stringProp name="1727010636">&quot;action&quot;:&quot;CREATED&quot;</stringProp>
                   <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                  <stringProp name="-998864503">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;name&quot;:&quot;SUBMITTED&quot;\}</stringProp>
-                  <stringProp name="86553571">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;name&quot;:&quot;DISABLED&quot;\}</stringProp>
-                  <stringProp name="-200568631">&quot;action&quot;:\{&quot;description&quot;:&quot;Enabled&quot;,&quot;name&quot;:&quot;ENABLED&quot;\}</stringProp>
-                  <stringProp name="-351183393">&quot;action&quot;:\{&quot;description&quot;:&quot;Rejected&quot;,&quot;name&quot;:&quot;REJECTED&quot;\}</stringProp>
+                  <stringProp name="-1645676775">&quot;action&quot;:&quot;SUBMITTED&quot;</stringProp>
+                  <stringProp name="1208580724">&quot;action&quot;:&quot;DISABLED&quot;</stringProp>
+                  <stringProp name="1548785171">&quot;action&quot;:&quot;ENABLED&quot;</stringProp>
+                  <stringProp name="-284172110">&quot;action&quot;:&quot;REJECTED&quot;</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
@@ -4504,12 +4504,12 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="2121102140">&quot;total&quot;:6</stringProp>
-                  <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
+                  <stringProp name="1727010636">&quot;action&quot;:&quot;CREATED&quot;</stringProp>
                   <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                  <stringProp name="-998864503">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;name&quot;:&quot;SUBMITTED&quot;\}</stringProp>
-                  <stringProp name="86553571">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;name&quot;:&quot;DISABLED&quot;\}</stringProp>
-                  <stringProp name="-200568631">&quot;action&quot;:\{&quot;description&quot;:&quot;Enabled&quot;,&quot;name&quot;:&quot;ENABLED&quot;\}</stringProp>
-                  <stringProp name="-351183393">&quot;action&quot;:\{&quot;description&quot;:&quot;Rejected&quot;,&quot;name&quot;:&quot;REJECTED&quot;\}</stringProp>
+                  <stringProp name="-1645676775">&quot;action&quot;:&quot;SUBMITTED&quot;</stringProp>
+                  <stringProp name="1208580724">&quot;action&quot;:&quot;DISABLED&quot;</stringProp>
+                  <stringProp name="1548785171">&quot;action&quot;:&quot;ENABLED&quot;</stringProp>
+                  <stringProp name="-284172110">&quot;action&quot;:&quot;REJECTED&quot;</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
@@ -4621,13 +4621,13 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="2121102141">&quot;total&quot;:7</stringProp>
-                  <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
+                  <stringProp name="1727010636">&quot;action&quot;:&quot;CREATED&quot;</stringProp>
                   <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                  <stringProp name="-998864503">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;name&quot;:&quot;SUBMITTED&quot;\}</stringProp>
-                  <stringProp name="86553571">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;name&quot;:&quot;DISABLED&quot;\}</stringProp>
-                  <stringProp name="-200568631">&quot;action&quot;:\{&quot;description&quot;:&quot;Enabled&quot;,&quot;name&quot;:&quot;ENABLED&quot;\}</stringProp>
-                  <stringProp name="-351183393">&quot;action&quot;:\{&quot;description&quot;:&quot;Rejected&quot;,&quot;name&quot;:&quot;REJECTED&quot;\}</stringProp>
-                  <stringProp name="-97832851">&quot;action&quot;:\{&quot;description&quot;:&quot;Approved&quot;,&quot;name&quot;:&quot;APPROVED&quot;\}</stringProp>
+                  <stringProp name="-1645676775">&quot;action&quot;:&quot;SUBMITTED&quot;</stringProp>
+                  <stringProp name="1208580724">&quot;action&quot;:&quot;DISABLED&quot;</stringProp>
+                  <stringProp name="1548785171">&quot;action&quot;:&quot;ENABLED&quot;</stringProp>
+                  <stringProp name="-284172110">&quot;action&quot;:&quot;REJECTED&quot;</stringProp>
+                  <stringProp name="-512764519">&quot;action&quot;:&quot;APPROVED&quot;</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
@@ -4819,13 +4819,13 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="2121102143">&quot;total&quot;:9</stringProp>
-                <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
+                <stringProp name="1727010636">&quot;action&quot;:&quot;CREATED&quot;</stringProp>
                 <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                <stringProp name="-998864503">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;name&quot;:&quot;SUBMITTED&quot;\}</stringProp>
-                <stringProp name="86553571">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;name&quot;:&quot;DISABLED&quot;\}</stringProp>
-                <stringProp name="-200568631">&quot;action&quot;:\{&quot;description&quot;:&quot;Enabled&quot;,&quot;name&quot;:&quot;ENABLED&quot;\}</stringProp>
-                <stringProp name="-351183393">&quot;action&quot;:\{&quot;description&quot;:&quot;Rejected&quot;,&quot;name&quot;:&quot;REJECTED&quot;\}</stringProp>
-                <stringProp name="-97832851">&quot;action&quot;:\{&quot;description&quot;:&quot;Approved&quot;,&quot;name&quot;:&quot;APPROVED&quot;\}</stringProp>
+                <stringProp name="-1645676775">&quot;action&quot;:&quot;SUBMITTED&quot;</stringProp>
+                <stringProp name="1208580724">&quot;action&quot;:&quot;DISABLED&quot;</stringProp>
+                <stringProp name="1548785171">&quot;action&quot;:&quot;ENABLED&quot;</stringProp>
+                <stringProp name="-284172110">&quot;action&quot;:&quot;REJECTED&quot;</stringProp>
+                <stringProp name="-512764519">&quot;action&quot;:&quot;APPROVED&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -4880,14 +4880,14 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="1329656793">&quot;total&quot;:10</stringProp>
-                <stringProp name="-807452183">&quot;action&quot;:\{&quot;description&quot;:&quot;Created&quot;,&quot;name&quot;:&quot;CREATED&quot;\}</stringProp>
+                <stringProp name="1727010636">&quot;action&quot;:&quot;CREATED&quot;</stringProp>
                 <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                <stringProp name="-998864503">&quot;action&quot;:\{&quot;description&quot;:&quot;Submitted&quot;,&quot;name&quot;:&quot;SUBMITTED&quot;\}</stringProp>
-                <stringProp name="86553571">&quot;action&quot;:\{&quot;description&quot;:&quot;Disabled&quot;,&quot;name&quot;:&quot;DISABLED&quot;\}</stringProp>
-                <stringProp name="-200568631">&quot;action&quot;:\{&quot;description&quot;:&quot;Enabled&quot;,&quot;name&quot;:&quot;ENABLED&quot;\}</stringProp>
-                <stringProp name="-351183393">&quot;action&quot;:\{&quot;description&quot;:&quot;Rejected&quot;,&quot;name&quot;:&quot;REJECTED&quot;\}</stringProp>
-                <stringProp name="-97832851">&quot;action&quot;:\{&quot;description&quot;:&quot;Approved&quot;,&quot;name&quot;:&quot;APPROVED&quot;\}</stringProp>
-                <stringProp name="1089029705">&quot;action&quot;:\{&quot;description&quot;:&quot;Modified&quot;,&quot;name&quot;:&quot;MODIFIED&quot;\}</stringProp>
+                <stringProp name="-1645676775">&quot;action&quot;:&quot;SUBMITTED&quot;</stringProp>
+                <stringProp name="1208580724">&quot;action&quot;:&quot;DISABLED&quot;</stringProp>
+                <stringProp name="1548785171">&quot;action&quot;:&quot;ENABLED&quot;</stringProp>
+                <stringProp name="-284172110">&quot;action&quot;:&quot;REJECTED&quot;</stringProp>
+                <stringProp name="-512764519">&quot;action&quot;:&quot;APPROVED&quot;</stringProp>
+                <stringProp name="-501695545">&quot;action&quot;:&quot;MODIFIED&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -4993,7 +4993,7 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
           </hashTree>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="OZF-301 - Change Log for Feedback - Create Listing" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Change Log for Feedback - Create Listing" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -5306,7 +5306,7 @@ vars.put(&quot;userName&quot;,&quot;${testUser}&quot;);</stringProp>
             <hashTree>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="49586">200</stringProp>
+                  <stringProp name="49587">201</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
@@ -5315,7 +5315,8 @@ vars.put(&quot;userName&quot;,&quot;${testUser}&quot;);</stringProp>
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="-547797305">&quot;success&quot;:true</stringProp>
+                  <stringProp name="23794865">&quot;text&quot;:&quot;This is a comment&quot;</stringProp>
+                  <stringProp name="109413273">&quot;rate&quot;:3</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
@@ -5391,8 +5392,8 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="-747247532">&quot;text&quot;:&quot;${result}&quot;</stringProp>
-                  <stringProp name="-347488159">&quot;rate&quot;:null</stringProp>
+                  <stringProp name="-186152566">&quot;text&quot;:&quot;This is a comment EDITED&quot;</stringProp>
+                  <stringProp name="109413273">&quot;rate&quot;:3</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
@@ -5432,7 +5433,7 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="2121102138">&quot;total&quot;:4</stringProp>
-                  <stringProp name="188046989">&quot;action&quot;:\{&quot;description&quot;:&quot;Review Edited&quot;,&quot;title&quot;:&quot;REVIEW_EDITED&quot;\}</stringProp>
+                  <stringProp name="-455674204">&quot;action&quot;:&quot;REVIEW_EDITED&quot;</stringProp>
                   <stringProp name="445264142">&quot;newValue&quot;:&quot;This is a comment EDITED&quot;</stringProp>
                   <stringProp name="-1308167308">&quot;oldValue&quot;:&quot;This is a comment&quot;</stringProp>
                 </collectionProp>
@@ -5508,7 +5509,7 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="2121102139">&quot;total&quot;:5</stringProp>
-                  <stringProp name="1080523897">&quot;action&quot;:\{&quot;description&quot;:&quot;Review Deleted&quot;,&quot;title&quot;:&quot;REVIEW_DELETED&quot;\}</stringProp>
+                  <stringProp name="-2023821538">&quot;action&quot;:&quot;REVIEW_DELETED&quot;</stringProp>
                   <stringProp name="519094927">&quot;newValue&quot;:&quot;Test User 1&quot;</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
