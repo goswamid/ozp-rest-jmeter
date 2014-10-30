@@ -4807,9 +4807,9 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-1755637269">&quot;title&quot;:&quot;Listing1&quot;,</stringProp>
-                <stringProp name="-1755636308">&quot;title&quot;:&quot;Listing2&quot;,</stringProp>
-                <stringProp name="-1853887596">&quot;title&quot;:&quot;StartTitle&quot;,</stringProp>
+                <stringProp name="1088438676">api/listing/${listingID1}</stringProp>
+                <stringProp name="1088438707">api/listing/${listingID2}</stringProp>
+                <stringProp name="35110997">api/listing/${listingID}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -4867,10 +4867,10 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-1755637269">&quot;title&quot;:&quot;Listing1&quot;,</stringProp>
-                <stringProp name="-1755636308">&quot;title&quot;:&quot;Listing2&quot;,</stringProp>
-                <stringProp name="-1853887596">&quot;title&quot;:&quot;StartTitle&quot;,</stringProp>
-                <stringProp name="-355805611">&quot;changeDetails&quot;:\[\{&quot;id&quot;:\d+,&quot;newValue&quot;:&quot;3&quot;,&quot;oldValue&quot;:&quot;2&quot;,&quot;fieldName&quot;:&quot;versionName&quot;,&quot;displayName&quot;:&quot;Version&quot;\}\]</stringProp>
+                <stringProp name="1088438676">api/listing/${listingID1}</stringProp>
+                <stringProp name="1088438707">api/listing/${listingID2}</stringProp>
+                <stringProp name="35110997">api/listing/${listingID}</stringProp>
+                <stringProp name="-1724230422">&quot;changeDetails&quot;:\[\{&quot;newValue&quot;:&quot;3&quot;,&quot;oldValue&quot;:&quot;2&quot;,&quot;fieldName&quot;:&quot;versionName&quot;\}\]</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
