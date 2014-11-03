@@ -443,7 +443,13 @@ vars.put(&quot;profileID&quot;,res[6]);</stringProp>
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -584,7 +590,13 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -676,7 +688,13 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
-	&quot;approvalStatus&quot;:&quot;PENDING&quot;&#xd;
+	&quot;approvalStatus&quot;:&quot;PENDING&quot;,&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -796,7 +814,13 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -888,7 +912,13 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
-	&quot;approvalStatus&quot;:&quot;PENDING&quot;&#xd;
+	&quot;approvalStatus&quot;:&quot;PENDING&quot;,&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -1056,7 +1086,13 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -1148,7 +1184,13 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
-	&quot;approvalStatus&quot;:&quot;PENDING&quot;&#xd;
+	&quot;approvalStatus&quot;:&quot;PENDING&quot;,&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -1220,7 +1262,13 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
 	&quot;approvalStatus&quot;:&quot;APPROVED&quot;,&#xd;
-	&quot;isOutside&quot;:true&#xd;
+	&quot;isOutside&quot;:true,&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>

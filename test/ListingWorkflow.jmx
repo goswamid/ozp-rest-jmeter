@@ -243,7 +243,13 @@
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -374,7 +380,13 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
-	&quot;approvalStatus&quot;:&quot;PENDING&quot;&#xd;
+	&quot;approvalStatus&quot;:&quot;PENDING&quot;,&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -589,7 +601,13 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
-	&quot;approvalStatus&quot;:&quot;PENDING&quot;&#xd;
+	&quot;approvalStatus&quot;:&quot;PENDING&quot;,&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -708,7 +726,13 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
-	&quot;approvalStatus&quot;:&quot;APPROVED&quot;&#xd;
+	&quot;approvalStatus&quot;:&quot;APPROVED&quot;,&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -955,7 +979,13 @@ vars.put(&quot;userName&quot;,&quot;${testUser}&quot;);</stringProp>
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -1086,7 +1116,13 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
-	&quot;approvalStatus&quot;:&quot;PENDING&quot;&#xd;
+	&quot;approvalStatus&quot;:&quot;PENDING&quot;,&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -1322,7 +1358,13 @@ vars.put(&quot;userName&quot;,&quot;${testUser}&quot;);</stringProp>
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
-	&quot;approvalStatus&quot;:&quot;PENDING&quot;&#xd;
+	&quot;approvalStatus&quot;:&quot;PENDING&quot;,&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -1452,7 +1494,13 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
-	&quot;approvalStatus&quot;:&quot;APPROVED&quot;&#xd;
+	&quot;approvalStatus&quot;:&quot;APPROVED&quot;,&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -1690,7 +1738,13 @@ vars.put(&quot;profileName&quot;,username);</stringProp>
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -1821,7 +1875,13 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
-	&quot;approvalStatus&quot;:&quot;PENDING&quot;&#xd;
+	&quot;approvalStatus&quot;:&quot;PENDING&quot;,&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -1988,7 +2048,13 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
-	&quot;approvalStatus&quot;:&quot;APPROVED&quot;&#xd;
+	&quot;approvalStatus&quot;:&quot;APPROVED&quot;,&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -2153,7 +2219,13 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -2295,7 +2367,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1172567421">&quot;error&quot;:true,&quot;message&quot;:&quot;Cannot reject ServiceItem ${listingID} that has approval status of In Progress&quot;</stringProp>
+                <stringProp name="-167353314">&quot;error&quot;:true,&quot;message&quot;:&quot;Cannot reject ServiceItem ${listingID} that has approval status of IN_PROGRESS&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -2332,7 +2404,13 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
-	&quot;approvalStatus&quot;:&quot;APPROVED&quot;&#xd;
+	&quot;approvalStatus&quot;:&quot;APPROVED&quot;,&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -2366,7 +2444,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="918325736">&quot;error&quot;:true,&quot;message&quot;:&quot;Invalid approval status transition from In Progress to Approved&quot;</stringProp>
+                <stringProp name="1068957481">&quot;error&quot;:true,&quot;message&quot;:&quot;Invalid approval status transition from IN_PROGRESS to APPROVED&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -2455,7 +2533,13 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -2586,7 +2670,13 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
-	&quot;approvalStatus&quot;:&quot;PENDING&quot;&#xd;
+	&quot;approvalStatus&quot;:&quot;PENDING&quot;,&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -2705,7 +2795,13 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
-	&quot;approvalStatus&quot;:&quot;IN_PROGRESS&quot;&#xd;
+	&quot;approvalStatus&quot;:&quot;IN_PROGRESS&quot;,&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -2739,7 +2835,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1004880684">&quot;error&quot;:true,&quot;message&quot;:&quot;Invalid approval status transition from Pending to In Progress&quot;</stringProp>
+                <stringProp name="926066125">&quot;error&quot;:true,&quot;message&quot;:&quot;Invalid approval status transition from PENDING to IN_PROGRESS&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -2828,7 +2924,13 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -2959,7 +3061,13 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
-	&quot;approvalStatus&quot;:&quot;PENDING&quot;&#xd;
+	&quot;approvalStatus&quot;:&quot;PENDING&quot;,&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -3078,7 +3186,13 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
-	&quot;approvalStatus&quot;:&quot;APPROVED&quot;&#xd;
+	&quot;approvalStatus&quot;:&quot;APPROVED&quot;,&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -3208,7 +3322,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="998728680">&quot;error&quot;:true,&quot;message&quot;:&quot;Cannot reject ServiceItem ${listingID} that has approval status of Approved&quot;</stringProp>
+                <stringProp name="1781355528">&quot;error&quot;:true,&quot;message&quot;:&quot;Cannot reject ServiceItem ${listingID} that has approval status of APPROVED&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -3245,7 +3359,13 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
-	&quot;approvalStatus&quot;:&quot;PENDING&quot;&#xd;
+	&quot;approvalStatus&quot;:&quot;PENDING&quot;,&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -3279,7 +3399,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="459883921">&quot;error&quot;:true,&quot;message&quot;:&quot;Invalid approval status transition from Approved to Pending&quot;</stringProp>
+                <stringProp name="1873644913">&quot;error&quot;:true,&quot;message&quot;:&quot;Invalid approval status transition from APPROVED to PENDING&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -3316,7 +3436,13 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
-	&quot;approvalStatus&quot;:&quot;IN_PROGRESS&quot;&#xd;
+	&quot;approvalStatus&quot;:&quot;IN_PROGRESS&quot;,&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -3350,7 +3476,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-166231200">&quot;error&quot;:true,&quot;message&quot;:&quot;Invalid approval status transition from Approved to In Progress&quot;</stringProp>
+                <stringProp name="-1422803487">&quot;error&quot;:true,&quot;message&quot;:&quot;Invalid approval status transition from APPROVED to IN_PROGRESS&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -3439,7 +3565,13 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -3570,7 +3702,13 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
-	&quot;approvalStatus&quot;:&quot;PENDING&quot;&#xd;
+	&quot;approvalStatus&quot;:&quot;PENDING&quot;,&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -3784,7 +3922,13 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
-	&quot;approvalStatus&quot;:&quot;IN_PROGRESS&quot;&#xd;
+	&quot;approvalStatus&quot;:&quot;IN_PROGRESS&quot;,&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -3818,7 +3962,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1077855015">&quot;error&quot;:true,&quot;message&quot;:&quot;Invalid approval status transition from Rejected to In Progress&quot;</stringProp>
+                <stringProp name="-178717272">&quot;error&quot;:true,&quot;message&quot;:&quot;Invalid approval status transition from REJECTED to IN_PROGRESS&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -3855,7 +3999,13 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
-	&quot;approvalStatus&quot;:&quot;APPROVED&quot;&#xd;
+	&quot;approvalStatus&quot;:&quot;APPROVED&quot;,&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -3889,7 +4039,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="606439038">&quot;error&quot;:true,&quot;message&quot;:&quot;Invalid approval status transition from Rejected to Approved&quot;</stringProp>
+                <stringProp name="1483355838">&quot;error&quot;:true,&quot;message&quot;:&quot;Invalid approval status transition from REJECTED to APPROVED&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -3998,7 +4148,13 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
-	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -4129,7 +4285,13 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
-	&quot;approvalStatus&quot;:&quot;IN_PROGRESS&quot;&#xd;
+	&quot;approvalStatus&quot;:&quot;IN_PROGRESS&quot;,&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -4250,7 +4412,13 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
-	&quot;approvalStatus&quot;:&quot;IN_PROGRESS&quot;&#xd;
+	&quot;approvalStatus&quot;:&quot;IN_PROGRESS&quot;,&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -4371,7 +4539,13 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
-	&quot;approvalStatus&quot;:&quot;PENDING&quot;&#xd;
+	&quot;approvalStatus&quot;:&quot;PENDING&quot;,&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -4490,7 +4664,13 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
-	&quot;approvalStatus&quot;:&quot;PENDING&quot;&#xd;
+	&quot;approvalStatus&quot;:&quot;PENDING&quot;,&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -4611,7 +4791,13 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
-	&quot;approvalStatus&quot;:&quot;PENDING&quot;&#xd;
+	&quot;approvalStatus&quot;:&quot;PENDING&quot;,&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -4827,7 +5013,13 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
-	&quot;approvalStatus&quot;:&quot;REJECTED&quot;&#xd;
+	&quot;approvalStatus&quot;:&quot;REJECTED&quot;,&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -4948,7 +5140,13 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
-	&quot;approvalStatus&quot;:&quot;REJECTED&quot;&#xd;
+	&quot;approvalStatus&quot;:&quot;REJECTED&quot;,&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -5069,7 +5267,13 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
-	&quot;approvalStatus&quot;:&quot;PENDING&quot;&#xd;
+	&quot;approvalStatus&quot;:&quot;PENDING&quot;,&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -5188,7 +5392,13 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
-	&quot;approvalStatus&quot;:&quot;APPROVED&quot;&#xd;
+	&quot;approvalStatus&quot;:&quot;APPROVED&quot;,&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -5307,7 +5517,13 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
-	&quot;approvalStatus&quot;:&quot;APPROVED&quot;&#xd;
+	&quot;approvalStatus&quot;:&quot;APPROVED&quot;,&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -5428,7 +5644,13 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
-	&quot;approvalStatus&quot;:&quot;APPROVED&quot;&#xd;
+	&quot;approvalStatus&quot;:&quot;APPROVED&quot;,&#xd;
+	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>

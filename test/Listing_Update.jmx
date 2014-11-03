@@ -24164,7 +24164,7 @@ vars.put(&quot;reqContactTypeTitle&quot;,name);</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Update Contacts - Required - Negative" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Update Contacts - Required - Negative on Submit" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Save Listing - Contacts - Required Negative" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -24289,6 +24289,7 @@ vars.put(&quot;reqContactTypeTitle&quot;,name);</stringProp>
 	&quot;dependencies&quot;:&quot;Requirements test&quot;,&#xd;
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
+	&quot;approvalStatus&quot;:&quot;PENDING&quot;,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -24323,7 +24324,8 @@ vars.put(&quot;reqContactTypeTitle&quot;,name);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-1907466084">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Missing required contacts of type\(s\): \[Required ContactType\]&quot;</stringProp>
+                <stringProp name="-817851986">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):</stringProp>
+                <stringProp name="1708054348">Missing required contacts of type\(s\): \[Required ContactType\]&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
