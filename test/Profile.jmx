@@ -4033,7 +4033,7 @@ vars.put(&quot;profileAdminID&quot;,res[6]);</stringProp>
 	&quot;uuid&quot; : &quot;${profileUuid}&quot;,&#xd;
 	&quot;username&quot; : &quot;${profileUserName}&quot;,&#xd;
 	&quot;email&quot; : &quot;${profileEmail}&quot;,&#xd;
-	&quot;organizations&quot; : [{&quot;id&quot;:${agencyID1}}]&#xd;
+	&quot;organizations&quot; : [&quot;${agencyTitle1}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -4102,7 +4102,7 @@ vars.put(&quot;profileAdminID&quot;,res[6]);</stringProp>
 	&quot;uuid&quot; : &quot;${profileUuid}&quot;,&#xd;
 	&quot;username&quot; : &quot;${profileUserName}&quot;,&#xd;
 	&quot;email&quot; : &quot;${profileEmail}&quot;,&#xd;
-	&quot;organizations&quot; : [{&quot;id&quot;:${agencyID1}},{&quot;id&quot;:${agencyID2}},{&quot;id&quot;:${agencyID3}}]&#xd;
+	&quot;organizations&quot; : [&quot;${agencyTitle1}&quot;,&quot;${agencyTitle2}&quot;,&quot;${agencyTitle3}&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
