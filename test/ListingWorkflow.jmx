@@ -5841,7 +5841,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-178817246">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;\[title\] is a required field. Please supply a value.&quot;\]</stringProp>
+                <stringProp name="406242462">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;title&quot;:&quot;title is a required field. Please supply a value.&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -5914,7 +5914,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-1870794046">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;\[type\] is a required field. Please supply a value.&quot;\]</stringProp>
+                <stringProp name="-295898630">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;type&quot;:&quot;type is a required field. Please supply a value.&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -5985,7 +5985,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1920001659">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;\[title\] is a required field. Please supply a value.&quot;,&quot;\[type\] is a required field. Please supply a value.&quot;\]</stringProp>
+                <stringProp name="-1549160203">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;title&quot;:&quot;title is a required field. Please supply a value.&quot;,&quot;type&quot;:&quot;type is a required field. Please supply a value.&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -6418,23 +6418,23 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-916615437">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:</stringProp>
-                <stringProp name="-1311085978">&quot;Value required for field \[descriptionShort\] on non-draft listings&quot;</stringProp>
-                <stringProp name="891947475">&quot;\[title\] is a required field. Please supply a value.&quot;</stringProp>
-                <stringProp name="-1718635550">&quot;Value required for field \[description\] on non-draft listings&quot;</stringProp>
-                <stringProp name="-316895685">&quot;Value required for field \[versionName\] on non-draft listings&quot;</stringProp>
-                <stringProp name="67867725">&quot;Value required for field \[tags\] on non-draft listings&quot;</stringProp>
-                <stringProp name="-745485386">&quot;Value required for field \[requirements\] on non-draft listings&quot;</stringProp>
-                <stringProp name="-1129344799">&quot;Value required for field \[agency\] on non-draft listings&quot;</stringProp>
-                <stringProp name="2118161231">&quot;\[type\] is a required field. Please supply a value.&quot;</stringProp>
-                <stringProp name="943712802">&quot;Value required for field \[launchUrl\] on non-draft listings&quot;</stringProp>
-                <stringProp name="1571136682">&quot;Value required for field \[categories\] on non-draft listings&quot;</stringProp>
-                <stringProp name="-1636095683">Value required for field \[imageSmallUrl\] on non-draft listings&quot;</stringProp>
-                <stringProp name="-1957449755">Value required for field \[imageMediumUrl\] on non-draft listings&quot;</stringProp>
-                <stringProp name="612945295">&quot;Value required for field \[imageLargeUrl\] on non-draft listings&quot;</stringProp>
-                <stringProp name="-1678281515">&quot;Value required for field \[imageXlargeUrl\] on non-draft listings&quot;</stringProp>
-                <stringProp name="562917479">&quot;Property \[owners\] of class [class marketplace.Listing] with value \[\[\]\] does not pass custom validation&quot;</stringProp>
-                <stringProp name="-1220784847">&quot;Value required for field \[screenshots\] on non-draft listings&quot;</stringProp>
+                <stringProp name="-1108470579">&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:</stringProp>
+                <stringProp name="-898215642">&quot;Value required for field descriptionShort on non-draft listings&quot;</stringProp>
+                <stringProp name="673081525">&quot;title is a required field. Please supply a value.&quot;</stringProp>
+                <stringProp name="823699460">&quot;Value required for field description on non-draft listings&quot;</stringProp>
+                <stringProp name="-560315235">&quot;Value required for field versionName on non-draft listings&quot;</stringProp>
+                <stringProp name="-1068356106">&quot;Value required for field requirements on non-draft listings&quot;</stringProp>
+                <stringProp name="-1934891743">&quot;Value required for field agency on non-draft listings&quot;</stringProp>
+                <stringProp name="-1189830769">&quot;type is a required field. Please supply a value.&quot;</stringProp>
+                <stringProp name="-1143317884">&quot;Value required for field launchUrl on non-draft listings&quot;</stringProp>
+                <stringProp name="-1173008470">&quot;Value required for field categories on non-draft listings&quot;</stringProp>
+                <stringProp name="1806732383">Value required for field imageSmallUrl on non-draft listings&quot;</stringProp>
+                <stringProp name="92276133">Value required for field imageMediumUrl on non-draft listings&quot;</stringProp>
+                <stringProp name="-91788111">&quot;Value required for field imageLargeUrl on non-draft listings&quot;</stringProp>
+                <stringProp name="1188161301">&quot;Value required for field imageXlargeUrl on non-draft listings&quot;</stringProp>
+                <stringProp name="454479705">&quot;owners does not pass custom validation&quot;,</stringProp>
+                <stringProp name="-529970925">&quot;Value required for field screenshots on non-draft listings&quot;</stringProp>
+                <stringProp name="-646467723">&quot;Value required for field tags on non-draft listings</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -6503,7 +6503,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-178817246">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;\[title\] is a required field. Please supply a value.&quot;\]</stringProp>
+                <stringProp name="406242462">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;title&quot;:&quot;title is a required field. Please supply a value.&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -6571,7 +6571,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-1870794046">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;\[type\] is a required field. Please supply a value.&quot;\]</stringProp>
+                <stringProp name="-295898630">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;type&quot;:&quot;type is a required field. Please supply a value.&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -6639,7 +6639,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="119753273">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Value required for field \[categories\] on non-draft listings&quot;\]</stringProp>
+                <stringProp name="-2020558275">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;categories&quot;:&quot;Value required for field categories on non-draft listings&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -6707,7 +6707,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="302505884">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Value required for field \[tags\] on non-draft listings&quot;\]</stringProp>
+                <stringProp name="-298797757">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;tags&quot;:&quot;Value required for field tags on non-draft listings&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -6775,7 +6775,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="409824885">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Value required for field \[descriptionShort\] on non-draft listings&quot;\]</stringProp>
+                <stringProp name="-1534041099">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;descriptionShort&quot;:&quot;Value required for field descriptionShort on non-draft listings&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -6843,7 +6843,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-2103327723">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Value required for field \[description\] on non-draft listings&quot;\]</stringProp>
+                <stringProp name="1870578591">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;description&quot;:&quot;Value required for field description on non-draft listings&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -6911,7 +6911,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="643918894">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Value required for field \[versionName\] on non-draft listings&quot;\]</stringProp>
+                <stringProp name="-1836695169">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;versionName&quot;:&quot;Value required for field versionName on non-draft listings&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -6979,7 +6979,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1568476885">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Value required for field \[launchUrl\] on non-draft listings&quot;\]</stringProp>
+                <stringProp name="68295519">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;launchUrl&quot;:&quot;Value required for field launchUrl on non-draft listings&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -7047,7 +7047,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-364121403">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Value required for field \[requirements\] on non-draft listings&quot;\]</stringProp>
+                <stringProp name="-732193003">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;requirements&quot;:&quot;Value required for field requirements on non-draft listings&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -7115,7 +7115,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1084540068">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Value required for field \[imageXlargeUrl\] on non-draft listings&quot;\]</stringProp>
+                <stringProp name="1520814675">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;imageXlargeUrl&quot;:&quot;Value required for field imageXlargeUrl on non-draft listings&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -7183,7 +7183,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1706205698">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Value required for field \[imageLargeUrl\] on non-draft listings&quot;\]</stringProp>
+                <stringProp name="-2075350401">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;imageLargeUrl&quot;:&quot;Value required for field imageLargeUrl on non-draft listings&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -7251,7 +7251,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-692876586">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Value required for field \[imageMediumUrl\] on non-draft listings&quot;\]</stringProp>
+                <stringProp name="-1035099849">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;imageMediumUrl&quot;:&quot;Value required for field imageMediumUrl on non-draft listings&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -7319,7 +7319,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-216510770">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Value required for field \[imageSmallUrl\] on non-draft listings&quot;\]</stringProp>
+                <stringProp name="2101075967">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;imageSmallUrl&quot;:&quot;Value required for field imageSmallUrl on non-draft listings&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -7387,7 +7387,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-410171996">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Value required for field \[screenshots\] on non-draft listings&quot;\]</stringProp>
+                <stringProp name="1831991487">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;screenshots&quot;:&quot;Value required for field screenshots on non-draft listings&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -7455,7 +7455,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-837583952">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Value required for field \[agency\] on non-draft listings&quot;\]</stringProp>
+                <stringProp name="-1843024021">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;agency&quot;:&quot;Value required for field agency on non-draft listings&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -7523,7 +7523,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="957321438">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Property \[owners\] of class \[class marketplace.Listing\] with value \[\[\]\] does not pass custom validation&quot;\]</stringProp>
+                <stringProp name="-43402236">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;owners&quot;:&quot;owners does not pass custom validation&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -8352,8 +8352,7 @@ vars.put(&quot;reqContactTypeTitle&quot;,name);</stringProp>
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="-817851986">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):</stringProp>
-                  <stringProp name="1708054348">Missing required contacts of type\(s\): \[Required ContactType\]&quot;</stringProp>
+                  <stringProp name="-431035666">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;contacts&quot;:&quot;Missing required contacts of type\(s\): \[Required ContactType\]&quot;}}</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>

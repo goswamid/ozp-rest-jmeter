@@ -1,4 +1,4 @@
-+-$!#&	"error":true,"message":"Validation Error\(s\) occurred during save\(\):","resolvedMessges":\["Property \[action\] of class \[class marketplace.Intent\] with value
-a-@+$!#&_^.	"error":true,"message":"Validation Error\(s\) occurred during save\(\):","resolvedMessges":\["Property \[action\] of class \[class marketplace.Intent\] with value
-123/456	"error":true,"message":"Validation Error\(s\) occurred during save\(\):","resolvedMessges":\["Property \[action\] of class \[class marketplace.Intent\] with value
-Intent_that_is_64_characters_long_Intent_that_is_64_characters_long	"error":true,"message":"Validation Error\(s\) occurred during save\(\):","resolvedMessges":\["Property \[action\] exceeds the maximum size of \[64\]"
++-$!#&	"message":"Validation Error\(s\) occurred during save\(\):","errors":{"action":"Property \[action\] of class \[class marketplace.Intent\] with value
+a-@+$!#&_^.	"message":"Validation Error\(s\) occurred during save\(\):","errors":{"action":"Property \[action\] of class \[class marketplace.Intent\] with value
+123/456	"message":"Validation Error\(s\) occurred during save\(\):","errors":{"action":"Property \[action\] of class \[class marketplace.Intent\] with value
+Intent_that_is_64_characters_long_Intent_that_is_64_characters_long	"message":"Validation Error\(s\) occurred during save\(\):","errors":{"action":\["action exceeds the maximum size of 64","Property \[action\] of class \[class marketplace.Intent\] with value

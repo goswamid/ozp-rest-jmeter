@@ -651,7 +651,7 @@ every HTTP request sent during the tests
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="701489121">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;\[title\] is a required field. Please supply a value.&quot;</stringProp>
+                <stringProp name="406242462">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;title&quot;:&quot;title is a required field. Please supply a value.&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -916,7 +916,7 @@ every HTTP request sent during the tests
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="-190014519">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Property \[title\] exceeds the maximum size of \[255\]&quot;</stringProp>
+                  <stringProp name="357312701">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;title&quot;:&quot;title exceeds the maximum size of 255&quot;}}</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
@@ -2163,7 +2163,7 @@ every HTTP request sent during the tests
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="1022027966">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Property \[versionName\] exceeds the maximum size of \[255\]&quot;</stringProp>
+                  <stringProp name="-1187978521">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;versionName&quot;:&quot;versionName exceeds the maximum size of 255&quot;}}</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
@@ -2959,7 +2959,7 @@ every HTTP request sent during the tests
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="684660863">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Property \[description\] exceeds the maximum size of \[4,000\]&quot;</stringProp>
+                <stringProp name="-1985706225">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;description&quot;:&quot;description exceeds the maximum size of 4,000&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -3967,7 +3967,7 @@ every HTTP request sent during the tests
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="2104290515">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Property \[descriptionShort\] exceeds the maximum size of \[150\]&quot;</stringProp>
+                <stringProp name="-653241249">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;descriptionShort&quot;:&quot;descriptionShort exceeds the maximum size of 150&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -5752,7 +5752,7 @@ every HTTP request sent during the tests
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-1005459298">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;\[smallImageUrl\] is a required field. Please supply a value.&quot;</stringProp>
+                <stringProp name="233982447">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;screenshots\[0\].smallImageUrl&quot;:&quot;smallImageUrl is a required field. Please supply a value.&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -5867,7 +5867,7 @@ every HTTP request sent during the tests
             <stringProp name="filename">./Listing/URL_Negative_API.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">ss1URLNeg,errorMsg</stringProp>
-            <stringProp name="delimiter">,</stringProp>
+            <stringProp name="delimiter">\t</stringProp>
             <boolProp name="quotedData">false</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
@@ -6675,7 +6675,7 @@ every HTTP request sent during the tests
             <stringProp name="filename">./Listing/URL_Negative_API.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">ss2URLNeg,errorMsg</stringProp>
-            <stringProp name="delimiter">,</stringProp>
+            <stringProp name="delimiter">\t</stringProp>
             <boolProp name="quotedData">false</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
@@ -6784,7 +6784,7 @@ every HTTP request sent during the tests
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;validLaunchUrl&quot;:true,&#xd;
 &#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:${ss2URLNeg},&quot;ordinal&quot;:1,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/g/550/500&quot;}],&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;${ss2URLNeg}&quot;,&quot;ordinal&quot;:1,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/g/550/500&quot;}],&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
 	&quot;title&quot;:&quot;CreateListing_${__Random(1,9000,)}&quot;,&#xd;
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
@@ -7745,7 +7745,7 @@ every HTTP request sent during the tests
             <stringProp name="filename">./Listing/URL_Negative_API.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">smallIconURLNeg,errorMsg</stringProp>
-            <stringProp name="delimiter">,</stringProp>
+            <stringProp name="delimiter">\t</stringProp>
             <boolProp name="quotedData">false</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
@@ -8525,7 +8525,7 @@ every HTTP request sent during the tests
             <stringProp name="filename">./Listing/URL_Negative_API.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">mediumIconURLNeg,errorMsg</stringProp>
-            <stringProp name="delimiter">,</stringProp>
+            <stringProp name="delimiter">\t</stringProp>
             <boolProp name="quotedData">false</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
@@ -8654,7 +8654,7 @@ every HTTP request sent during the tests
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
             <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID}</stringProp>
-            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <stringProp name="HTTPSampler.method">PUT</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
             <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -9323,7 +9323,7 @@ every HTTP request sent during the tests
             <stringProp name="filename">./Listing/URL_Negative_API.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">largeIconURLNeg,errorMsg</stringProp>
-            <stringProp name="delimiter">,</stringProp>
+            <stringProp name="delimiter">\t</stringProp>
             <boolProp name="quotedData">false</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
@@ -10172,7 +10172,7 @@ every HTTP request sent during the tests
             <stringProp name="filename">./Listing/URL_Negative_API.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">xLargeIconURLNeg,errorMsg</stringProp>
-            <stringProp name="delimiter">,</stringProp>
+            <stringProp name="delimiter">\t</stringProp>
             <boolProp name="quotedData">false</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
@@ -10960,7 +10960,7 @@ every HTTP request sent during the tests
             <stringProp name="filename">./Listing/URL_Negative.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">launchURLNeg,errorMsg</stringProp>
-            <stringProp name="delimiter">,</stringProp>
+            <stringProp name="delimiter">\t</stringProp>
             <boolProp name="quotedData">false</boolProp>
             <boolProp name="recycle">false</boolProp>
             <boolProp name="stopThread">true</boolProp>
@@ -11750,7 +11750,7 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="184236189">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Property \[owners\] of class \[class marketplace.Listing\] with value \[\[\]\] does not pass custom validation&quot;</stringProp>
+                <stringProp name="-43402236">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;owners&quot;:&quot;owners does not pass custom validation&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">true</boolProp>
@@ -13138,7 +13138,7 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1937915738">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Property \[requirements\] exceeds the maximum size of \[1,000\]&quot;</stringProp>
+                <stringProp name="997720022">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;requirements&quot;:&quot;requirements exceeds the maximum size of 1,000&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">true</boolProp>
@@ -13922,7 +13922,7 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-1580905150">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Property \[name\] exceeds the maximum size of \[255\]&quot;</stringProp>
+                <stringProp name="-1443842113">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;docUrls\[0\].name&quot;:&quot;name exceeds the maximum size of 255&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">true</boolProp>
@@ -13993,7 +13993,7 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="837285935">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Property \[url\] exceeds the maximum size of \[2,083\]</stringProp>
+                <stringProp name="1868737558">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;docUrls\[0\].url&quot;:&quot;url exceeds the maximum size of 2,083&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">true</boolProp>
@@ -17573,7 +17573,7 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-1087312300">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Property \[whatIsNew\] exceeds the maximum size of \[250\]&quot;</stringProp>
+                <stringProp name="-791700049">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;whatIsNew&quot;:&quot;whatIsNew exceeds the maximum size of 250&quot;}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">true</boolProp>
@@ -18171,7 +18171,7 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
         </IncludeController>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Validate Tags - Negative - Waiting on Requirements" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Validate Tags - Negative" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -18352,8 +18352,7 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="215427073">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Property \[tags\] of class \[class marketplace.Listing\] with value</stringProp>
-                  <stringProp name="-271582827">does not pass custom validation&quot;</stringProp>
+                  <stringProp name="1754463268">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;tags&quot;:&quot;tags does not pass custom validation&quot;}}</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">true</boolProp>
@@ -19441,7 +19440,7 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="1952961435">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Property \[organization\] exceeds the maximum size of \[100\]&quot;</stringProp>
+                  <stringProp name="609783785">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;contacts\[0\].organization&quot;:&quot;organization exceeds the maximum size of 100&quot;}}</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
@@ -19993,7 +19992,7 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="782341661">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;\[email\] is a required field. Please supply a value.&quot;</stringProp>
+                <stringProp name="1889899909">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;contacts\[0\].email&quot;:&quot;email is a required field. Please supply a value.&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -20277,7 +20276,7 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="684401012">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Property \[email\] of class \[class marketplace.Contact\] with value</stringProp>
+                  <stringProp name="650236954">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;contacts\[0\].email&quot;:&quot;Property \[email\] of class \[class marketplace.Contact\] with value</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
@@ -20829,7 +20828,7 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="970567696">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;\[name\] is a required field. Please supply a value.&quot;</stringProp>
+                <stringProp name="-167623756">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;contacts\[0\].name&quot;:&quot;name is a required field. Please supply a value.&quot;}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -21113,7 +21112,7 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="-1614300861">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Property \[name\] exceeds the maximum size of \[100\]&quot;</stringProp>
+                  <stringProp name="359033833">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;contacts\[0\].name&quot;:&quot;name exceeds the maximum size of 100&quot;}}</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
@@ -21951,7 +21950,7 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="-1107259690">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Property \[unsecurePhone\] of class \[class marketplace.Contact\] with value</stringProp>
+                  <stringProp name="-285097737">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;contacts\[0\].unsecurePhone&quot;:&quot;Property \[unsecurePhone\] of class \[class marketplace.Contact\] with </stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
@@ -22789,7 +22788,7 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="-693047793">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Property \[securePhone\] of class \[class marketplace.Contact\] with value</stringProp>
+                  <stringProp name="1402151290">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;contacts\[0\].securePhone&quot;:&quot;Property \[securePhone\] of class \[class marketplace.Contact\] with value</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
@@ -23056,7 +23055,7 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1898832327">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Property \[securePhone\] of class \[class marketplace.Contact\] with value \[null\] does not pass custom validation&quot;,&quot;Property \[unsecurePhone\] of class \[class marketplace.Contact\] with value \[null\] does not pass custom validation&quot;</stringProp>
+                <stringProp name="-621524799">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;contacts\[0\].securePhone&quot;:&quot;securePhone does not pass custom validation&quot;,&quot;contacts\[0\].unsecurePhone&quot;:&quot;unsecurePhone does not pass custom validation&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -24290,7 +24289,15 @@ vars.put(&quot;reqContactTypeTitle&quot;,name);</stringProp>
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;approvalStatus&quot;:&quot;PENDING&quot;,&#xd;
-	&quot;categories&quot;:[&quot;${categoryTitle}&quot;]&#xd;
+	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
+	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
+	&quot;tags&quot;:[&quot;red&quot;],&#xd;
+	&quot;whatIsNew&quot;:&quot;new&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;intents&quot;:[&quot;${intentDataType}/${intentAction}&quot;],&#xd;
+	&quot;descriptionShort&quot;:&quot;short description&quot;&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -24324,8 +24331,7 @@ vars.put(&quot;reqContactTypeTitle&quot;,name);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-817851986">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):</stringProp>
-                <stringProp name="1708054348">Missing required contacts of type\(s\): \[Required ContactType\]&quot;</stringProp>
+                <stringProp name="-431035666">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;contacts&quot;:&quot;Missing required contacts of type\(s\): \[Required ContactType\]&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>

@@ -400,7 +400,7 @@ This will scenarios for CRUD on Type as well as testing the list function.</stri
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="701489121">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;\[title\] is a required field. Please supply a value.&quot;</stringProp>
+              <stringProp name="406242462">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;title&quot;:&quot;title is a required field. Please supply a value.&quot;}}</stringProp>
             </collectionProp>
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
@@ -482,7 +482,7 @@ This will scenarios for CRUD on Type as well as testing the list function.</stri
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-1388943764">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Property \[title\] exceeds the maximum size of \[50\]&quot;</stringProp>
+                <stringProp name="-124414950">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;title&quot;:&quot;title exceeds the maximum size of 50&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -839,7 +839,7 @@ This will scenarios for CRUD on Type as well as testing the list function.</stri
             <stringProp name="shareMode">shareMode.thread</stringProp>
           </CSVDataSet>
           <hashTree/>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Type - Title Negative" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Type - Description Negative" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
@@ -882,7 +882,7 @@ This will scenarios for CRUD on Type as well as testing the list function.</stri
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-124019163">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Property \[description\] exceeds the maximum size of \[255\]&quot;</stringProp>
+                <stringProp name="1526776949">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;description&quot;:&quot;description exceeds the maximum size of 255&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -1230,7 +1230,7 @@ This will scenarios for CRUD on Type as well as testing the list function.</stri
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="701489121">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;\[title\] is a required field. Please supply a value.&quot;</stringProp>
+              <stringProp name="406242462">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;title&quot;:&quot;title is a required field. Please supply a value.&quot;}}</stringProp>
             </collectionProp>
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
@@ -1446,7 +1446,7 @@ This will scenarios for CRUD on Type as well as testing the list function.</stri
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-1388943764">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Property \[title\] exceeds the maximum size of \[50\]&quot;</stringProp>
+                <stringProp name="-124414950">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;title&quot;:&quot;title exceeds the maximum size of 50&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -2086,7 +2086,7 @@ This will scenarios for CRUD on Type as well as testing the list function.</stri
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-124019163">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Property \[description\] exceeds the maximum size of \[255\]&quot;</stringProp>
+                <stringProp name="1526776949">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;description&quot;:&quot;description exceeds the maximum size of 255&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -2287,7 +2287,7 @@ This will scenarios for CRUD on Type as well as testing the list function.</stri
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="1893988628">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Property \[title\] of class \[class marketplace.Type\] with value \[DuplicateType\] must be unique&quot;</stringProp>
+              <stringProp name="-1490202898">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;title&quot;:&quot;DuplicateType is already in use. Please supply a different value.&quot;}}</stringProp>
             </collectionProp>
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
@@ -3248,7 +3248,7 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
           </hashTree>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="OZF-462 - Delete Type with Listing" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Delete Type with Listing" enabled="true">
         <stringProp name="TestPlan.comments">This will verify that an Category can not be deleted if a listing is assigned to that Agency.</stringProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
@@ -3448,7 +3448,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-1748541277">&quot;error&quot;:true,&quot;message&quot;:&quot;Cannot delete organization with associated listings&quot;</stringProp>
+                <stringProp name="-788583026">{&quot;error&quot;:true,&quot;message&quot;:&quot;Attempted to delete type Type with associated listings&quot;}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>

@@ -427,7 +427,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="-95995691">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;\[question\] is a required field. Please supply a value.&quot;</stringProp>
+              <stringProp name="606954618">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;question&quot;:&quot;question is a required field. Please supply a value.&quot;}}</stringProp>
             </collectionProp>
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
@@ -519,7 +519,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-1160715604">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Property \[question\] exceeds the maximum size of \[250\]&quot;</stringProp>
+                <stringProp name="-852726594">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;question&quot;:&quot;question exceeds the maximum size of 250&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -778,7 +778,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="1195184765">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;\[description\] is a required field. Please supply a value.&quot;</stringProp>
+              <stringProp name="856132694">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;description&quot;:&quot;description is a required field. Please supply a value.&quot;}}</stringProp>
             </collectionProp>
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
@@ -870,7 +870,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-42898270">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Property \[description\] exceeds the maximum size of \[500\]&quot;</stringProp>
+                <stringProp name="1607897842">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;description&quot;:&quot;description exceeds the maximum size of 500&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -2177,7 +2177,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="-95995691">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;\[question\] is a required field. Please supply a value.&quot;</stringProp>
+              <stringProp name="606954618">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;question&quot;:&quot;question is a required field. Please supply a value.&quot;}}</stringProp>
             </collectionProp>
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
@@ -2412,7 +2412,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-1160715604">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Property \[question\] exceeds the maximum size of \[250\]&quot;</stringProp>
+                <stringProp name="-852726594">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;question&quot;:&quot;question exceeds the maximum size of 250&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -2871,7 +2871,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="1195184765">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;\[description\] is a required field. Please supply a value.&quot;</stringProp>
+              <stringProp name="856132694">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;description&quot;:&quot;description is a required field. Please supply a value.&quot;}}</stringProp>
             </collectionProp>
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
@@ -3106,7 +3106,7 @@ vars.put(&quot;scorecardID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-42898270">&quot;error&quot;:true,&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;resolvedMessges&quot;:\[&quot;Property \[description\] exceeds the maximum size of \[500\]&quot;</stringProp>
+                <stringProp name="1607897842">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;description&quot;:&quot;description exceeds the maximum size of 500&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
