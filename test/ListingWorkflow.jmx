@@ -249,7 +249,8 @@
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -386,7 +387,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -607,7 +609,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -732,7 +735,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -985,7 +989,8 @@ vars.put(&quot;userName&quot;,&quot;${testUser}&quot;);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -1122,7 +1127,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -1364,7 +1370,8 @@ vars.put(&quot;userName&quot;,&quot;${testUser}&quot;);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -1500,7 +1507,8 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -1744,7 +1752,8 @@ vars.put(&quot;profileName&quot;,username);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -1881,7 +1890,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -2054,7 +2064,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -2225,7 +2236,8 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -2410,7 +2422,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -2539,7 +2552,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -2676,7 +2690,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -2801,7 +2816,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -2930,7 +2946,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -3067,7 +3084,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -3192,7 +3210,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -3365,7 +3384,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -3442,7 +3462,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -3571,7 +3592,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -3708,7 +3730,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -3928,7 +3951,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -4005,7 +4029,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -4134,7 +4159,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -4271,7 +4297,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -4398,7 +4425,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -4525,7 +4553,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -4650,7 +4679,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -4777,7 +4807,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -4999,7 +5030,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -5126,7 +5158,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -5253,7 +5286,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -5378,7 +5412,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -5503,7 +5538,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -5630,7 +5666,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
 	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -6309,7 +6346,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="OZF-436 - Submitted Listing - Missing Required Fields" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Submitted Listing - Missing Required Fields" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Listing - Draft for Submitting" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -6434,7 +6471,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
                 <stringProp name="1188161301">&quot;Value required for field imageXlargeUrl on non-draft listings&quot;</stringProp>
                 <stringProp name="454479705">&quot;owners does not pass custom validation&quot;,</stringProp>
                 <stringProp name="-529970925">&quot;Value required for field screenshots on non-draft listings&quot;</stringProp>
-                <stringProp name="-646467723">&quot;Value required for field tags on non-draft listings</stringProp>
+                <stringProp name="-451116654">&quot;tags does not pass custom validation&quot;,</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -6707,7 +6744,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-298797757">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;tags&quot;:&quot;Value required for field tags on non-draft listings&quot;}}</stringProp>
+                <stringProp name="1754463268">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;tags&quot;:&quot;tags does not pass custom validation&quot;}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -8471,7 +8508,7 @@ vars.put(&quot;reqContactTypeTitle&quot;,name);</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="OZF-436 - Submit Listing - Missing Non Required Fields" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Submit Listing - Missing Non Required Fields" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Listing - Draft for Submitting" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
