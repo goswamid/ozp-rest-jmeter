@@ -2016,7 +2016,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
           </hashTree>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="TODO - Change Log for Required Listings" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Change Log for Required Listings" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -2097,7 +2097,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="868397630">&quot;id&quot;:\d+,</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -2108,7 +2108,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID1</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+),</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -2184,7 +2184,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="868397630">&quot;id&quot;:\d+,</stringProp>
                 <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -2195,7 +2195,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID2</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+),</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -2271,7 +2271,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="868397630">&quot;id&quot;:\d+,</stringProp>
                 <stringProp name="-1442106721">&quot;title&quot;:&quot;Listing3&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -2282,7 +2282,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID3</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+),</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -2325,7 +2325,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
-	&quot;relationships&quot;:[{&quot;relationshipType&quot;:&quot;REQUIRE&quot;,&quot;relatedItems&quot;:[{&quot;id&quot;:${listingID1}},{&quot;id&quot;:${listingID2}},{&quot;id&quot;:${listingID3}}]}]&#xd;
+	&quot;required&quot;:[{&quot;id&quot;:${listingID1}},{&quot;id&quot;:${listingID2}},{&quot;id&quot;:${listingID3}}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -2359,7 +2359,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="868397630">&quot;id&quot;:\d+,</stringProp>
                 <stringProp name="-1442106690">&quot;title&quot;:&quot;Listing4&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -2370,7 +2370,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID4</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+),</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -2403,7 +2403,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID4}/requiredlistings</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID4}/requiredListings</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2425,7 +2425,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="868397630">&quot;id&quot;:\d+,</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
                 <stringProp name="-1442106721">&quot;title&quot;:&quot;Listing3&quot;</stringProp>
@@ -2467,9 +2467,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="125876390">&quot;description&quot;:&quot;Added as a requirement&quot;,&quot;title&quot;:&quot;ADDRELATEDTOITEM&quot;</stringProp>
+                <stringProp name="-583488136">&quot;action&quot;:&quot;ADDRELATEDTOITEM&quot;</stringProp>
                 <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                <stringProp name="624003657">&quot;relatedItems&quot;:\[\{&quot;id&quot;:${listingID4},&quot;title&quot;:&quot;Listing4&quot;\}\],</stringProp>
+                <stringProp name="-167049383">&quot;listings&quot;:\[&quot;Listing4&quot;\]</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -2508,9 +2508,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="125876390">&quot;description&quot;:&quot;Added as a requirement&quot;,&quot;title&quot;:&quot;ADDRELATEDTOITEM&quot;</stringProp>
+                <stringProp name="-583488136">&quot;action&quot;:&quot;ADDRELATEDTOITEM&quot;</stringProp>
                 <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                <stringProp name="624003657">&quot;relatedItems&quot;:\[\{&quot;id&quot;:${listingID4},&quot;title&quot;:&quot;Listing4&quot;\}\],</stringProp>
+                <stringProp name="-167049383">&quot;listings&quot;:\[&quot;Listing4&quot;\]</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -2549,9 +2549,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="125876390">&quot;description&quot;:&quot;Added as a requirement&quot;,&quot;title&quot;:&quot;ADDRELATEDTOITEM&quot;</stringProp>
+                <stringProp name="-583488136">&quot;action&quot;:&quot;ADDRELATEDTOITEM&quot;</stringProp>
                 <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                <stringProp name="624003657">&quot;relatedItems&quot;:\[\{&quot;id&quot;:${listingID4},&quot;title&quot;:&quot;Listing4&quot;\}\],</stringProp>
+                <stringProp name="-167049383">&quot;listings&quot;:\[&quot;Listing4&quot;\]</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -2590,13 +2590,12 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1910935030">&quot;description&quot;:&quot;New requirements added&quot;,&quot;title&quot;:&quot;ADDRELATEDITEMS&quot;</stringProp>
+                <stringProp name="779127902">&quot;action&quot;:&quot;ADDRELATEDITEMS&quot;</stringProp>
                 <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                <stringProp name="923447789">&quot;relatedItems&quot;:\[\{</stringProp>
-                <stringProp name="584941582">&quot;id&quot;:${listingID3},&quot;title&quot;:&quot;Listing3&quot;</stringProp>
-                <stringProp name="373590638">&quot;id&quot;:${listingID2},&quot;title&quot;:&quot;Listing2&quot;</stringProp>
-                <stringProp name="162239694">&quot;id&quot;:${listingID1},&quot;title&quot;:&quot;Listing1&quot;</stringProp>
-                <stringProp name="2121102136">&quot;total&quot;:2</stringProp>
+                <stringProp name="-157876760">&quot;listings&quot;:\[</stringProp>
+                <stringProp name="-1597549165">&quot;Listing1&quot;</stringProp>
+                <stringProp name="-1597549134">&quot;Listing2&quot;</stringProp>
+                <stringProp name="-1597549103">&quot;Listing3&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -2632,7 +2631,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;type&quot;:&quot;${typeTitle}&quot;,&#xd;
 	&quot;isPublished&quot;:true,&#xd;
 	&quot;categories&quot;:[&quot;${categoryTitle}&quot;],&#xd;
-	&quot;relationships&quot;:[{&quot;relationshipType&quot;:&quot;REQUIRE&quot;,&quot;relatedItems&quot;:[{&quot;id&quot;:${listingID1}}]}],&#xd;
+	&quot;required&quot;:[{&quot;id&quot;:${listingID1}}],&#xd;
 	&quot;uuid&quot;:&quot;${listingUuid4}&quot;&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -2667,8 +2666,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="868397630">&quot;id&quot;:\d+,</stringProp>
                 <stringProp name="-1442106690">&quot;title&quot;:&quot;Listing4&quot;</stringProp>
+                <stringProp name="-1643488388">&quot;required&quot;:\[{&quot;id&quot;:${listingID1}}\]</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -2693,7 +2693,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID4}/requiredlistings</stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID4}/requiredListings</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2715,7 +2715,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="868397630">&quot;id&quot;:\d+,</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -2765,13 +2765,11 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="125876390">&quot;description&quot;:&quot;Added as a requirement&quot;,&quot;title&quot;:&quot;ADDRELATEDTOITEM&quot;</stringProp>
-                <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                <stringProp name="624003657">&quot;relatedItems&quot;:\[\{&quot;id&quot;:${listingID4},&quot;title&quot;:&quot;Listing4&quot;\}\],</stringProp>
+                <stringProp name="594157419">&quot;action&quot;:&quot;REMOVERELATEDITEMS</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">2</intProp>
+              <intProp name="Assertion.test_type">6</intProp>
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
@@ -2806,9 +2804,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1030511697">&quot;description&quot;:&quot;Removed as a requirement&quot;,&quot;title&quot;:&quot;REMOVERELATEDTOITEM&quot;</stringProp>
+                <stringProp name="1549439395">&quot;action&quot;:&quot;REMOVERELATEDTOITEM</stringProp>
                 <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                <stringProp name="624003657">&quot;relatedItems&quot;:\[\{&quot;id&quot;:${listingID4},&quot;title&quot;:&quot;Listing4&quot;\}\],</stringProp>
+                <stringProp name="-167049383">&quot;listings&quot;:\[&quot;Listing4&quot;\]</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -2847,9 +2845,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1030511697">&quot;description&quot;:&quot;Removed as a requirement&quot;,&quot;title&quot;:&quot;REMOVERELATEDTOITEM&quot;</stringProp>
+                <stringProp name="1549439395">&quot;action&quot;:&quot;REMOVERELATEDTOITEM</stringProp>
                 <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                <stringProp name="624003657">&quot;relatedItems&quot;:\[\{&quot;id&quot;:${listingID4},&quot;title&quot;:&quot;Listing4&quot;\}\],</stringProp>
+                <stringProp name="-167049383">&quot;listings&quot;:\[&quot;Listing4&quot;\]</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -2888,18 +2886,24 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1910935030">&quot;description&quot;:&quot;New requirements added&quot;,&quot;title&quot;:&quot;ADDRELATEDITEMS&quot;</stringProp>
+                <stringProp name="594157419">&quot;action&quot;:&quot;REMOVERELATEDITEMS</stringProp>
                 <stringProp name="-139454680">&quot;changeDetails&quot;:\[\]</stringProp>
-                <stringProp name="923447789">&quot;relatedItems&quot;:\[\{</stringProp>
-                <stringProp name="584941582">&quot;id&quot;:${listingID3},&quot;title&quot;:&quot;Listing3&quot;</stringProp>
-                <stringProp name="373590638">&quot;id&quot;:${listingID2},&quot;title&quot;:&quot;Listing2&quot;</stringProp>
-                <stringProp name="162239694">&quot;id&quot;:${listingID1},&quot;title&quot;:&quot;Listing1&quot;</stringProp>
-                <stringProp name="2121102137">&quot;total&quot;:3</stringProp>
-                <stringProp name="-62868897">&quot;description&quot;:&quot;Requirements removed&quot;,&quot;title&quot;:&quot;REMOVERELATEDITEMS&quot;</stringProp>
+                <stringProp name="-1597549103">&quot;Listing3&quot;</stringProp>
+                <stringProp name="-1597549134">&quot;Listing2&quot;</stringProp>
+                <stringProp name="-157876760">&quot;listings&quot;:\[</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
               <intProp name="Assertion.test_type">2</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-1597549165">&quot;Listing1&quot;</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">6</intProp>
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
