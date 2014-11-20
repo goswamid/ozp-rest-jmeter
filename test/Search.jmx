@@ -808,6 +808,79 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
                 <boolProp name="IfController.evaluateAll">false</boolProp>
               </IfController>
               <hashTree>
+                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Org Approve Listings - ${title}" enabled="false">
+                  <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                  <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                    <collectionProp name="Arguments.arguments">
+                      <elementProp name="" elementType="HTTPArgument">
+                        <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                        <stringProp name="Argument.value">{&#xd;
+	&quot;id&quot;:${listingID},&#xd;
+	&quot;title&quot;:&quot;${title}&quot;,&#xd;
+	&quot;type&quot;:&quot;${type}&quot;,&#xd;
+	&quot;versionName&quot;:&quot;${version}&quot;,&#xd;
+	&quot;description&quot;:&quot;${description}&quot;,&#xd;
+	&quot;descriptionShort&quot;:&quot;${shortDescription}&quot;,&#xd;
+	&quot;categories&quot;:${category},&#xd;
+	&quot;screenshots&quot;:${screenshots},&#xd;
+	&quot;imageSmallUrl&quot;:&quot;${smallIcon}&quot;,&#xd;
+	&quot;imageMediumUrl&quot;:&quot;${mediumIcon}&quot;,&#xd;
+	&quot;imageLargeUrl&quot;:&quot;${largeIcon}&quot;,&#xd;
+	&quot;imageXlargeUrl&quot;:&quot;${xLargeIcon}&quot;,&#xd;
+	&quot;launchUrl&quot;:&quot;${launchURL}&quot;,&#xd;
+	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
+	&quot;requirements&quot;:&quot;${requirements}&quot;,&#xd;
+	&quot;docUrls&quot;:${docURLs},&#xd;
+	&quot;agency&quot;:&quot;${agency}&quot;,&#xd;
+	&quot;isFeatured&quot;:${isFeatured},&#xd;
+	&quot;isEnabled&quot;:${isEnabled},&#xd;
+	&quot;whatIsNew&quot;:&quot;${whatsNew}&quot;,&#xd;
+	&quot;tags&quot;:${tags},&#xd;
+	&quot;contacts&quot;:[],&#xd;
+	&quot;intents&quot;:${intents},&#xd;
+	&quot;approvalStatus&quot;:&quot;APPROVED_ORG&quot;&#xd;
+}</stringProp>
+                        <stringProp name="Argument.metadata">=</stringProp>
+                      </elementProp>
+                    </collectionProp>
+                  </elementProp>
+                  <stringProp name="HTTPSampler.domain"></stringProp>
+                  <stringProp name="HTTPSampler.port"></stringProp>
+                  <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                  <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                  <stringProp name="HTTPSampler.protocol"></stringProp>
+                  <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                  <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID}</stringProp>
+                  <stringProp name="HTTPSampler.method">PUT</stringProp>
+                  <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                  <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                  <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                  <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                  <stringProp name="HTTPSampler.implementation">Java</stringProp>
+                  <boolProp name="HTTPSampler.monitor">false</boolProp>
+                  <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                </HTTPSamplerProxy>
+                <hashTree>
+                  <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code" enabled="true">
+                    <collectionProp name="Asserion.test_strings">
+                      <stringProp name="49586">200</stringProp>
+                    </collectionProp>
+                    <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+                    <boolProp name="Assertion.assume_success">false</boolProp>
+                    <intProp name="Assertion.test_type">8</intProp>
+                  </ResponseAssertion>
+                  <hashTree/>
+                  <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                    <collectionProp name="Asserion.test_strings">
+                      <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
+                      <stringProp name="-269874734">&quot;title&quot;:&quot;${title}&quot;</stringProp>
+                    </collectionProp>
+                    <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                    <boolProp name="Assertion.assume_success">false</boolProp>
+                    <intProp name="Assertion.test_type">2</intProp>
+                  </ResponseAssertion>
+                  <hashTree/>
+                </hashTree>
                 <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Approve Listings - ${title}" enabled="true">
                   <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
                   <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
