@@ -6999,7 +6999,8 @@ every HTTP request sent during the tests
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="868397630">&quot;id&quot;:\d+,</stringProp>
-                <stringProp name="-446259362">&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/g/650/600&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/g/550/500&quot;</stringProp>
+                <stringProp name="824522122">&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/g/650/600&quot;</stringProp>
+                <stringProp name="-399371520">&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/g/550/500&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -24331,7 +24332,7 @@ vars.put(&quot;reqContactTypeTitle&quot;,name);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-431035666">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;contacts&quot;:&quot;Missing required contacts of type\(s\): \[Required ContactType\]&quot;}}</stringProp>
+                <stringProp name="-756268346">&quot;error&quot;:true,&quot;message&quot;:&quot;Missing contacts for required types: \[Required ContactType\]&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
