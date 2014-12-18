@@ -423,7 +423,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                  <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                   <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                   <stringProp name="1776666319">&quot;folder&quot;:&quot;${result}</stringProp>
                 </collectionProp>
@@ -435,7 +435,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
               <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
                 <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                 <stringProp name="RegexExtractor.refname">listingID1</stringProp>
-                <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
                 <stringProp name="RegexExtractor.template">$1$</stringProp>
                 <stringProp name="RegexExtractor.default">unknown</stringProp>
                 <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -481,7 +481,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                  <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                   <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                   <stringProp name="1776666319">&quot;folder&quot;:&quot;${result}</stringProp>
                 </collectionProp>
@@ -734,7 +734,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID1</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -797,7 +797,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 <stringProp name="248925423">&quot;folder&quot;:null</stringProp>
               </collectionProp>
@@ -809,7 +809,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID1</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -855,7 +855,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 <stringProp name="248925423">&quot;folder&quot;:null</stringProp>
               </collectionProp>
@@ -1119,7 +1119,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
               <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
                 <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                 <stringProp name="RegexExtractor.refname">listingID1</stringProp>
-                <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
                 <stringProp name="RegexExtractor.template">$1$</stringProp>
                 <stringProp name="RegexExtractor.default">unknown</stringProp>
                 <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -1342,7 +1342,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID1</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -1431,7 +1431,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID2</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -1520,7 +1520,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID3</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -1609,7 +1609,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID4</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -1672,7 +1672,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -1725,7 +1725,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -1778,7 +1778,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106721">&quot;title&quot;:&quot;Listing3&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -1831,7 +1831,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106690">&quot;title&quot;:&quot;Listing4&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -1879,7 +1879,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 <stringProp name="248925423">&quot;folder&quot;:null</stringProp>
                 <stringProp name="-323614238">&quot;title&quot;:&quot;Listing2</stringProp>
@@ -2435,7 +2435,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID1</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -2524,7 +2524,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID2</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -2613,7 +2613,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID3</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -2702,7 +2702,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID4</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -2765,7 +2765,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -2818,7 +2818,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -2871,7 +2871,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106721">&quot;title&quot;:&quot;Listing3&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -2924,7 +2924,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106690">&quot;title&quot;:&quot;Listing4&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -2972,7 +2972,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 <stringProp name="-2061876599">&quot;folder&quot;:&quot;folder 1&quot;</stringProp>
                 <stringProp name="-323614238">&quot;title&quot;:&quot;Listing2</stringProp>
@@ -3548,7 +3548,7 @@ while (c &lt; 4){
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID1</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -3637,7 +3637,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID2</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -3726,7 +3726,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID3</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -3815,7 +3815,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID4</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -3878,7 +3878,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -3931,7 +3931,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -3984,7 +3984,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106721">&quot;title&quot;:&quot;Listing3&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -4037,7 +4037,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106690">&quot;title&quot;:&quot;Listing4&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -4085,7 +4085,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 <stringProp name="-2061876599">&quot;folder&quot;:&quot;folder 1&quot;</stringProp>
                 <stringProp name="-323614238">&quot;title&quot;:&quot;Listing2</stringProp>
@@ -4672,7 +4672,7 @@ while (c &lt; 4){
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID1</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -4761,7 +4761,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID2</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -4850,7 +4850,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID3</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -4939,7 +4939,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID4</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -5028,7 +5028,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID5</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -5091,7 +5091,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -5144,7 +5144,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -5197,7 +5197,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106721">&quot;title&quot;:&quot;Listing3&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -5250,7 +5250,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106690">&quot;title&quot;:&quot;Listing4&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -5303,7 +5303,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106659">&quot;title&quot;:&quot;Listing5&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -5351,7 +5351,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 <stringProp name="-2061876599">&quot;folder&quot;:&quot;folder 1&quot;</stringProp>
                 <stringProp name="-323614238">&quot;title&quot;:&quot;Listing2</stringProp>
@@ -6273,7 +6273,7 @@ while (c &lt; 5){
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID1</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -6336,7 +6336,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -6490,7 +6490,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 <stringProp name="248925423">&quot;folder&quot;:null</stringProp>
               </collectionProp>
@@ -6736,7 +6736,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID1</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -6799,7 +6799,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -6847,7 +6847,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 <stringProp name="248925423">&quot;folder&quot;:null</stringProp>
               </collectionProp>
@@ -7093,7 +7093,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
               <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
                 <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                 <stringProp name="RegexExtractor.refname">listingID1</stringProp>
-                <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
                 <stringProp name="RegexExtractor.template">$1$</stringProp>
                 <stringProp name="RegexExtractor.default">unknown</stringProp>
                 <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -7156,7 +7156,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                  <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                   <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                   <stringProp name="-57908631">&quot;folder&quot;:&quot;Folder 1&quot;</stringProp>
                 </collectionProp>
@@ -7210,7 +7210,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                  <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                   <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                   <stringProp name="1776666319">&quot;folder&quot;:&quot;${result}</stringProp>
                 </collectionProp>
@@ -7259,7 +7259,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                  <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                   <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                   <stringProp name="1776666319">&quot;folder&quot;:&quot;${result}</stringProp>
                 </collectionProp>
@@ -7506,7 +7506,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID1</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -7569,7 +7569,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 <stringProp name="-57908631">&quot;folder&quot;:&quot;Folder 1&quot;</stringProp>
               </collectionProp>
@@ -7623,7 +7623,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 <stringProp name="248925423">&quot;folder&quot;:null</stringProp>
               </collectionProp>
@@ -7672,7 +7672,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 <stringProp name="248925423">&quot;folder&quot;:null</stringProp>
               </collectionProp>
@@ -7936,7 +7936,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
               <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
                 <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                 <stringProp name="RegexExtractor.refname">listingID1</stringProp>
-                <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
                 <stringProp name="RegexExtractor.template">$1$</stringProp>
                 <stringProp name="RegexExtractor.default">unknown</stringProp>
                 <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -7999,7 +7999,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                  <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                   <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                   <stringProp name="-57908631">&quot;folder&quot;:&quot;Folder 1&quot;</stringProp>
                 </collectionProp>
@@ -8100,7 +8100,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                  <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                   <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                   <stringProp name="-57908631">&quot;folder&quot;:&quot;Folder 1&quot;</stringProp>
                 </collectionProp>
@@ -8300,7 +8300,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID1</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -8389,7 +8389,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID2</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -8478,7 +8478,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID3</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -8567,7 +8567,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID4</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -8630,7 +8630,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -8683,7 +8683,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -8736,7 +8736,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106721">&quot;title&quot;:&quot;Listing3&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -8789,7 +8789,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106690">&quot;title&quot;:&quot;Listing4&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -8859,7 +8859,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 <stringProp name="248925423">&quot;folder&quot;:null</stringProp>
               </collectionProp>
@@ -8908,7 +8908,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 <stringProp name="248925423">&quot;folder&quot;:null</stringProp>
                 <stringProp name="-323614238">&quot;title&quot;:&quot;Listing2</stringProp>
@@ -9498,7 +9498,7 @@ if (name3.listing.title !== &quot;Listing1&quot;){
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID1</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -9587,7 +9587,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID2</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -9676,7 +9676,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID3</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -9765,7 +9765,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID4</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -9828,7 +9828,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -9881,7 +9881,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -9934,7 +9934,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106721">&quot;title&quot;:&quot;Listing3&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -9987,7 +9987,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106690">&quot;title&quot;:&quot;Listing4&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -10057,7 +10057,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 <stringProp name="248925423">&quot;folder&quot;:null</stringProp>
               </collectionProp>
@@ -10106,7 +10106,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 <stringProp name="248925423">&quot;folder&quot;:null</stringProp>
                 <stringProp name="-323614238">&quot;title&quot;:&quot;Listing2</stringProp>
@@ -10692,7 +10692,7 @@ while (c &lt; 4){
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID1</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -10781,7 +10781,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID2</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -10870,7 +10870,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID3</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -10959,7 +10959,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID4</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -11022,7 +11022,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -11075,7 +11075,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -11128,7 +11128,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106721">&quot;title&quot;:&quot;Listing3&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -11181,7 +11181,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106690">&quot;title&quot;:&quot;Listing4&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -11251,7 +11251,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 <stringProp name="-2061876599">&quot;folder&quot;:&quot;folder 1&quot;</stringProp>
                 <stringProp name="-2061876568">&quot;folder&quot;:&quot;folder 2&quot;</stringProp>
@@ -11301,7 +11301,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 <stringProp name="-2061876599">&quot;folder&quot;:&quot;folder 1&quot;</stringProp>
                 <stringProp name="-323614238">&quot;title&quot;:&quot;Listing2</stringProp>
@@ -11888,7 +11888,7 @@ while (c &lt; 4){
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID1</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -11977,7 +11977,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID2</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -12066,7 +12066,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID3</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -12155,7 +12155,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID4</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -12244,7 +12244,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID5</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -12307,7 +12307,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -12360,7 +12360,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -12413,7 +12413,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106721">&quot;title&quot;:&quot;Listing3&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -12466,7 +12466,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106690">&quot;title&quot;:&quot;Listing4&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -12519,7 +12519,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106659">&quot;title&quot;:&quot;Listing5&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -12594,7 +12594,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 <stringProp name="-2061876599">&quot;folder&quot;:&quot;folder 1&quot;</stringProp>
                 <stringProp name="-2061876568">&quot;folder&quot;:&quot;folder 2&quot;</stringProp>
@@ -12644,7 +12644,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 <stringProp name="-2061876599">&quot;folder&quot;:&quot;folder 1&quot;</stringProp>
                 <stringProp name="-323614238">&quot;title&quot;:&quot;Listing2</stringProp>
@@ -13312,7 +13312,7 @@ while (c &lt; 5){
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID1</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -13401,7 +13401,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID2</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -13490,7 +13490,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID3</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -13579,7 +13579,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID4</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -13642,7 +13642,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -13695,7 +13695,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -13748,7 +13748,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106721">&quot;title&quot;:&quot;Listing3&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -13801,7 +13801,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106690">&quot;title&quot;:&quot;Listing4&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -14355,7 +14355,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID1</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -14444,7 +14444,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID2</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -14533,7 +14533,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID3</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -14622,7 +14622,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID4</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -14711,7 +14711,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID5</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -14774,7 +14774,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -14827,7 +14827,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -14880,7 +14880,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106721">&quot;title&quot;:&quot;Listing3&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -14933,7 +14933,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106690">&quot;title&quot;:&quot;Listing4&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -14986,7 +14986,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106659">&quot;title&quot;:&quot;Listing5&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -15061,7 +15061,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 <stringProp name="-2061876599">&quot;folder&quot;:&quot;folder 1&quot;</stringProp>
                 <stringProp name="-2061876568">&quot;folder&quot;:&quot;folder 2&quot;</stringProp>
@@ -15111,7 +15111,7 @@ vars.put(&quot;listingID5&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 <stringProp name="-2061876599">&quot;folder&quot;:&quot;folder 1&quot;</stringProp>
                 <stringProp name="-323614238">&quot;title&quot;:&quot;Listing2</stringProp>
@@ -15794,7 +15794,7 @@ if (name4.folder !== &quot;folder 1&quot;){
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID1</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -15857,7 +15857,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -15964,7 +15964,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 <stringProp name="248925423">&quot;folder&quot;:null</stringProp>
               </collectionProp>
@@ -16210,7 +16210,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID1</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -16299,7 +16299,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID2</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -16388,7 +16388,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID3</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -16477,7 +16477,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID4</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -16540,7 +16540,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -16593,7 +16593,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -16646,7 +16646,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106721">&quot;title&quot;:&quot;Listing3&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -16716,7 +16716,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 <stringProp name="248925423">&quot;folder&quot;:null</stringProp>
                 <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
@@ -16768,7 +16768,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 <stringProp name="248925423">&quot;folder&quot;:null</stringProp>
                 <stringProp name="-323614238">&quot;title&quot;:&quot;Listing2</stringProp>
@@ -17324,7 +17324,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID1</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -17413,7 +17413,7 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID2</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -17502,7 +17502,7 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID3</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -17591,7 +17591,7 @@ vars.put(&quot;listingID3&quot;,res[6]);</stringProp>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">listingID4</stringProp>
-              <stringProp name="RegexExtractor.regex">,&quot;id&quot;:([\d]+),</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:([\d]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
               <stringProp name="RegexExtractor.default">unknown</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -17654,7 +17654,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -17707,7 +17707,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -17760,7 +17760,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106721">&quot;title&quot;:&quot;Listing3&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -17813,7 +17813,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106690">&quot;title&quot;:&quot;Listing4&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -17878,7 +17878,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 <stringProp name="-57908631">&quot;folder&quot;:&quot;Folder 1&quot;</stringProp>
                 <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
@@ -17938,7 +17938,7 @@ vars.put(&quot;listingID4&quot;,res[6]);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="811738002">,&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
                 <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
                 <stringProp name="-57908631">&quot;folder&quot;:&quot;Folder 1&quot;</stringProp>
                 <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
