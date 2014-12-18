@@ -422,9 +422,6 @@
                 <stringProp name="-1942803752">&quot;title&quot;:&quot;Agency 1&quot;</stringProp>
                 <stringProp name="-1942803721">&quot;title&quot;:&quot;Agency 2&quot;</stringProp>
                 <stringProp name="-1942803690">&quot;title&quot;:&quot;Agency 3&quot;</stringProp>
-                <stringProp name="-1354134608">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Captain-America-icon.png&quot;</stringProp>
-                <stringProp name="-1369979992">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Captain-America-Shield-icon.png&quot;</stringProp>
-                <stringProp name="1779984717">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Captain-America-Shield-2-icon.png&quot;</stringProp>
                 <stringProp name="2141585194">&quot;shortName&quot;:&quot;sName1&quot;</stringProp>
                 <stringProp name="2141585225">&quot;shortName&quot;:&quot;sName2&quot;</stringProp>
                 <stringProp name="2141585256">&quot;shortName&quot;:&quot;sName3&quot;</stringProp>
@@ -540,7 +537,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
-                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="2134919733">&quot;title&quot;:&quot;${result}</stringProp>
                 <stringProp name="-208011287">&quot;shortName&quot;:&quot;sName&quot;</stringProp>
               </collectionProp>
@@ -583,7 +579,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="1607886001">&quot;id&quot;:${agencyID}</stringProp>
-                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="2134919733">&quot;title&quot;:&quot;${result}</stringProp>
                 <stringProp name="-208011287">&quot;shortName&quot;:&quot;sName&quot;</stringProp>
               </collectionProp>
@@ -884,7 +879,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
-                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="-151903916">&quot;title&quot;:&quot;Duplicate Agency&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -976,7 +970,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
           </hashTree>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Agency - Icon URL Positive" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Agency - Icon URL Positive" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -1156,7 +1150,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
           </hashTree>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Agency - Icon URL Null" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Agency - Icon URL Null" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -1323,7 +1317,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
           </hashTree>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Agency - Icon URL Negative" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Agency - Icon URL Negative" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -1512,7 +1506,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
-                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
                 <stringProp name="-1642204898">&quot;shortName&quot;:&quot;${result}&quot;</stringProp>
               </collectionProp>
@@ -1555,7 +1548,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="1607886001">&quot;id&quot;:${agencyID}</stringProp>
-                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
                 <stringProp name="-1642204898">&quot;shortName&quot;:&quot;${result}&quot;</stringProp>
               </collectionProp>
@@ -1854,7 +1846,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
-                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
                 <stringProp name="-1553581384">&quot;shortName&quot;:&quot;DName&quot;</stringProp>
               </collectionProp>
@@ -2027,7 +2018,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
-                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
                 <stringProp name="-208011287">&quot;shortName&quot;:&quot;sName&quot;</stringProp>
               </collectionProp>
@@ -2080,7 +2070,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
-                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="-865515516">&quot;title&quot;:&quot;Updated Agency&quot;</stringProp>
                 <stringProp name="-208011287">&quot;shortName&quot;:&quot;sName&quot;</stringProp>
               </collectionProp>
@@ -2123,7 +2112,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="1607886001">&quot;id&quot;:${agencyID}</stringProp>
-                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="-865515516">&quot;title&quot;:&quot;Updated Agency&quot;</stringProp>
                 <stringProp name="-208011287">&quot;shortName&quot;:&quot;sName&quot;</stringProp>
               </collectionProp>
@@ -2247,7 +2235,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
-                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
                 <stringProp name="-208011287">&quot;shortName&quot;:&quot;sName&quot;</stringProp>
               </collectionProp>
@@ -2341,7 +2328,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="1607886001">&quot;id&quot;:${agencyID}</stringProp>
-                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
                 <stringProp name="-208011287">&quot;shortName&quot;:&quot;sName&quot;</stringProp>
               </collectionProp>
@@ -2478,7 +2464,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
-                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
                 <stringProp name="-208011287">&quot;shortName&quot;:&quot;sName&quot;</stringProp>
               </collectionProp>
@@ -2572,7 +2557,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="1607886001">&quot;id&quot;:${agencyID}</stringProp>
-                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
                 <stringProp name="-208011287">&quot;shortName&quot;:&quot;sName&quot;</stringProp>
               </collectionProp>
@@ -2615,7 +2599,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
           </hashTree>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Update Agency - Icon URL Positive" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Update Agency - Icon URL Positive" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -2696,7 +2680,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
-                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
                 <stringProp name="-208011287">&quot;shortName&quot;:&quot;sName&quot;</stringProp>
               </collectionProp>
@@ -2749,7 +2732,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
-                <stringProp name="-102320307">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Rulk-Angry-icon.png&quot;</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -2791,7 +2773,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="1607886001">&quot;id&quot;:${agencyID}</stringProp>
-                <stringProp name="-102320307">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Rulk-Angry-icon.png&quot;</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
                 <stringProp name="-208011287">&quot;shortName&quot;:&quot;sName&quot;</stringProp>
               </collectionProp>
@@ -2834,7 +2815,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
           </hashTree>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Update Agency - Icon URL Null" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Update Agency - Icon URL Null" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -2915,7 +2896,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
-                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
                 <stringProp name="-208011287">&quot;shortName&quot;:&quot;sName&quot;</stringProp>
               </collectionProp>
@@ -3054,7 +3034,7 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
           </hashTree>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Update Agency - Icon URL Negative" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Update Agency - Icon URL Negative" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -3148,7 +3128,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
-                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
                 <stringProp name="-208011287">&quot;shortName&quot;:&quot;sName&quot;</stringProp>
               </collectionProp>
@@ -3242,7 +3221,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="1607886001">&quot;id&quot;:${agencyID}</stringProp>
-                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
                 <stringProp name="-208011287">&quot;shortName&quot;:&quot;sName&quot;</stringProp>
               </collectionProp>
@@ -3379,7 +3357,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
-                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
                 <stringProp name="-208011287">&quot;shortName&quot;:&quot;sName&quot;</stringProp>
               </collectionProp>
@@ -3441,7 +3418,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
-                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
                 <stringProp name="-1642204898">&quot;shortName&quot;:&quot;${result}&quot;</stringProp>
               </collectionProp>
@@ -3484,7 +3460,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="1607886001">&quot;id&quot;:${agencyID}</stringProp>
-                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
                 <stringProp name="-1642204898">&quot;shortName&quot;:&quot;${result}&quot;</stringProp>
               </collectionProp>
@@ -3608,7 +3583,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
-                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
                 <stringProp name="-208011287">&quot;shortName&quot;:&quot;sName&quot;</stringProp>
               </collectionProp>
@@ -3701,7 +3675,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="1607886001">&quot;id&quot;:${agencyID}</stringProp>
-                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
                 <stringProp name="-208011287">&quot;shortName&quot;:&quot;sName&quot;</stringProp>
               </collectionProp>
@@ -3838,7 +3811,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
-                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
                 <stringProp name="-208011287">&quot;shortName&quot;:&quot;sName&quot;</stringProp>
               </collectionProp>
@@ -3932,7 +3904,6 @@ ${__setProperty(agency3,${agency3temp},)};</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="1607886001">&quot;id&quot;:${agencyID}</stringProp>
-                <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                 <stringProp name="776512707">&quot;title&quot;:&quot;Test Agency&quot;</stringProp>
                 <stringProp name="-208011287">&quot;shortName&quot;:&quot;sName&quot;</stringProp>
               </collectionProp>
@@ -4049,9 +4020,6 @@ vars.put(&quot;userName&quot;,&quot;${testUser}&quot;);</stringProp>
                 <stringProp name="-1942803752">&quot;title&quot;:&quot;Agency 1&quot;</stringProp>
                 <stringProp name="-1942803721">&quot;title&quot;:&quot;Agency 2&quot;</stringProp>
                 <stringProp name="-1942803690">&quot;title&quot;:&quot;Agency 3&quot;</stringProp>
-                <stringProp name="-1354134608">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Captain-America-icon.png&quot;</stringProp>
-                <stringProp name="-1369979992">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Captain-America-Shield-icon.png&quot;</stringProp>
-                <stringProp name="1779984717">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Captain-America-Shield-2-icon.png&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>

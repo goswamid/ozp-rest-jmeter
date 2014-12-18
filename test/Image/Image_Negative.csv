@@ -1,0 +1,4 @@
+sample.bmp	image/bmp	{"error":true,"message":"Could not find extension for image with media type image/bmp"}
+sample.tiff	image/tiff	{"error":true,"message":"Could not find extension for image with media type image/tiff"}
+sample.gif	image/gif	{"error":true,"message":"Could not find extension for image with media type image/gif"}
+LargeImage.png	image/png	{"error":true,"message":"Images cannot be larger than 1 MiB"}
