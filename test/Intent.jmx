@@ -177,6 +177,143 @@ This will scenarios for CRUD on Intents as well as testing the list function.</s
         <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Images" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1419012121000</longProp>
+        <longProp name="ThreadGroup.end_time">1419012121000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="Set Souce for Image Files" enabled="true">
+          <stringProp name="BeanShellSampler.query">import org.apache.jmeter.services.FileServer;
+String fs = FileServer.getFileServer().getBaseDir();; //instantiate FileServer class
+vars.put(&quot;fileServer&quot;,fs);</stringProp>
+          <stringProp name="BeanShellSampler.filename"></stringProp>
+          <stringProp name="BeanShellSampler.parameters"></stringProp>
+          <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+        </BeanShellSampler>
+        <hashTree/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Image" enabled="true"/>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Image" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"></stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">${context}/api/image</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">true</boolProp>
+            <stringProp name="HTTPSampler.implementation">Java</stringProp>
+            <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
+              <collectionProp name="HTTPFileArgs.files">
+                <elementProp name="${fileServer}\Common\\Microformat.png" elementType="HTTPFileArg">
+                  <stringProp name="File.path">${fileServer}\Common\\Microformat.png</stringProp>
+                  <stringProp name="File.paramname">image</stringProp>
+                  <stringProp name="File.mimetype">image/png</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="49587">201</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+              <boolProp name="Assertion.assume_success">true</boolProp>
+              <intProp name="Assertion.test_type">8</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-519826618">&quot;contentType&quot;:&quot;image/png&quot;</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">2</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor" enabled="true">
+              <stringProp name="filename"></stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
+eval(&apos;var response = &apos; + prev.getResponseDataAsString());
+
+var id =response.id;
+//OUT.println(res[6]);
+vars.put(&quot;imageID&quot;,id);</stringProp>
+              <stringProp name="scriptLanguage">javascript</stringProp>
+            </BSFPostProcessor>
+            <hashTree/>
+          </hashTree>
+          <JavaSampler guiclass="JavaTestSamplerGui" testclass="JavaSampler" testname="Java Request" enabled="true">
+            <elementProp name="arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="Sleep_Time" elementType="Argument">
+                  <stringProp name="Argument.name">Sleep_Time</stringProp>
+                  <stringProp name="Argument.value">100</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="Sleep_Mask" elementType="Argument">
+                  <stringProp name="Argument.name">Sleep_Mask</stringProp>
+                  <stringProp name="Argument.value">0xFF</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="Label" elementType="Argument">
+                  <stringProp name="Argument.name">Label</stringProp>
+                  <stringProp name="Argument.value"></stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="ResponseCode" elementType="Argument">
+                  <stringProp name="Argument.name">ResponseCode</stringProp>
+                  <stringProp name="Argument.value"></stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="ResponseMessage" elementType="Argument">
+                  <stringProp name="Argument.name">ResponseMessage</stringProp>
+                  <stringProp name="Argument.value"></stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="Status" elementType="Argument">
+                  <stringProp name="Argument.name">Status</stringProp>
+                  <stringProp name="Argument.value">OK</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="SamplerData" elementType="Argument">
+                  <stringProp name="Argument.name">SamplerData</stringProp>
+                  <stringProp name="Argument.value"></stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="ResultData" elementType="Argument">
+                  <stringProp name="Argument.name">ResultData</stringProp>
+                  <stringProp name="Argument.value">${__setProperty(urlID,${imageID},)}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="classname">org.apache.jmeter.protocol.java.test.JavaTest</stringProp>
+          </JavaSampler>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Intents  - Action Positive" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
@@ -217,7 +354,7 @@ This will scenarios for CRUD on Intents as well as testing the list function.</s
 	 &quot;type&quot;: &quot;application/json&quot;,&#xd;
       &quot;action&quot;: &quot;${intent}&quot;,&#xd;
       &quot;label&quot;: null,&#xd;
-      &quot;icon&quot;: null&#xd;
+      &quot;iconId&quot;: null&#xd;
 }&#xd;
 </stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -255,7 +392,7 @@ This will scenarios for CRUD on Intents as well as testing the list function.</s
                 <stringProp name="-907948659">&quot;type&quot;:&quot;application/json&quot;</stringProp>
                 <stringProp name="2146162283">&quot;action&quot;:&quot;${result}&quot;</stringProp>
                 <stringProp name="-1300542351">&quot;label&quot;:null</stringProp>
-                <stringProp name="1374673210">&quot;icon&quot;:null</stringProp>
+                <stringProp name="-1853661323">&quot;iconId&quot;:null</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -310,7 +447,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
                 <stringProp name="-907948659">&quot;type&quot;:&quot;application/json&quot;</stringProp>
                 <stringProp name="2146162283">&quot;action&quot;:&quot;${result}&quot;</stringProp>
                 <stringProp name="-1300542351">&quot;label&quot;:null</stringProp>
-                <stringProp name="1374673210">&quot;icon&quot;:null</stringProp>
+                <stringProp name="-1853661323">&quot;iconId&quot;:null</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -377,7 +514,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	 &quot;type&quot;: &quot;application/json&quot;,&#xd;
       &quot;label&quot;: null,&#xd;
-      &quot;icon&quot;: null&#xd;
+      &quot;iconId&quot;: null&#xd;
 }&#xd;
 </stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -462,7 +599,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
 	 &quot;type&quot;: &quot;application/json&quot;,&#xd;
 	 &quot;action&quot;: &quot;${intent}&quot;,&#xd;
       &quot;label&quot;: null,&#xd;
-      &quot;icon&quot;: null&#xd;
+      &quot;iconId&quot;: null&#xd;
 }&#xd;
 </stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -547,7 +684,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
 	 &quot;type&quot;: &quot;application/${intent}&quot;,&#xd;
       &quot;action&quot;: &quot;view&quot;,&#xd;
       &quot;label&quot;: null,&#xd;
-      &quot;icon&quot;: null&#xd;
+      &quot;iconId&quot;: null&#xd;
 }&#xd;
 </stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -585,7 +722,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
                 <stringProp name="-1085816698">&quot;type&quot;:&quot;application/${result}&quot;</stringProp>
                 <stringProp name="-114604437">&quot;action&quot;:&quot;view&quot;</stringProp>
                 <stringProp name="-1300542351">&quot;label&quot;:null</stringProp>
-                <stringProp name="1374673210">&quot;icon&quot;:null</stringProp>
+                <stringProp name="-1853661323">&quot;iconId&quot;:null</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -640,7 +777,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
                 <stringProp name="-1085816698">&quot;type&quot;:&quot;application/${result}&quot;</stringProp>
                 <stringProp name="-114604437">&quot;action&quot;:&quot;view&quot;</stringProp>
                 <stringProp name="-1300542351">&quot;label&quot;:null</stringProp>
-                <stringProp name="1374673210">&quot;icon&quot;:null</stringProp>
+                <stringProp name="-1853661323">&quot;iconId&quot;:null</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -721,7 +858,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
 	 &quot;type&quot;: &quot;${intent}/json&quot;,&#xd;
       &quot;action&quot;: &quot;view&quot;,&#xd;
       &quot;label&quot;: null,&#xd;
-      &quot;icon&quot;: null&#xd;
+      &quot;iconId&quot;: null&#xd;
 }&#xd;
 </stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -759,7 +896,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
                 <stringProp name="1333108038">&quot;type&quot;:&quot;${result}/json&quot;</stringProp>
                 <stringProp name="-114604437">&quot;action&quot;:&quot;view&quot;</stringProp>
                 <stringProp name="-1300542351">&quot;label&quot;:null</stringProp>
-                <stringProp name="1374673210">&quot;icon&quot;:null</stringProp>
+                <stringProp name="-1853661323">&quot;iconId&quot;:null</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -814,7 +951,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
                 <stringProp name="1333108038">&quot;type&quot;:&quot;${result}/json&quot;</stringProp>
                 <stringProp name="-114604437">&quot;action&quot;:&quot;view&quot;</stringProp>
                 <stringProp name="-1300542351">&quot;label&quot;:null</stringProp>
-                <stringProp name="1374673210">&quot;icon&quot;:null</stringProp>
+                <stringProp name="-1853661323">&quot;iconId&quot;:null</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -895,7 +1032,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
 	 &quot;type&quot;: &quot;application/${intent}&quot;,&#xd;
 	 &quot;action&quot;: &quot;view&quot;,&#xd;
       &quot;label&quot;: null,&#xd;
-      &quot;icon&quot;: null&#xd;
+      &quot;iconId&quot;: null&#xd;
 }&#xd;
 </stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -980,7 +1117,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
 	 &quot;type&quot;: &quot;${intent}/json&quot;,&#xd;
 	 &quot;action&quot;: &quot;view&quot;,&#xd;
       &quot;label&quot;: null,&#xd;
-      &quot;icon&quot;: null&#xd;
+      &quot;iconId&quot;: null&#xd;
 }&#xd;
 </stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -1051,7 +1188,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
                   <stringProp name="Argument.value">{&#xd;
 	 &quot;action&quot;: &quot;view&quot;,&#xd;
       &quot;label&quot;: null,&#xd;
-      &quot;icon&quot;: null&#xd;
+      &quot;iconId&quot;: null&#xd;
 }&#xd;
 </stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -1104,7 +1241,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
 	 &quot;type&quot;: &quot;application/&quot;,&#xd;
 	 &quot;action&quot;: &quot;view&quot;,&#xd;
       &quot;label&quot;: null,&#xd;
-      &quot;icon&quot;: null&#xd;
+      &quot;iconId&quot;: null&#xd;
 }&#xd;
 </stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -1157,7 +1294,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
 	 &quot;type&quot;: &quot;/json&quot;,&#xd;
 	 &quot;action&quot;: &quot;view&quot;,&#xd;
       &quot;label&quot;: null,&#xd;
-      &quot;icon&quot;: null&#xd;
+      &quot;iconId&quot;: null&#xd;
 }&#xd;
 </stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -1217,163 +1354,147 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
-          <stringProp name="WhileController.condition">title</stringProp>
-        </WhileController>
-        <hashTree>
-          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">./Intent/URL_Positive.csv</stringProp>
-            <stringProp name="fileEncoding"></stringProp>
-            <stringProp name="variableNames">icon</stringProp>
-            <stringProp name="delimiter">,</stringProp>
-            <boolProp name="quotedData">true</boolProp>
-            <boolProp name="recycle">false</boolProp>
-            <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">shareMode.thread</stringProp>
-          </CSVDataSet>
-          <hashTree/>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Intents - Icon Positive" enabled="true">
-            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-              <collectionProp name="Arguments.arguments">
-                <elementProp name="" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&#xd;
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Intents - Icon Positive" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
 	 &quot;type&quot;: &quot;application/json&quot;,&#xd;
       &quot;action&quot;: &quot;view&quot;,&#xd;
       &quot;label&quot;: null,&#xd;
-      &quot;icon&quot;:&quot;${icon}&quot;&#xd;
+      &quot;iconId&quot;:&quot;${__property(urlID,,)}&quot;&#xd;
 }&#xd;
 </stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-              </collectionProp>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain"></stringProp>
-            <stringProp name="HTTPSampler.port"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            <stringProp name="HTTPSampler.protocol"></stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/intent</stringProp>
-            <stringProp name="HTTPSampler.method">POST</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.implementation">Java</stringProp>
-            <boolProp name="HTTPSampler.monitor">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code" enabled="true">
-              <collectionProp name="Asserion.test_strings">
-                <stringProp name="49587">201</stringProp>
-              </collectionProp>
-              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
-              <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">8</intProp>
-            </ResponseAssertion>
-            <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-              <collectionProp name="Asserion.test_strings">
-                <stringProp name="-907948659">&quot;type&quot;:&quot;application/json&quot;</stringProp>
-                <stringProp name="-114604437">&quot;action&quot;:&quot;view&quot;</stringProp>
-                <stringProp name="-1300542351">&quot;label&quot;:null</stringProp>
-                <stringProp name="1904139108">&quot;icon&quot;:&quot;${icon}&quot;</stringProp>
-              </collectionProp>
-              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-              <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">2</intProp>
-            </ResponseAssertion>
-            <hashTree/>
-            <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor - Get IntentID" enabled="true">
-              <stringProp name="scriptLanguage">javascript</stringProp>
-              <stringProp name="parameters"></stringProp>
-              <stringProp name="filename"></stringProp>
-              <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${context}/api/intent</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">Java</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49587">201</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-907948659">&quot;type&quot;:&quot;application/json&quot;</stringProp>
+              <stringProp name="-114604437">&quot;action&quot;:&quot;view&quot;</stringProp>
+              <stringProp name="-1300542351">&quot;label&quot;:null</stringProp>
+              <stringProp name="1519971468">&quot;iconId&quot;:&quot;${__property(urlID,,)}&quot;</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor - Get IntentID" enabled="true">
+            <stringProp name="scriptLanguage">javascript</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
 eval(&apos;var response = &apos; + prev.getResponseDataAsString());
 var intentLink = response._links.self.href;	
 var res = intentLink.split(&apos;/&apos;);
 //OUT.println(res[6]);
 vars.put(&quot;intentID&quot;,res[6]);</stringProp>
-            </BSFPostProcessor>
-            <hashTree/>
-          </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="get Intents - Icon" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
-              <collectionProp name="Arguments.arguments"/>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain"></stringProp>
-            <stringProp name="HTTPSampler.port"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            <stringProp name="HTTPSampler.protocol"></stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/intent/${intentID}</stringProp>
-            <stringProp name="HTTPSampler.method">GET</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.implementation">Java</stringProp>
-            <boolProp name="HTTPSampler.monitor">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code" enabled="true">
-              <collectionProp name="Asserion.test_strings">
-                <stringProp name="49586">200</stringProp>
-              </collectionProp>
-              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
-              <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">8</intProp>
-            </ResponseAssertion>
-            <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-              <collectionProp name="Asserion.test_strings">
-                <stringProp name="-907948659">&quot;type&quot;:&quot;application/json&quot;</stringProp>
-                <stringProp name="-114604437">&quot;action&quot;:&quot;view&quot;</stringProp>
-                <stringProp name="-1300542351">&quot;label&quot;:null</stringProp>
-                <stringProp name="1904139108">&quot;icon&quot;:&quot;${icon}&quot;</stringProp>
-              </collectionProp>
-              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-              <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">2</intProp>
-            </ResponseAssertion>
-            <hashTree/>
-          </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Delete Intents - Icon" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
-              <collectionProp name="Arguments.arguments"/>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain"></stringProp>
-            <stringProp name="HTTPSampler.port"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            <stringProp name="HTTPSampler.protocol"></stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/intent/${intentID}</stringProp>
-            <stringProp name="HTTPSampler.method">DELETE</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.implementation">Java</stringProp>
-            <boolProp name="HTTPSampler.monitor">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code" enabled="true">
-              <collectionProp name="Asserion.test_strings">
-                <stringProp name="49590">204</stringProp>
-              </collectionProp>
-              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
-              <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">8</intProp>
-            </ResponseAssertion>
-            <hashTree/>
-          </hashTree>
+          </BSFPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="get Intents - Icon" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${context}/api/intent/${intentID}</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">Java</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-907948659">&quot;type&quot;:&quot;application/json&quot;</stringProp>
+              <stringProp name="-114604437">&quot;action&quot;:&quot;view&quot;</stringProp>
+              <stringProp name="-1300542351">&quot;label&quot;:null</stringProp>
+              <stringProp name="1519971468">&quot;iconId&quot;:&quot;${__property(urlID,,)}&quot;</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Delete Intents - Icon" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${context}/api/intent/${intentID}</stringProp>
+          <stringProp name="HTTPSampler.method">DELETE</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">Java</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49590">204</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+          </ResponseAssertion>
+          <hashTree/>
         </hashTree>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Intents  - Icon Null" enabled="true">
@@ -1403,7 +1524,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
 	 &quot;type&quot;: &quot;application/json&quot;,&#xd;
       &quot;action&quot;: &quot;view&quot;,&#xd;
       &quot;label&quot;: null,&#xd;
-      &quot;icon&quot;:null&#xd;
+      &quot;iconId&quot;:null&#xd;
 }&#xd;
 </stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -1441,7 +1562,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
                 <stringProp name="-907948659">&quot;type&quot;:&quot;application/json&quot;</stringProp>
                 <stringProp name="-114604437">&quot;action&quot;:&quot;view&quot;</stringProp>
                 <stringProp name="-1300542351">&quot;label&quot;:null</stringProp>
-                <stringProp name="1374673210">&quot;icon&quot;:null</stringProp>
+                <stringProp name="-1853661323">&quot;iconId&quot;:null</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -1496,7 +1617,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
                 <stringProp name="-907948659">&quot;type&quot;:&quot;application/json&quot;</stringProp>
                 <stringProp name="-114604437">&quot;action&quot;:&quot;view&quot;</stringProp>
                 <stringProp name="-1300542351">&quot;label&quot;:null</stringProp>
-                <stringProp name="1374673210">&quot;icon&quot;:null</stringProp>
+                <stringProp name="-1853661323">&quot;iconId&quot;:null</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -1552,86 +1673,58 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
-          <stringProp name="WhileController.condition">title</stringProp>
-        </WhileController>
-        <hashTree>
-          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">./Intent/URL_Negative.csv</stringProp>
-            <stringProp name="fileEncoding"></stringProp>
-            <stringProp name="variableNames">icon,result</stringProp>
-            <stringProp name="delimiter">,</stringProp>
-            <boolProp name="quotedData">false</boolProp>
-            <boolProp name="recycle">false</boolProp>
-            <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">shareMode.thread</stringProp>
-          </CSVDataSet>
-          <hashTree/>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Intents - Icon Negative" enabled="true">
-            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-              <collectionProp name="Arguments.arguments">
-                <elementProp name="" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&#xd;
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Intents - Icon Negative" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
 	 &quot;type&quot;: &quot;application/json&quot;,&#xd;
       &quot;action&quot;: &quot;view&quot;,&#xd;
       &quot;label&quot;: null,&#xd;
-      &quot;icon&quot;:&quot;${icon}&quot;&#xd;
+      &quot;iconId&quot;:&quot;12345678-1234-1234-1234-123456789012&quot;&#xd;
 }&#xd;
 </stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-              </collectionProp>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain"></stringProp>
-            <stringProp name="HTTPSampler.port"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            <stringProp name="HTTPSampler.protocol"></stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/intent</stringProp>
-            <stringProp name="HTTPSampler.method">POST</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.implementation">Java</stringProp>
-            <boolProp name="HTTPSampler.monitor">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code" enabled="true">
-              <collectionProp name="Asserion.test_strings">
-                <stringProp name="51508">400</stringProp>
-              </collectionProp>
-              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
-              <boolProp name="Assertion.assume_success">true</boolProp>
-              <intProp name="Assertion.test_type">8</intProp>
-            </ResponseAssertion>
-            <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-              <collectionProp name="Asserion.test_strings">
-                <stringProp name="71001929">${result}</stringProp>
-              </collectionProp>
-              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-              <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">2</intProp>
-            </ResponseAssertion>
-            <hashTree/>
-            <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor - Get IntentID" enabled="true">
-              <stringProp name="scriptLanguage">javascript</stringProp>
-              <stringProp name="parameters"></stringProp>
-              <stringProp name="filename"></stringProp>
-              <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
-eval(&apos;var response = &apos; + prev.getResponseDataAsString());
-var intentLink = response._links.self.href;	
-var res = intentLink.split(&apos;/&apos;);
-//OUT.println(res[6]);
-vars.put(&quot;intentID&quot;,res[6]);</stringProp>
-            </BSFPostProcessor>
-            <hashTree/>
-          </hashTree>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${context}/api/intent</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">Java</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="51508">400</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">true</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="2086329144">{&quot;error&quot;:true,&quot;message&quot;:&quot;Invalid icon id: 12345678-1234-1234-1234-123456789012&quot;}</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
         </hashTree>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Intents  - Label Positive" enabled="true">
@@ -1674,7 +1767,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
 	 &quot;type&quot;: &quot;application/json&quot;,&#xd;
       &quot;action&quot;: &quot;view&quot;,&#xd;
       &quot;label&quot;: &quot;${label}&quot;,&#xd;
-      &quot;icon&quot;:null&#xd;
+      &quot;iconId&quot;:null&#xd;
 }&#xd;
 </stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -1712,7 +1805,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
                 <stringProp name="-907948659">&quot;type&quot;:&quot;application/json&quot;</stringProp>
                 <stringProp name="-114604437">&quot;action&quot;:&quot;view&quot;</stringProp>
                 <stringProp name="-193356591">&quot;label&quot;:&quot;${result}</stringProp>
-                <stringProp name="1374673210">&quot;icon&quot;:null</stringProp>
+                <stringProp name="-1853661323">&quot;iconId&quot;:null</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -1767,7 +1860,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
                 <stringProp name="-907948659">&quot;type&quot;:&quot;application/json&quot;</stringProp>
                 <stringProp name="-114604437">&quot;action&quot;:&quot;view&quot;</stringProp>
                 <stringProp name="-193356591">&quot;label&quot;:&quot;${result}</stringProp>
-                <stringProp name="1374673210">&quot;icon&quot;:null</stringProp>
+                <stringProp name="-1853661323">&quot;iconId&quot;:null</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -1835,7 +1928,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
 	 &quot;type&quot;: &quot;application/json&quot;,&#xd;
       &quot;action&quot;: &quot;view&quot;,&#xd;
       &quot;label&quot;: null,&#xd;
-      &quot;icon&quot;:null&#xd;
+      &quot;iconId&quot;:null&#xd;
 }&#xd;
 </stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -1873,7 +1966,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
                 <stringProp name="-907948659">&quot;type&quot;:&quot;application/json&quot;</stringProp>
                 <stringProp name="-114604437">&quot;action&quot;:&quot;view&quot;</stringProp>
                 <stringProp name="-1300542351">&quot;label&quot;:null</stringProp>
-                <stringProp name="1374673210">&quot;icon&quot;:null</stringProp>
+                <stringProp name="-1853661323">&quot;iconId&quot;:null</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -1928,7 +2021,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
                 <stringProp name="-907948659">&quot;type&quot;:&quot;application/json&quot;</stringProp>
                 <stringProp name="-114604437">&quot;action&quot;:&quot;view&quot;</stringProp>
                 <stringProp name="-1300542351">&quot;label&quot;:null</stringProp>
-                <stringProp name="1374673210">&quot;icon&quot;:null</stringProp>
+                <stringProp name="-1853661323">&quot;iconId&quot;:null</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -2009,7 +2102,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
 	 &quot;type&quot;: &quot;application/json&quot;,&#xd;
       &quot;action&quot;: &quot;view&quot;,&#xd;
       &quot;label&quot;:&quot;${label}&quot;,&#xd;
-      &quot;icon&quot;:null&#xd;
+      &quot;iconId&quot;:null&#xd;
 }&#xd;
 </stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -2081,7 +2174,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
 	 &quot;type&quot;: &quot;application/json&quot;,&#xd;
       &quot;action&quot;: &quot;view&quot;,&#xd;
       &quot;label&quot;: null,&#xd;
-      &quot;icon&quot;: null&#xd;
+      &quot;iconId&quot;: null&#xd;
 }&#xd;
 </stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -2119,7 +2212,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
                 <stringProp name="-907948659">&quot;type&quot;:&quot;application/json&quot;</stringProp>
                 <stringProp name="-114604437">&quot;action&quot;:&quot;view&quot;</stringProp>
                 <stringProp name="-1300542351">&quot;label&quot;:null</stringProp>
-                <stringProp name="1374673210">&quot;icon&quot;:null</stringProp>
+                <stringProp name="-1853661323">&quot;iconId&quot;:null</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -2149,7 +2242,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
 	 &quot;type&quot;: &quot;application/json&quot;,&#xd;
       &quot;action&quot;: &quot;test&quot;,&#xd;
       &quot;label&quot;: null,&#xd;
-      &quot;icon&quot;: null&#xd;
+      &quot;iconId&quot;: null&#xd;
 }&#xd;
 </stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -2227,7 +2320,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
                 <stringProp name="-907948659">&quot;type&quot;:&quot;application/json&quot;</stringProp>
                 <stringProp name="-114604437">&quot;action&quot;:&quot;view&quot;</stringProp>
                 <stringProp name="-1300542351">&quot;label&quot;:null</stringProp>
-                <stringProp name="1374673210">&quot;icon&quot;:null</stringProp>
+                <stringProp name="-1853661323">&quot;iconId&quot;:null</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -2295,7 +2388,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
 	 &quot;type&quot;: &quot;application/json&quot;,&#xd;
       &quot;action&quot;: &quot;view&quot;,&#xd;
       &quot;label&quot;: null,&#xd;
-      &quot;icon&quot;: null&#xd;
+      &quot;iconId&quot;: null&#xd;
 }&#xd;
 </stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -2333,7 +2426,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
                 <stringProp name="-907948659">&quot;type&quot;:&quot;application/json&quot;</stringProp>
                 <stringProp name="-114604437">&quot;action&quot;:&quot;view&quot;</stringProp>
                 <stringProp name="-1300542351">&quot;label&quot;:null</stringProp>
-                <stringProp name="1374673210">&quot;icon&quot;:null</stringProp>
+                <stringProp name="-1853661323">&quot;iconId&quot;:null</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -2363,7 +2456,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
 	 &quot;type&quot;: &quot;application/foo&quot;,&#xd;
       &quot;action&quot;: &quot;view&quot;,&#xd;
       &quot;label&quot;: null,&#xd;
-      &quot;icon&quot;: null&#xd;
+      &quot;iconId&quot;: null&#xd;
 }&#xd;
 </stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -2441,7 +2534,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
                 <stringProp name="-907948659">&quot;type&quot;:&quot;application/json&quot;</stringProp>
                 <stringProp name="-114604437">&quot;action&quot;:&quot;view&quot;</stringProp>
                 <stringProp name="-1300542351">&quot;label&quot;:null</stringProp>
-                <stringProp name="1374673210">&quot;icon&quot;:null</stringProp>
+                <stringProp name="-1853661323">&quot;iconId&quot;:null</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -2497,219 +2590,203 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Controller" enabled="true">
-          <stringProp name="WhileController.condition">title</stringProp>
-        </WhileController>
-        <hashTree>
-          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">./Intent/URL_Positive.csv</stringProp>
-            <stringProp name="fileEncoding"></stringProp>
-            <stringProp name="variableNames">icon</stringProp>
-            <stringProp name="delimiter">,</stringProp>
-            <boolProp name="quotedData">true</boolProp>
-            <boolProp name="recycle">false</boolProp>
-            <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">shareMode.thread</stringProp>
-          </CSVDataSet>
-          <hashTree/>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Intents - Icon Positive" enabled="true">
-            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-              <collectionProp name="Arguments.arguments">
-                <elementProp name="" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&#xd;
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Intents - Icon Positive" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
 	 &quot;type&quot;: &quot;application/json&quot;,&#xd;
       &quot;action&quot;: &quot;view&quot;,&#xd;
       &quot;label&quot;: null,&#xd;
-      &quot;icon&quot;:&quot;http://www.image.com/image.png&quot;&#xd;
+      &quot;iconId&quot;:null&#xd;
 }&#xd;
 </stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-              </collectionProp>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain"></stringProp>
-            <stringProp name="HTTPSampler.port"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            <stringProp name="HTTPSampler.protocol"></stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/intent</stringProp>
-            <stringProp name="HTTPSampler.method">POST</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.implementation">Java</stringProp>
-            <boolProp name="HTTPSampler.monitor">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code" enabled="true">
-              <collectionProp name="Asserion.test_strings">
-                <stringProp name="49587">201</stringProp>
-              </collectionProp>
-              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
-              <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">8</intProp>
-            </ResponseAssertion>
-            <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-              <collectionProp name="Asserion.test_strings">
-                <stringProp name="-907948659">&quot;type&quot;:&quot;application/json&quot;</stringProp>
-                <stringProp name="-114604437">&quot;action&quot;:&quot;view&quot;</stringProp>
-                <stringProp name="-1300542351">&quot;label&quot;:null</stringProp>
-                <stringProp name="453206759">&quot;icon&quot;:&quot;http://www.image.com/image.png&quot;</stringProp>
-              </collectionProp>
-              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-              <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">2</intProp>
-            </ResponseAssertion>
-            <hashTree/>
-            <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor - Get IntentID" enabled="true">
-              <stringProp name="scriptLanguage">javascript</stringProp>
-              <stringProp name="parameters"></stringProp>
-              <stringProp name="filename"></stringProp>
-              <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${context}/api/intent</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">Java</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49587">201</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-907948659">&quot;type&quot;:&quot;application/json&quot;</stringProp>
+              <stringProp name="-114604437">&quot;action&quot;:&quot;view&quot;</stringProp>
+              <stringProp name="-1300542351">&quot;label&quot;:null</stringProp>
+              <stringProp name="-1853661323">&quot;iconId&quot;:null</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor - Get IntentID" enabled="true">
+            <stringProp name="scriptLanguage">javascript</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
 eval(&apos;var response = &apos; + prev.getResponseDataAsString());
 var intentLink = response._links.self.href;	
 var res = intentLink.split(&apos;/&apos;);
 //OUT.println(res[6]);
 vars.put(&quot;intentID&quot;,res[6]);</stringProp>
-            </BSFPostProcessor>
-            <hashTree/>
-          </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Update Intents - Icon Positive" enabled="true">
-            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-              <collectionProp name="Arguments.arguments">
-                <elementProp name="" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&#xd;
+          </BSFPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Update Intents - Icon Positive" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
 	 &quot;type&quot;: &quot;application/json&quot;,&#xd;
       &quot;action&quot;: &quot;view&quot;,&#xd;
       &quot;label&quot;:null,&#xd;
-      &quot;icon&quot;:&quot;${icon}&quot;&#xd;
+      &quot;iconId&quot;:&quot;${__property(urlID,,)}&quot;&#xd;
 }&#xd;
 </stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-              </collectionProp>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain"></stringProp>
-            <stringProp name="HTTPSampler.port"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            <stringProp name="HTTPSampler.protocol"></stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/intent/${intentID}</stringProp>
-            <stringProp name="HTTPSampler.method">PUT</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.implementation">Java</stringProp>
-            <boolProp name="HTTPSampler.monitor">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code" enabled="true">
-              <collectionProp name="Asserion.test_strings">
-                <stringProp name="49586">200</stringProp>
-              </collectionProp>
-              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
-              <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">8</intProp>
-            </ResponseAssertion>
-            <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-              <collectionProp name="Asserion.test_strings">
-                <stringProp name="-907948659">&quot;type&quot;:&quot;application/json&quot;</stringProp>
-                <stringProp name="-114604437">&quot;action&quot;:&quot;view&quot;</stringProp>
-                <stringProp name="-1300542351">&quot;label&quot;:null</stringProp>
-                <stringProp name="1904139108">&quot;icon&quot;:&quot;${icon}&quot;</stringProp>
-              </collectionProp>
-              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-              <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">2</intProp>
-            </ResponseAssertion>
-            <hashTree/>
-          </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="get Intents - Icon" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
-              <collectionProp name="Arguments.arguments"/>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain"></stringProp>
-            <stringProp name="HTTPSampler.port"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            <stringProp name="HTTPSampler.protocol"></stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/intent/${intentID}</stringProp>
-            <stringProp name="HTTPSampler.method">GET</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.implementation">Java</stringProp>
-            <boolProp name="HTTPSampler.monitor">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code" enabled="true">
-              <collectionProp name="Asserion.test_strings">
-                <stringProp name="49586">200</stringProp>
-              </collectionProp>
-              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
-              <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">8</intProp>
-            </ResponseAssertion>
-            <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-              <collectionProp name="Asserion.test_strings">
-                <stringProp name="-907948659">&quot;type&quot;:&quot;application/json&quot;</stringProp>
-                <stringProp name="-114604437">&quot;action&quot;:&quot;view&quot;</stringProp>
-                <stringProp name="-1300542351">&quot;label&quot;:null</stringProp>
-                <stringProp name="1904139108">&quot;icon&quot;:&quot;${icon}&quot;</stringProp>
-              </collectionProp>
-              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-              <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">2</intProp>
-            </ResponseAssertion>
-            <hashTree/>
-          </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Delete Intents - Icon" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
-              <collectionProp name="Arguments.arguments"/>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain"></stringProp>
-            <stringProp name="HTTPSampler.port"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            <stringProp name="HTTPSampler.protocol"></stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${context}/api/intent/${intentID}</stringProp>
-            <stringProp name="HTTPSampler.method">DELETE</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.implementation">Java</stringProp>
-            <boolProp name="HTTPSampler.monitor">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code" enabled="true">
-              <collectionProp name="Asserion.test_strings">
-                <stringProp name="49590">204</stringProp>
-              </collectionProp>
-              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
-              <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">8</intProp>
-            </ResponseAssertion>
-            <hashTree/>
-          </hashTree>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${context}/api/intent/${intentID}</stringProp>
+          <stringProp name="HTTPSampler.method">PUT</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">Java</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-907948659">&quot;type&quot;:&quot;application/json&quot;</stringProp>
+              <stringProp name="-114604437">&quot;action&quot;:&quot;view&quot;</stringProp>
+              <stringProp name="-1300542351">&quot;label&quot;:null</stringProp>
+              <stringProp name="1519971468">&quot;iconId&quot;:&quot;${__property(urlID,,)}&quot;</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="get Intents - Icon" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${context}/api/intent/${intentID}</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">Java</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-907948659">&quot;type&quot;:&quot;application/json&quot;</stringProp>
+              <stringProp name="-114604437">&quot;action&quot;:&quot;view&quot;</stringProp>
+              <stringProp name="-1300542351">&quot;label&quot;:null</stringProp>
+              <stringProp name="1519971468">&quot;iconId&quot;:&quot;${__property(urlID,,)}&quot;</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Delete Intents - Icon" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${context}/api/intent/${intentID}</stringProp>
+          <stringProp name="HTTPSampler.method">DELETE</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">Java</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49590">204</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+          </ResponseAssertion>
+          <hashTree/>
         </hashTree>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Update Intents  - Label Positive" enabled="true">
@@ -2752,7 +2829,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
      &quot;type&quot;: &quot;application/json&quot;,&#xd;
       &quot;action&quot;: &quot;view&quot;,&#xd;
       &quot;label&quot;: &quot;Test Label&quot;,&#xd;
-      &quot;icon&quot;:&quot;http://www.image.com/image.png&quot;&#xd;
+      &quot;iconId&quot;:&quot;${__property(urlID,,)}&quot;&#xd;
 }&#xd;
 </stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -2790,7 +2867,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
                 <stringProp name="-907948659">&quot;type&quot;:&quot;application/json&quot;</stringProp>
                 <stringProp name="-114604437">&quot;action&quot;:&quot;view&quot;</stringProp>
                 <stringProp name="-431086972">&quot;label&quot;:&quot;Test Label&quot;</stringProp>
-                <stringProp name="453206759">&quot;icon&quot;:&quot;http://www.image.com/image.png&quot;</stringProp>
+                <stringProp name="1519971468">&quot;iconId&quot;:&quot;${__property(urlID,,)}&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -2820,7 +2897,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
      &quot;type&quot;: &quot;application/json&quot;,&#xd;
       &quot;action&quot;: &quot;view&quot;,&#xd;
       &quot;label&quot;:&quot;${label}&quot;,&#xd;
-      &quot;icon&quot;:&quot;http://www.image.com/image.png&quot;&#xd;
+      &quot;iconId&quot;:&quot;${__property(urlID,,)}&quot;&#xd;
 }&#xd;
 </stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -2858,7 +2935,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
                 <stringProp name="-907948659">&quot;type&quot;:&quot;application/json&quot;</stringProp>
                 <stringProp name="-114604437">&quot;action&quot;:&quot;view&quot;</stringProp>
                 <stringProp name="-193356591">&quot;label&quot;:&quot;${result}</stringProp>
-                <stringProp name="453206759">&quot;icon&quot;:&quot;http://www.image.com/image.png&quot;</stringProp>
+                <stringProp name="1519971468">&quot;iconId&quot;:&quot;${__property(urlID,,)}&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -2901,7 +2978,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
                 <stringProp name="-907948659">&quot;type&quot;:&quot;application/json&quot;</stringProp>
                 <stringProp name="-114604437">&quot;action&quot;:&quot;view&quot;</stringProp>
                 <stringProp name="-193356591">&quot;label&quot;:&quot;${result}</stringProp>
-                <stringProp name="453206759">&quot;icon&quot;:&quot;http://www.image.com/image.png&quot;</stringProp>
+                <stringProp name="1519971468">&quot;iconId&quot;:&quot;${__property(urlID,,)}&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -2967,7 +3044,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
 	 &quot;type&quot;: &quot;application/json&quot;,&#xd;
       &quot;action&quot;: &quot;view&quot;,&#xd;
       &quot;label&quot;: null,&#xd;
-      &quot;icon&quot;: null&#xd;
+      &quot;iconId&quot;: null&#xd;
 }&#xd;
 </stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
@@ -3005,7 +3082,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
               <stringProp name="-907948659">&quot;type&quot;:&quot;application/json&quot;</stringProp>
               <stringProp name="-114604437">&quot;action&quot;:&quot;view&quot;</stringProp>
               <stringProp name="-1300542351">&quot;label&quot;:null</stringProp>
-              <stringProp name="1374673210">&quot;icon&quot;:null</stringProp>
+              <stringProp name="-1853661323">&quot;iconId&quot;:null</stringProp>
             </collectionProp>
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
@@ -3035,7 +3112,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
 	 &quot;type&quot;: &quot;application/json&quot;,&#xd;
       &quot;action&quot;: &quot;view&quot;,&#xd;
       &quot;label&quot;: null,&#xd;
-      &quot;icon&quot;: null&#xd;
+      &quot;iconId&quot;: null&#xd;
 }&#xd;
 </stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
@@ -3113,7 +3190,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
               <stringProp name="-907948659">&quot;type&quot;:&quot;application/json&quot;</stringProp>
               <stringProp name="-114604437">&quot;action&quot;:&quot;view&quot;</stringProp>
               <stringProp name="-1300542351">&quot;label&quot;:null</stringProp>
-              <stringProp name="1374673210">&quot;icon&quot;:null</stringProp>
+              <stringProp name="-1853661323">&quot;iconId&quot;:null</stringProp>
             </collectionProp>
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
@@ -3363,7 +3440,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
 	 &quot;type&quot;: &quot;application${__counter(false,c)}/json&quot;,&#xd;
       &quot;action&quot;: &quot;view${__counter(false,c)}&quot;,&#xd;
       &quot;label&quot;: &quot;label${__counter(false,c)}&quot;,&#xd;
-      &quot;icon&quot;: null&#xd;
+      &quot;iconId&quot;: null&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -3780,7 +3857,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
      &quot;type&quot;: &quot;application/json&quot;,&#xd;
       &quot;action&quot;: &quot;view&quot;,&#xd;
       &quot;label&quot;: null,&#xd;
-      &quot;icon&quot;: null&#xd;
+      &quot;iconId&quot;: null&#xd;
 }&#xd;
 </stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -3818,7 +3895,7 @@ vars.put(&quot;intentID&quot;,res[6]);</stringProp>
                 <stringProp name="-907948659">&quot;type&quot;:&quot;application/json&quot;</stringProp>
                 <stringProp name="-114604437">&quot;action&quot;:&quot;view&quot;</stringProp>
                 <stringProp name="-1300542351">&quot;label&quot;:null</stringProp>
-                <stringProp name="1374673210">&quot;icon&quot;:null</stringProp>
+                <stringProp name="-1853661323">&quot;iconId&quot;:null</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -3884,7 +3961,7 @@ vars.put(&quot;userName&quot;,&quot;${testUser}&quot;);</stringProp>
                 <stringProp name="-907948659">&quot;type&quot;:&quot;application/json&quot;</stringProp>
                 <stringProp name="-114604437">&quot;action&quot;:&quot;view&quot;</stringProp>
                 <stringProp name="-1300542351">&quot;label&quot;:null</stringProp>
-                <stringProp name="1374673210">&quot;icon&quot;:null</stringProp>
+                <stringProp name="-1853661323">&quot;iconId&quot;:null</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -3902,7 +3979,7 @@ vars.put(&quot;userName&quot;,&quot;${testUser}&quot;);</stringProp>
      &quot;type&quot;: &quot;application1/json&quot;,&#xd;
       &quot;action&quot;: &quot;view1&quot;,&#xd;
       &quot;label&quot;: null,&#xd;
-      &quot;icon&quot;: null&#xd;
+      &quot;iconId&quot;: null&#xd;
 }&#xd;
 </stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -3995,7 +4072,7 @@ vars.put(&quot;userName&quot;,&quot;${testUser}&quot;);</stringProp>
      &quot;type&quot;: &quot;application1/json&quot;,&#xd;
       &quot;action&quot;: &quot;view1&quot;,&#xd;
       &quot;label&quot;: null,&#xd;
-      &quot;icon&quot;: null&#xd;
+      &quot;iconId&quot;: null&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -4117,7 +4194,7 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
 	 &quot;type&quot;: &quot;application/json&quot;,&#xd;
       &quot;action&quot;: &quot;view&quot;,&#xd;
       &quot;label&quot;: null,&#xd;
-      &quot;icon&quot;: null&#xd;
+      &quot;iconId&quot;: null&#xd;
 }&#xd;
 </stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>

@@ -5967,7 +5967,7 @@ every HTTP request sent during the tests
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="1662240845">${errorMsg}</stringProp>
+              <stringProp name="1804360520">{&quot;error&quot;:true,&quot;message&quot;:&quot;Invalid image id: 12345678-1234-1234-1234-123456789012&quot;}</stringProp>
             </collectionProp>
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
             <boolProp name="Assertion.assume_success">true</boolProp>
@@ -6719,7 +6719,7 @@ every HTTP request sent during the tests
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="1662240845">${errorMsg}</stringProp>
+              <stringProp name="1804360520">{&quot;error&quot;:true,&quot;message&quot;:&quot;Invalid image id: 12345678-1234-1234-1234-123456789012&quot;}</stringProp>
             </collectionProp>
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
@@ -6758,8 +6758,7 @@ every HTTP request sent during the tests
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="-918318004">&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/g/550/500&quot;</stringProp>
-              <stringProp name="-399371520">&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/g/550/500&quot;</stringProp>
+              <stringProp name="-1737970237">&quot;screenshots&quot;:\[\]</stringProp>
             </collectionProp>
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
@@ -7719,7 +7718,7 @@ every HTTP request sent during the tests
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="1662240845">${errorMsg}</stringProp>
+              <stringProp name="1804360520">{&quot;error&quot;:true,&quot;message&quot;:&quot;Invalid image id: 12345678-1234-1234-1234-123456789012&quot;}</stringProp>
             </collectionProp>
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
             <boolProp name="Assertion.assume_success">true</boolProp>
@@ -8453,7 +8452,7 @@ every HTTP request sent during the tests
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="1662240845">${errorMsg}</stringProp>
+              <stringProp name="1804360520">{&quot;error&quot;:true,&quot;message&quot;:&quot;Invalid image id: 12345678-1234-1234-1234-123456789012&quot;}</stringProp>
             </collectionProp>
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
             <boolProp name="Assertion.assume_success">true</boolProp>
@@ -9212,7 +9211,7 @@ every HTTP request sent during the tests
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="1662240845">${errorMsg}</stringProp>
+              <stringProp name="1804360520">{&quot;error&quot;:true,&quot;message&quot;:&quot;Invalid image id: 12345678-1234-1234-1234-123456789012&quot;}</stringProp>
             </collectionProp>
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
             <boolProp name="Assertion.assume_success">true</boolProp>
@@ -9952,7 +9951,7 @@ every HTTP request sent during the tests
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="1662240845">${errorMsg}</stringProp>
+              <stringProp name="1804360520">{&quot;error&quot;:true,&quot;message&quot;:&quot;Invalid image id: 12345678-1234-1234-1234-123456789012&quot;}</stringProp>
             </collectionProp>
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
             <boolProp name="Assertion.assume_success">true</boolProp>
