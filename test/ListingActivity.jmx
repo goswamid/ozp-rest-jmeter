@@ -231,8 +231,8 @@
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
-	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__P(largeIcon,unknown)}&quot;,&#xd;
+	&quot;smallIconId&quot;:&quot;${__P(smallIcon,unknown)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;validLaunchUrl&quot;:true,&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
@@ -246,9 +246,9 @@
 	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
 	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
-	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;bannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;featuredBannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageId&quot;:&quot;${__P(lScreenshot1,unknown)}&quot;,&quot;smallImageId&quot;:&quot;${__P(sScreenshot1,unknown)}&quot;}],&#xd;
 	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -360,8 +360,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
-	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__P(largeIcon,unknown)}&quot;,&#xd;
+	&quot;smallIconId&quot;:&quot;${__P(smallIcon,unknown)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;validLaunchUrl&quot;:true,&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
@@ -377,9 +377,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
 	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
-	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;bannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;featuredBannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageId&quot;:&quot;${__P(lScreenshot1,unknown)}&quot;,&quot;smallImageId&quot;:&quot;${__P(sScreenshot1,unknown)}&quot;}],&#xd;
 	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -479,8 +479,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
-	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__P(largeIcon,unknown)}&quot;,&#xd;
+	&quot;smallIconId&quot;:&quot;${__P(smallIcon,unknown)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;validLaunchUrl&quot;:true,&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
@@ -497,9 +497,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
 	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
-	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;bannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;featuredBannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageId&quot;:&quot;${__P(lScreenshot1,unknown)}&quot;,&quot;smallImageId&quot;:&quot;${__P(sScreenshot1,unknown)}&quot;}],&#xd;
 	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -601,8 +601,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
-	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__P(largeIcon,unknown)}&quot;,&#xd;
+	&quot;smallIconId&quot;:&quot;${__P(smallIcon,unknown)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;validLaunchUrl&quot;:true,&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
@@ -619,9 +619,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
 	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
-	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;bannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;featuredBannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageId&quot;:&quot;${__P(lScreenshot1,unknown)}&quot;,&quot;smallImageId&quot;:&quot;${__P(sScreenshot1,unknown)}&quot;}],&#xd;
 	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -865,8 +865,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
-	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__P(largeIcon,unknown)}&quot;,&#xd;
+	&quot;smallIconId&quot;:&quot;${__P(smallIcon,unknown)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;validLaunchUrl&quot;:true,&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
@@ -883,9 +883,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
 	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
-	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;bannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;featuredBannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageId&quot;:&quot;${__P(lScreenshot1,unknown)}&quot;,&quot;smallImageId&quot;:&quot;${__P(sScreenshot1,unknown)}&quot;}],&#xd;
 	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -989,8 +989,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
-	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__P(largeIcon,unknown)}&quot;,&#xd;
+	&quot;smallIconId&quot;:&quot;${__P(smallIcon,unknown)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;validLaunchUrl&quot;:true,&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
@@ -1007,9 +1007,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
 	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
-	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;bannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;featuredBannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageId&quot;:&quot;${__P(lScreenshot1,unknown)}&quot;,&quot;smallImageId&quot;:&quot;${__P(sScreenshot1,unknown)}&quot;}],&#xd;
 	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -1114,8 +1114,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
-	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__P(largeIcon,unknown)}&quot;,&#xd;
+	&quot;smallIconId&quot;:&quot;${__P(smallIcon,unknown)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;validLaunchUrl&quot;:true,&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
@@ -1132,9 +1132,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
 	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
-	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;bannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;featuredBannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageId&quot;:&quot;${__P(lScreenshot1,unknown)}&quot;,&quot;smallImageId&quot;:&quot;${__P(sScreenshot1,unknown)}&quot;}],&#xd;
 	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -1332,8 +1332,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
-	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__P(largeIcon,unknown)}&quot;,&#xd;
+	&quot;smallIconId&quot;:&quot;${__P(smallIcon,unknown)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;validLaunchUrl&quot;:true,&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
@@ -1347,9 +1347,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
 	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
-	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;bannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;featuredBannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageId&quot;:&quot;${__P(lScreenshot1,unknown)}&quot;,&quot;smallImageId&quot;:&quot;${__P(sScreenshot1,unknown)}&quot;}],&#xd;
 	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -1420,8 +1420,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
-	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__P(largeIcon,unknown)}&quot;,&#xd;
+	&quot;smallIconId&quot;:&quot;${__P(smallIcon,unknown)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;validLaunchUrl&quot;:true,&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
@@ -1437,9 +1437,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
 	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
-	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;bannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;featuredBannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageId&quot;:&quot;${__P(lScreenshot1,unknown)}&quot;,&quot;smallImageId&quot;:&quot;${__P(sScreenshot1,unknown)}&quot;}],&#xd;
 	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -1716,8 +1716,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
-	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__P(largeIcon,unknown)}&quot;,&#xd;
+	&quot;smallIconId&quot;:&quot;${__P(smallIcon,unknown)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;validLaunchUrl&quot;:true,&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
@@ -1731,9 +1731,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
 	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
-	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;bannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;featuredBannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageId&quot;:&quot;${__P(lScreenshot1,unknown)}&quot;,&quot;smallImageId&quot;:&quot;${__P(sScreenshot1,unknown)}&quot;}],&#xd;
 	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -1804,8 +1804,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
-	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__P(largeIcon,unknown)}&quot;,&#xd;
+	&quot;smallIconId&quot;:&quot;${__P(smallIcon,unknown)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;validLaunchUrl&quot;:true,&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
@@ -1821,9 +1821,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
 	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
-	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;bannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;featuredBannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageId&quot;:&quot;${__P(lScreenshot1,unknown)}&quot;,&quot;smallImageId&quot;:&quot;${__P(sScreenshot1,unknown)}&quot;}],&#xd;
 	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -2178,8 +2178,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
-	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__P(largeIcon,unknown)}&quot;,&#xd;
+	&quot;smallIconId&quot;:&quot;${__P(smallIcon,unknown)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;validLaunchUrl&quot;:true,&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
@@ -2265,8 +2265,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
-	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__P(largeIcon,unknown)}&quot;,&#xd;
+	&quot;smallIconId&quot;:&quot;${__P(smallIcon,unknown)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;validLaunchUrl&quot;:true,&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
@@ -2352,8 +2352,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
-	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__P(largeIcon,unknown)}&quot;,&#xd;
+	&quot;smallIconId&quot;:&quot;${__P(smallIcon,unknown)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;validLaunchUrl&quot;:true,&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
@@ -2439,8 +2439,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
-	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__P(largeIcon,unknown)}&quot;,&#xd;
+	&quot;smallIconId&quot;:&quot;${__P(smallIcon,unknown)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;validLaunchUrl&quot;:true,&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
@@ -2745,8 +2745,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
-	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__P(largeIcon,unknown)}&quot;,&#xd;
+	&quot;smallIconId&quot;:&quot;${__P(smallIcon,unknown)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;validLaunchUrl&quot;:true,&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
@@ -3186,8 +3186,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
-	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__P(largeIcon,unknown)}&quot;,&#xd;
+	&quot;smallIconId&quot;:&quot;${__P(smallIcon,unknown)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;validLaunchUrl&quot;:true,&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
@@ -3201,9 +3201,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
 	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
-	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;bannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;featuredBannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+&quot;screenshots&quot;:[{&quot;largeImageId&quot;:&quot;${__P(lScreenshot1,unknown)}&quot;,&quot;smallImageId&quot;:&quot;${__P(sScreenshot1,unknown)}&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -3325,9 +3325,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
 	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
-	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;bannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;featuredBannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+&quot;screenshots&quot;:[{&quot;largeImageId&quot;:&quot;${__P(lScreenshot1,unknown)}&quot;,&quot;smallImageId&quot;:&quot;${__P(sScreenshot1,unknown)}&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -3403,14 +3403,19 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
                 <stringProp name="2121102136">&quot;total&quot;:2</stringProp>
                 <stringProp name="1727010636">&quot;action&quot;:&quot;CREATED&quot;</stringProp>
                 <stringProp name="-205731481">&quot;changeDetails&quot;:\[</stringProp>
-                <stringProp name="-1513700247">&quot;newValue&quot;:&quot;Requirements Test1&quot;,&quot;oldValue&quot;:&quot;Requirements Test&quot;,&quot;fieldName&quot;:&quot;requirements&quot;</stringProp>
-                <stringProp name="289479976">&quot;newValue&quot;:&quot;21&quot;,&quot;oldValue&quot;:&quot;2&quot;,&quot;fieldName&quot;:&quot;versionName&quot;</stringProp>
-                <stringProp name="2050994181">&quot;newValue&quot;:&quot;StartTitle1&quot;,&quot;oldValue&quot;:&quot;StartTitle&quot;,&quot;fieldName&quot;:&quot;title&quot;</stringProp>
-                <stringProp name="-39355449">&quot;newValue&quot;:&quot;Description test 1&quot;,&quot;oldValue&quot;:&quot;Description test&quot;,&quot;fieldName&quot;:&quot;description&quot;</stringProp>
-                <stringProp name="-1868511378">&quot;newValue&quot;:&quot;http:\/\/icons1.iconarchive.com\/icons\/mattahan\/ultrabuuf\/128\/Comics-Hulkling-Sulking-icon.png&quot;,&quot;oldValue&quot;:&quot;http:\/\/icons.iconarchive.com\/icons\/mattahan\/ultrabuuf\/128\/Comics-Hulkling-Sulking-icon.png&quot;,&quot;fieldName&quot;:&quot;imageSmallUrl&quot;</stringProp>
-                <stringProp name="-1997090123">&quot;newValue&quot;:&quot;http:\/\/icons1.iconarchive.com\/icons\/mattahan\/ultrabuuf\/128\/Comics-Hulkling-Sulking-icon.png&quot;,&quot;oldValue&quot;:&quot;http:\/\/icons.iconarchive.com\/icons\/mattahan\/ultrabuuf\/128\/Comics-Hulkling-Sulking-icon.png&quot;,&quot;fieldName&quot;:&quot;launchUrl&quot;</stringProp>
-                <stringProp name="512930722">&quot;newValue&quot;:&quot;http:\/\/icons1.iconarchive.com\/icons\/mattahan\/ultrabuuf\/128\/Comics-Hulkling-Sulking-icon.png&quot;,&quot;oldValue&quot;:&quot;http:\/\/icons.iconarchive.com\/icons\/mattahan\/ultrabuuf\/128\/Comics-Hulkling-Sulking-icon.png&quot;,&quot;fieldName&quot;:&quot;imageLargeUrl&quot;</stringProp>
+                <stringProp name="-1482308036">&quot;newValue&quot;:&quot;Requirements Test1&quot;</stringProp>
+                <stringProp name="1631723084">&quot;newValue&quot;:&quot;21&quot;</stringProp>
+                <stringProp name="1269855582">&quot;newValue&quot;:&quot;StartTitle1&quot;</stringProp>
+                <stringProp name="1952476836">&quot;newValue&quot;:&quot;Description test 1&quot;</stringProp>
                 <stringProp name="-501695545">&quot;action&quot;:&quot;MODIFIED&quot;</stringProp>
+                <stringProp name="1373562974">&quot;oldValue&quot;:&quot;Requirements Test&quot;</stringProp>
+                <stringProp name="-571942453">&quot;fieldName&quot;:&quot;requirements&quot;</stringProp>
+                <stringProp name="-1078870962">&quot;oldValue&quot;:&quot;2&quot;</stringProp>
+                <stringProp name="-2119552602">&quot;fieldName&quot;:&quot;versionName&quot;</stringProp>
+                <stringProp name="599751502">&quot;oldValue&quot;:&quot;StartTitle&quot;</stringProp>
+                <stringProp name="1130468017">&quot;fieldName&quot;:&quot;title&quot;</stringProp>
+                <stringProp name="324977326">&quot;oldValue&quot;:&quot;Description test&quot;</stringProp>
+                <stringProp name="372841549">&quot;fieldName&quot;:&quot;description&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -3526,8 +3531,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
-	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__P(largeIcon,unknown)}&quot;,&#xd;
+	&quot;smallIconId&quot;:&quot;${__P(smallIcon,unknown)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;validLaunchUrl&quot;:true,&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
@@ -3541,9 +3546,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
 	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
-	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;bannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;featuredBannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+&quot;screenshots&quot;:[{&quot;largeImageId&quot;:&quot;${__P(lScreenshot1,unknown)}&quot;,&quot;smallImageId&quot;:&quot;${__P(sScreenshot1,unknown)}&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -3654,8 +3659,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
-	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__P(largeIcon,unknown)}&quot;,&#xd;
+	&quot;smallIconId&quot;:&quot;${__P(smallIcon,unknown)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;validLaunchUrl&quot;:true,&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
@@ -3670,10 +3675,11 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
 	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
-	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
-}</stringProp>
+	&quot;bannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;featuredBannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+&quot;screenshots&quot;:[{&quot;largeImageId&quot;:&quot;${__P(lScreenshot1,unknown)}&quot;,&quot;smallImageId&quot;:&quot;${__P(sScreenshot1,unknown)}&quot;}]&#xd;
+}&#xd;
+</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -3863,8 +3869,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
-	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__P(largeIcon,unknown)}&quot;,&#xd;
+	&quot;smallIconId&quot;:&quot;${__P(smallIcon,unknown)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;validLaunchUrl&quot;:true,&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
@@ -3878,10 +3884,11 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
 	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
-	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
-}</stringProp>
+	&quot;bannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;featuredBannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+&quot;screenshots&quot;:[{&quot;largeImageId&quot;:&quot;${__P(lScreenshot1,unknown)}&quot;,&quot;smallImageId&quot;:&quot;${__P(sScreenshot1,unknown)}&quot;}]&#xd;
+}&#xd;
+</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -3949,8 +3956,8 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
-	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__P(largeIcon,unknown)}&quot;,&#xd;
+	&quot;smallIconId&quot;:&quot;${__P(smallIcon,unknown)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;validLaunchUrl&quot;:true,&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
@@ -3964,10 +3971,11 @@ vars.put(&quot;listingID1&quot;,res[6]);</stringProp>
 	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
 	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
-	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
-}</stringProp>
+	&quot;bannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;featuredBannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+&quot;screenshots&quot;:[{&quot;largeImageId&quot;:&quot;${__P(lScreenshot1,unknown)}&quot;,&quot;smallImageId&quot;:&quot;${__P(sScreenshot1,unknown)}&quot;}]&#xd;
+}&#xd;
+</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -4037,8 +4045,8 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
-	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__P(largeIcon,unknown)}&quot;,&#xd;
+	&quot;smallIconId&quot;:&quot;${__P(smallIcon,unknown)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;validLaunchUrl&quot;:true,&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
@@ -4052,9 +4060,9 @@ vars.put(&quot;listingID2&quot;,res[6]);</stringProp>
 	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
 	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
-	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;bannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;featuredBannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageId&quot;:&quot;${__P(lScreenshot1,unknown)}&quot;,&quot;smallImageId&quot;:&quot;${__P(sScreenshot1,unknown)}&quot;}],&#xd;
 	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
@@ -4166,8 +4174,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
-	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__P(largeIcon,unknown)}&quot;,&#xd;
+	&quot;smallIconId&quot;:&quot;${__P(smallIcon,unknown)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;validLaunchUrl&quot;:true,&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
@@ -4183,9 +4191,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
 	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
-	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;bannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;featuredBannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageId&quot;:&quot;${__P(lScreenshot1,unknown)}&quot;,&quot;smallImageId&quot;:&quot;${__P(sScreenshot1,unknown)}&quot;}],&#xd;
 	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
@@ -4285,8 +4293,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
-	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__P(largeIcon,unknown)}&quot;,&#xd;
+	&quot;smallIconId&quot;:&quot;${__P(smallIcon,unknown)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;validLaunchUrl&quot;:true,&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
@@ -4303,9 +4311,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
 	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
-	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;bannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;featuredBannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageId&quot;:&quot;${__P(lScreenshot1,unknown)}&quot;,&quot;smallImageId&quot;:&quot;${__P(sScreenshot1,unknown)}&quot;}],&#xd;
 	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
@@ -4407,8 +4415,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;satisfiedScoreCardItems&quot;:[],&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
-	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__P(largeIcon,unknown)}&quot;,&#xd;
+	&quot;smallIconId&quot;:&quot;${__P(smallIcon,unknown)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;validLaunchUrl&quot;:true,&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
@@ -4425,9 +4433,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
 	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
-	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;bannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;featuredBannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageId&quot;:&quot;${__P(lScreenshot1,unknown)}&quot;,&quot;smallImageId&quot;:&quot;${__P(sScreenshot1,unknown)}&quot;}],&#xd;
 	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
@@ -4671,8 +4679,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
-	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__P(largeIcon,unknown)}&quot;,&#xd;
+	&quot;smallIconId&quot;:&quot;${__P(smallIcon,unknown)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;validLaunchUrl&quot;:true,&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
@@ -4689,9 +4697,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
 	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
-	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;bannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;featuredBannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageId&quot;:&quot;${__P(lScreenshot1,unknown)}&quot;,&quot;smallImageId&quot;:&quot;${__P(sScreenshot1,unknown)}&quot;}],&#xd;
 	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
@@ -4795,8 +4803,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
-	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__P(largeIcon,unknown)}&quot;,&#xd;
+	&quot;smallIconId&quot;:&quot;${__P(smallIcon,unknown)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;validLaunchUrl&quot;:true,&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
@@ -4813,9 +4821,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
 	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
-	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;bannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;featuredBannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageId&quot;:&quot;${__P(lScreenshot1,unknown)}&quot;,&quot;smallImageId&quot;:&quot;${__P(sScreenshot1,unknown)}&quot;}],&#xd;
 	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
@@ -4920,8 +4928,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
-	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__P(largeIcon,unknown)}&quot;,&#xd;
+	&quot;smallIconId&quot;:&quot;${__P(smallIcon,unknown)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;validLaunchUrl&quot;:true,&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
@@ -4938,9 +4946,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
 	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
-	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;bannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;featuredBannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageId&quot;:&quot;${__P(lScreenshot1,unknown)}&quot;,&quot;smallImageId&quot;:&quot;${__P(sScreenshot1,unknown)}&quot;}],&#xd;
 	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
@@ -5058,8 +5066,8 @@ vars.put(&quot;userName&quot;,&quot;testAdmin2&quot;);</stringProp>
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
-	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__P(largeIcon,unknown)}&quot;,&#xd;
+	&quot;smallIconId&quot;:&quot;${__P(smallIcon,unknown)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;validLaunchUrl&quot;:true,&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
@@ -5074,9 +5082,9 @@ vars.put(&quot;userName&quot;,&quot;testAdmin2&quot;);</stringProp>
 	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
 	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
-	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}]&#xd;
+	&quot;bannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;featuredBannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+&quot;screenshots&quot;:[{&quot;largeImageId&quot;:&quot;${__P(lScreenshot1,unknown)}&quot;,&quot;smallImageId&quot;:&quot;${__P(sScreenshot1,unknown)}&quot;}]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -5272,7 +5280,10 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
                 <stringProp name="1088438676">api/listing/${listingID1}</stringProp>
                 <stringProp name="1088438707">api/listing/${listingID2}</stringProp>
                 <stringProp name="35110997">api/listing/${listingID}</stringProp>
-                <stringProp name="-1724230422">&quot;changeDetails&quot;:\[\{&quot;newValue&quot;:&quot;3&quot;,&quot;oldValue&quot;:&quot;2&quot;,&quot;fieldName&quot;:&quot;versionName&quot;\}\]</stringProp>
+                <stringProp name="1881348072">&quot;changeDetails&quot;:</stringProp>
+                <stringProp name="-1471384410">&quot;newValue&quot;:&quot;3&quot;</stringProp>
+                <stringProp name="-1078870962">&quot;oldValue&quot;:&quot;2&quot;</stringProp>
+                <stringProp name="-2119552602">&quot;fieldName&quot;:&quot;versionName&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -5432,8 +5443,8 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
-	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__P(largeIcon,unknown)}&quot;,&#xd;
+	&quot;smallIconId&quot;:&quot;${__P(smallIcon,unknown)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;validLaunchUrl&quot;:true,&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
@@ -5448,9 +5459,9 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
 	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
 	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
-	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;bannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;featuredBannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageId&quot;:&quot;${__P(lScreenshot1,unknown)}&quot;,&quot;smallImageId&quot;:&quot;${__P(sScreenshot1,unknown)}&quot;}],&#xd;
 	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -5521,8 +5532,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
-	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__P(largeIcon,unknown)}&quot;,&#xd;
+	&quot;smallIconId&quot;:&quot;${__P(smallIcon,unknown)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;validLaunchUrl&quot;:true,&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
@@ -5539,9 +5550,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
 	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
-	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;bannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;featuredBannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageId&quot;:&quot;${__P(lScreenshot1,unknown)}&quot;,&quot;smallImageId&quot;:&quot;${__P(sScreenshot1,unknown)}&quot;}],&#xd;
 	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -5600,8 +5611,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
-	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__P(largeIcon,unknown)}&quot;,&#xd;
+	&quot;smallIconId&quot;:&quot;${__P(smallIcon,unknown)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;validLaunchUrl&quot;:true,&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
@@ -5618,9 +5629,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
 	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
-	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;bannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;featuredBannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageId&quot;:&quot;${__P(lScreenshot1,unknown)}&quot;,&quot;smallImageId&quot;:&quot;${__P(sScreenshot1,unknown)}&quot;}],&#xd;
 	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -5679,8 +5690,8 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;isEnabled&quot;:true,&#xd;
 	&quot;installUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-icon.png&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
-	&quot;imageLargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageSmallUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__P(largeIcon,unknown)}&quot;,&#xd;
+	&quot;smallIconId&quot;:&quot;${__P(smallIcon,unknown)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;validLaunchUrl&quot;:true,&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
@@ -5697,9 +5708,9 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;whatIsNew&quot;:&quot;This is new&quot;,&#xd;
 	&quot;descriptionShort&quot;:&quot;Short Description&quot;,&#xd;
 	&quot;agency&quot;:&quot;Jmeter Agency&quot;,&#xd;
-	&quot;imageMediumUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;imageXlargeUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageUrl&quot;:&quot;http://lorempixel.com/900/600/nature/1&quot;,&quot;smallImageUrl&quot;:&quot;http://lorempixel.com/600/375/nature/1&quot;}],&#xd;
+	&quot;bannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;featuredBannerIconId&quot;:&quot;${__P(bannerIcon,unknown)}&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageId&quot;:&quot;${__P(lScreenshot1,unknown)}&quot;,&quot;smallImageId&quot;:&quot;${__P(sScreenshot1,unknown)}&quot;}],&#xd;
 	&quot;tags&quot;:[&quot;blue&quot;]&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
