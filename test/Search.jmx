@@ -486,7 +486,6 @@
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="720749486">&quot;id&quot;:\d+</stringProp>
-                  <stringProp name="444129409">&quot;icon&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/24/Comics-Rulk-Fist-icon.png&quot;</stringProp>
                   <stringProp name="-23628979">&quot;title&quot;:&quot;${agency}</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -574,6 +573,155 @@
             </hashTree>
           </hashTree>
         </hashTree>
+        <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="Set Souce for Image Files" enabled="true">
+          <stringProp name="BeanShellSampler.query">import org.apache.jmeter.services.FileServer;
+String fs = FileServer.getFileServer().getBaseDir();; //instantiate FileServer class
+vars.put(&quot;fileServer&quot;,fs);</stringProp>
+          <stringProp name="BeanShellSampler.filename"></stringProp>
+          <stringProp name="BeanShellSampler.parameters"></stringProp>
+          <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+        </BeanShellSampler>
+        <hashTree/>
+        <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="Create Images" enabled="true">
+          <stringProp name="WhileController.condition">${__javaScript(&quot;${fileName}&quot;!=&quot;EOF&quot;)}</stringProp>
+        </WhileController>
+        <hashTree>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+            <stringProp name="filename">./Search/Image.csv</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames">fileName,name</stringProp>
+            <stringProp name="delimiter">,</stringProp>
+            <boolProp name="quotedData">true</boolProp>
+            <boolProp name="recycle">false</boolProp>
+            <boolProp name="stopThread">true</boolProp>
+            <stringProp name="shareMode">shareMode.thread</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="true">
+            <stringProp name="IfController.condition">&quot;${fileName}&quot;!=&quot;EOF&quot;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Image" enabled="true"/>
+            <hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Image" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                  <collectionProp name="Arguments.arguments"/>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">${context}/api/image</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">true</boolProp>
+                <stringProp name="HTTPSampler.implementation">Java</stringProp>
+                <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
+                  <collectionProp name="HTTPFileArgs.files">
+                    <elementProp name="${fileServer}\Search\\${fileName}" elementType="HTTPFileArg">
+                      <stringProp name="File.path">${fileServer}\Search\\${fileName}</stringProp>
+                      <stringProp name="File.paramname">image</stringProp>
+                      <stringProp name="File.mimetype">image/png</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="49587">201</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+                  <boolProp name="Assertion.assume_success">true</boolProp>
+                  <intProp name="Assertion.test_type">8</intProp>
+                </ResponseAssertion>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-519826618">&quot;contentType&quot;:&quot;image/png&quot;</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">2</intProp>
+                </ResponseAssertion>
+                <hashTree/>
+                <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor" enabled="true">
+                  <stringProp name="filename"></stringProp>
+                  <stringProp name="parameters"></stringProp>
+                  <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
+eval(&apos;var response = &apos; + prev.getResponseDataAsString());
+
+var id =response.id;
+//OUT.println(res[6]);
+vars.put(&quot;imageID&quot;,id);</stringProp>
+                  <stringProp name="scriptLanguage">javascript</stringProp>
+                </BSFPostProcessor>
+                <hashTree/>
+              </hashTree>
+              <JavaSampler guiclass="JavaTestSamplerGui" testclass="JavaSampler" testname="Java Request" enabled="true">
+                <elementProp name="arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="Sleep_Time" elementType="Argument">
+                      <stringProp name="Argument.name">Sleep_Time</stringProp>
+                      <stringProp name="Argument.value">100</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="Sleep_Mask" elementType="Argument">
+                      <stringProp name="Argument.name">Sleep_Mask</stringProp>
+                      <stringProp name="Argument.value">0xFF</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="Label" elementType="Argument">
+                      <stringProp name="Argument.name">Label</stringProp>
+                      <stringProp name="Argument.value"></stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="ResponseCode" elementType="Argument">
+                      <stringProp name="Argument.name">ResponseCode</stringProp>
+                      <stringProp name="Argument.value"></stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="ResponseMessage" elementType="Argument">
+                      <stringProp name="Argument.name">ResponseMessage</stringProp>
+                      <stringProp name="Argument.value"></stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="Status" elementType="Argument">
+                      <stringProp name="Argument.name">Status</stringProp>
+                      <stringProp name="Argument.value">OK</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="SamplerData" elementType="Argument">
+                      <stringProp name="Argument.name">SamplerData</stringProp>
+                      <stringProp name="Argument.value"></stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="ResultData" elementType="Argument">
+                      <stringProp name="Argument.name">ResultData</stringProp>
+                      <stringProp name="Argument.value">${__setProperty(${name},${imageID},)}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="classname">org.apache.jmeter.protocol.java.test.JavaTest</stringProp>
+              </JavaSampler>
+              <hashTree/>
+            </hashTree>
+            <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+              <boolProp name="displayJMeterProperties">true</boolProp>
+              <boolProp name="displayJMeterVariables">true</boolProp>
+              <boolProp name="displaySystemProperties">true</boolProp>
+            </DebugSampler>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
         <WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="Create Listing" enabled="true">
           <stringProp name="WhileController.condition">${__javaScript(&quot;${title}&quot;!=&quot;EOF&quot;)}</stringProp>
         </WhileController>
@@ -581,7 +729,7 @@
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
             <stringProp name="filename">./Search/Listing.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
-            <stringProp name="variableNames">title,type,version,description,shortDescription,category,screenshots,smallIcon,mediumIcon,largeIcon,xLargeIcon,launchURL,owner,requirements,docURLs,agency,isFeatured,isEnabled,whatsNew,tags,contacts,intents,approvalStatus</stringProp>
+            <stringProp name="variableNames">title,type,version,description,shortDescription,category,screenshots,smallIcon,mediumIcon,largeIcon,xLargeIcon,launchURL,owner,requirements,docURLs,agency,isFeatured,isEnabled,whatsNew,tags,contacts,intents,approvalStatus,featured,banner,largeicon,smallicon</stringProp>
             <stringProp name="delimiter">\t</stringProp>
             <boolProp name="quotedData">true</boolProp>
             <boolProp name="recycle">false</boolProp>
@@ -607,11 +755,11 @@
 	&quot;description&quot;:&quot;${description}&quot;,&#xd;
 	&quot;descriptionShort&quot;:&quot;${shortDescription}&quot;,&#xd;
 	&quot;categories&quot;:${category},&#xd;
-	&quot;screenshots&quot;:${screenshots},&#xd;
-	&quot;imageSmallUrl&quot;:&quot;${smallIcon}&quot;,&#xd;
-	&quot;imageMediumUrl&quot;:&quot;${mediumIcon}&quot;,&#xd;
-	&quot;imageLargeUrl&quot;:&quot;${largeIcon}&quot;,&#xd;
-	&quot;imageXlargeUrl&quot;:&quot;${xLargeIcon}&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageId&quot;:&quot;${__property(city_large,,)}&quot;,&quot;smallImageId&quot;:&quot;${__property(city_small,,)}&quot;},{&quot;largeImageId&quot;:&quot;${__property(tech_large,,)}&quot;,&quot;smallImageId&quot;:&quot;${__property(tech_small,,)}&quot;}],&#xd;
+	&quot;smallIconId&quot;:&quot;${__property(${smallicon},,)}&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__property(${largeicon},,)}&quot;,&#xd;
+	&quot;bannerIconId&quot;:&quot;${__property(${banner},,)}&quot;,&#xd;
+	&quot;featuredBannerIconId&quot;:&quot;${__property(${featured},,)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;${launchURL}&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;requirements&quot;:&quot;${requirements}&quot;,&#xd;
@@ -744,11 +892,11 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;description&quot;:&quot;${description}&quot;,&#xd;
 	&quot;descriptionShort&quot;:&quot;${shortDescription}&quot;,&#xd;
 	&quot;categories&quot;:${category},&#xd;
-	&quot;screenshots&quot;:${screenshots},&#xd;
-	&quot;imageSmallUrl&quot;:&quot;${smallIcon}&quot;,&#xd;
-	&quot;imageMediumUrl&quot;:&quot;${mediumIcon}&quot;,&#xd;
-	&quot;imageLargeUrl&quot;:&quot;${largeIcon}&quot;,&#xd;
-	&quot;imageXlargeUrl&quot;:&quot;${xLargeIcon}&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageId&quot;:&quot;${__property(city_large,,)}&quot;,&quot;smallImageId&quot;:&quot;${__property(city_small,,)}&quot;},{&quot;largeImageId&quot;:&quot;${__property(tech_large,,)}&quot;,&quot;smallImageId&quot;:&quot;${__property(tech_small,,)}&quot;}],&#xd;
+	&quot;smallIconId&quot;:&quot;${__property(${smallicon},,)}&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__property(${largeicon},,)}&quot;,&#xd;
+	&quot;bannerIconId&quot;:&quot;${__property(${banner},,)}&quot;,&#xd;
+	&quot;featuredBannerIconId&quot;:&quot;${__property(${featured},,)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;${launchURL}&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;requirements&quot;:&quot;${requirements}&quot;,&#xd;
@@ -822,11 +970,11 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;description&quot;:&quot;${description}&quot;,&#xd;
 	&quot;descriptionShort&quot;:&quot;${shortDescription}&quot;,&#xd;
 	&quot;categories&quot;:${category},&#xd;
-	&quot;screenshots&quot;:${screenshots},&#xd;
-	&quot;imageSmallUrl&quot;:&quot;${smallIcon}&quot;,&#xd;
-	&quot;imageMediumUrl&quot;:&quot;${mediumIcon}&quot;,&#xd;
-	&quot;imageLargeUrl&quot;:&quot;${largeIcon}&quot;,&#xd;
-	&quot;imageXlargeUrl&quot;:&quot;${xLargeIcon}&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageId&quot;:&quot;${__property(city_large,,)}&quot;,&quot;smallImageId&quot;:&quot;${__property(city_small,,)}&quot;},{&quot;largeImageId&quot;:&quot;${__property(tech_large,,)}&quot;,&quot;smallImageId&quot;:&quot;${__property(tech_small,,)}&quot;}],&#xd;
+	&quot;smallIconId&quot;:&quot;${__property(${smallicon},,)}&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__property(${largeicon},,)}&quot;,&#xd;
+	&quot;bannerIconId&quot;:&quot;${__property(${banner},,)}&quot;,&#xd;
+	&quot;featuredBannerIconId&quot;:&quot;${__property(${featured},,)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;${launchURL}&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;requirements&quot;:&quot;${requirements}&quot;,&#xd;
@@ -895,11 +1043,11 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
 	&quot;description&quot;:&quot;${description}&quot;,&#xd;
 	&quot;descriptionShort&quot;:&quot;${shortDescription}&quot;,&#xd;
 	&quot;categories&quot;:${category},&#xd;
-	&quot;screenshots&quot;:${screenshots},&#xd;
-	&quot;imageSmallUrl&quot;:&quot;${smallIcon}&quot;,&#xd;
-	&quot;imageMediumUrl&quot;:&quot;${mediumIcon}&quot;,&#xd;
-	&quot;imageLargeUrl&quot;:&quot;${largeIcon}&quot;,&#xd;
-	&quot;imageXlargeUrl&quot;:&quot;${xLargeIcon}&quot;,&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageId&quot;:&quot;${__property(city_large,,)}&quot;,&quot;smallImageId&quot;:&quot;${__property(city_small,,)}&quot;},{&quot;largeImageId&quot;:&quot;${__property(tech_large,,)}&quot;,&quot;smallImageId&quot;:&quot;${__property(tech_small,,)}&quot;}],&#xd;
+	&quot;smallIconId&quot;:&quot;${__property(${smallicon},,)}&quot;,&#xd;
+	&quot;largeIconId&quot;:&quot;${__property(${largeicon},,)}&quot;,&#xd;
+	&quot;bannerIconId&quot;:&quot;${__property(${banner},,)}&quot;,&#xd;
+	&quot;featuredBannerIconId&quot;:&quot;${__property(${featured},,)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;${launchURL}&quot;,&#xd;
 	&quot;owners&quot;:[{&quot;username&quot;:&quot;${testAdmin}&quot;}],&#xd;
 	&quot;requirements&quot;:&quot;${requirements}&quot;,&#xd;
@@ -1171,7 +1319,7 @@ vars.put(&quot;listingID&quot;,res[6]);</stringProp>
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Search - Query String (ShoryDescription)" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Search - Query String (ShortDescription)" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
