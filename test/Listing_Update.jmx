@@ -21779,7 +21779,7 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="868397630">&quot;id&quot;:\d+,</stringProp>
                 <stringProp name="1288272731">&quot;type&quot;:&quot;Jmeter ContactType&quot;</stringProp>
-                <stringProp name="-1533847970">&quot;securePhone&quot;:&quot;${result}&quot;,</stringProp>
+                <stringProp name="-1989141618">&quot;securePhone&quot;:&quot;${result}&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -21820,7 +21820,7 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="868397630">&quot;id&quot;:\d+,</stringProp>
                 <stringProp name="1288272731">&quot;type&quot;:&quot;Jmeter ContactType&quot;</stringProp>
-                <stringProp name="-1533847970">&quot;securePhone&quot;:&quot;${result}&quot;,</stringProp>
+                <stringProp name="-1989141618">&quot;securePhone&quot;:&quot;${result}&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
