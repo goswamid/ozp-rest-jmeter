@@ -1565,7 +1565,36 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
               <intProp name="Assertion.test_type">2</intProp>
             </ResponseAssertion>
             <hashTree/>
+            <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor - Get ProfileIDs for offset and max " enabled="true">
+              <stringProp name="scriptLanguage">javascript</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
+eval(&apos;var response = &apos; + prev.getResponseDataAsString());
+
+var profileLink = 	response._embedded.item[0]._links.self.href;
+var res = profileLink.split(&apos;/&apos;);
+//OUT.println(res[6]);
+vars.put(&quot;profileID0&quot;,res[6]);
+
+var profileLink = 	response._embedded.item[1]._links.self.href;
+var res = profileLink.split(&apos;/&apos;);
+//OUT.println(res[6]);
+vars.put(&quot;profileID1&quot;,res[6]);
+
+var profileLink = 	response._embedded.item[2]._links.self.href;
+var res = profileLink.split(&apos;/&apos;);
+//OUT.println(res[6]);
+vars.put(&quot;profileID2&quot;,res[6]);</stringProp>
+            </BSFPostProcessor>
+            <hashTree/>
           </hashTree>
+          <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+            <boolProp name="displayJMeterProperties">false</boolProp>
+            <boolProp name="displayJMeterVariables">true</boolProp>
+            <boolProp name="displaySystemProperties">false</boolProp>
+          </DebugSampler>
+          <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Profile List with offset and max" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
@@ -1605,8 +1634,8 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1824108439">api/profile/2</stringProp>
-                <stringProp name="1824108440">api/profile/3</stringProp>
+                <stringProp name="297132190">api/profile/${profileID1}</stringProp>
+                <stringProp name="297132221">api/profile/${profileID2}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -1615,7 +1644,7 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1824108438">api/profile/1</stringProp>
+                <stringProp name="297132159">api/profile/${profileID0}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -1662,7 +1691,7 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1824108439">api/profile/2</stringProp>
+                <stringProp name="297132190">api/profile/${profileID1}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -1671,8 +1700,8 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1824108438">api/profile/1</stringProp>
-                <stringProp name="1824108440">api/profile/3</stringProp>
+                <stringProp name="297132159">api/profile/${profileID0}</stringProp>
+                <stringProp name="297132221">api/profile/${profileID2}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -2437,10 +2466,6 @@ vars.put(&quot;profileAdminID&quot;,res[6]);</stringProp>
                   <stringProp name="-1036557817">&quot;text&quot;:&quot;This is an Admin comment for Listing2&quot;</stringProp>
                   <stringProp name="-1036557786">&quot;text&quot;:&quot;This is an Admin comment for Listing3&quot;</stringProp>
                   <stringProp name="-1036557755">&quot;text&quot;:&quot;This is an Admin comment for Listing4&quot;</stringProp>
-                  <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
-                  <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
-                  <stringProp name="-1442106721">&quot;title&quot;:&quot;Listing3&quot;</stringProp>
-                  <stringProp name="-1442106690">&quot;title&quot;:&quot;Listing4&quot;</stringProp>
                   <stringProp name="-347488159">&quot;rate&quot;:null</stringProp>
                   <stringProp name="109413271">&quot;rate&quot;:1</stringProp>
                   <stringProp name="109413273">&quot;rate&quot;:3</stringProp>
@@ -2499,10 +2524,6 @@ vars.put(&quot;profileAdminID&quot;,res[6]);</stringProp>
                   <stringProp name="-1036557817">&quot;text&quot;:&quot;This is an Admin comment for Listing2&quot;</stringProp>
                   <stringProp name="-1036557786">&quot;text&quot;:&quot;This is an Admin comment for Listing3&quot;</stringProp>
                   <stringProp name="-1036557755">&quot;text&quot;:&quot;This is an Admin comment for Listing4&quot;</stringProp>
-                  <stringProp name="-1442106783">&quot;title&quot;:&quot;Listing1&quot;</stringProp>
-                  <stringProp name="-1442106752">&quot;title&quot;:&quot;Listing2&quot;</stringProp>
-                  <stringProp name="-1442106721">&quot;title&quot;:&quot;Listing3&quot;</stringProp>
-                  <stringProp name="-1442106690">&quot;title&quot;:&quot;Listing4&quot;</stringProp>
                   <stringProp name="-347488159">&quot;rate&quot;:null</stringProp>
                   <stringProp name="109413271">&quot;rate&quot;:1</stringProp>
                   <stringProp name="109413273">&quot;rate&quot;:3</stringProp>
@@ -2644,7 +2665,7 @@ vars.put(&quot;profileUserID&quot;,res[6]);</stringProp>
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="796292526">&quot;id&quot;:${listingID4},&quot;title&quot;:&quot;Listing4&quot;</stringProp>
+                  <stringProp name="-914097988">&quot;id&quot;:${listingID4}</stringProp>
                   <stringProp name="1615157843">&quot;text&quot;:&quot;This is a User comment for Listing4&quot;</stringProp>
                   <stringProp name="109413272">&quot;rate&quot;:2</stringProp>
                 </collectionProp>
@@ -2655,9 +2676,9 @@ vars.put(&quot;profileUserID&quot;,res[6]);</stringProp>
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="734463262">&quot;id&quot;:${listingID1},&quot;title&quot;:&quot;Listing1&quot;,</stringProp>
-                  <stringProp name="-1303592066">&quot;id&quot;:${listingID2},&quot;title&quot;:&quot;Listing2&quot;,</stringProp>
-                  <stringProp name="953319902">&quot;id&quot;:${listingID3},&quot;title&quot;:&quot;Listing3&quot;,</stringProp>
+                  <stringProp name="-914098081">&quot;id&quot;:${listingID1}</stringProp>
+                  <stringProp name="-914098050">&quot;id&quot;:${listingID2}</stringProp>
+                  <stringProp name="-914098019">&quot;id&quot;:${listingID3}</stringProp>
                   <stringProp name="100688175">&quot;text&quot;:&quot;This is an Admin comment for Listing1&quot;,&quot;rate&quot;:null,</stringProp>
                   <stringProp name="250619408">&quot;text&quot;:&quot;This is an Admin comment for Listing2&quot;,&quot;rate&quot;:1,</stringProp>
                   <stringProp name="379702189">&quot;text&quot;:&quot;This is an Admin comment for Listing3&quot;,&quot;rate&quot;:3,</stringProp>
