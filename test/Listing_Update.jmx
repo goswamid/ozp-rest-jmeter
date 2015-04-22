@@ -7798,7 +7798,7 @@ every HTTP request sent during the tests
         </hashTree>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Validate Large Icon URL - Positive" enabled="true">
-        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <stringProp name="ThreadGroup.on_sample_error">stoptest</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
@@ -7916,8 +7916,7 @@ every HTTP request sent during the tests
 	&quot;largeIconId&quot;:&quot;${__P(largeIcon,unknown)}&quot;,&#xd;
 	&quot;smallIconId&quot;:&quot;${__P(smallIcon,unknown)}&quot;,&#xd;
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
-	&quot;validLaunchUrl&quot;:true,&#xd;
-	&#xd;
+	&quot;validLaunchUrl&quot;:true,	&#xd;
 	&quot;screenshots&quot;:[],&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
 	&quot;title&quot;:&quot;CreateListing_${__Random(1,9000,)}&quot;,&#xd;
@@ -7951,7 +7950,7 @@ every HTTP request sent during the tests
         <hashTree>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="51508">400</stringProp>
+              <stringProp name="49586">200</stringProp>
             </collectionProp>
             <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
@@ -7965,7 +7964,7 @@ every HTTP request sent during the tests
               <stringProp name="938969136">&quot;smallIconId&quot;:&quot;${__P(smallIcon,unknown)}&quot;</stringProp>
             </collectionProp>
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-            <boolProp name="Assertion.assume_success">true</boolProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
             <intProp name="Assertion.test_type">2</intProp>
           </ResponseAssertion>
           <hashTree/>
@@ -10581,7 +10580,7 @@ every HTTP request sent during the tests
         </WhileController>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Launch URL_Negative" enabled="true">
-            <stringProp name="filename">./Listing/URL_Negative.csv</stringProp>
+            <stringProp name="filename">./Listing/URL_Negative_API.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">launchURLNeg,errorMsg</stringProp>
             <stringProp name="delimiter">\t</stringProp>
