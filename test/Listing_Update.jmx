@@ -55,12 +55,12 @@ every HTTP request sent during the tests
           </elementProp>
           <elementProp name="hostName" elementType="Argument">
             <stringProp name="Argument.name">hostName</stringProp>
-            <stringProp name="Argument.value">localhost</stringProp>
+            <stringProp name="Argument.value">${__property(hostname,,localhost)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="hostPort" elementType="Argument">
             <stringProp name="Argument.name">hostPort</stringProp>
-            <stringProp name="Argument.value">8443</stringProp>
+            <stringProp name="Argument.value">${__property(hostport,,8443)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="showAccessAlertEnabled" elementType="Argument">
@@ -75,12 +75,12 @@ every HTTP request sent during the tests
           </elementProp>
           <elementProp name="context" elementType="Argument">
             <stringProp name="Argument.name">context</stringProp>
-            <stringProp name="Argument.value">marketplace</stringProp>
+            <stringProp name="Argument.value">${__property(context,,marketplace)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="protocol" elementType="Argument">
             <stringProp name="Argument.name">protocol</stringProp>
-            <stringProp name="Argument.value">https</stringProp>
+            <stringProp name="Argument.value">${__property(protocol,,https)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="testAdmin" elementType="Argument">
@@ -5716,16 +5716,17 @@ every HTTP request sent during the tests
           <hashTree>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="51508">400</stringProp>
+                <stringProp name="49586">200</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
-              <boolProp name="Assertion.assume_success">true</boolProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
               <intProp name="Assertion.test_type">8</intProp>
             </ResponseAssertion>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-1528988111">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;screenshots\[0\].smallImageId&quot;:&quot;smallImageId is a required field. Please supply a value.&quot;}}</stringProp>
+                <stringProp name="-1907655755">&quot;largeImageId&quot;:&quot;${__P(lScreenshot1,unknown)}&quot;</stringProp>
+                <stringProp name="-1532549360">&quot;smallImageId&quot;:null</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -5764,7 +5765,8 @@ every HTTP request sent during the tests
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="1957497545">&quot;screenshots&quot;:\[\],</stringProp>
+                <stringProp name="-1907655755">&quot;largeImageId&quot;:&quot;${__P(lScreenshot1,unknown)}&quot;</stringProp>
+                <stringProp name="-1532549360">&quot;smallImageId&quot;:null</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>

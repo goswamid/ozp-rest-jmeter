@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="2.1" jmeter="2.9 r1437961">
+<jmeterTestPlan version="1.2" properties="2.6" jmeter="2.11 r1554548">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -46,12 +46,12 @@
           </elementProp>
           <elementProp name="hostName" elementType="Argument">
             <stringProp name="Argument.name">hostName</stringProp>
-            <stringProp name="Argument.value">localhost</stringProp>
+            <stringProp name="Argument.value">${__property(hostname,,localhost)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="hostPort" elementType="Argument">
             <stringProp name="Argument.name">hostPort</stringProp>
-            <stringProp name="Argument.value">8443</stringProp>
+            <stringProp name="Argument.value">${__property(hostport,,8443)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="showAccessAlertEnabled" elementType="Argument">
@@ -66,12 +66,12 @@
           </elementProp>
           <elementProp name="context" elementType="Argument">
             <stringProp name="Argument.name">context</stringProp>
-            <stringProp name="Argument.value">marketplace</stringProp>
+            <stringProp name="Argument.value">${__property(context,,marketplace)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="protocol" elementType="Argument">
             <stringProp name="Argument.name">protocol</stringProp>
-            <stringProp name="Argument.value">https</stringProp>
+            <stringProp name="Argument.value">${__property(protocol,,https)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>

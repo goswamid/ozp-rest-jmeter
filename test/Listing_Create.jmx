@@ -50,12 +50,12 @@
           </elementProp>
           <elementProp name="hostName" elementType="Argument">
             <stringProp name="Argument.name">hostName</stringProp>
-            <stringProp name="Argument.value">localhost</stringProp>
+            <stringProp name="Argument.value">${__property(hostname,,localhost)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="hostPort" elementType="Argument">
             <stringProp name="Argument.name">hostPort</stringProp>
-            <stringProp name="Argument.value">8443</stringProp>
+            <stringProp name="Argument.value">${__property(hostport,,8443)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="showAccessAlertEnabled" elementType="Argument">
@@ -70,12 +70,12 @@
           </elementProp>
           <elementProp name="context" elementType="Argument">
             <stringProp name="Argument.name">context</stringProp>
-            <stringProp name="Argument.value">marketplace</stringProp>
+            <stringProp name="Argument.value">${__property(context,,marketplace)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="protocol" elementType="Argument">
             <stringProp name="Argument.name">protocol</stringProp>
-            <stringProp name="Argument.value">https</stringProp>
+            <stringProp name="Argument.value">${__property(protocol,,https)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="testAdmin" elementType="Argument">
@@ -4317,7 +4317,7 @@ vars.put(&quot;listingID&quot;,id);</stringProp>
 	&quot;launchUrl&quot;:&quot;http://icons.iconarchive.com/icons/mattahan/ultrabuuf/128/Comics-Hulkling-Sulking-icon.png&quot;,&#xd;
 	&quot;validLaunchUrl&quot;:true,&#xd;
 	&#xd;
-	&quot;screenshots&quot;:[{&quot;largeImageId&quot;:&quot;${__P(lScreenshot1,unknown)}&quot;,&quot;smallImageId&quot;:null}],&#xd;
+	&quot;screenshots&quot;:[{&quot;largeImageId&quot;:&quot;${__P(lScreenshot1,unknown)}&quot;}],&#xd;
 	&quot;requirements&quot;:&quot;Requirements Test&quot;,&#xd;
 	&quot;title&quot;:&quot;CreateListing_${__Random(1,9000,)}&quot;,&#xd;
 	&quot;organization&quot;:&quot;Test Admin Organization&quot;,&#xd;
@@ -4350,7 +4350,7 @@ vars.put(&quot;listingID&quot;,id);</stringProp>
           <hashTree>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="51508">400</stringProp>
+                <stringProp name="49587">201</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -4359,14 +4359,97 @@ vars.put(&quot;listingID&quot;,id);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-1528988111">{&quot;message&quot;:&quot;Validation Error\(s\) occurred during save\(\):&quot;,&quot;errors&quot;:{&quot;screenshots\[0\].smallImageId&quot;:&quot;smallImageId is a required field. Please supply a value.&quot;}}</stringProp>
+                <stringProp name="-1907655755">&quot;largeImageId&quot;:&quot;${__P(lScreenshot1,unknown)}&quot;</stringProp>
+                <stringProp name="-1532549360">&quot;smallImageId&quot;:null</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-              <boolProp name="Assertion.assume_success">true</boolProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
               <intProp name="Assertion.test_type">2</intProp>
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
+          <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor - Get LisitingID" enabled="true">
+            <stringProp name="scriptLanguage">javascript</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
+eval(&apos;var response = &apos; + prev.getResponseDataAsString());
+var id = response.id;
+
+vars.put(&quot;listingID&quot;,id);</stringProp>
+          </BSFPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get Listing  Small Screenshot1 URL - Null" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID}</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1907655755">&quot;largeImageId&quot;:&quot;${__P(lScreenshot1,unknown)}&quot;</stringProp>
+              <stringProp name="-1532549360">&quot;smallImageId&quot;:null</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Delete Listing Small Screenshot1 URL - Null" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${context}/api/listing/${listingID}</stringProp>
+          <stringProp name="HTTPSampler.method">DELETE</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">Java</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49590">204</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+          </ResponseAssertion>
+          <hashTree/>
         </hashTree>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Validate Small Screenshot URL - Negative" enabled="true">
