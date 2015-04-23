@@ -5,7 +5,7 @@ buildscript {
     maven {
       url 'https://dl.bintray.com/rszewczyk/maven'
     }
-  }
+    }
   dependencies {
     classpath 'com.github.rszewczyk:jmeter-gradle-plugin:1.3.3-2.10'
   }
@@ -24,21 +24,28 @@ repositories {
 
 def propsFile = file 'jmeter.properties'
 def apiResources = [
-  'Agency',
   'API',
+  'Agency',
   'ApplicationLibrary',
   'Category',
   'ContactType',
+  'Data',
+  'Image',
   'Intent',
   'ListingActivity',
   'ListingComment',
   'ListingRelationships',
   'Listing_Create',
   'Listing_Update',
-  'Listing_Invalid',
+  'Listing_Invalid_IDs',
+  'Listing_Parameters',
+  'ListingWorkflow',
+  'Metadata',
+  'Notification',
   'Profile',
   'ProfileOrganizationStewards',
   'Scorecard',
+  'Storefront',
   'Type'
 ]
 
@@ -48,6 +55,7 @@ apiResources.each { resource ->
   task "test$resource"(type: JmeterRunTask) {
     jmeterTestFiles = [testFile]
     jmeterPropertyFile = propsFile 
+    jmeterUserProperties = ["hostname=localhost","context=marketplace","hostport=8443","protocol=https"]
     maxHeapSize = '512m'
     enableReports = true
     reportDir = file "$project.buildDir/jmeter-report"
