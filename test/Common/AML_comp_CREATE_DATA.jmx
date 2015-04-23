@@ -457,8 +457,8 @@ vars.put(&quot;imageID&quot;,id);</stringProp>
                 <stringProp name="HTTPSampler.implementation">Java</stringProp>
                 <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
                   <collectionProp name="HTTPFileArgs.files">
-                    <elementProp name="${fileServer}\Common\\Mirco_Format_16.png" elementType="HTTPFileArg">
-                      <stringProp name="File.path">${fileServer}\Common\\Mirco_Format_16.png</stringProp>
+                    <elementProp name="${fileServer}/Common/Mirco_Format_16.png" elementType="HTTPFileArg">
+                      <stringProp name="File.path">${fileServer}/Common/Mirco_Format_16.png</stringProp>
                       <stringProp name="File.paramname">image</stringProp>
                       <stringProp name="File.mimetype">image/png</stringProp>
                     </elementProp>
@@ -520,8 +520,8 @@ vars.put(&quot;imageID&quot;,id);</stringProp>
                 <stringProp name="HTTPSampler.implementation">Java</stringProp>
                 <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
                   <collectionProp name="HTTPFileArgs.files">
-                    <elementProp name="${fileServer}\Common\\Mirco_Format_64.png" elementType="HTTPFileArg">
-                      <stringProp name="File.path">${fileServer}\Common\\Mirco_Format_64.png</stringProp>
+                    <elementProp name="${fileServer}/Common/Mirco_Format_64.png" elementType="HTTPFileArg">
+                      <stringProp name="File.path">${fileServer}/Common/Mirco_Format_64.png</stringProp>
                       <stringProp name="File.paramname">image</stringProp>
                       <stringProp name="File.mimetype">image/png</stringProp>
                     </elementProp>
@@ -583,8 +583,8 @@ vars.put(&quot;imageID&quot;,id);</stringProp>
                 <stringProp name="HTTPSampler.implementation">Java</stringProp>
                 <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
                   <collectionProp name="HTTPFileArgs.files">
-                    <elementProp name="${fileServer}\Common\\Microformat.png" elementType="HTTPFileArg">
-                      <stringProp name="File.path">${fileServer}\Common\\Microformat.png</stringProp>
+                    <elementProp name="${fileServer}/Common/Microformat.png" elementType="HTTPFileArg">
+                      <stringProp name="File.path">${fileServer}/Common/Microformat.png</stringProp>
                       <stringProp name="File.paramname">image</stringProp>
                       <stringProp name="File.mimetype">image/png</stringProp>
                     </elementProp>
@@ -646,8 +646,8 @@ vars.put(&quot;imageID&quot;,id);</stringProp>
                 <stringProp name="HTTPSampler.implementation">Java</stringProp>
                 <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
                   <collectionProp name="HTTPFileArgs.files">
-                    <elementProp name="${fileServer}\Common\\city_small.jpg" elementType="HTTPFileArg">
-                      <stringProp name="File.path">${fileServer}\Common\\city_small.jpg</stringProp>
+                    <elementProp name="${fileServer}/Common/city_small.jpg" elementType="HTTPFileArg">
+                      <stringProp name="File.path">${fileServer}/Common/city_small.jpg</stringProp>
                       <stringProp name="File.paramname">image</stringProp>
                       <stringProp name="File.mimetype">image/png</stringProp>
                     </elementProp>
@@ -709,8 +709,8 @@ vars.put(&quot;imageID&quot;,id);</stringProp>
                 <stringProp name="HTTPSampler.implementation">Java</stringProp>
                 <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
                   <collectionProp name="HTTPFileArgs.files">
-                    <elementProp name="${fileServer}\Common\\city_large.jpg" elementType="HTTPFileArg">
-                      <stringProp name="File.path">${fileServer}\Common\\city_large.jpg</stringProp>
+                    <elementProp name="${fileServer}/Common/city_large.jpg" elementType="HTTPFileArg">
+                      <stringProp name="File.path">${fileServer}/Common/city_large.jpg</stringProp>
                       <stringProp name="File.paramname">image</stringProp>
                       <stringProp name="File.mimetype">image/png</stringProp>
                     </elementProp>
@@ -772,8 +772,8 @@ vars.put(&quot;imageID&quot;,id);</stringProp>
                 <stringProp name="HTTPSampler.implementation">Java</stringProp>
                 <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
                   <collectionProp name="HTTPFileArgs.files">
-                    <elementProp name="${fileServer}\Common\\tech_small.jpg" elementType="HTTPFileArg">
-                      <stringProp name="File.path">${fileServer}\Common\\tech_small.jpg</stringProp>
+                    <elementProp name="${fileServer}/Common/tech_small.jpg" elementType="HTTPFileArg">
+                      <stringProp name="File.path">${fileServer}/Common/tech_small.jpg</stringProp>
                       <stringProp name="File.paramname">image</stringProp>
                       <stringProp name="File.mimetype">image/png</stringProp>
                     </elementProp>
@@ -835,8 +835,8 @@ vars.put(&quot;imageID&quot;,id);</stringProp>
                 <stringProp name="HTTPSampler.implementation">Java</stringProp>
                 <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
                   <collectionProp name="HTTPFileArgs.files">
-                    <elementProp name="${fileServer}\Common\\tech_large.jpg" elementType="HTTPFileArg">
-                      <stringProp name="File.path">${fileServer}\Common\\tech_large.jpg</stringProp>
+                    <elementProp name="${fileServer}/Common/tech_large.jpg" elementType="HTTPFileArg">
+                      <stringProp name="File.path">${fileServer}/Common/tech_large.jpg</stringProp>
                       <stringProp name="File.paramname">image</stringProp>
                       <stringProp name="File.mimetype">image/png</stringProp>
                     </elementProp>
