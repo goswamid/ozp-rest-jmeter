@@ -628,8 +628,8 @@ vars.put(&quot;fileServer&quot;,fs);</stringProp>
                 <stringProp name="HTTPSampler.implementation">Java</stringProp>
                 <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
                   <collectionProp name="HTTPFileArgs.files">
-                    <elementProp name="${fileServer}\Search\\${fileName}" elementType="HTTPFileArg">
-                      <stringProp name="File.path">${fileServer}\Search\\${fileName}</stringProp>
+                    <elementProp name="${fileServer}/Search/${fileName}" elementType="HTTPFileArg">
+                      <stringProp name="File.path">${fileServer}/Search/${fileName}</stringProp>
                       <stringProp name="File.paramname">image</stringProp>
                       <stringProp name="File.mimetype">image/png</stringProp>
                     </elementProp>

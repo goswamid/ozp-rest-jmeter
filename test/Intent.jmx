@@ -222,8 +222,8 @@ vars.put(&quot;fileServer&quot;,fs);</stringProp>
             <stringProp name="HTTPSampler.implementation">Java</stringProp>
             <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
               <collectionProp name="HTTPFileArgs.files">
-                <elementProp name="${fileServer}\Common\\Microformat.png" elementType="HTTPFileArg">
-                  <stringProp name="File.path">${fileServer}\Common\\Microformat.png</stringProp>
+                <elementProp name="${fileServer}/Common/Microformat.png" elementType="HTTPFileArg">
+                  <stringProp name="File.path">${fileServer}/Common/Microformat.png</stringProp>
                   <stringProp name="File.paramname">image</stringProp>
                   <stringProp name="File.mimetype">image/png</stringProp>
                 </elementProp>
