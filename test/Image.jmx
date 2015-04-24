@@ -296,7 +296,7 @@ vars.put(&quot;fileServer&quot;,fs);</stringProp>
                 <stringProp name="parameters"></stringProp>
                 <stringProp name="script"> // Turn the JSON into an object called &apos;JSonResponse&apos;
 eval(&apos;var response = &apos; + prev.getResponseDataAsString());
-OUT.println(response);
+//OUT.println(response);
 var id =response._links.self.href;
 var res = id.split(&apos;/&apos;);
 //OUT.println(res[6]);
