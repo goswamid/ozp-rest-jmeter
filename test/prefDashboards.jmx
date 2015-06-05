@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.6" jmeter="2.11 r1554548">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">true</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ConfigTestElement guiclass="SimpleConfigGui" testclass="ConfigTestElement" testname="Description" enabled="true">
+        <stringProp name="TestPlan.comments">This test will validate the API call that will test invalid ids being used to GET, PUT and DELETE listings
+
+ To run these tests:
+1. Inspect the &apos;Test Variables&apos; node for test parameters and validate they are correct and pointed to the correct locations
+2. Execute using menu choice Run-&gt;Start 
+</stringProp>
+      </ConfigTestElement>
+      <hashTree/>
+      <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager" enabled="true">
+        <collectionProp name="AuthManager.auth_list">
+          <elementProp name="" elementType="Authorization">
+            <stringProp name="Authorization.url"></stringProp>
+            <stringProp name="Authorization.username">${userName}</stringProp>
+            <stringProp name="Authorization.password">password</stringProp>
+            <stringProp name="Authorization.domain"></stringProp>
+            <stringProp name="Authorization.realm"></stringProp>
+          </elementProp>
+        </collectionProp>
+      </AuthManager>
+      <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Variables for Script" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="loopsPerUser" elementType="Argument">
+            <stringProp name="Argument.name">loopsPerUser</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="numUsersPerType" elementType="Argument">
+            <stringProp name="Argument.name">numUsersPerType</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="hostName" elementType="Argument">
+            <stringProp name="Argument.name">hostName</stringProp>
+            <stringProp name="Argument.value">${__property(hostname,,localhost)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="hostPort" elementType="Argument">
+            <stringProp name="Argument.name">hostPort</stringProp>
+            <stringProp name="Argument.value">${__property(hostport,,8443)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="showAccessAlertEnabled" elementType="Argument">
+            <stringProp name="Argument.name">showAccessAlertEnabled</stringProp>
+            <stringProp name="Argument.value">true</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="userName" elementType="Argument">
+            <stringProp name="Argument.name">userName</stringProp>
+            <stringProp name="Argument.value">testAdmin1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="context" elementType="Argument">
+            <stringProp name="Argument.name">context</stringProp>
+            <stringProp name="Argument.value">${__property(context,,marketplace)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="protocol" elementType="Argument">
+            <stringProp name="Argument.name">protocol</stringProp>
+            <stringProp name="Argument.value">${__property(protocol,,https)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="testAdmin" elementType="Argument">
+            <stringProp name="Argument.name">testAdmin</stringProp>
+            <stringProp name="Argument.value">testAdmin1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="testUser" elementType="Argument">
+            <stringProp name="Argument.name">testUser</stringProp>
+            <stringProp name="Argument.value">testUser1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="testSteward" elementType="Argument">
+            <stringProp name="Argument.name">testSteward</stringProp>
+            <stringProp name="Argument.value">testSteward1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="Connect to Marketplace" enabled="true">
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+        <stringProp name="HTTPSampler.domain">${hostName}</stringProp>
+        <stringProp name="HTTPSampler.port">${hostPort}</stringProp>
+        <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+        <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
+        <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+        <stringProp name="HTTPSampler.path"></stringProp>
+        <stringProp name="HTTPSampler.concurrentPool">4</stringProp>
+      </ConfigTestElement>
+      <hashTree/>
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+        <collectionProp name="HeaderManager.headers">
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">Accept</stringProp>
+            <stringProp name="Header.value">application/json</stringProp>
+          </elementProp>
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">Content-Type</stringProp>
+            <stringProp name="Header.value">application/json</stringProp>
+          </elementProp>
+        </collectionProp>
+      </HeaderManager>
+      <hashTree/>
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+        <collectionProp name="CookieManager.cookies"/>
+        <boolProp name="CookieManager.clearEachIteration">false</boolProp>
+        <stringProp name="CookieManager.policy">rfc2109</stringProp>
+      </CookieManager>
+      <hashTree/>
+      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>true</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>true</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="prefDashboards" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1430419450000</longProp>
+        <longProp name="ThreadGroup.end_time">1430419450000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Accept</stringProp>
+              <stringProp name="Header.value">application/json</stringProp>
+            </elementProp>
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Content-Type</stringProp>
+              <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="createOrUpdateDashboard - Post" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+    &quot;alteredByAdmin&quot;: &quot;false&quot;,&#xd;
+    &quot;guid&quot;: &quot;56672b31-0df3-44f1-a273-9e6149d5c06b&quot;,&#xd;
+    &quot;id&quot;: &quot;56672b31-0df3-44f1-a273-9e6149d5c06b&quot;,&#xd;
+    &quot;isdefault&quot;: true,&#xd;
+    &quot;dashboardPosition&quot;: 31,&#xd;
+    &quot;EDashboardLayoutList&quot;: &quot;[accordion, desktop, portal, tabbed]&quot;,&#xd;
+    &quot;name&quot;: &quot;abc&quot;,&#xd;
+    &quot;state&quot;: [],&#xd;
+    &quot;removed&quot;: &quot;&quot;,&#xd;
+    &quot;groups&quot;: [&#xd;
+        {&#xd;
+            &quot;stackDefault&quot;: true,&#xd;
+            &quot;totalUsers&quot;: 0,&#xd;
+            &quot;id&quot;: 197,&#xd;
+            &quot;totalWidgets&quot;: 0,&#xd;
+            &quot;name&quot;: &quot;1ad03a7d-7db2-426c-b784-74c3c3100ce7&quot;,&#xd;
+            &quot;totalStacks&quot;: 0,&#xd;
+            &quot;status&quot;: &quot;active&quot;,&#xd;
+            &quot;tagLinks&quot;: [],&#xd;
+            &quot;description&quot;: &quot;&quot;,&#xd;
+            &quot;email&quot;: null,&#xd;
+            &quot;displayName&quot;: null,&#xd;
+            &quot;automatic&quot;: false&#xd;
+        }&#xd;
+    ],&#xd;
+    &quot;isGroupDashboard&quot;: false,&#xd;
+    &quot;description&quot;: &quot; &quot;,&#xd;
+    &quot;iconImageUrl&quot;: &quot; &quot;,&#xd;
+    &quot;type&quot;: null,&#xd;
+    &quot;createdDate&quot;: &quot;08/14/2013 02:23 PM EDT&quot;,&#xd;
+    &quot;prettyCreatedDate&quot;: &quot;  moments ago&quot;,&#xd;
+    &quot;editedDate&quot;: &quot;08/14/2013 02:23 PM EDT&quot;,&#xd;
+    &quot;prettyEditedDate&quot;: &quot;  moments ago&quot;,&#xd;
+    &quot;publishedToStore&quot;: false,&#xd;
+    &quot;stack&quot;: {&#xd;
+        &quot;totalUsers&quot;: 0,&#xd;
+        &quot;id&quot;: 4,&#xd;
+        &quot;totalWidgets&quot;: 1,&#xd;
+        &quot;name&quot;: &quot;My Dashboarda&quot;,&#xd;
+        &quot;totalDashboards&quot;: 0,&#xd;
+        &quot;imageUrl&quot;: &quot; &quot;,&#xd;
+        &quot;owner&quot;: {&#xd;
+            &quot;id&quot;: 1,&#xd;
+            &quot;userRealName&quot;: &quot;Test Admin 1&quot;,&#xd;
+            &quot;username&quot;: &quot;testAdmin1&quot;,&#xd;
+            &quot;totalWidgets&quot;: 0,&#xd;
+            &quot;totalDashboards&quot;: 0,&#xd;
+            &quot;totalStacks&quot;: 0,&#xd;
+            &quot;hasPWD&quot;: null,&#xd;
+            &quot;totalGroups&quot;: 0,&#xd;
+            &quot;tagLinks&quot;: [],&#xd;
+            &quot;email&quot;: &quot;testAdmin1@ozone3.test&quot;,&#xd;
+            &quot;lastLogin&quot;: 1376502218991&#xd;
+        },&#xd;
+        &quot;totalGroups&quot;: 0,&#xd;
+        &quot;stackContext&quot;: &quot;70257b96-5a70-4c73-b287-03df38195cb5&quot;,&#xd;
+        &quot;groups&quot;: [&#xd;
+            {&#xd;
+                &quot;stackDefault&quot;: true,&#xd;
+                &quot;totalUsers&quot;: 0,&#xd;
+                &quot;id&quot;: 197,&#xd;
+                &quot;totalWidgets&quot;: 0,&#xd;
+                &quot;name&quot;: &quot;1ad03a7d-7db2-426c-b784-74c3c3100ce7&quot;,&#xd;
+                &quot;totalStacks&quot;: 0,&#xd;
+                &quot;status&quot;: &quot;active&quot;,&#xd;
+                &quot;tagLinks&quot;: [],&#xd;
+                &quot;description&quot;: &quot;&quot;,&#xd;
+                &quot;email&quot;: null,&#xd;
+                &quot;displayName&quot;: null,&#xd;
+                &quot;automatic&quot;: false&#xd;
+            }&#xd;
+        ],&#xd;
+        &quot;descriptorUrl&quot;: null,&#xd;
+        &quot;description&quot;: &quot;This is my dashboard&quot;&#xd;
+    },&#xd;
+    &quot;locked&quot;: false,&#xd;
+    &quot;layoutConfig&quot;: {&#xd;
+        &quot;widgets&quot;: [],&#xd;
+        &quot;height&quot;: &quot;100%&quot;,&#xd;
+        &quot;items&quot;: [],&#xd;
+        &quot;xtype&quot;: &quot;dashboarddesignerpane&quot;,&#xd;
+        &quot;flex&quot;: 1,&#xd;
+        &quot;paneType&quot;: &quot;desktoppane&quot;,&#xd;
+        &quot;defaultSettings&quot;: {}&#xd;
+    },&#xd;
+    &quot;createdBy&quot;: {&#xd;
+        &quot;userId&quot;: null,&#xd;
+        &quot;userRealName&quot;: null&#xd;
+    },&#xd;
+    &quot;user&quot;: {&#xd;
+        &quot;userId&quot;: &quot;testAdmin1&quot;&#xd;
+    }&#xd;
+}&#xd;
+&#xd;
+                                           </stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${context}/api/prefs/dashboard</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">Java</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="51512">404</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="1320173782">{&quot;error&quot;:true}</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">true</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="createOrUpdateDashboard - Put" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+    &quot;alteredByAdmin&quot;: &quot;false&quot;,&#xd;
+    &quot;guid&quot;: &quot;56672b31-0df3-44f1-a273-9e6149d5c06b&quot;,&#xd;
+    &quot;id&quot;: &quot;56672b31-0df3-44f1-a273-9e6149d5c06b&quot;,&#xd;
+    &quot;isdefault&quot;: true,&#xd;
+    &quot;dashboardPosition&quot;: 31,&#xd;
+    &quot;EDashboardLayoutList&quot;: &quot;[accordion, desktop, portal, tabbed]&quot;,&#xd;
+    &quot;name&quot;: &quot;abc&quot;,&#xd;
+    &quot;state&quot;: [],&#xd;
+    &quot;removed&quot;: &quot;&quot;,&#xd;
+    &quot;groups&quot;: [&#xd;
+        {&#xd;
+            &quot;stackDefault&quot;: true,&#xd;
+            &quot;totalUsers&quot;: 0,&#xd;
+            &quot;id&quot;: 197,&#xd;
+            &quot;totalWidgets&quot;: 0,&#xd;
+            &quot;name&quot;: &quot;1ad03a7d-7db2-426c-b784-74c3c3100ce7&quot;,&#xd;
+            &quot;totalStacks&quot;: 0,&#xd;
+            &quot;status&quot;: &quot;active&quot;,&#xd;
+            &quot;tagLinks&quot;: [],&#xd;
+            &quot;description&quot;: &quot;&quot;,&#xd;
+            &quot;email&quot;: null,&#xd;
+            &quot;displayName&quot;: null,&#xd;
+            &quot;automatic&quot;: false&#xd;
+        }&#xd;
+    ],&#xd;
+    &quot;isGroupDashboard&quot;: false,&#xd;
+    &quot;description&quot;: &quot; &quot;,&#xd;
+    &quot;iconImageUrl&quot;: &quot; &quot;,&#xd;
+    &quot;type&quot;: null,&#xd;
+    &quot;createdDate&quot;: &quot;08/14/2013 02:23 PM EDT&quot;,&#xd;
+    &quot;prettyCreatedDate&quot;: &quot;  moments ago&quot;,&#xd;
+    &quot;editedDate&quot;: &quot;08/14/2013 02:23 PM EDT&quot;,&#xd;
+    &quot;prettyEditedDate&quot;: &quot;  moments ago&quot;,&#xd;
+    &quot;publishedToStore&quot;: false,&#xd;
+    &quot;stack&quot;: {&#xd;
+        &quot;totalUsers&quot;: 0,&#xd;
+        &quot;id&quot;: 4,&#xd;
+        &quot;totalWidgets&quot;: 1,&#xd;
+        &quot;name&quot;: &quot;My Dashboarda&quot;,&#xd;
+        &quot;totalDashboards&quot;: 0,&#xd;
+        &quot;imageUrl&quot;: &quot; &quot;,&#xd;
+        &quot;owner&quot;: {&#xd;
+            &quot;id&quot;: 1,&#xd;
+            &quot;userRealName&quot;: &quot;Test Admin 1&quot;,&#xd;
+            &quot;username&quot;: &quot;testAdmin1&quot;,&#xd;
+            &quot;totalWidgets&quot;: 0,&#xd;
+            &quot;totalDashboards&quot;: 0,&#xd;
+            &quot;totalStacks&quot;: 0,&#xd;
+            &quot;hasPWD&quot;: null,&#xd;
+            &quot;totalGroups&quot;: 0,&#xd;
+            &quot;tagLinks&quot;: [],&#xd;
+            &quot;email&quot;: &quot;testAdmin1@ozone3.test&quot;,&#xd;
+            &quot;lastLogin&quot;: 1376502218991&#xd;
+        },&#xd;
+        &quot;totalGroups&quot;: 0,&#xd;
+        &quot;stackContext&quot;: &quot;70257b96-5a70-4c73-b287-03df38195cb5&quot;,&#xd;
+        &quot;groups&quot;: [&#xd;
+            {&#xd;
+                &quot;stackDefault&quot;: true,&#xd;
+                &quot;totalUsers&quot;: 0,&#xd;
+                &quot;id&quot;: 197,&#xd;
+                &quot;totalWidgets&quot;: 0,&#xd;
+                &quot;name&quot;: &quot;1ad03a7d-7db2-426c-b784-74c3c3100ce7&quot;,&#xd;
+                &quot;totalStacks&quot;: 0,&#xd;
+                &quot;status&quot;: &quot;active&quot;,&#xd;
+                &quot;tagLinks&quot;: [],&#xd;
+                &quot;description&quot;: &quot;&quot;,&#xd;
+                &quot;email&quot;: null,&#xd;
+                &quot;displayName&quot;: null,&#xd;
+                &quot;automatic&quot;: false&#xd;
+            }&#xd;
+        ],&#xd;
+        &quot;descriptorUrl&quot;: null,&#xd;
+        &quot;description&quot;: &quot;This is my dashboard&quot;&#xd;
+    },&#xd;
+    &quot;locked&quot;: false,&#xd;
+    &quot;layoutConfig&quot;: {&#xd;
+        &quot;widgets&quot;: [],&#xd;
+        &quot;height&quot;: &quot;100%&quot;,&#xd;
+        &quot;items&quot;: [],&#xd;
+        &quot;xtype&quot;: &quot;dashboarddesignerpane&quot;,&#xd;
+        &quot;flex&quot;: 1,&#xd;
+        &quot;paneType&quot;: &quot;desktoppane&quot;,&#xd;
+        &quot;defaultSettings&quot;: {}&#xd;
+    },&#xd;
+    &quot;createdBy&quot;: {&#xd;
+        &quot;userId&quot;: null,&#xd;
+        &quot;userRealName&quot;: null&#xd;
+    },&#xd;
+    &quot;user&quot;: {&#xd;
+        &quot;userId&quot;: &quot;testAdmin1&quot;&#xd;
+    }&#xd;
+}&#xd;
+&#xd;
+                                           </stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${context}/api/prefs/dashboard</stringProp>
+          <stringProp name="HTTPSampler.method">PUT</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">Java</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="51512">404</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="1320173782">{&quot;error&quot;:true}</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">true</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TODO - findDashboardByType" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${context}/api/prefs/dashboard</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">Java</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="51512">404</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="1320173782">{&quot;error&quot;:true}</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">true</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="deleteDashboard" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${context}/api/prefs/dashboard/12345678-1234-1434-1234-123456789012</stringProp>
+          <stringProp name="HTTPSampler.method">DELETE</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">Java</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="51512">404</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="1320173782">{&quot;error&quot;:true}</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">true</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="findDashboard" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${context}/api/prefs/dashboard</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">Java</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="51512">404</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="1320173782">{&quot;error&quot;:true}</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">true</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
