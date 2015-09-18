@@ -132,7 +132,6 @@ every HTTP request sent during the tests
       <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
-          <name>saveConfig</name>
           <value class="SampleSaveConfiguration">
             <time>true</time>
             <latency>true</latency>
@@ -164,7 +163,6 @@ every HTTP request sent during the tests
       <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
-          <name>saveConfig</name>
           <value class="SampleSaveConfiguration">
             <time>true</time>
             <latency>true</latency>
@@ -12440,7 +12438,6 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
             <ResultCollector guiclass="SimpleDataWriter" testclass="ResultCollector" testname="Simple Data Writer" enabled="true">
               <boolProp name="ResultCollector.error_logging">false</boolProp>
               <objProp>
-                <name>saveConfig</name>
                 <value class="SampleSaveConfiguration">
                   <time>true</time>
                   <latency>true</latency>
@@ -18149,7 +18146,10 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="868397630">&quot;id&quot;:\d+,</stringProp>
-                <stringProp name="-181589885">&quot;tags&quot;:\[&quot;test1&quot;,&quot;test2&quot;,&quot;test3&quot;\]</stringProp>
+                <stringProp name="-2071750766">&quot;tags&quot;:\[</stringProp>
+                <stringProp name="-766817083">&quot;test1&quot;</stringProp>
+                <stringProp name="-766817052">&quot;test2&quot;</stringProp>
+                <stringProp name="-766817021">&quot;test3&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -18188,7 +18188,11 @@ vars.put(&quot;userName&quot;,&quot;${testAdmin}&quot;);</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="-181589885">&quot;tags&quot;:\[&quot;test1&quot;,&quot;test2&quot;,&quot;test3&quot;\]</stringProp>
+                <stringProp name="868397630">&quot;id&quot;:\d+,</stringProp>
+                <stringProp name="-2071750766">&quot;tags&quot;:\[</stringProp>
+                <stringProp name="-766817083">&quot;test1&quot;</stringProp>
+                <stringProp name="-766817052">&quot;test2&quot;</stringProp>
+                <stringProp name="-766817021">&quot;test3&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -25090,7 +25094,9 @@ vars.put(&quot;reqContactTypeTitle&quot;,name);</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="868397630">&quot;id&quot;:\d+,</stringProp>
-                <stringProp name="931438127">&quot;intents&quot;:\[&quot;${intentDataType1}/${intentAction1}&quot;,&quot;${intentDataType2}/${intentAction2}&quot;\]</stringProp>
+                <stringProp name="-1055823284">&quot;intents&quot;:\[</stringProp>
+                <stringProp name="1920293475">&quot;${intentDataType1}/${intentAction1}&quot;</stringProp>
+                <stringProp name="1511470211">&quot;${intentDataType2}/${intentAction2}&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -25130,7 +25136,9 @@ vars.put(&quot;reqContactTypeTitle&quot;,name);</stringProp>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="868397630">&quot;id&quot;:\d+,</stringProp>
-                <stringProp name="931438127">&quot;intents&quot;:\[&quot;${intentDataType1}/${intentAction1}&quot;,&quot;${intentDataType2}/${intentAction2}&quot;\]</stringProp>
+                <stringProp name="-1055823284">&quot;intents&quot;:\[</stringProp>
+                <stringProp name="1920293475">&quot;${intentDataType1}/${intentAction1}&quot;</stringProp>
+                <stringProp name="1511470211">&quot;${intentDataType2}/${intentAction2}&quot;</stringProp>
               </collectionProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
@@ -25236,7 +25244,6 @@ vars.put(&quot;reqContactTypeTitle&quot;,name);</stringProp>
       <ResultCollector guiclass="SimpleDataWriter" testclass="ResultCollector" testname="Simple Data Writer" enabled="true">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
-          <name>saveConfig</name>
           <value class="SampleSaveConfiguration">
             <time>true</time>
             <latency>true</latency>
@@ -25268,7 +25275,6 @@ vars.put(&quot;reqContactTypeTitle&quot;,name);</stringProp>
       <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
-          <name>saveConfig</name>
           <value class="SampleSaveConfiguration">
             <time>true</time>
             <latency>true</latency>
